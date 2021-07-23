@@ -34,7 +34,7 @@ body::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.85);
   z-index: -1;
 }
 
@@ -59,8 +59,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape) {
+  screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   body {
     overflow-y: auto;
   }
@@ -108,8 +107,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape) {
+  screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .header,
   .footer {
     padding: 40px 40px;
@@ -134,8 +132,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape) {
+  screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .header {
     flex-direction: row-reverse;
     align-items: flex-start;
@@ -171,8 +168,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape) {
+  screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .logo {
     display: none;
   }
@@ -245,8 +241,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape) {
+  screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .main {
     max-height: unset;
   }
@@ -326,8 +321,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape) {
+  screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .previous-button {
     top: -4px;
     left: 0;
@@ -400,8 +394,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape) {
+  screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .wallet-card {
     padding: 24px;
   }
@@ -440,8 +433,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape) {
+  screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .info {
     margin: 32px 12px;
     text-align: left;
@@ -487,8 +479,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape) {
+  screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .footer {
     flex-direction: column-reverse;
     margin-top: 20px;
