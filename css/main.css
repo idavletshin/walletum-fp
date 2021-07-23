@@ -59,10 +59,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-device-pixel-ratio: 4/2),
-  only screen and (min-device-pixel-ratio: 2) {
+  only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
   body {
     overflow-y: auto;
   }
@@ -110,10 +107,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-device-pixel-ratio: 4/2),
-  only screen and (min-device-pixel-ratio: 2) {
+  only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
   .header,
   .footer {
     padding: 40px 40px;
@@ -138,10 +132,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-device-pixel-ratio: 4/2),
-  only screen and (min-device-pixel-ratio: 2) {
+  only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
   .header {
     flex-direction: row-reverse;
     align-items: flex-start;
@@ -177,10 +168,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-device-pixel-ratio: 4/2),
-  only screen and (min-device-pixel-ratio: 2) {
+  only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
   .logo {
     display: none;
   }
@@ -253,10 +241,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-device-pixel-ratio: 4/2),
-  only screen and (min-device-pixel-ratio: 2) {
+  only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
   .main {
     max-height: unset;
   }
@@ -336,10 +321,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-device-pixel-ratio: 4/2),
-  only screen and (min-device-pixel-ratio: 2) {
+  only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
   .previous-button {
     top: -4px;
     left: 0;
@@ -412,10 +394,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-device-pixel-ratio: 4/2),
-  only screen and (min-device-pixel-ratio: 2) {
+  only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
   .wallet-card {
     padding: 24px;
   }
@@ -454,10 +433,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-device-pixel-ratio: 4/2),
-  only screen and (min-device-pixel-ratio: 2) {
+  only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
   .info {
     margin: 32px 12px;
     text-align: left;
@@ -503,10 +479,7 @@ body::after {
 
 @media screen and (max-width: 768px),
   only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape),
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-device-pixel-ratio: 4/2),
-  only screen and (min-device-pixel-ratio: 2) {
+  only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
   .footer {
     flex-direction: column-reverse;
     margin-top: 20px;
