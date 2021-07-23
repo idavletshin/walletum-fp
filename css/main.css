@@ -1,0 +1,451 @@
+@import "variables.css";
+@import "reset.css";
+@import "typography.css";
+@import "burger.css";
+@import "scrollbar.css";
+@import "button.css";
+
+/* Общие стили для страницы */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-height: inherit;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 135px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0 56px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-y: auto;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .container {
+    padding: 0 25px;
+  }
+}
+
+/* *** */
+
+/* Стили отвечающие за цвет */
+
+.gradient-color {
+  background: -webkit-linear-gradient(45deg, #b3ffab, #12fff7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-bg {
+  background: var(--main-bg);
+}
+
+.blue-color {
+  color: var(--blue);
+}
+
+/* *** */
+
+/* Общие стили для header и footer */
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 56px;
+}
+
+@media screen and (max-width: 768px) {
+  .header,
+  .footer {
+    padding: 40px 40px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .header,
+  .footer {
+    padding: 40px 25px;
+  }
+}
+
+/* *** */
+
+/* Стили для header */
+
+.header__lang {
+  margin-left: auto;
+  margin-right: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  .header__lang {
+    margin-right: 0;
+  }
+}
+
+/* *** */
+
+/* Стили для блока с логотипом */
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo__img {
+  width: 110px;
+  margin-left: -15px;
+  margin-right: 9px;
+}
+
+.logo__text {
+  font-size: 24px;
+  font-family: var(--second-font);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+}
+
+/* *** */
+
+/* Стили для блока с выбором языка */
+
+.lang {
+  font-family: var(--second-font);
+}
+
+.lang__item {
+  color: #7a7a7a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.lang__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.lang__item:hover {
+  color: #fff;
+}
+
+.lang__item.active {
+  color: #fff;
+  border-bottom: 2px solid #f49c0b;
+}
+
+/* *** */
+
+/* Стили для блока main */
+
+.main {
+  margin: auto 0;
+  max-height: calc(100vh - 260px);
+  height: 100%;
+}
+
+.main__wrapper {
+  display: flex;
+  max-height: inherit;
+}
+
+.main__left,
+.main__right {
+  flex: 1;
+}
+
+.main__left {
+  position: relative;
+  display: flex;
+  max-height: inherit;
+  max-width: 450px;
+  margin-right: 20px;
+}
+
+.main__right {
+  display: flex;
+  max-height: inherit;
+  max-width: 450px;
+  margin-left: auto;
+  background: var(--card-bg);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    max-height: unset;
+  }
+
+  .main__wrapper {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .main__left {
+    margin-right: 0;
+  }
+
+  .main__left,
+  .main__right {
+    max-width: unset;
+    width: 100%;
+  }
+}
+
+/* *** */
+
+/* Стили для блока form */
+
+.form {
+  overflow-y: auto;
+}
+
+.form__steps {
+  margin-bottom: 40px;
+}
+
+.steps {
+  color: var(--yellow);
+  font-family: var(--second-font);
+  font-weight: 700;
+}
+
+.form__title-group {
+  margin-bottom: 50px;
+}
+
+.form__title {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-family: var(--second-font);
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.form__subtitle {
+  margin-bottom: 20px;
+  color: var(--gray);
+  font-size: 18px;
+  font-family: var(--second-font);
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.previous-button {
+  position: absolute;
+  top: 70px;
+  left: -70px;
+}
+
+@media screen and (max-width: 1200px) {
+  .previous-button {
+    left: -50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .previous-button {
+    left: -40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .previous-button {
+    top: -4px;
+    left: 0;
+  }
+
+  .form__title {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .form__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* *** */
+
+/* Стили для wallet-card */
+
+.form__wallet-card {
+  margin-bottom: 40px;
+}
+
+.wallet-card {
+  padding: 24px 40px;
+  background: var(--card-bg);
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.wallet-card__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.wallet-card__title img {
+  width: auto;
+  height: 16px;
+  margin-left: 20px;
+  transform: rotate(180deg);
+}
+
+.wallet-card__text {
+  width: 75%;
+  color: var(--gray);
+  font-size: 14px;
+  text-align: left;
+  line-height: 24px;
+}
+
+.--yellow-border {
+  border: 3px solid var(--yellow);
+}
+
+.--yellow-border:hover {
+  box-shadow: inset 0 0 10px rgba(251, 214, 61, 0.5);
+}
+
+.--blue-border {
+  border: 3px solid var(--blue);
+}
+
+.--blue-border:hover {
+  box-shadow: inset 0 0 10px rgba(41, 151, 255, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .wallet-card {
+    padding: 24px;
+  }
+
+  .wallet-card__text {
+    width: 100%;
+  }
+}
+
+/* *** */
+
+/* Стили для блока info */
+
+.info {
+  max-height: inherit;
+  margin: 64px 30px;
+  overflow: hidden;
+}
+
+.info__wrapper {
+  height: 100%;
+  padding: 0 30px;
+  overflow-y: auto;
+}
+
+.info__title {
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--second-font);
+}
+
+.info__text:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    margin: 32px 12px;
+    text-align: left;
+  }
+
+  .info__wrapper {
+    padding: 0 12px;
+  }
+
+  .info__title {
+    font-size: 16px;
+  }
+
+  .info__text {
+    font-size: 14px;
+  }
+}
+
+/* *** */
+
+/* Стили для footer */
+
+.footer__copyright {
+  font-size: 18px;
+  font-family: var(--second-font);
+}
+
+.socials__list {
+  display: flex;
+  align-items: center;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.socials__icon {
+  min-width: 24px;
+  width: 24px;
+  min-height: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+
+  .footer__copyright {
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+/* *** */

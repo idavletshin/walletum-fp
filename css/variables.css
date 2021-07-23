@@ -1,0 +1,14 @@
+:root {
+  --white: #ffffff;
+  --main-bg: #0c0c0c;
+  --card-bg: #191919;
+  --disabled-black: #322b2b;
+  --gray: #7a7a7a;
+  --purple: #7303c0;
+  --pink: #ec38bc;
+  --blue: #2997ff;
+  --yellow: #fbd63d;
+
+  --main-font: "Inter", sans-serif;
+  --second-font: "Montserrat", "Helvetica", sans-serif;
+}

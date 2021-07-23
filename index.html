@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Walletum</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo logo" href="#">
+        <img class="logo__img" src="./images/logo.svg" alt="Logo" />
+        <span class="logo__text">walletum</span>
+      </a>
+      <div class="header__lang lang">
+        <a class="lang__item" href="#">Ru</a>
+        <a class="lang__item active" href="#">En</a>
+      </div>
+      <div class="header__menu menu">
+        <!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
+        <input class="toggle" id="toggle" type="checkbox" />
+        <!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
+
+        <!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
+        <label class="toggle-container" for="toggle">
+          <!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
+          <span class="button-toggle"></span>
+        </label>
+
+        <!-- Навигация -->
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">F.A.Q</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Social</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="main__wrapper">
+          <div class="main__left">
+            <button type="button" class="previous-button">
+              <img src="./images/vector.png" alt="previous button" />
+            </button>
+            <form action="#" class="form">
+              <p class="form__steps steps">Шаг 1 из 5</p>
+              <div class="form__title-group title-group">
+                <h2 class="form__title">Создать Seed Wallet</h2>
+                <p class="form__subtitle">
+                  Зашифруйте свой аккаунт для этого устройства паролем
+                </p>
+              </div>
+              <div class="form__wallet-card wallet-card --yellow-border">
+                <h3 class="wallet-card__title">
+                  Seed-Wallet
+                  <img src="./images/vector.png" alt="arrow" />
+                </h3>
+                <p class="wallet-card__text">
+                  К каждому варианту будет какой-то небольшой поясняющий текст
+                  примерно такого размера.
+                </p>
+              </div>
+              <div class="form__wallet-card wallet-card --blue-border">
+                <h3 class="wallet-card__title">
+                  Brain Wallet
+                  <img src="./images/vector.png" alt="arrow" />
+                </h3>
+                <p class="wallet-card__text">
+                  К каждому варианту будет какой-то небольшой поясняющий текст
+                  примерно такого размера.
+                </p>
+              </div>
+            </form>
+          </div>
+          <div class="main__right">
+            <div class="info">
+              <div class="info__wrapper">
+                <h3 class="info__title">
+                  Здесь вы можете решить, сохранять ли аккаунт на этом
+                  устройтстве.
+                </h3>
+                <p class="info__text gradient-color">
+                  Здесь вы можете решить, сохранять ли аккаунт на этом
+                  устройтстве. Если вы хотите пользоваться кошельком достаточно
+                  часто, то следует активировать данную функцию.
+                </p>
+                <p class="info__text">
+                  Вы сохраните аккаунт в кэше вашего браузера/устройства.
+                  Потерять доступ от него не страшно. Это просто способ связать
+                  ваш браузер/устроство с вашим кошельком в Walletum. Связку
+                  логин/пароль
+                  <span class="blue-color">запоминает только</span> ваше текущее
+                  устройство, мы не имеем доступа к этой информации и никак не
+                  можем повлиять на её изменения. Вы можете задавать разные
+                  связки логина и пароля для доступа к вашему кошельку Walletum
+                  в каждом из ваших устройств.
+                </p>
+                <p class="info__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                  doloribus deleniti in recusandae culpa numquam inventore
+                  laboriosam delectus, repellat nobis sapiente, perspiciatis
+                  alias laborum dolores sunt nihil neque illum tempora!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__copyright">
+        © 2020 «Walletum» — path of Calcium Project
+      </div>
+      <div class="footer__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__icon" src="./images/telegram.png" alt="" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__icon" src="./images/twitter.png" alt="" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__icon" src="./images/discord.png" alt="" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__icon" src="./images/facebook.png" alt="" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__icon" src="./images/instagram.png" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
