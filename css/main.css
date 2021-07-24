@@ -67,7 +67,7 @@ body::after {
   }
 }
 
-@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2.2) {
   body {
     overflow-y: auto;
   }
@@ -120,7 +120,7 @@ body::after {
   }
 }
 
-@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2.2) {
   .header,
   .footer {
     padding: 40px 40px;
@@ -154,7 +154,7 @@ body::after {
   }
 }
 
-@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2.2) {
   .header {
     flex-direction: row-reverse;
     align-items: flex-start;
@@ -194,7 +194,7 @@ body::after {
   }
 }
 
-@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2.2) {
   .logo {
     display: none;
   }
@@ -287,7 +287,7 @@ body::after {
   }
 }
 
-@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2.2) {
   .main {
     max-height: unset;
   }
@@ -387,7 +387,7 @@ body::after {
   }
 }
 
-@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2.2) {
   .previous-button {
     top: -4px;
     left: 0;
@@ -473,7 +473,7 @@ body::after {
   }
 }
 
-@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2.2) {
   .wallet-card {
     padding: 24px;
   }
@@ -529,7 +529,7 @@ body::after {
   }
 }
 
-@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2.2) {
   .info {
     margin: 32px 12px;
     text-align: left;
@@ -586,7 +586,7 @@ body::after {
   }
 }
 
-@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2.2) {
   .footer {
     flex-direction: column-reverse;
     margin-top: 20px;
