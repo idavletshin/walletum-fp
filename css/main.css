@@ -19,7 +19,8 @@ body::before {
   right: 0;
   top: 0;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
   background-image: url("../images/background.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -40,37 +41,36 @@ body::after {
 
 .container {
   max-height: inherit;
-  max-width: 1440px;
+  max-width: 90em;
   margin: 0 auto;
-  padding: 0 135px;
+  padding: 0 8.4375em;
 }
 
 @media screen and (max-width: 1200px) {
   .container {
-    padding: 0 80px;
+    padding: 0 5em;
   }
 }
 
 @media screen and (max-width: 992px) {
   .container {
-    padding: 0 56px;
+    padding: 0 3.5em;
   }
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 768px) {
   body {
     overflow-y: auto;
   }
 
   .container {
-    padding: 0 25px;
+    padding: 0 1.5625em;
   }
 }
 
 @media screen and (max-width: 325px) {
   .container {
-    padding: 0 16px;
+    padding: 0 1em;
   }
 }
 
@@ -101,21 +101,20 @@ body::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 56px;
+  padding: 2.5em 3.5em;
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 768px) {
   .header,
   .footer {
-    padding: 25px;
+    padding: 1.5625em;
   }
 }
 
 @media screen and (max-width: 325px) {
   .header,
   .footer {
-    padding: 25px 16px;
+    padding: 1.5625em 1em;
   }
 }
 
@@ -125,11 +124,10 @@ body::after {
 
 .header__lang {
   margin-left: auto;
-  margin-right: 48px;
+  margin-right: 3em;
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 768px) {
   .header {
     flex-direction: row-reverse;
     align-items: flex-start;
@@ -152,19 +150,18 @@ body::after {
 }
 
 .logo__img {
-  width: 110px;
-  margin-left: -15px;
-  margin-right: 9px;
+  width: 6.875em;
+  margin-left: -0.9375em;
+  margin-right: 0.5625em;
 }
 
 .logo__text {
-  font-size: 24px;
+  font-size: 1.5em;
   font-family: var(--second-font);
   font-weight: 700;
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 768px) {
   .logo {
     display: none;
   }
@@ -185,7 +182,7 @@ body::after {
 }
 
 .lang__item:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 1em;
 }
 
 .lang__item:hover {
@@ -194,7 +191,7 @@ body::after {
 
 .lang__item.active {
   color: #fff;
-  border-bottom: 2px solid #f49c0b;
+  border-bottom: 0.125em solid #f49c0b;
 }
 
 /* *** */
@@ -204,17 +201,13 @@ body::after {
 .main {
   position: relative;
   margin: auto 0;
-  max-height: calc(100vh - 260px);
+  max-height: calc(100vh - 16.25em);
   height: 100%;
 }
 
 .main__wrapper {
   display: flex;
   max-height: inherit;
-}
-
-.main__wrapper > div:not(:last-child) {
-  margin-right: 20px;
 }
 
 .main__left,
@@ -226,43 +219,34 @@ body::after {
   position: relative;
   display: flex;
   max-height: inherit;
-  max-width: 450px;
-  /* margin-right: 20px; */
+  max-width: 28.125em;
+  margin-right: 1.25em;
 }
 
 .main__right {
   display: flex;
   max-height: inherit;
-  max-width: 450px;
+  max-width: 28.125em;
   margin-left: auto;
   background: var(--card-bg);
-  border-radius: 16px;
+  border-radius: 1em;
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 768px) {
   .main {
     max-height: unset;
   }
 
   .main__wrapper {
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 1.25em;
   }
 
-  .main__wrapper > div {
-    margin-bottom: 20px;
+  .main__wrapper > div[class^="main__"] {
+    margin-bottom: 1.25em;
     margin-right: 0;
   }
-
-  .main__wrapper > div:last-child {
-    background-color: transparent;
-  }
-
-  /* .main__left {
-    margin-right: 0;
-  } */
 
   .main__left,
   .main__right {
@@ -281,7 +265,7 @@ body::after {
 }
 
 .form__steps {
-  margin-bottom: 40px;
+  margin-bottom: 2.5em;
 }
 
 .steps {
@@ -291,71 +275,70 @@ body::after {
 }
 
 .form__title-group {
-  margin-bottom: 50px;
+  margin-bottom: 3.125em;
 }
 
 .form__title {
-  margin-bottom: 20px;
-  font-size: 28px;
+  margin-bottom: 1.25em;
+  font-size: 1.75em;
   font-family: var(--second-font);
   font-weight: 600;
-  line-height: 42px;
+  line-height: 2.625em;
 }
 
 .form__subtitle {
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   color: var(--gray);
-  font-size: 18px;
+  font-size: 1.125em;
   font-family: var(--second-font);
   font-weight: 500;
-  line-height: 28px;
+  line-height: 1.75em;
 }
 
 .previous-button {
   position: absolute;
-  top: 70px;
-  left: -70px;
+  top: 4.375em;
+  left: -4.375em;
 }
 
 @media screen and (max-width: 1200px) {
   .previous-button {
-    left: -50px;
+    left: -3.125em;
   }
 }
 
 @media screen and (max-width: 992px) {
   .previous-button {
-    left: -40px;
+    left: -2.5em;
   }
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 768px) {
   .previous-button {
-    top: 2px;
-    left: -5px;
+    top: 0.125em;
+    left: -0.3125em;
   }
 
   .previous-button img {
     width: auto;
-    height: 16px;
+    height: 1em;
   }
 
   .form__steps {
-    margin-left: 30px;
+    margin-left: 1.875em;
     text-align: left;
   }
 
   .form__title {
-    font-size: 22px;
+    font-size: 1.375em;
     text-align: left;
     /* text-align: center; */
-    line-height: 33px;
+    line-height: 2.0625em;
   }
 
   .form__subtitle {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1em;
+    line-height: 1.5em;
     /* text-align: center; */
     text-align: left;
   }
@@ -366,59 +349,58 @@ body::after {
 /* Стили для wallet-card */
 
 .form__wallet-card {
-  margin-bottom: 40px;
+  margin-bottom: 2.5em;
 }
 
 .wallet-card {
-  padding: 24px 40px;
+  padding: 1.5em 2.5em;
   background: var(--card-bg);
-  border-radius: 16px;
+  border-radius: 1em;
   cursor: pointer;
 }
 
 .wallet-card__title {
   display: flex;
   align-items: center;
-  margin-bottom: 24px;
-  font-size: 22px;
-  line-height: 24px;
+  margin-bottom: 1.5em;
+  font-size: 1.375em;
+  line-height: 1.5em;
 }
 
 .wallet-card__title img {
   width: auto;
-  height: 16px;
-  margin-left: 20px;
+  height: 1em;
+  margin-left: 1.25em;
   transform: rotate(180deg);
 }
 
 .wallet-card__text {
   width: 75%;
   color: var(--gray);
-  font-size: 14px;
+  font-size: 0.875em;
   text-align: left;
-  line-height: 24px;
+  line-height: 1.5em;
 }
 
 .--yellow-border {
-  border: 3px solid var(--yellow);
+  border: 0.1875em solid var(--yellow);
 }
 
 .--yellow-border:hover {
-  box-shadow: inset 0 0 10px rgba(251, 214, 61, 0.5);
+  box-shadow: inset 0 0 0.625em rgba(251, 214, 61, 0.5);
 }
 
 .--blue-border {
-  border: 3px solid var(--blue);
+  border: 0.1875em solid var(--blue);
 }
 
 .--blue-border:hover {
-  box-shadow: inset 0 0 10px rgba(41, 151, 255, 0.5);
+  box-shadow: inset 0 0 0.625em rgba(41, 151, 255, 0.5);
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 768px) {
   .wallet-card {
-    padding: 24px;
+    padding: 1.5em;
   }
 
   .wallet-card__text {
@@ -432,50 +414,43 @@ body::after {
 
 .info {
   max-height: inherit;
-  margin: 64px 30px;
+  margin: 4em 1.875em;
   overflow: hidden;
 }
 
 .info__wrapper {
   height: 100%;
-  padding: 0 30px;
+  padding: 0 1.875em;
   overflow-y: auto;
 }
 
 .info__title {
-  margin-bottom: 40px;
-  font-size: 18px;
+  margin-bottom: 2.5em;
+  font-size: 1.125em;
   font-weight: 700;
   font-family: var(--second-font);
 }
 
 .info__text:not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 2.5em;
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 768px) {
   .info {
-    margin: 32px 12px;
+    margin: 2em 0.75em;
     text-align: left;
   }
 
   .info__wrapper {
-    padding: 0 12px;
+    padding: 0 0.75em;
   }
 
   .info__title {
-    font-size: 16px;
+    font-size: 1em;
   }
 
   .info__text {
-    font-size: 14px;
-  }
-
-  .main__wrapper > div:last-child .info,
-  .main__wrapper > div:last-child .info__wrapper {
-    padding: 0;
-    margin: 0;
+    font-size: 0.875em;
   }
 }
 
@@ -484,7 +459,7 @@ body::after {
 /* Стили для footer */
 
 .footer__copyright {
-  font-size: 18px;
+  font-size: 1.125em;
   font-family: var(--second-font);
 }
 
@@ -494,28 +469,58 @@ body::after {
 }
 
 .socials__item:not(:last-child) {
-  margin-right: 24px;
+  margin-right: 1.5em;
 }
 
 .socials__icon {
-  min-width: 24px;
-  width: 24px;
-  min-height: 24px;
-  height: 24px;
+  min-width: 1.5em;
+  width: 1.5em;
+  min-height: 1.5em;
+  height: 1.5em;
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 768px) {
   .footer {
     flex-direction: column-reverse;
-    margin-top: 20px;
+    margin-top: 1.25em;
   }
 
   .footer__copyright {
-    margin-top: 30px;
-    font-size: 14px;
+    margin-top: 1.875em;
+    font-size: 0.875em;
     text-align: center;
   }
 }
 
 /* *** */
+
+/* тест */
+
+.main__right + .main__right {
+  display: none;
+  margin-left: 1.25em;
+  background-color: transparent;
+}
+
+.main__right + .main__right .info,
+.main__right + .main__right .info__wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .main__right + .main__right {
+    display: flex;
+    margin-left: 0;
+  }
+}
+
+/* @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+} */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body {
+    font-size: 12px;
+  }
+}
