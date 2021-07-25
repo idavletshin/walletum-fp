@@ -108,14 +108,14 @@ body::after {
   only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .header,
   .footer {
-    padding: 40px 40px;
+    padding: 25px;
   }
 }
 
 @media screen and (max-width: 325px) {
   .header,
   .footer {
-    padding: 40px 25px;
+    padding: 25px 16px;
   }
 }
 
@@ -336,6 +336,7 @@ body::after {
   .form__subtitle {
     font-size: 16px;
     line-height: 24px;
+    text-align: center;
   }
 }
 
