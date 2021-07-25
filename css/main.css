@@ -319,7 +319,7 @@ body::after {
 @media screen and (max-width: 768px),
   only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .previous-button {
-    top: -4px;
+    top: 0px;
     left: 0;
   }
 
