@@ -323,6 +323,10 @@ body::after {
     left: 0;
   }
 
+  .previous-button img {
+    width: 12px;
+  }
+
   .form__steps {
     text-align: center;
   }
