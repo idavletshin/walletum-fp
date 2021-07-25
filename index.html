@@ -19,23 +19,22 @@
         <img class="logo__img" src="./images/logo.svg" alt="Logo" />
         <span class="logo__text">walletum</span>
       </a>
-      <div class="header__lang lang">
-        <a class="lang__item" href="#">Ru</a>
-        <a class="lang__item active" href="#">En</a>
-      </div>
       <div class="header__menu menu">
-        <!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
-        <input class="toggle" id="toggle" type="checkbox" />
-        <!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
-
-        <!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
-        <label class="toggle-container" for="toggle">
-          <!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
-          <span class="button-toggle"></span>
-        </label>
-
-        <!-- Навигация -->
+        <div class="menu__burger burger">
+          <span></span>
+          <span></span>
+        </div>
         <ul class="menu__list">
+          <li class="menu__item lang">
+            <ul class="lang__list">
+              <li class="lang__item">
+                <a class="lang__link" href="#">Ru</a>
+              </li>
+              <li class="lang__item">
+                <a class="lang__link active" href="#">En</a>
+              </li>
+            </ul>
+          </li>
           <li class="menu__item">
             <a class="menu__link" href="#">F.A.Q</a>
           </li>
@@ -53,9 +52,9 @@
       <div class="container">
         <div class="main__wrapper">
           <div class="main__left">
-            <button type="button" class="previous-button">
+            <!-- <button type="button" class="previous-button">
               <img src="./images/vector.png" alt="previous button" />
-            </button>
+            </button> -->
             <form action="#" class="form">
               <p class="form__steps steps">Шаг 1 из 5</p>
               <div class="form__title-group title-group">
