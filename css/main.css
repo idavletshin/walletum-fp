@@ -64,13 +64,13 @@ body::after {
   }
 
   .container {
-    padding: 0 40px;
+    padding: 0 25px;
   }
 }
 
 @media screen and (max-width: 325px) {
   .container {
-    padding: 0 25px;
+    padding: 0 16px;
   }
 }
 
