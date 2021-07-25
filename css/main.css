@@ -62,7 +62,8 @@ body.--scroll-off {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px),
+  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   body {
     overflow-y: auto;
   }
@@ -108,7 +109,8 @@ body.--scroll-off {
   padding: 2.5em 3.5em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px),
+  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .header,
   .footer {
     padding: 1.5625em;
@@ -131,7 +133,8 @@ body.--scroll-off {
   margin-right: 3em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px),
+  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .header {
     /* flex-direction: row-reverse; */
     align-items: flex-start;
@@ -163,7 +166,8 @@ body.--scroll-off {
   font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px),
+  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .logo {
     /* display: none; */
     width: 4em;
@@ -230,7 +234,8 @@ body.--scroll-off {
   color: var(--pink);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px),
+  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .menu__list {
     position: fixed;
     top: 0%;
@@ -295,7 +300,8 @@ body.--scroll-off {
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px),
+  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .main {
     max-height: unset;
   }
@@ -375,7 +381,8 @@ body.--scroll-off {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px),
+  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .previous-button {
     top: 0.125em;
     left: -0.3125em;
@@ -460,7 +467,8 @@ body.--scroll-off {
   box-shadow: inset 0 0 0.625em rgba(41, 151, 255, 0.5);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px),
+  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .wallet-card {
     padding: 1.5em;
   }
@@ -497,7 +505,8 @@ body.--scroll-off {
   margin-bottom: 2.5em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px),
+  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .info {
     margin: 2em 0.75em;
     text-align: left;
@@ -546,7 +555,8 @@ body.--scroll-off {
   height: 1.5em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px),
+  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .footer {
     flex-direction: column-reverse;
     margin-top: 2em;
@@ -575,7 +585,8 @@ body.--scroll-off {
   margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px),
+  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .main__right + .main__right {
     display: flex;
     margin-left: 0;
