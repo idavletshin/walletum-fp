@@ -319,28 +319,32 @@ body::after {
 @media screen and (max-width: 768px),
   only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .previous-button {
-    top: 0px;
-    left: 0;
+    top: 2px;
+    left: -5px;
   }
 
   .previous-button img {
-    width: 12px;
+    width: auto;
+    height: 16px;
   }
 
   .form__steps {
-    text-align: center;
+    margin-left: 30px;
+    text-align: left;
   }
 
   .form__title {
     font-size: 22px;
-    text-align: center;
+    text-align: left;
+    /* text-align: center; */
     line-height: 33px;
   }
 
   .form__subtitle {
     font-size: 16px;
     line-height: 24px;
-    text-align: center;
+    /* text-align: center; */
+    text-align: left;
   }
 }
 
