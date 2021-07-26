@@ -56,18 +56,18 @@ body.--scroll-off {
   }
 }
 
-@media screen and (max-width: 992px) {
-  .container {
-    padding: 0 3.5em;
-  }
-}
-
-@media screen and (max-width: 768px),
+@media screen and (max-width: 992px),
   only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   body {
     overflow-y: auto;
   }
 
+  .container {
+    padding: 0 3.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .container {
     padding: 0 1.5625em;
   }
@@ -136,7 +136,6 @@ body.--scroll-off {
 @media screen and (max-width: 768px),
   only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .header {
-    /* flex-direction: row-reverse; */
     align-items: flex-start;
   }
 }
@@ -169,7 +168,6 @@ body.--scroll-off {
 @media screen and (max-width: 768px),
   only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .logo {
-    /* display: none; */
     width: 4em;
   }
 
@@ -300,7 +298,7 @@ body.--scroll-off {
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px),
+@media screen and (max-width: 992px),
   only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .main {
     max-height: unset;
@@ -313,12 +311,19 @@ body.--scroll-off {
 
   .main__wrapper > div[class^="main__"] {
     margin-bottom: 1.25em;
-    margin-right: 0;
   }
 
   .main__left,
   .main__right {
     max-width: unset;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main__left,
+  .main__right {
     width: 100%;
   }
 }
@@ -365,12 +370,13 @@ body.--scroll-off {
 
 .previous-button {
   position: absolute;
-  top: 60px;
+  top: 5em;
   left: -4.375em;
 }
 
 @media screen and (max-width: 1200px) {
   .previous-button {
+    top: 5.3em;
     left: -3.125em;
   }
 }
@@ -585,17 +591,13 @@ body.--scroll-off {
   margin: 0;
 }
 
-@media screen and (max-width: 768px),
+@media screen and (max-width: 992px),
   only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
   .main__right + .main__right {
     display: flex;
-    margin-left: 0;
+    margin: auto;
   }
 }
-
-/* @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min-device-pixel-ratio: 1.5) {
-} */
 
 /* Медиазапрос для ретина-дисплеев */
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
