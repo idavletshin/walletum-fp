@@ -600,8 +600,9 @@ body.--scroll-off {
 }
 
 /* Медиазапрос для ретина-дисплеев */
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
-  (min-width: 1200px) and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
   body {
     font-size: 12px;
   }
