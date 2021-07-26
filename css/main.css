@@ -600,7 +600,7 @@ body.--scroll-off {
 }
 
 /* Медиазапрос для ретина-дисплеев */
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   /* only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) { */
   body {
