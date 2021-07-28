@@ -39,7 +39,6 @@ body.--scroll-off {
 }
 
 @media screen and (max-width: 992px) {
-  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   body {
     overflow-y: auto;
   }
@@ -94,7 +93,6 @@ body.--scroll-off {
 }
 
 @media screen and (max-width: 768px) {
-  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .header,
   .footer {
     padding: 1.5625em;
@@ -118,7 +116,6 @@ body.--scroll-off {
 }
 
 @media screen and (max-width: 768px) {
-  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .header {
     align-items: flex-start;
   }
@@ -151,7 +148,6 @@ body.--scroll-off {
 }
 
 @media screen and (max-width: 768px) {
-  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .logo {
     width: 4em;
   }
@@ -220,7 +216,6 @@ body.--scroll-off {
 }
 
 @media screen and (max-width: 768px) {
-  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .menu__list {
     position: fixed;
     top: 0%;
@@ -287,7 +282,6 @@ body.--scroll-off {
 }
 
 @media screen and (max-width: 992px) {
-  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .main,
   .main__right {
     max-height: unset;
@@ -369,7 +363,6 @@ body.--scroll-off {
 }
 
 @media screen and (max-width: 767px) {
-  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .form .previous-button {
     margin-bottom: 1.5em;
   }
@@ -392,7 +385,6 @@ body.--scroll-off {
   .form__subtitle {
     font-size: 1em;
     line-height: 1.5;
-    /* text-align: center; */
     text-align: left;
   }
 }
@@ -445,7 +437,6 @@ body.--scroll-off {
 }
 
 @media screen and (max-width: 767px) {
-  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .wallet-card {
     padding: 1.5em;
   }
@@ -493,7 +484,6 @@ body.--scroll-off {
 }
 
 @media screen and (max-width: 767px) {
-  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .info {
     margin: 2em 0.75em;
     text-align: left;
@@ -510,10 +500,6 @@ body.--scroll-off {
 
   .info__text {
     font-size: 0.875em;
-  }
-
-  .info__text:not(:last-child) {
-    /* margin-bottom: 1.5em; */
   }
 }
 
@@ -543,7 +529,6 @@ body.--scroll-off {
 }
 
 @media screen and (max-width: 768px) {
-  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .footer {
     flex-direction: column-reverse;
     margin-top: 2em;
@@ -562,8 +547,6 @@ body.--scroll-off {
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-width: 768px) and (min-resolution: 192dpi),
   only screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  /* only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) { */
   body {
     font-size: 12px;
   }
@@ -581,3 +564,48 @@ body.--scroll-off {
     width: 100%;
   }
 }
+
+/* тестовые стили */
+
+/* @media screen and (min-width: 768px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-width: 768px) and (max-width: 1600px) and (min-resolution: 192dpi),
+  only screen and (min-width: 768px) and (max-width: 1600px) and (min-resolution: 2dppx),
+  only screen and (min-width: 768px) and (max-width: 1600px) and (min-aspect-ratio: 2/1) {
+
+  body {
+    font-size: 12px;
+    overflow-y: auto;
+  }
+
+  .main,
+  .main__right {
+    max-height: unset;
+  }
+
+  .main__wrapper {
+    flex-direction: row;
+    margin-top: 0.5em;
+  }
+
+  .main__wrapper > div[class^="main__"] {
+    margin-bottom: 0;
+  }
+
+  .main__left {
+    margin: auto;
+    margin-top: 0;
+    margin-right: 1em;
+  }
+
+  .wallet-card__text {
+    width: 100%;
+  }
+
+  .info {
+    margin: 3em 1.275em;
+  }
+
+  .info__wrapper {
+    padding: 0 1.275em;
+  }
+} */
