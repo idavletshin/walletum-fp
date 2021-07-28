@@ -1,7 +1,7 @@
 .previous-button {
   display: flex;
   align-items: center;
-  width: max-content;
+  width: 100%;
   padding: 0;
   background: transparent;
   border: 0;

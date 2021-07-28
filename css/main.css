@@ -335,6 +335,7 @@ body.--scroll-off {
   font-family: var(--second-font);
   font-weight: 700;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .previous-button .previous-button__text:hover {
