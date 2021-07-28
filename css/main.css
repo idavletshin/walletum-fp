@@ -334,6 +334,7 @@ body.--scroll-off {
 }
 
 .previous-button__text {
+  width: max-content;
   color: var(--yellow);
   font-family: var(--second-font);
   font-weight: 700;
@@ -379,7 +380,6 @@ body.--scroll-off {
   .form__title {
     font-size: 1.375em;
     text-align: left;
-    /* text-align: center; */
     line-height: 1;
   }
 
@@ -553,8 +553,8 @@ body.--scroll-off {
 /* *** */
 
 /* Медиазапрос для ретина-дисплеев */
-@media screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-width: 769px) and (min-resolution: 192dpi) {
   /* only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) { */
   body {
