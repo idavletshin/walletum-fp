@@ -20,23 +20,11 @@ body::before {
   top: 0;
   width: 100vw;
   height: 100vh;
-  /* height: 100%; */
   background-image: url("../images/background.png");
-  background-position: center;
+  background-position: 170% 12%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 80%;
   z-index: -2;
-}
-
-body::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.85);
-  z-index: -1;
 }
 
 body.--scroll-off {
@@ -45,25 +33,31 @@ body.--scroll-off {
 
 .container {
   max-height: inherit;
-  max-width: 90em;
+  max-width: 73.125em;
   margin: 0 auto;
-  padding: 0 8.4375em;
+  /* padding: 0 8.4375em; */
+  padding: 0 3.5em;
 }
 
 @media screen and (max-width: 1200px) {
   .container {
-    padding: 0 5em;
+    /* padding: 0 5em; */
   }
 }
 
-@media screen and (max-width: 992px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 992px) {
+  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   body {
     overflow-y: auto;
   }
 
+  body::before {
+    background-position: center;
+    background-size: cover;
+  }
+
   .container {
-    padding: 0 3.5em;
+    /* padding: 0 3.5em; */
   }
 }
 
@@ -106,11 +100,11 @@ body.--scroll-off {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5em 3.5em;
+  padding: 2em 3.5em;
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 768px) {
+  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .header,
   .footer {
     padding: 1.5625em;
@@ -133,8 +127,8 @@ body.--scroll-off {
   margin-right: 3em;
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 768px) {
+  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .header {
     align-items: flex-start;
   }
@@ -154,19 +148,20 @@ body.--scroll-off {
 }
 
 .logo__img {
-  width: 6.875em;
+  width: 5em;
   margin-left: -0.9375em;
   margin-right: 0.5625em;
 }
 
 .logo__text {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-family: var(--second-font);
   font-weight: 700;
+  line-height: 1.2;
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 768px) {
+  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .logo {
     width: 4em;
   }
@@ -232,8 +227,8 @@ body.--scroll-off {
   color: var(--pink);
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 768px) {
+  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .menu__list {
     position: fixed;
     top: 0%;
@@ -243,6 +238,7 @@ body.--scroll-off {
     align-items: center;
     width: 100%;
     height: 100%;
+    font-size: 1.2em;
     background: var(--main-bg);
     opacity: 0;
     transition: all 0.3s linear;
@@ -290,7 +286,7 @@ body.--scroll-off {
 
 .main__right {
   display: flex;
-  max-height: inherit;
+  max-height: 45em;
   max-width: 28.125em;
   margin-left: auto;
   background: var(--card-bg);
@@ -298,9 +294,10 @@ body.--scroll-off {
   overflow: hidden;
 }
 
-@media screen and (max-width: 992px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
-  .main {
+@media screen and (max-width: 992px) {
+  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
+  .main,
+  .main__right {
     max-height: unset;
   }
 
@@ -310,7 +307,7 @@ body.--scroll-off {
   }
 
   .main__wrapper > div[class^="main__"] {
-    margin-bottom: 1.25em;
+    margin-bottom: 2.5em;
   }
 
   .main__left,
@@ -337,83 +334,68 @@ body.--scroll-off {
   overflow-y: auto;
 }
 
-.form__steps {
-  margin-bottom: 2.5em;
+.form .previous-button {
+  margin-bottom: 2em;
 }
 
-.steps {
+.previous-button img {
+  height: 0.75em;
+  margin-right: 1em;
+}
+
+.previous-button__text {
   color: var(--yellow);
   font-family: var(--second-font);
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .form__title-group {
-  margin-bottom: 3.125em;
+  margin-bottom: 2.5em;
 }
 
 .form__title {
-  margin-bottom: 1.25em;
-  font-size: 1.75em;
+  margin-bottom: 0.725em;
+  font-size: 1.375em;
   font-family: var(--second-font);
   font-weight: 600;
-  line-height: 2.625em;
+  line-height: 1.2;
 }
 
 .form__subtitle {
-  margin-bottom: 1.25em;
+  margin-bottom: 1em;
   color: var(--gray);
-  font-size: 1.125em;
+  font-size: 1em;
   font-family: var(--second-font);
   font-weight: 500;
-  line-height: 1.75em;
+  line-height: 1.5;
 }
 
-.previous-button {
-  position: absolute;
-  top: 5em;
-  left: -4.375em;
-}
-
-@media screen and (max-width: 1200px) {
-  .previous-button {
-    top: 5.3em;
-    left: -3.125em;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .previous-button {
-    left: -2.5em;
-  }
-}
-
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
-  .previous-button {
-    top: 0.125em;
-    left: -0.3125em;
+@media screen and (max-width: 768px) {
+  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
+  .form .previous-button {
+    margin-bottom: 1.5em;
   }
 
   .previous-button img {
-    width: auto;
-    height: 1em;
+    margin-right: 0.725em;
+    height: 0.625em;
   }
 
-  .form__steps {
-    margin-left: 1.875em;
-    text-align: left;
+  .previous-button__text {
+    font-size: 0.875em;
   }
 
   .form__title {
     font-size: 1.375em;
     text-align: left;
     /* text-align: center; */
-    line-height: 2.0625em;
+    line-height: 1;
   }
 
   .form__subtitle {
     font-size: 1em;
-    line-height: 1.5em;
+    line-height: 1.5;
     /* text-align: center; */
     text-align: left;
   }
@@ -423,8 +405,8 @@ body.--scroll-off {
 
 /* Стили для wallet-card */
 
-.form__wallet-card {
-  margin-bottom: 2.5em;
+.form__wallet-card:not(:last-child) {
+  margin-bottom: 2em;
 }
 
 .wallet-card {
@@ -437,16 +419,9 @@ body.--scroll-off {
 .wallet-card__title {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.725em;
   font-size: 1.375em;
-  line-height: 1.5em;
-}
-
-.wallet-card__title img {
-  width: auto;
-  height: 1em;
-  margin-left: 1.25em;
-  transform: rotate(180deg);
+  line-height: 1.2;
 }
 
 .wallet-card__text {
@@ -454,7 +429,7 @@ body.--scroll-off {
   color: var(--gray);
   font-size: 0.875em;
   text-align: left;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 
 .--yellow-border {
@@ -473,8 +448,8 @@ body.--scroll-off {
   box-shadow: inset 0 0 0.625em rgba(41, 151, 255, 0.5);
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 768px) {
+  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .wallet-card {
     padding: 1.5em;
   }
@@ -501,18 +476,28 @@ body.--scroll-off {
 }
 
 .info__title {
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
   font-size: 1.125em;
   font-weight: 700;
   font-family: var(--second-font);
 }
 
 .info__text:not(:last-child) {
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 992px) {
+  .info {
+    margin: 3em 1.275em;
+  }
+
+  .info__wrapper {
+    padding: 0 1.275em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .info {
     margin: 2em 0.75em;
     text-align: left;
@@ -523,7 +508,7 @@ body.--scroll-off {
   }
 
   .info__title {
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
     font-size: 1em;
   }
 
@@ -532,7 +517,7 @@ body.--scroll-off {
   }
 
   .info__text:not(:last-child) {
-    margin-bottom: 1.5em;
+    /* margin-bottom: 1.5em; */
   }
 }
 
@@ -561,8 +546,8 @@ body.--scroll-off {
   height: 1.5em;
 }
 
-@media screen and (max-width: 768px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
+@media screen and (max-width: 768px) {
+  /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .footer {
     flex-direction: column-reverse;
     margin-top: 2em;
@@ -576,28 +561,6 @@ body.--scroll-off {
 }
 
 /* *** */
-
-/* тест */
-
-.main__right + .main__right {
-  display: none;
-  margin-left: 1.25em;
-  background-color: transparent;
-}
-
-.main__right + .main__right .info,
-.main__right + .main__right .info__wrapper {
-  padding: 0;
-  margin: 0;
-}
-
-@media screen and (max-width: 992px),
-  only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) {
-  .main__right + .main__right {
-    display: flex;
-    margin: auto;
-  }
-}
 
 /* Медиазапрос для ретина-дисплеев */
 @media screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
