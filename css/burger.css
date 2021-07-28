@@ -24,7 +24,8 @@
 }
 
 .burger:hover::before {
-  box-shadow: 0 0 10px #491d88, 0 0 40px #491d88, 0 0 80px #491d88;
+  box-shadow: 0 0 0.625em var(--dark-purple), 0 0 2.5em var(--dark-purple),
+    0 0 5em var(--dark-purple);
   opacity: 1;
   transform: scale(1);
 }
