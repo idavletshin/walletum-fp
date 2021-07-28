@@ -65,7 +65,7 @@
     transform 0.15s 0.15s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /* only screen and (orientation: landscape) and (min-aspect-ratio: 2/1) { */
   .burger {
     display: block;
