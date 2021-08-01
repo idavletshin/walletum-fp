@@ -50,4 +50,5 @@ input:checked + .seed-phrases__side-button {
 
 .seed-phrases__side-radio:not(:checked) + span + .seed-phrases__side {
   display: none;
+  transition: all 0.2s ease-in;
 }
