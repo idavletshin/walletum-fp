@@ -1,9 +1,112 @@
-.previous-button {
+/* Общие стили для кнопки */
+
+.button {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 0;
-  background: transparent;
+  /* padding: 0;
+  background: transparent; */
   border: 0;
   cursor: pointer;
 }
+
+/* *** */
+
+/* Стилизация кнопки с шагами (возврата назад) */
+
+.previous-button {
+  padding: 0;
+  background: transparent;
+}
+
+.previous-button img {
+  height: 0.75em;
+  margin-right: 1em;
+}
+
+.previous-button__text {
+  width: max-content;
+  color: var(--yellow);
+  font-family: var(--second-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.previous-button .previous-button__text:hover {
+  text-shadow: 0 0 0.3125em var(--yellow);
+}
+
+@media screen and (max-width: 767px) {
+  .previous-button img {
+    margin-right: 0.725em;
+    height: 0.625em;
+  }
+
+  .previous-button__text {
+    font-size: 0.875em;
+  }
+}
+
+/* *** */
+
+/* Стилизация кнопки копирования в буфер обмена */
+
+.clipboard-button {
+  justify-content: center;
+  /* height: 3em; */
+  /* padding: 0.625em; */
+  padding: 0.375em;
+  color: var(--white);
+  font-size: 0.875em;
+  background: transparent;
+  border: 0.0625em dashed var(--blue);
+  border-radius: 2em;
+  transition: background 0.2s ease;
+}
+
+.clipboard-button:hover {
+  background: var(--blue);
+}
+
+.clipboard-button svg {
+  height: 1.25em;
+  width: 1.25em;
+  margin-right: 0.5em;
+}
+
+.clipboard-button:hover svg path {
+  stroke: var(--white);
+}
+
+.clipboard-button:active {
+  background: transparent;
+}
+
+/* *** */
+
+/* Стилизация кнопки перехода на следующий шаг */
+
+.next-button {
+  justify-content: space-between;
+  height: 3em;
+  padding: 0.625em 1.5em;
+  color: var(--white);
+  background: var(--dark-blue);
+  border-radius: 0.5em;
+  transition: background 0.2s ease;
+}
+
+.next-button img {
+  height: 12px;
+  transform: rotate(180deg);
+}
+
+.next-button:hover {
+  background: var(--blue);
+}
+
+.next-button:active {
+  background: var(--dark-blue);
+}
+/* *** */
