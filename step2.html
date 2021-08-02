@@ -70,34 +70,36 @@
               </div>
               <div class="progress">
                 <svg class="progress-ring" viewBox="0 0 110 110">
-                  <linearGradient
-                    id="progress-ring-colors"
-                    x1="0"
-                    y1="0"
-                    x2="1"
-                    y2="1"
-                  >
-                    <stop offset="0%" stop-color="#02A8C5"></stop>
-                    <stop offset="100%" stop-color="#9F0ACF"></stop>
-                  </linearGradient>
-                  <circle
-                    class="progress-ring__background"
-                    stroke-width="3"
-                    stroke="#fff"
-                    cx="55"
-                    cy="55"
-                    r="52"
-                    fill="none"
-                  />
-                  <circle
-                    class="progress-ring__circle"
-                    stroke-width="3"
-                    cx="55"
-                    cy="55"
-                    r="52"
-                    fill="none"
-                    stroke="url(#progress-ring-colors)"
-                  />
+                  <defs>
+                    <linearGradient
+                      id="progress-ring-colors"
+                      x1="0"
+                      y1="0"
+                      x2="1"
+                      y2="1"
+                    >
+                      <stop offset="0%" stop-color="#02A8C5"></stop>
+                      <stop offset="100%" stop-color="#9F0ACF"></stop>
+                    </linearGradient>
+                    <circle
+                      class="progress-ring__background"
+                      stroke-width="3"
+                      stroke="#fff"
+                      cx="55"
+                      cy="55"
+                      r="52"
+                      fill="none"
+                    />
+                    <circle
+                      class="progress-ring__circle"
+                      stroke-width="3"
+                      cx="55"
+                      cy="55"
+                      r="52"
+                      fill="none"
+                      stroke="url(#progress-ring-colors)"
+                    />
+                  </defs>
                 </svg>
               </div>
             </form>
