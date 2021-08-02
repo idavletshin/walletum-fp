@@ -1,0 +1,54 @@
+.custom-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-input__field {
+  padding: 1em 0;
+  color: var(--white);
+  background-color: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0.0625em solid var(--input-border);
+  outline: none;
+}
+
+/* Стили для бордера у поля ввода */
+
+.custom-input__field.error {
+  border-bottom-color: var(--red);
+}
+
+.custom-input__field.success {
+  border-bottom-color: var(--green);
+}
+
+.custom-input__field:focus {
+  border-bottom-color: var(--blue);
+}
+
+/* Стили для текстового поля о валидности */
+
+.custom-input__text-wrap span {
+  font-size: 0;
+}
+
+.custom-input__text-wrap.primary .primary__text,
+.custom-input__text-wrap.error .error__text,
+.custom-input__text-wrap.success .success__text {
+  font-size: 0.75em;
+  line-height: 2;
+}
+
+.custom-input__text-wrap.primary .primary__text {
+  color: var(--gray);
+}
+
+.custom-input__text-wrap.error .error__text {
+  color: var(--red);
+}
+
+.custom-input__text-wrap.success .success__text {
+  color: var(--green);
+}

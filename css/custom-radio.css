@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.seed-phrases__side-radio {
+.seed-phrases__radio {
   position: absolute;
   top: -2em;
   width: 4em;
@@ -14,7 +14,7 @@
   cursor: pointer;
 }
 
-.seed-phrases__side-button {
+.seed-phrases__button {
   position: absolute;
   top: -2em;
   display: flex;
@@ -25,30 +25,30 @@
   user-select: none;
 }
 
-input:checked + .seed-phrases__side-button {
+.seed-phrases__radio:checked + .seed-phrases__button {
   position: absolute;
   top: -2em;
   background: var(--blue);
   border-radius: 3em;
 }
 
-.seed-phrases__side-button:nth-of-type(1) {
+.seed-phrases__button:nth-of-type(1) {
   right: 4.5em;
 }
 
-.seed-phrases__side-button:nth-of-type(2) {
+.seed-phrases__button:nth-of-type(2) {
   right: 0;
 }
 
-.seed-phrases__side-radio:nth-of-type(1) {
+.seed-phrases__radio:nth-of-type(1) {
   right: 4.5em;
 }
 
-.seed-phrases__side-radio:nth-of-type(2) {
+.seed-phrases__radio:nth-of-type(2) {
   right: 0;
 }
 
-.seed-phrases__side-radio:not(:checked) + span + .seed-phrases__side {
+.seed-phrases__radio:not(:checked) + span + .seed-phrases__side {
   display: none;
   transition: all 0.2s ease-in;
 }

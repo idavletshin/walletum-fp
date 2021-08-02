@@ -93,14 +93,14 @@
               </div>
               <div class="form__seed-phrases">
                 <input
-                  class="seed-phrases__side-radio"
+                  class="seed-phrases__radio"
                   id="seed-phrase-1"
                   type="radio"
                   name="seed-phrase"
                   value="seed-phrase"
                   checked
                 />
-                <span class="seed-phrases__side-button">Part 1</span>
+                <span class="seed-phrases__button">Part 1</span>
                 <label for="seed-phrase-1" class="seed-phrases__side">
                   <ul class="seed-phrases__list">
                     <li class="seed-phrases__item">canyon</li>
@@ -119,13 +119,13 @@
                 </label>
 
                 <input
-                  class="seed-phrases__side-radio"
+                  class="seed-phrases__radio"
                   id="seed-phrase-2"
                   type="radio"
                   name="seed-phrase"
                   value="seed-phrase"
                 />
-                <span class="seed-phrases__side-button">Part 2</span>
+                <span class="seed-phrases__button">Part 2</span>
                 <label for="seed-phrase-2" class="seed-phrases__side">
                   <ul class="seed-phrases__list">
                     <li class="seed-phrases__item">canyon2</li>
@@ -161,20 +161,32 @@
                 </svg>
                 Скопировать фразу в буфер
               </button>
-              <div class="form__custom-switch-group">
+              <div class="form__custom-switch-group custom-switch-group">
                 <span>Сохранить аккаунт на этом устройстве</span>
                 <label class="custom-switch">
                   <input type="checkbox" />
                   <span class="custom-slider round"></span>
                 </label>
               </div>
-              <div class="form__custom-checkbox-group">
-                <label class="custom-checkbox">
-                  <input type="checkbox" checked="checked" />
-                  <span class="checkmark"></span>
-                  Я сохранил шифр и фразу
-                </label>
+              <div class="form__custom-input-group custom-input-group">
+                <input
+                  class="custom-input__field success"
+                  type="text"
+                  placeholder="Account title"
+                />
+                <p class="custom-input__text-wrap primary error success">
+                  <span class="primary__text"
+                    >Minimum length is 8 character but longer is better</span
+                  >
+                  <span class="error__text">Error</span>
+                  <span class="success__text">Success</span>
+                </p>
               </div>
+              <label class="form__custom-checkbox custom-checkbox">
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+                Я сохранил шифр и фразу
+              </label>
               <button class="next-button button" type="button">
                 Продолжить
                 <img src="./images/vector.png" alt="previous button" />

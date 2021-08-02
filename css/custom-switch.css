@@ -1,3 +1,9 @@
+.custom-switch-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* The switch - the box around the slider */
 .custom-switch {
   position: relative;

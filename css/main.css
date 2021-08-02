@@ -6,7 +6,8 @@
 @import "button.css";
 @import "custom-switch.css";
 @import "custom-checkbox.css";
-@import "radiobutton.css";
+@import "custom-radio.css";
+@import "custom-input-text.css";
 
 /* Общие стили для страницы */
 
@@ -316,7 +317,7 @@ body.--scroll-off {
 
 /* *** */
 
-/* Стили для блока form */
+/* Общие стили для блока form */
 
 .form {
   width: 100%;
@@ -326,24 +327,6 @@ body.--scroll-off {
 .form .previous-button {
   margin-bottom: 2em;
 }
-
-/* .previous-button img {
-  height: 0.75em;
-  margin-right: 1em;
-}
-
-.previous-button__text {
-  width: max-content;
-  color: var(--yellow);
-  font-family: var(--second-font);
-  font-weight: 700;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.previous-button .previous-button__text:hover {
-  text-shadow: 0 0 0.3125em var(--yellow);
-} */
 
 .form__title-group {
   margin-bottom: 2.5em;
@@ -371,15 +354,6 @@ body.--scroll-off {
     margin-bottom: 1.5em;
   }
 
-  /* .previous-button img {
-    margin-right: 0.725em;
-    height: 0.625em;
-  }
-
-  .previous-button__text {
-    font-size: 0.875em;
-  } */
-
   .form__title {
     font-size: 1.375em;
     text-align: left;
@@ -395,7 +369,7 @@ body.--scroll-off {
 
 /* *** */
 
-/* Стили для wallet-card */
+/* Выбор кошелька (1 шаг формы), стили для wallet-card*/
 
 .form__wallet-card:not(:last-child) {
   margin-bottom: 2em;
@@ -448,6 +422,53 @@ body.--scroll-off {
   .wallet-card__text {
     width: 100%;
   }
+}
+
+/* *** */
+
+/* Создание Seed Wallet, генерация фраз (3 шаг формы) */
+
+.form__seed-phrases {
+  margin-bottom: 1em;
+}
+
+.seed-phrases__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  user-select: none;
+}
+
+.seed-phrases__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23%;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 0.875em;
+  background: var(--card-bg);
+  border-radius: 0.5em;
+}
+
+.form .clipboard-button {
+  margin-bottom: 1.5em;
+}
+
+.form__custom-switch-group {
+  margin-bottom: 1.5em;
+}
+
+.form__custom-switch-group span {
+  /* width: 68%; */
+}
+
+.form__custom-input-group {
+  margin-bottom: 1.5em;
+}
+
+.form__custom-checkbox {
+  margin-bottom: 1.5em;
 }
 
 /* *** */
@@ -505,54 +526,6 @@ body.--scroll-off {
   .info__text {
     font-size: 0.875em;
   }
-}
-
-/* *** */
-
-/* Создание Seed Wallet 3 шаг */
-
-.form__seed-phrases {
-  margin-bottom: 1em;
-}
-
-.seed-phrases__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  user-select: none;
-}
-
-.seed-phrases__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 23%;
-  margin-bottom: 10px;
-  padding: 5px;
-  font-size: 0.875em;
-  background: var(--card-bg);
-  border-radius: 0.5em;
-}
-
-.form .clipboard-button {
-  margin-bottom: 2em;
-}
-
-.form__custom-switch-group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2em;
-  font-size: 0.875em;
-}
-
-.form__custom-switch-group span {
-  /* width: 68%; */
-}
-
-.form__custom-checkbox-group {
-  margin-bottom: 1em;
-  font-size: 0.875em;
 }
 
 /* *** */
