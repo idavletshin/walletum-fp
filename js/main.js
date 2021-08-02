@@ -11,5 +11,5 @@ burger.addEventListener('click', () => {
 })
 
 seedWallet.addEventListener('click', () => {
-  window.location.href = '../step3.html';
+  window.location.href = './step3.html';
 })
