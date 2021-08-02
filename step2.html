@@ -51,36 +51,54 @@
     <main class="main">
       <div class="container">
         <div class="main__wrapper">
-          <!-- Выбор кошелька 1 шаг -->
+          <!-- Выбор кошелька 2 шаг -->
           <div class="main__left">
             <form action="#" class="form">
               <!-- <button class="previous-button button" type="button">
                 <img src="./images/vector.png" alt="previous button" />
                 <span class="previous-button__text">Шаг 1 из 5</span>
               </button> -->
-              <a class="previous-button button" href="#">
+              <a class="previous-button button" href="index.html">
                 <img src="./images/vector.png" alt="previous button" />
-                <span class="previous-button__text">Шаг 1 из 5</span>
+                <span class="previous-button__text">Шаг 2 из 5</span>
               </a>
               <div class="form__title-group title-group">
                 <h2 class="form__title">Создать Seed Wallet</h2>
                 <p class="form__subtitle gradient-color">
-                  Зашифруйте свой аккаунт для этого устройства паролем
+                  Подвигайте курсором мыши в заданной области
                 </p>
               </div>
-              <div class="form__wallet-card wallet-card --yellow-border">
-                <h3 class="wallet-card__title">Seed-Wallet</h3>
-                <p class="wallet-card__text">
-                  К каждому варианту будет какой-то небольшой поясняющий текст
-                  примерно такого размера.
-                </p>
-              </div>
-              <div class="form__wallet-card wallet-card --blue-border">
-                <h3 class="wallet-card__title">Brain Wallet</h3>
-                <p class="wallet-card__text">
-                  К каждому варианту будет какой-то небольшой поясняющий текст
-                  примерно такого размера.
-                </p>
+              <div class="progress">
+                <svg class="progress-ring" viewBox="0 0 110 110">
+                  <linearGradient
+                    id="progress-ring-colors"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="1"
+                  >
+                    <stop offset="0%" stop-color="#02A8C5"></stop>
+                    <stop offset="100%" stop-color="#9F0ACF"></stop>
+                  </linearGradient>
+                  <circle
+                    class="progress-ring__background"
+                    stroke-width="3"
+                    stroke="#fff"
+                    cx="55"
+                    cy="55"
+                    r="52"
+                    fill="none"
+                  />
+                  <circle
+                    class="progress-ring__circle"
+                    stroke-width="3"
+                    cx="55"
+                    cy="55"
+                    r="52"
+                    fill="none"
+                    stroke="url(#progress-ring-colors)"
+                  />
+                </svg>
               </div>
             </form>
           </div>
@@ -157,11 +175,27 @@
     </footer>
     <script src="./js/main.js"></script>
     <script>
-      const seedWallet = document.querySelector(".wallet-card.--yellow-border");
+      const progressWrap = document.querySelector(".progress");
+      const circle = document.querySelector(".progress-ring__circle");
+      const radius = circle.r.baseVal.value;
+      const circumference = 2 * Math.PI * radius;
+      let percent = 0;
 
-      seedWallet.addEventListener("click", () => {
-        window.location.href = "step2.html";
-      });
+      circle.style.strokeDasharray = `${circumference} ${circumference}`;
+      circle.style.strokeDashoffset = circumference;
+
+      function setProgress(num) {
+        const offset = circumference - (num / 100) * circumference;
+        circle.style.strokeDashoffset = offset;
+      }
+
+      progressWrap.onmousemove = function () {
+        setProgress((percent += 0.5));
+        if (percent === 100) {
+          percent = 0;
+          window.location.href = "step3.html";
+        }
+      };
     </script>
   </body>
 </html>
