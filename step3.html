@@ -51,40 +51,123 @@
     <main class="main">
       <div class="container">
         <div class="main__wrapper">
-          <!-- Выбор кошелька 1 шаг -->
+          <!-- Создание Seed Wallet 3 шаг -->
           <div class="main__left">
             <form action="#" class="form">
-              <!-- <button class="previous-button button" type="button">
+              <!-- <button class="button previous-button" type="button">
                 <img src="./images/vector.png" alt="previous button" />
-                <span class="previous-button__text">Шаг 1 из 5</span>
+                <span class="previous-button__text">Шаг 3 из 5</span>
               </button> -->
-              <a class="previous-button button" href="#">
+              <a class="previous-button button" href="./index.html">
                 <img src="./images/vector.png" alt="previous button" />
-                <span class="previous-button__text">Шаг 1 из 5</span>
+                <span class="previous-button__text">Шаг 3 из 5</span>
               </a>
               <div class="form__title-group title-group">
                 <h2 class="form__title">Создать Seed Wallet</h2>
-                <p class="form__subtitle gradient-color">
-                  Зашифруйте свой аккаунт для этого устройства паролем
+                <p class="form__subtitle gradient-color">Ваш новый Seed-Ключ</p>
+              </div>
+              <div class="form__seed-phrases">
+                <input
+                  class="seed-phrases__radio"
+                  id="seed-phrase-1"
+                  type="radio"
+                  name="seed-phrase"
+                  value="seed-phrase"
+                  checked
+                />
+                <span class="seed-phrases__button">Part 1</span>
+                <label for="seed-phrase-1" class="seed-phrases__side">
+                  <ul class="seed-phrases__list">
+                    <li class="seed-phrases__item">canyon</li>
+                    <li class="seed-phrases__item">purity</li>
+                    <li class="seed-phrases__item">warm</li>
+                    <li class="seed-phrases__item">bulb</li>
+                    <li class="seed-phrases__item">carry</li>
+                    <li class="seed-phrases__item">produce</li>
+                    <li class="seed-phrases__item">resist</li>
+                    <li class="seed-phrases__item">ecology</li>
+                    <li class="seed-phrases__item">nephew</li>
+                    <li class="seed-phrases__item">fly</li>
+                    <li class="seed-phrases__item">immense</li>
+                    <li class="seed-phrases__item">lonely</li>
+                  </ul>
+                </label>
+
+                <input
+                  class="seed-phrases__radio"
+                  id="seed-phrase-2"
+                  type="radio"
+                  name="seed-phrase"
+                  value="seed-phrase"
+                />
+                <span class="seed-phrases__button">Part 2</span>
+                <label for="seed-phrase-2" class="seed-phrases__side">
+                  <ul class="seed-phrases__list">
+                    <li class="seed-phrases__item">canyon2</li>
+                    <li class="seed-phrases__item">purity2</li>
+                    <li class="seed-phrases__item">warm2</li>
+                    <li class="seed-phrases__item">bulb2</li>
+                    <li class="seed-phrases__item">carry2</li>
+                    <li class="seed-phrases__item">produce2</li>
+                    <li class="seed-phrases__item">resist2</li>
+                    <li class="seed-phrases__item">ecology2</li>
+                    <li class="seed-phrases__item">nephew2</li>
+                    <li class="seed-phrases__item">fly2</li>
+                    <li class="seed-phrases__item">immense2</li>
+                    <li class="seed-phrases__item">lonely2</li>
+                  </ul>
+                </label>
+              </div>
+              <button class="button clipboard-button" type="button">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 16H6C5.46957 16 4.96086 15.7893 4.58579 15.4142C4.21071 15.0391 4 14.5304 4 14V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H14C14.5304 4 15.0391 4.21071 15.4142 4.58579C15.7893 4.96086 16 5.46957 16 6V8M10 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V10C20 9.46957 19.7893 8.96086 19.4142 8.58579C19.0391 8.21071 18.5304 8 18 8H10C9.46957 8 8.96086 8.21071 8.58579 8.58579C8.21071 8.96086 8 9.46957 8 10V18C8 18.5304 8.21071 19.0391 8.58579 19.4142C8.96086 19.7893 9.46957 20 10 20Z"
+                    stroke="#2997FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Скопировать фразу в буфер
+              </button>
+              <div class="form__custom-switch-group custom-switch-group">
+                <span>Сохранить аккаунт на этом устройстве</span>
+                <label class="custom-switch">
+                  <input type="checkbox" />
+                  <span class="custom-slider round"></span>
+                </label>
+              </div>
+              <div class="form__custom-input-group custom-input-group">
+                <input
+                  class="custom-input__field success"
+                  type="text"
+                  placeholder="Account title"
+                />
+                <p class="custom-input__text-wrap primary error success">
+                  <span class="primary__text"
+                    >Minimum length is 8 character but longer is better</span
+                  >
+                  <span class="error__text">Error</span>
+                  <span class="success__text">Success</span>
                 </p>
               </div>
-              <div class="form__wallet-card wallet-card --yellow-border">
-                <h3 class="wallet-card__title">Seed-Wallet</h3>
-                <p class="wallet-card__text">
-                  К каждому варианту будет какой-то небольшой поясняющий текст
-                  примерно такого размера.
-                </p>
-              </div>
-              <div class="form__wallet-card wallet-card --blue-border">
-                <h3 class="wallet-card__title">Brain Wallet</h3>
-                <p class="wallet-card__text">
-                  К каждому варианту будет какой-то небольшой поясняющий текст
-                  примерно такого размера.
-                </p>
-              </div>
+              <label class="form__custom-checkbox custom-checkbox">
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+                Я сохранил шифр и фразу
+              </label>
+              <button class="next-button button" type="button">
+                Продолжить
+                <img src="./images/vector.png" alt="previous button" />
+              </button>
             </form>
           </div>
-          <!-- *** -->
           <div class="main__right">
             <div class="info">
               <div class="info__wrapper">

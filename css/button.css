@@ -4,8 +4,6 @@
   display: flex;
   align-items: center;
   width: 100%;
-  /* padding: 0;
-  background: transparent; */
   border: 0;
   cursor: pointer;
 }
@@ -17,6 +15,7 @@
 .previous-button {
   padding: 0;
   background: transparent;
+  text-decoration: none;
 }
 
 .previous-button img {
