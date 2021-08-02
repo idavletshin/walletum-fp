@@ -3,6 +3,7 @@
   margin: 0 auto;
   box-shadow: none;
   padding: 50%;
+  max-width: 450px;
   max-height: 450px;
   position: relative;
 }
