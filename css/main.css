@@ -68,6 +68,15 @@ body.--scroll-off {
 
 /* *** */
 
+/* Отключение скролла */
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* *** */
+
 /* Стили отвечающие за цвет */
 
 .gradient-color {

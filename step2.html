@@ -198,6 +198,8 @@
       }
 
       progressWrap.onmousemove = function () {
+        document.querySelector("body").classList.add("stop-scrolling");
+
         setProgress((percent += 0.5));
         if (percent === 100) {
           percent = 0;
@@ -205,12 +207,22 @@
         }
       };
 
-      progressWrap.touchmove = function () {
+      progressWrap.onmouseleave = function () {
+        document.querySelector("body").classList.remove("stop-scrolling");
+      };
+
+      progressWrap.ontouchmove = function () {
+        document.querySelector("body").classList.add("stop-scrolling");
+
         setProgress((percent += 5));
         if (percent === 100) {
           percent = 0;
           window.location.href = "step3.html";
         }
+      };
+
+      progressWrap.ontouchleave = function () {
+        document.querySelector("body").classList.remove("stop-scrolling");
       };
     </script>
   </body>
