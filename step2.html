@@ -106,9 +106,33 @@
                     stroke="url(#progress-ring-colors)"
                   />
                 </svg> -->
-                <svg viewBox="0 0 150 150" preserveAspectRatio="xMinYMin meet">
+                <svg
+                  class="progress-ring"
+                  viewBox="0 0 110 110"
+                  preserveAspectRatio="xMinYMin meet"
+                >
+                  <defs>
+                    <linearGradient
+                      id="progress-ring-colors"
+                      x1="0"
+                      y1="0"
+                      x2="1"
+                      y2="1"
+                    >
+                      <stop offset="5%" stop-color="#02A8C5"></stop>
+                      <stop offset="95%" stop-color="#9F0ACF"></stop>
+                    </linearGradient>
+                  </defs>
                   <g>
-                    <circle r="48%" cx="50%" cy="50%" class="circle-back" />
+                    <circle
+                      class="progress-ring__circle"
+                      r="48%"
+                      cx="50%"
+                      cy="50%"
+                      stroke="url(#progress-ring-colors)"
+                      stroke-width="3"
+                      fill="none"
+                    />
                   </g>
                 </svg>
               </div>

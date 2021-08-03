@@ -1,38 +1,23 @@
-/* .progress {
-  background: none;
+.progress {
+  /* background: none;
   margin: 0 auto;
   box-shadow: none;
   padding: 50%;
   max-width: 450px;
   max-height: 450px;
-  position: relative;
+  position: relative; */
 }
 
 .progress-ring {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0; */
 }
 
 .progress-ring__circle {
   transform-origin: center;
   transform: rotate(-90deg);
   transition: stroke-dashoffset 0.3s;
-} */
-
-.progress {
-  /* padding: 20px; */
-}
-svg {
-  /* height: 100px; */
-  /* border: 1px solid plum; */
-}
-circle {
-  fill: none;
-}
-.circle-back {
-  stroke: #eee;
-  stroke-width: 3px;
 }
