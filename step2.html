@@ -214,7 +214,7 @@
       progressWrap.ontouchmove = function () {
         document.querySelector("body").classList.add("stop-scrolling");
 
-        setProgress((percent += 5));
+        setProgress((percent += 1));
         if (percent === 100) {
           percent = 0;
           window.location.href = "step3.html";
