@@ -204,6 +204,14 @@
           window.location.href = "step3.html";
         }
       };
+
+      progressWrap.touchmove = function () {
+        setProgress((percent += 5));
+        if (percent === 100) {
+          percent = 0;
+          window.location.href = "step3.html";
+        }
+      };
     </script>
   </body>
 </html>
