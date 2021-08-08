@@ -590,7 +590,7 @@ body.--scroll-off {
   only screen and (min-width: 768px) and (min-resolution: 192dpi),
   only screen and (min-width: 768px) and (min-resolution: 2dppx) {
   body {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .main__wrapper {
