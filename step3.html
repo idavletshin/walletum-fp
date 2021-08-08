@@ -54,71 +54,49 @@
           <!-- Создание Seed Wallet 3 шаг -->
           <div class="main__left">
             <form action="#" class="form">
-              <!-- <button class="button previous-button" type="button">
+              <!-- <button class="previous-button button" type="button">
                 <img src="./images/vector.png" alt="previous button" />
                 <span class="previous-button__text">Шаг 3 из 5</span>
               </button> -->
+              <!-- Временный вариант в виде ссылки -->
               <a class="previous-button button" href="step2.html">
                 <img src="./images/vector.png" alt="previous button" />
                 <span class="previous-button__text">Шаг 3 из 5</span>
               </a>
-              <div class="form__title-group title-group">
-                <h2 class="form__title">Создать Seed Wallet</h2>
+              <!-- *** -->
+              <div class="form__title-group">
+                <h2 class="form__title">Генерация кошелька</h2>
                 <p class="form__subtitle gradient-color">Ваш новый Seed-Ключ</p>
               </div>
               <div class="form__seed-phrases">
-                <input
-                  class="seed-phrases__radio"
-                  id="seed-phrase-1"
-                  type="radio"
-                  name="seed-phrase"
-                  value="seed-phrase"
-                  checked
-                />
-                <span class="seed-phrases__button">Part 1</span>
-                <label for="seed-phrase-1" class="seed-phrases__side">
-                  <ul class="seed-phrases__list">
-                    <li class="seed-phrases__item">canyon</li>
-                    <li class="seed-phrases__item">purity</li>
-                    <li class="seed-phrases__item">warm</li>
-                    <li class="seed-phrases__item">bulb</li>
-                    <li class="seed-phrases__item">carry</li>
-                    <li class="seed-phrases__item">produce</li>
-                    <li class="seed-phrases__item">resist</li>
-                    <li class="seed-phrases__item">ecology</li>
-                    <li class="seed-phrases__item">nephew</li>
-                    <li class="seed-phrases__item">fly</li>
-                    <li class="seed-phrases__item">immense</li>
-                    <li class="seed-phrases__item">lonely</li>
-                  </ul>
-                </label>
-
-                <input
-                  class="seed-phrases__radio"
-                  id="seed-phrase-2"
-                  type="radio"
-                  name="seed-phrase"
-                  value="seed-phrase"
-                />
-                <span class="seed-phrases__button">Part 2</span>
-                <label for="seed-phrase-2" class="seed-phrases__side">
-                  <ul class="seed-phrases__list">
-                    <li class="seed-phrases__item">canyon2</li>
-                    <li class="seed-phrases__item">purity2</li>
-                    <li class="seed-phrases__item">warm2</li>
-                    <li class="seed-phrases__item">bulb2</li>
-                    <li class="seed-phrases__item">carry2</li>
-                    <li class="seed-phrases__item">produce2</li>
-                    <li class="seed-phrases__item">resist2</li>
-                    <li class="seed-phrases__item">ecology2</li>
-                    <li class="seed-phrases__item">nephew2</li>
-                    <li class="seed-phrases__item">fly2</li>
-                    <li class="seed-phrases__item">immense2</li>
-                    <li class="seed-phrases__item">lonely2</li>
-                  </ul>
-                </label>
+                <ul class="seed-phrases__list">
+                  <li class="seed-phrases__item">canyon</li>
+                  <li class="seed-phrases__item">purity</li>
+                  <li class="seed-phrases__item">warm</li>
+                  <li class="seed-phrases__item">bulb</li>
+                  <li class="seed-phrases__item">carry</li>
+                  <li class="seed-phrases__item">produce</li>
+                  <li class="seed-phrases__item">resist</li>
+                  <li class="seed-phrases__item">ecology</li>
+                  <li class="seed-phrases__item">nephew</li>
+                  <li class="seed-phrases__item">fly</li>
+                  <li class="seed-phrases__item">immense</li>
+                  <li class="seed-phrases__item">lonely</li>
+                  <li class="seed-phrases__item">canyon2</li>
+                  <li class="seed-phrases__item">purity2</li>
+                  <li class="seed-phrases__item">warm2</li>
+                  <li class="seed-phrases__item">bulb2</li>
+                  <li class="seed-phrases__item">carry2</li>
+                  <li class="seed-phrases__item">produce2</li>
+                  <li class="seed-phrases__item">resist2</li>
+                  <li class="seed-phrases__item">ecology2</li>
+                  <li class="seed-phrases__item">nephew2</li>
+                  <li class="seed-phrases__item">fly2</li>
+                  <li class="seed-phrases__item">immense2</li>
+                  <li class="seed-phrases__item">lonely2</li>
+                </ul>
               </div>
-              <button class="button clipboard-button" type="button">
+              <button class="clipboard-button button" type="button">
                 <svg
                   width="24"
                   height="24"
@@ -137,6 +115,35 @@
                 Скопировать фразу в буфер
               </button>
               <div class="form__custom-switch-group custom-switch-group">
+                <span>Использовать дополнительное шифрование</span>
+                <label class="custom-switch">
+                  <input id="additionalEncryption" type="checkbox" />
+                  <span class="custom-slider round"></span>
+                </label>
+              </div>
+              <div
+                class="form__custom-input custom-input fade"
+                id="chiperForPhrases"
+              >
+                <label class="custom-input__label">
+                  <!-- no class / error / success -->
+                  <input
+                    class="custom-input__field password"
+                    type="password"
+                    placeholder="Ваш шифр Cид-фразы"
+                  />
+                  <span class="icon"> </span>
+                </label>
+                <!-- primary / error / success -->
+                <div class="custom-input__text-wrap primary">
+                  <p class="primary-text">
+                    Minimum length is 8 character but longer is better
+                  </p>
+                  <p class="error-text">Error</p>
+                  <p class="success-text">Success</p>
+                </div>
+              </div>
+              <!-- <div class="form__custom-switch-group custom-switch-group">
                 <span>Сохранить аккаунт на этом устройстве</span>
                 <label class="custom-switch">
                   <input type="checkbox" />
@@ -156,7 +163,7 @@
                   <span class="error__text">Error</span>
                   <span class="success__text">Success</span>
                 </p>
-              </div>
+              </div> -->
               <label class="form__custom-checkbox custom-checkbox">
                 <input type="checkbox" checked="checked" />
                 <span class="checkmark"></span>
@@ -239,6 +246,33 @@
       </div>
     </footer>
     <script src="./js/main.js"></script>
-    <script></script>
+    <script>
+      const additionalEncryption = document.getElementById(
+        "additionalEncryption"
+      );
+      const chiperForPhrases = document.getElementById("chiperForPhrases");
+
+      additionalEncryption.addEventListener("change", function () {
+        if (this.checked) {
+          chiperForPhrases.classList.remove("fade");
+          chiperForPhrases.scrollIntoView({ behavior: "smooth" });
+        } else {
+          chiperForPhrases.classList.add("fade");
+        }
+      });
+
+      const showHidePasswd = document.querySelector(".custom-input .icon");
+      const passwd = document.querySelector(".custom-input__field");
+
+      showHidePasswd.addEventListener("click", function () {
+        if (passwd.getAttribute("type") == "password") {
+          showHidePasswd.classList.add("view");
+          passwd.setAttribute("type", "text");
+        } else {
+          showHidePasswd.classList.remove("view");
+          passwd.setAttribute("type", "password");
+        }
+      });
+    </script>
   </body>
 </html>

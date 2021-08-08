@@ -1,4 +1,4 @@
-.form__seed-phrases {
+/* .form__seed-phrases {
   position: relative;
 }
 
@@ -51,4 +51,4 @@
 .seed-phrases__radio:not(:checked) + span + .seed-phrases__side {
   display: none;
   transition: all 0.2s ease-in;
-}
+} */

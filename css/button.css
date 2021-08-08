@@ -13,6 +13,7 @@
 /* Стилизация кнопки с шагами (возврата назад) */
 
 .previous-button {
+  max-width: max-content;
   padding: 0;
   background: transparent;
   text-decoration: none;

@@ -454,8 +454,8 @@ body.--scroll-off {
   justify-content: center;
   align-items: center;
   width: 23%;
-  margin-bottom: 10px;
-  padding: 5px;
+  margin-bottom: 6px;
+  padding: 3px;
   font-size: 0.875em;
   background: var(--card-bg);
   border-radius: 0.5em;
@@ -469,16 +469,23 @@ body.--scroll-off {
   margin-bottom: 1.5em;
 }
 
-.form__custom-switch-group span {
-  /* width: 68%; */
+.form__custom-switch-group > span {
+  width: 90%;
 }
 
-.form__custom-input-group {
+.form__custom-input {
   margin-bottom: 1.5em;
 }
 
 .form__custom-checkbox {
   margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 767px) {
+  .form__custom-switch-group > span,
+  .form__custom-checkbox {
+    font-size: 0.875em;
+  }
 }
 
 /* *** */
@@ -583,7 +590,7 @@ body.--scroll-off {
   only screen and (min-width: 768px) and (min-resolution: 192dpi),
   only screen and (min-width: 768px) and (min-resolution: 2dppx) {
   body {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .main__wrapper {
