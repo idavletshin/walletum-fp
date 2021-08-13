@@ -11,6 +11,7 @@
 @import "circular-progress.css";
 @import "pin-code.css";
 @import "qr-code.css";
+@import "file-upload.css";
 
 /* Общие стили для страницы */
 
@@ -521,6 +522,14 @@ body.--scroll-off {
   .form.generation .main-progress {
     margin: auto;
   }
+}
+
+/* *** */
+
+/* Стили для загрузки файла file-wallet */
+
+.form__file-upload {
+  margin-bottom: 2.5rem;
 }
 
 /* *** */

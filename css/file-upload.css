@@ -1,0 +1,35 @@
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  height: 12.5rem;
+  width: 100%;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.file-upload label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border: 0.0625rem dashed var(--blue);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.file-upload img {
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.file-upload span {
+  width: 50%;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  text-align: center;
+}
