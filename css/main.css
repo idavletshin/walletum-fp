@@ -320,6 +320,10 @@ body.--scroll-off {
     margin-top: 0.5rem;
   }
 
+  .main__left-box {
+    max-width: unset;
+  }
+
   /* .main__wrapper > div[class^="main__"] {
     margin-bottom: 2.5rem;
   } */
@@ -513,7 +517,7 @@ body.--scroll-off {
 
 /* Стили для шага с генерацией кошелька */
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 20rem) {
   .form.generation .form__title,
   .form.generation .form__subtitle {
     text-align: center;
@@ -532,6 +536,16 @@ body.--scroll-off {
   margin-bottom: 2.5rem;
 }
 
+/* *** */
+
+/* Стили для pin-code */
+
+@media screen and (max-width: 62rem) {
+  .form .pincode {
+    max-width: 20rem;
+    margin: auto;
+  }
+}
 /* *** */
 
 /* Стили для qr-кода */
