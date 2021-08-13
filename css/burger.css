@@ -5,7 +5,7 @@
   height: 1.875rem;
   cursor: pointer;
   transition: all 0.3s ease-in;
-  z-index: 5;
+  z-index: 6;
 }
 
 .burger::before {
