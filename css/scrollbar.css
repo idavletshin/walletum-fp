@@ -7,19 +7,19 @@
 }
 
 .info__wrapper::-webkit-scrollbar-track {
-  padding-right: 0.625em;
+  padding-right: 0.625rem;
   background: var(--disabled-black);
-  border: 0.25em solid transparent;
+  border: 0.25rem solid transparent;
   background-clip: content-box;
 }
 
 .info__wrapper::-webkit-scrollbar {
   display: block;
-  width: 0.625em;
+  width: 0.625rem;
 }
 
 .info__wrapper::-webkit-scrollbar-thumb {
   background: linear-gradient(to top, #b3ffab, #12fff7);
-  border: 0.0625em solid rgb(0, 0, 0);
-  border-radius: 0.625em;
+  border: 0.0625rem solid rgb(0, 0, 0);
+  border-radius: 0.625rem;
 }

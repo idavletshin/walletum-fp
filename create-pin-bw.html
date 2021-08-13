@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Walletum</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo logo" href="#">
+        <img class="logo__img" src="./images/logo.svg" alt="Logo" />
+        <span class="logo__text">walletum</span>
+      </a>
+      <div class="header__menu menu">
+        <div class="menu__burger burger">
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item lang">
+            <ul class="lang__list">
+              <li class="lang__item">
+                <a class="lang__link" href="#">Ru</a>
+              </li>
+              <li class="lang__item">
+                <a class="lang__link active" href="#">En</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">F.A.Q</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Social</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="main__wrapper">
+          <!-- Создание pin-кода для brain-кошелька 4 шаг -->
+          <div class="main__left">
+            <div class="main__left-box">
+              <form action="#" class="form">
+                <!-- <button class="previous-button button" type="button">
+                      <img src="./images/vector.png" alt="previous button" />
+                      <span class="previous-button__text">Шаг 3 из 5</span>
+                    </button> -->
+
+                <!-- Временный вариант в виде ссылки -->
+                <a class="previous-button button" href="create-bw-sp.html">
+                  <img src="./images/vector.png" alt="previous button" />
+                  <span class="previous-button__text">Шаг 4 из 5</span>
+                </a>
+                <!-- *** -->
+                <div class="form__title-group">
+                  <h2 class="form__title">Создать Pin-Code</h2>
+                </div>
+                <div class="form__pincode pincode">
+                  <div class="pincode-input">
+                    <input type="text" maxlength="1" id="pincode-0" />
+                    <input type="text" maxlength="1" id="pincode-1" />
+                    <input type="text" maxlength="1" id="pincode-2" />
+                    <input type="text" maxlength="1" id="pincode-3" />
+                    <input type="text" maxlength="1" id="pincode-4" />
+                    <input type="text" maxlength="1" id="pincode-5" />
+                  </div>
+                  <div class="pincode-control">
+                    <div class="pincode-control__list">
+                      <div class="pincode-control__group">
+                        <button
+                          type="button"
+                          class="pincode-control__button"
+                          value="1"
+                        >
+                          1
+                        </button>
+                        <button
+                          type="button"
+                          class="pincode-control__button"
+                          value="2"
+                        >
+                          2
+                        </button>
+                        <button
+                          type="button"
+                          class="pincode-control__button"
+                          value="3"
+                        >
+                          3
+                        </button>
+                      </div>
+                      <div class="pincode-control__group">
+                        <button
+                          type="button"
+                          class="pincode-control__button"
+                          value="4"
+                        >
+                          4
+                        </button>
+                        <button
+                          type="button"
+                          class="pincode-control__button"
+                          value="5"
+                        >
+                          5
+                        </button>
+                        <button
+                          type="button"
+                          class="pincode-control__button"
+                          value="6"
+                        >
+                          6
+                        </button>
+                      </div>
+                      <div class="pincode-control__group">
+                        <button
+                          type="button"
+                          class="pincode-control__button"
+                          value="7"
+                        >
+                          7
+                        </button>
+                        <button
+                          type="button"
+                          class="pincode-control__button"
+                          value="8"
+                        >
+                          8
+                        </button>
+                        <button
+                          type="button"
+                          class="pincode-control__button"
+                          value="9"
+                        >
+                          9
+                        </button>
+                      </div>
+                      <div class="pincode-control__group">
+                        <button
+                          type="button"
+                          class="pincode-control__button"
+                          value="0"
+                        >
+                          0
+                        </button>
+                        <button
+                          type="button"
+                          class="pincode-control__button delete-button"
+                          value="delete"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="next-button button --blue jc-center"
+                  type="button"
+                >
+                  Сгенерировать
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="main__right">
+            <div class="info">
+              <div class="info__wrapper">
+                <h3 class="info__title">
+                  Здесь вы можете решить, сохранять ли аккаунт на этом
+                  устройтстве.
+                </h3>
+                <p class="info__text gradient-color">
+                  Здесь вы можете решить, сохранять ли аккаунт на этом
+                  устройтстве. Если вы хотите пользоваться кошельком достаточно
+                  часто, то следует активировать данную функцию.
+                </p>
+                <p class="info__text">
+                  Вы сохраните аккаунт в кэше вашего браузера/устройства.
+                  Потерять доступ от него не страшно. Это просто способ связать
+                  ваш браузер/устроство с вашим кошельком в Walletum. Связку
+                  логин/пароль
+                  <span class="blue-color">запоминает только</span> ваше текущее
+                  устройство, мы не имеем доступа к этой информации и никак не
+                  можем повлиять на её изменения. Вы можете задавать разные
+                  связки логина и пароля для доступа к вашему кошельку Walletum
+                  в каждом из ваших устройств.
+                </p>
+                <p class="info__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                  doloribus deleniti in recusandae culpa numquam inventore
+                  laboriosam delectus, repellat nobis sapiente, perspiciatis
+                  alias laborum dolores sunt nihil neque illum tempora!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__copyright">
+        © 2020 «Walletum» — path of Calcium Project
+      </div>
+      <div class="footer__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__icon" src="./images/telegram.png" alt="" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__icon" src="./images/twitter.png" alt="" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__icon" src="./images/discord.png" alt="" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__icon" src="./images/facebook.png" alt="" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__icon" src="./images/instagram.png" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script>
+      const nextButton = document.querySelector(".next-button.button");
+      const pincodeInputs = [
+        ...document.querySelectorAll(".pincode-input input"),
+      ];
+      const pincodeInputsId = {
+        "pincode-0": { previous: "pincode-0", next: "pincode-1" },
+        "pincode-1": { previous: "pincode-0", next: "pincode-2" },
+        "pincode-2": { previous: "pincode-1", next: "pincode-3" },
+        "pincode-3": { previous: "pincode-2", next: "pincode-4" },
+        "pincode-4": { previous: "pincode-3", next: "pincode-5" },
+        "pincode-5": { previous: "pincode-4", next: "pincode-5" },
+      };
+      const pincodeControls = [
+        ...document.querySelectorAll(".pincode-control__button"),
+      ];
+      const reversePincodeInputs = [...pincodeInputs].reverse();
+
+      nextButton.addEventListener("click", () => {
+        window.location.href = "generate-bw.html";
+      });
+
+      for (let i = 0; i < pincodeInputs.length; i++) {
+        pincodeInputs[i].addEventListener("input", handlePincode);
+        pincodeInputs[i].addEventListener("keydown", handleBackspace);
+      }
+
+      function handlePincode(e) {
+        const result = e.target.value.slice(0, 1).replace(/ /g, "");
+
+        if (!result.match(/^\d+$/)) {
+          e.target.value = "";
+        } else {
+          document.getElementById(pincodeInputsId[e.target.id].next).focus();
+        }
+
+        if (result === "") {
+          document
+            .getElementById(pincodeInputsId[e.target.id].previous)
+            .focus();
+        }
+      }
+
+      function handleBackspace(e) {
+        const result = event.target.value.slice(0, 1).replace(/ /g, "");
+        if (e.keyCode == 8 && result === "") {
+          document
+            .getElementById(pincodeInputsId[e.target.id].previous)
+            .focus();
+        }
+      }
+
+      for (let button of pincodeControls) {
+        button.addEventListener("click", handlePincodeControls);
+      }
+
+      function handlePincodeControls(e) {
+        for (let j = 0; j < pincodeInputs.length; j++) {
+          if (e.target.value === "delete") {
+            if (reversePincodeInputs[j].value) {
+              reversePincodeInputs[j].value = "";
+              document
+                .getElementById(
+                  pincodeInputsId[reversePincodeInputs[j].id].previous
+                )
+                .focus();
+              return;
+            }
+          } else {
+            if (!pincodeInputs[j].value) {
+              pincodeInputs[j].value = e.target.value;
+              document
+                .getElementById(pincodeInputsId[pincodeInputs[j].id].next)
+                .focus();
+              return;
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -2,8 +2,8 @@
 .custom-checkbox {
   display: block;
   position: relative;
-  padding-left: 2.75em;
-  margin-bottom: 0.75em;
+  padding-left: 2.75rem;
+  margin-bottom: 0.75rem;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -25,10 +25,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 1.5em;
-  width: 1.5em;
-  border: 0.1875em solid var(--disabled-black);
-  border-radius: 0.1875em;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 0.1875rem solid var(--disabled-black);
+  border-radius: 0.1875rem;
 }
 
 /* On mouse-over, add a grey background color */
@@ -59,11 +59,11 @@
 .custom-checkbox .checkmark:after {
   top: 50%;
   left: 50%;
-  width: 0.3125em;
-  height: 0.625em;
+  width: 0.625rem;
+  height: 1em;
   border: solid var(--white);
-  border-width: 0 0.1875em 0.1875em 0;
-  -webkit-transform: rotate(45deg) translate(-110%, -40%);
-  -ms-transform: rotate(45deg) translate(-110%, -40%);
-  transform: rotate(45deg) translate(-110%, -40%);
+  border-width: 0 0.1875rem 0.1875rem 0;
+  -webkit-transform: rotate(45deg) translate(-110%, -30%);
+  -ms-transform: rotate(45deg) translate(-110%, -30%);
+  transform: rotate(45deg) translate(-110%, -30%);
 }

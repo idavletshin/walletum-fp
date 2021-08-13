@@ -51,40 +51,70 @@
     <main class="main">
       <div class="container">
         <div class="main__wrapper">
-          <!-- Выбор кошелька 1 шаг -->
+          <!-- Создание brain-кошелька 3 шаг -->
           <div class="main__left">
             <form action="#" class="form">
               <!-- <button class="previous-button button" type="button">
                 <img src="./images/vector.png" alt="previous button" />
-                <span class="previous-button__text">Шаг 1 из 5</span>
+                <span class="previous-button__text">Шаг 3 из 5</span>
               </button> -->
-              <a class="previous-button button" href="#">
+
+              <!-- Временный вариант в виде ссылки -->
+              <a class="previous-button button" href="scan-qr.html">
                 <img src="./images/vector.png" alt="previous button" />
-                <span class="previous-button__text">Шаг 1 из 5</span>
+                <span class="previous-button__text">Шаг 2 из 3</span>
               </a>
+              <!-- *** -->
               <div class="form__title-group">
-                <h2 class="form__title">Создать кошелек</h2>
-                <p class="form__subtitle gradient-color">
-                  Зашифруйте свой аккаунт для этого устройства паролем
-                </p>
+                <h2 class="form__title">Войти по QR-коду</h2>
+                <!-- <p class="form__subtitle gradient-color">
+                  Если у вас есть активная сесссия на другом устройстве, то
+                  перейдите в раздел «Настройки» и откройте «Совместное
+                  использование»
+                </p> -->
               </div>
-              <div class="form__wallet-card wallet-card --yellow-border">
-                <h3 class="wallet-card__title">Seed-Wallet</h3>
-                <p class="wallet-card__text">
-                  К каждому варианту будет какой-то небольшой поясняющий текст
-                  примерно такого размера.
-                </p>
+
+              <div class="form__qr-code">
+                <div class="qr-code__image-wrap">
+                  <img src="./images/qr-code.png" alt="qr-code" />
+                </div>
+                <p class="qr-code__text">Сканируйте QR-код</p>
               </div>
-              <div class="form__wallet-card wallet-card --blue-border">
-                <h3 class="wallet-card__title">Brain Wallet</h3>
-                <p class="wallet-card__text">
-                  К каждому варианту будет какой-то небольшой поясняющий текст
-                  примерно такого размера.
-                </p>
+
+              <div class="form__text-field-container text-field-container">
+                <div class="text-field">
+                  <input
+                    id="password"
+                    class="text-field__input password"
+                    type="password"
+                    placeholder="Введите одноразовый ключ"
+                  />
+                  <label for="password" class="text-field__label"
+                    >Введите одноразовый ключ</label
+                  >
+                  <!-- no class / error / success -->
+                  <span class="text-field__line"></span>
+                  <span class="text-field__icon"></span>
+                </div>
+                <!-- primary / error / success -->
+                <div class="text-field-helper primary">
+                  <p class="primary-text">
+                    Minimum length is 8 character but longer is better
+                  </p>
+                  <p class="error-text">Error</p>
+                  <p class="success-text">Success</p>
+                </div>
               </div>
+
+              <button
+                class="next-button button --blue jc-space-between"
+                type="button"
+              >
+                Продолжить
+                <img src="./images/vector.png" alt="previous button" />
+              </button>
             </form>
           </div>
-          <!-- *** -->
           <div class="main__right">
             <div class="info">
               <div class="info__wrapper">
@@ -96,23 +126,6 @@
                   Здесь вы можете решить, сохранять ли аккаунт на этом
                   устройтстве. Если вы хотите пользоваться кошельком достаточно
                   часто, то следует активировать данную функцию.
-                </p>
-                <p class="info__text">
-                  Вы сохраните аккаунт в кэше вашего браузера/устройства.
-                  Потерять доступ от него не страшно. Это просто способ связать
-                  ваш браузер/устроство с вашим кошельком в Walletum. Связку
-                  логин/пароль
-                  <span class="blue-color">запоминает только</span> ваше текущее
-                  устройство, мы не имеем доступа к этой информации и никак не
-                  можем повлиять на её изменения. Вы можете задавать разные
-                  связки логина и пароля для доступа к вашему кошельку Walletum
-                  в каждом из ваших устройств.
-                </p>
-                <p class="info__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                  doloribus deleniti in recusandae culpa numquam inventore
-                  laboriosam delectus, repellat nobis sapiente, perspiciatis
-                  alias laborum dolores sunt nihil neque illum tempora!
                 </p>
               </div>
             </div>
@@ -157,15 +170,23 @@
     </footer>
     <script src="./js/main.js"></script>
     <script>
-      const seedWallet = document.querySelector(".wallet-card.--yellow-border");
-      const brainWallet = document.querySelector(".wallet-card.--blue-border");
+      const showHidePasswd = document.querySelector(".text-field__icon");
+      const passwd = document.querySelector(".password");
 
-      seedWallet.addEventListener("click", () => {
-        window.location.href = "create-sw.html";
+      const nextButton = document.querySelector(".next-button.button");
+
+      nextButton.addEventListener("click", () => {
+        window.location.href = "final-step-qr.html";
       });
 
-      brainWallet.addEventListener("click", () => {
-        window.location.href = "create-bw-fp.html";
+      showHidePasswd.addEventListener("click", function () {
+        if (passwd.getAttribute("type") == "password") {
+          showHidePasswd.classList.add("view");
+          passwd.setAttribute("type", "text");
+        } else {
+          showHidePasswd.classList.remove("view");
+          passwd.setAttribute("type", "password");
+        }
       });
     </script>
   </body>

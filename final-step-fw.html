@@ -51,66 +51,85 @@
     <main class="main">
       <div class="container">
         <div class="main__wrapper">
-          <!-- Движение курсора внутри круга 2 шаг -->
+          <!-- Финальный шаг входа с помощью file-wallet 4 шаг -->
           <div class="main__left">
             <form action="#" class="form">
               <!-- <button class="previous-button button" type="button">
                 <img src="./images/vector.png" alt="previous button" />
-                <span class="previous-button__text">Шаг 1 из 5</span>
+                <span class="previous-button__text">Шаг 3 из 5</span>
               </button> -->
-              <a class="previous-button button" href="index.html">
+
+              <!-- Временный вариант в виде ссылки -->
+              <a class="previous-button button" href="enter-fw-thp.html">
                 <img src="./images/vector.png" alt="previous button" />
-                <span class="previous-button__text">Шаг 2 из 5</span>
+                <span class="previous-button__text">Шаг 4 из 4</span>
               </a>
+              <!-- *** -->
               <div class="form__title-group">
-                <h2 class="form__title">Создать Seed Wallet</h2>
+                <h2 class="form__title">Окончания входа в кошелек</h2>
                 <p class="form__subtitle gradient-color">
-                  Подвигайте курсором мыши в заданной области
+                  Зашифруйте свой аккаунт для этого устройства паролем
                 </p>
               </div>
-              <div class="progress">
-                <svg
-                  class="progress-ring"
-                  viewBox="0 0 110 110"
-                  preserveAspectRatio="xMinYMin meet"
-                >
-                  <defs>
-                    <linearGradient
-                      id="progress-ring-colors"
-                      x1="0"
-                      y1="0"
-                      x2="1"
-                      y2="1"
-                    >
-                      <stop offset="5%" stop-color="#02A8C5"></stop>
-                      <stop offset="95%" stop-color="#9F0ACF"></stop>
-                    </linearGradient>
-                  </defs>
-                  <g>
-                    <circle
-                      class="progress-ring__background"
-                      stroke-width="3"
-                      stroke="#fff"
-                      r="48%"
-                      cx="50%"
-                      cy="50%"
-                      fill="none"
-                    />
-                    <circle
-                      class="progress-ring__circle"
-                      r="48%"
-                      cx="50%"
-                      cy="50%"
-                      stroke="url(#progress-ring-colors)"
-                      stroke-width="3"
-                      fill="none"
-                    />
-                  </g>
-                </svg>
+              <div class="form__custom-switch-group custom-switch-group">
+                <span>Сохранить аккаунт на этом устройстве</span>
+                <label class="custom-switch">
+                  <input type="checkbox" />
+                  <span class="custom-slider round"></span>
+                </label>
               </div>
+              <div class="form__text-field-container text-field-container">
+                <div class="text-field">
+                  <input
+                    id="accountTitle"
+                    class="text-field__input"
+                    type="text"
+                    placeholder="Account title"
+                  />
+                  <label for="accountTitle" class="text-field__label"
+                    >Account title</label
+                  >
+                  <!-- no class / error / success -->
+                  <span class="text-field__line"></span>
+                </div>
+                <!-- primary / error / success -->
+                <div class="text-field-helper primary">
+                  <p class="primary-text">
+                    Minimum length is 8 character but longer is better
+                  </p>
+                  <p class="error-text">Error</p>
+                  <p class="success-text">Success</p>
+                </div>
+              </div>
+              <div class="form__text-field-container text-field-container">
+                <div class="text-field">
+                  <input
+                    id="password"
+                    class="text-field__input password"
+                    type="password"
+                    placeholder="Password"
+                  />
+                  <label for="password" class="text-field__label"
+                    >Password</label
+                  >
+                  <!-- no class / error / success -->
+                  <span class="text-field__line"></span>
+                  <span class="text-field__icon"></span>
+                </div>
+                <!-- primary / error / success -->
+                <div class="text-field-helper primary">
+                  <p class="primary-text">
+                    Minimum length is 8 character but longer is better
+                  </p>
+                  <p class="error-text">Error</p>
+                  <p class="success-text">Success</p>
+                </div>
+              </div>
+              <button class="next-button button --blue jc-center" type="button">
+                Перейти в кошелек
+              </button>
             </form>
           </div>
-          <!-- *** -->
           <div class="main__right">
             <div class="info">
               <div class="info__wrapper">
@@ -183,47 +202,18 @@
     </footer>
     <script src="./js/main.js"></script>
     <script>
-      const progressWrap = document.querySelector(".progress");
-      const circle = document.querySelector(".progress-ring__circle");
-      const radius = circle.r.baseVal.value;
-      const circumference = 2 * Math.PI * radius;
-      let percent = 0;
+      const showHidePasswd = document.querySelector(".text-field__icon");
+      const passwd = document.querySelector(".password");
 
-      circle.style.strokeDasharray = `${circumference} ${circumference}`;
-      circle.style.strokeDashoffset = circumference;
-
-      function setProgress(num) {
-        const offset = circumference - (num / 100) * circumference;
-        circle.style.strokeDashoffset = offset;
-      }
-
-      progressWrap.onmousemove = function () {
-        document.querySelector("body").classList.add("stop-scrolling");
-
-        setProgress((percent += 0.5));
-        if (percent === 100) {
-          percent = 0;
-          window.location.href = "step3.html";
+      showHidePasswd.addEventListener("click", function () {
+        if (passwd.getAttribute("type") == "password") {
+          showHidePasswd.classList.add("view");
+          passwd.setAttribute("type", "text");
+        } else {
+          showHidePasswd.classList.remove("view");
+          passwd.setAttribute("type", "password");
         }
-      };
-
-      progressWrap.onmouseleave = function () {
-        document.querySelector("body").classList.remove("stop-scrolling");
-      };
-
-      progressWrap.ontouchmove = function () {
-        document.querySelector("body").classList.add("stop-scrolling");
-
-        setProgress((percent += 1));
-        if (percent === 100) {
-          percent = 0;
-          window.location.href = "step3.html";
-        }
-      };
-
-      progressWrap.ontouchleave = function () {
-        document.querySelector("body").classList.remove("stop-scrolling");
-      };
+      });
     </script>
   </body>
 </html>

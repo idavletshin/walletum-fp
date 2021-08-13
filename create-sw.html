@@ -51,36 +51,62 @@
     <main class="main">
       <div class="container">
         <div class="main__wrapper">
-          <!-- Выбор кошелька 1 шаг -->
+          <!-- Создание seed-кошелька 2 шаг -->
           <div class="main__left">
             <form action="#" class="form">
               <!-- <button class="previous-button button" type="button">
                 <img src="./images/vector.png" alt="previous button" />
                 <span class="previous-button__text">Шаг 1 из 5</span>
               </button> -->
-              <a class="previous-button button" href="#">
+              <a class="previous-button button" href="index.html">
                 <img src="./images/vector.png" alt="previous button" />
-                <span class="previous-button__text">Шаг 1 из 5</span>
+                <span class="previous-button__text">Шаг 2 из 5</span>
               </a>
               <div class="form__title-group">
-                <h2 class="form__title">Создать кошелек</h2>
+                <h2 class="form__title">Создать Seed Wallet</h2>
                 <p class="form__subtitle gradient-color">
-                  Зашифруйте свой аккаунт для этого устройства паролем
+                  Подвигайте курсором мыши в заданной области
                 </p>
               </div>
-              <div class="form__wallet-card wallet-card --yellow-border">
-                <h3 class="wallet-card__title">Seed-Wallet</h3>
-                <p class="wallet-card__text">
-                  К каждому варианту будет какой-то небольшой поясняющий текст
-                  примерно такого размера.
-                </p>
-              </div>
-              <div class="form__wallet-card wallet-card --blue-border">
-                <h3 class="wallet-card__title">Brain Wallet</h3>
-                <p class="wallet-card__text">
-                  К каждому варианту будет какой-то небольшой поясняющий текст
-                  примерно такого размера.
-                </p>
+              <div class="progress">
+                <svg
+                  class="progress-ring"
+                  viewBox="0 0 110 110"
+                  preserveAspectRatio="xMinYMin meet"
+                >
+                  <defs>
+                    <linearGradient
+                      id="progress-ring-colors"
+                      x1="0"
+                      y1="0"
+                      x2="1"
+                      y2="1"
+                    >
+                      <stop offset="5%" stop-color="#02A8C5"></stop>
+                      <stop offset="95%" stop-color="#9F0ACF"></stop>
+                    </linearGradient>
+                  </defs>
+                  <g>
+                    <circle
+                      class="progress-ring__background"
+                      stroke-width="3"
+                      stroke="#fff"
+                      r="48%"
+                      cx="50%"
+                      cy="50%"
+                      fill="none"
+                    />
+                    <circle
+                      class="progress-ring__circle"
+                      r="48%"
+                      cx="50%"
+                      cy="50%"
+                      stroke="url(#progress-ring-colors)"
+                      stroke-width="3"
+                      fill="none"
+                    />
+                  </g>
+                </svg>
               </div>
             </form>
           </div>
@@ -157,16 +183,47 @@
     </footer>
     <script src="./js/main.js"></script>
     <script>
-      const seedWallet = document.querySelector(".wallet-card.--yellow-border");
-      const brainWallet = document.querySelector(".wallet-card.--blue-border");
+      const progressWrap = document.querySelector(".progress");
+      const circle = document.querySelector(".progress-ring__circle");
+      const radius = circle.r.baseVal.value;
+      const circumference = 2 * Math.PI * radius;
+      let percent = 0;
 
-      seedWallet.addEventListener("click", () => {
-        window.location.href = "create-sw.html";
-      });
+      circle.style.strokeDasharray = `${circumference} ${circumference}`;
+      circle.style.strokeDashoffset = circumference;
 
-      brainWallet.addEventListener("click", () => {
-        window.location.href = "create-bw-fp.html";
-      });
+      function setProgress(num) {
+        const offset = circumference - (num / 100) * circumference;
+        circle.style.strokeDashoffset = offset;
+      }
+
+      progressWrap.onmousemove = function () {
+        document.querySelector("body").classList.add("stop-scrolling");
+
+        setProgress((percent += 0.5));
+        if (percent === 100) {
+          percent = 0;
+          window.location.href = "generate-sw.html";
+        }
+      };
+
+      progressWrap.onmouseleave = function () {
+        document.querySelector("body").classList.remove("stop-scrolling");
+      };
+
+      progressWrap.ontouchmove = function () {
+        document.querySelector("body").classList.add("stop-scrolling");
+
+        setProgress((percent += 1));
+        if (percent === 100) {
+          percent = 0;
+          window.location.href = "generate-sw.html";
+        }
+      };
+
+      progressWrap.ontouchleave = function () {
+        document.querySelector("body").classList.remove("stop-scrolling");
+      };
     </script>
   </body>
 </html>

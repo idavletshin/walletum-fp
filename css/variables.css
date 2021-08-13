@@ -4,6 +4,7 @@
   --card-bg: #191919;
   --input-border: #2b2b34;
   --disabled-black: #322b2b;
+  --dark-gray: #565669;
   --gray: #7a7a7a;
   --light-gray: #ccc;
   --dark-purple: #491d88;
@@ -13,7 +14,9 @@
   --blue: #2997ff;
   --dark-blue: #246bfe;
   --green: #2abb9b;
+  --light-green: #94d783;
   --yellow: #fbd63d;
+  --orange: #f49c0b;
 
   --main-font: "Inter", sans-serif;
   --second-font: "Montserrat", "Helvetica", sans-serif;

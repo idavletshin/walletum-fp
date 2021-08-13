@@ -51,15 +51,16 @@
     <main class="main">
       <div class="container">
         <div class="main__wrapper">
-          <!-- Создание Seed Wallet 3 шаг -->
+          <!-- Генерация seed-кошелька 3 шаг -->
           <div class="main__left">
             <form action="#" class="form">
               <!-- <button class="previous-button button" type="button">
                 <img src="./images/vector.png" alt="previous button" />
                 <span class="previous-button__text">Шаг 3 из 5</span>
               </button> -->
+
               <!-- Временный вариант в виде ссылки -->
-              <a class="previous-button button" href="step2.html">
+              <a class="previous-button button" href="create-sw.html">
                 <img src="./images/vector.png" alt="previous button" />
                 <span class="previous-button__text">Шаг 3 из 5</span>
               </a>
@@ -122,20 +123,23 @@
                 </label>
               </div>
               <div
-                class="form__custom-input custom-input fade"
-                id="chiperForPhrases"
+                id="encryptionContainer"
+                class="form__text-field-container text-field-container fade"
               >
-                <label class="custom-input__label">
-                  <!-- no class / error / success -->
+                <div class="text-field">
                   <input
-                    class="custom-input__field password"
+                    id="chiperForPhrases"
+                    class="text-field__input password"
                     type="password"
                     placeholder="Ваш шифр Cид-фразы"
                   />
-                  <span class="icon"> </span>
-                </label>
-                <!-- primary / error / success -->
-                <div class="custom-input__text-wrap primary">
+                  <label for="chiperForPhrases" class="text-field__label"
+                    >Ваш шифр Cид-фразы</label
+                  >
+                  <span class="text-field__line focus"></span>
+                  <span class="text-field__icon"></span>
+                </div>
+                <div class="text-field-helper primary">
                   <p class="primary-text">
                     Minimum length is 8 character but longer is better
                   </p>
@@ -143,33 +147,15 @@
                   <p class="success-text">Success</p>
                 </div>
               </div>
-              <!-- <div class="form__custom-switch-group custom-switch-group">
-                <span>Сохранить аккаунт на этом устройстве</span>
-                <label class="custom-switch">
-                  <input type="checkbox" />
-                  <span class="custom-slider round"></span>
-                </label>
-              </div>
-              <div class="form__custom-input-group custom-input-group">
-                <input
-                  class="custom-input__field success"
-                  type="text"
-                  placeholder="Account title"
-                />
-                <p class="custom-input__text-wrap primary error success">
-                  <span class="primary__text"
-                    >Minimum length is 8 character but longer is better</span
-                  >
-                  <span class="error__text">Error</span>
-                  <span class="success__text">Success</span>
-                </p>
-              </div> -->
               <label class="form__custom-checkbox custom-checkbox">
                 <input type="checkbox" checked="checked" />
                 <span class="checkmark"></span>
                 Я сохранил шифр и фразу
               </label>
-              <button class="next-button button" type="button">
+              <button
+                class="next-button button --blue jc-space-between"
+                type="button"
+              >
                 Продолжить
                 <img src="./images/vector.png" alt="previous button" />
               </button>
@@ -250,19 +236,26 @@
       const additionalEncryption = document.getElementById(
         "additionalEncryption"
       );
-      const chiperForPhrases = document.getElementById("chiperForPhrases");
+      const encryptionContainer = document.getElementById(
+        "encryptionContainer"
+      );
+      const showHidePasswd = document.querySelector(".text-field__icon");
+      const passwd = document.querySelector(".password");
+      const nextButton = document.querySelector(".next-button.button");
+
+      nextButton.addEventListener("click", () => {
+        window.location.href = "phrase-check-sw.html";
+      });
 
       additionalEncryption.addEventListener("change", function () {
         if (this.checked) {
-          chiperForPhrases.classList.remove("fade");
-          chiperForPhrases.scrollIntoView({ behavior: "smooth" });
+          encryptionContainer.classList.remove("fade");
+          encryptionContainer.scrollIntoView({ behavior: "smooth" });
         } else {
-          chiperForPhrases.classList.add("fade");
+          encryptionContainer.classList.add("fade");
+          passwd.value = "";
         }
       });
-
-      const showHidePasswd = document.querySelector(".custom-input .icon");
-      const passwd = document.querySelector(".custom-input__field");
 
       showHidePasswd.addEventListener("click", function () {
         if (passwd.getAttribute("type") == "password") {

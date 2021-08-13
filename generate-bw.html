@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Walletum</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo logo" href="#">
+        <img class="logo__img" src="./images/logo.svg" alt="Logo" />
+        <span class="logo__text">walletum</span>
+      </a>
+      <div class="header__menu menu">
+        <div class="menu__burger burger">
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item lang">
+            <ul class="lang__list">
+              <li class="lang__item">
+                <a class="lang__link" href="#">Ru</a>
+              </li>
+              <li class="lang__item">
+                <a class="lang__link active" href="#">En</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">F.A.Q</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Social</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="main__wrapper">
+          <!-- Генерация brain-кошелька 4/5 шаг -->
+          <form class="form generation">
+            <div class="form__title-group">
+              <h2 class="form__title">Генерация кошелька</h2>
+              <p class="form__subtitle gradient-color">
+                Генерация может занят несколько минут
+              </p>
+            </div>
+            <div class="main-progress">
+              <div class="inner"></div>
+              <div class="number">100%</div>
+              <div class="text">Генерация</div>
+              <div class="circle">
+                <div class="bar left">
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="bar right">
+                  <div class="progress-bar"></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__copyright">
+        © 2020 «Walletum» — path of Calcium Project
+      </div>
+      <div class="footer__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__icon" src="./images/telegram.png" alt="" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__icon" src="./images/twitter.png" alt="" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__icon" src="./images/discord.png" alt="" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__icon" src="./images/facebook.png" alt="" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__icon" src="./images/instagram.png" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script>
+      const numb = document.querySelector(".number");
+      let counter = 0;
+      setInterval(() => {
+        if (counter == 100) {
+          clearInterval();
+          window.location.href = "final-step-bw.html";
+        } else {
+          counter += 1;
+          numb.textContent = counter + "%";
+        }
+      }, 110);
+    </script>
+  </body>
+</html>

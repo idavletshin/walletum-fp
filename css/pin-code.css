@@ -1,0 +1,83 @@
+.pincode-input {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 2rem;
+}
+
+.pincode-input input {
+  height: 3.5rem;
+  width: 2.5rem;
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 700;
+  background: var(--card-bg);
+  text-align: center;
+  border: 0;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.pincode-control {
+  max-width: 15rem;
+  margin: 0 auto 2rem;
+}
+
+.pincode-control__list {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  user-select: none;
+}
+
+.pincode-control__group {
+  display: flex;
+}
+
+.pincode-control__button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0.5rem;
+  color: var(--white);
+  font-size: 2rem;
+  background: var(--card-bg);
+  /* border: 0; */
+  border: 0.125rem solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+
+.pincode-control__button:hover {
+  border: 0.125rem solid var(--purple);
+}
+
+.delete-button {
+  position: relative;
+}
+
+.delete-button::after {
+  position: absolute;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../images/x-circle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* .pincode-control__button:hover:before {
+  position: absolute;
+  top: -0.125rem;
+  bottom: -0.125rem;
+  left: -0.125rem;
+  right: -0.125rem;
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  content: "";
+  z-index: -1;
+  border-radius: 50%;
+} */

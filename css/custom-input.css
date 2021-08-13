@@ -1,0 +1,230 @@
+.text-field-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-field {
+  position: relative;
+}
+
+.text-field__input {
+  width: 100%;
+  padding: 1.25rem 0 0.375rem;
+  color: var(--white);
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+/* Стили для заголовка у поля ввода */
+
+.text-field__input::placeholder {
+  color: transparent;
+}
+
+.text-field__input:placeholder-shown ~ .text-field__label {
+  top: 1.25rem;
+  color: var(--white);
+  font-size: 1rem;
+  cursor: text;
+}
+
+.text-field__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 0.75rem;
+  color: var(--gray);
+}
+
+.text-field__input:focus ~ .text-field__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 0.75rem;
+  color: var(--gray);
+}
+
+/* reset input */
+.text-field__input:required {
+  box-shadow: none;
+}
+
+.text-field__input:invalid {
+  box-shadow: none;
+}
+
+/* *** */
+
+.text-field__input.password {
+  padding: 1.25rem 2rem 0.375rem 0;
+}
+
+/* Стили для бордера у поля ввода */
+
+.text-field__line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.0625rem;
+  width: 100%;
+  background-color: var(--input-border);
+}
+
+.text-field__line.error {
+  height: 0.125rem;
+  background-color: var(--red);
+}
+
+.text-field__line.success {
+  height: 0.125rem;
+  background-color: var(--light-green);
+}
+
+.text-field__input:focus ~ .text-field__line {
+  height: 0.125rem;
+  background-color: var(--light-green);
+}
+
+/* *** */
+
+/* Стили для иконки у поля ввода */
+
+.text-field__icon {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../images/eye.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.text-field__icon.view {
+  background-image: url(../images/eye-off.svg);
+}
+
+/* *** */
+
+/* Стили для текста-подсказки о валидности у поля ввода */
+
+.text-field-helper p {
+  font-size: 0;
+}
+
+.text-field-helper.primary .primary-text {
+  font-size: 0.75rem;
+  line-height: 2;
+}
+.text-field-helper.error .error-text {
+  font-size: 0.75rem;
+  line-height: 2;
+}
+.text-field-helper.success .success-text {
+  font-size: 0.75rem;
+  line-height: 2;
+}
+
+.primary-text {
+  color: var(--gray);
+}
+
+.error-text {
+  color: var(--red);
+}
+
+.success-text {
+  color: var(--light-green);
+}
+
+/* *** */
+
+/* Плавное появление блока создания дополнительного шифра */
+#encryptionContainer {
+  opacity: 1;
+  -webkit-animation: fadeInFromNone 0.4s ease-out;
+  -moz-animation: fadeInFromNone 0.4s ease-out;
+  -o-animation: fadeInFromNone 0.4s ease-out;
+  animation: fadeInFromNone 0.4s ease-out;
+}
+
+#encryptionContainer.fade {
+  display: none;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}

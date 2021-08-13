@@ -7,8 +7,10 @@
 @import "custom-switch.css";
 @import "custom-checkbox.css";
 @import "custom-radio.css";
-@import "custom-input-text.css";
+@import "custom-input.css";
 @import "circular-progress.css";
+@import "pin-code.css";
+@import "qr-code.css";
 
 /* Общие стили для страницы */
 
@@ -38,12 +40,12 @@ body.--scroll-off {
 
 .container {
   max-height: inherit;
-  max-width: 73.125em;
+  max-width: 73.125rem;
   margin: 0 auto;
-  padding: 0 3.5em;
+  padding: 0 3.5rem;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 62rem) {
   body {
     overflow-y: auto;
   }
@@ -54,15 +56,15 @@ body.--scroll-off {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.9375rem) {
   .container {
-    padding: 0 1.5625em;
+    padding: 0 1.5625rem;
   }
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 20.3125rem) {
   .container {
-    padding: 0 1em;
+    padding: 0 1rem;
   }
 }
 
@@ -86,6 +88,13 @@ body.--scroll-off {
   -webkit-text-fill-color: transparent;
 }
 
+.gradient-color-red {
+  color: #ee0979;
+  background: -webkit-linear-gradient(45deg, #ee0979, #ff6a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .main-bg {
   background: var(--main-bg);
 }
@@ -103,20 +112,20 @@ body.--scroll-off {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 3.5em;
+  padding: 2rem 3.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .header,
   .footer {
-    padding: 1.5625em;
+    padding: 1.5625rem;
   }
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 20.3125rem) {
   .header,
   .footer {
-    padding: 1.5625em 1em;
+    padding: 1.5625rem 1rem;
   }
 }
 
@@ -124,12 +133,7 @@ body.--scroll-off {
 
 /* Стили для header */
 
-.header__lang {
-  margin-left: auto;
-  margin-right: 3em;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .header {
     align-items: flex-start;
   }
@@ -149,25 +153,24 @@ body.--scroll-off {
 }
 
 .logo__img {
-  width: 5em;
-  margin-left: -0.9375em;
-  margin-right: 0.5625em;
+  width: 3.75rem;
+  margin-left: -0.6875rem;
+  margin-right: 0.421875rem;
 }
 
 .logo__text {
-  font-size: 1.25em;
   font-family: var(--second-font);
   font-weight: 700;
   line-height: 1.2;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .logo {
-    width: 4em;
+    width: 4rem;
   }
 
   .logo__img {
-    margin-left: -0.5em;
+    margin-left: -0.5rem;
   }
 
   .logo__text {
@@ -188,7 +191,7 @@ body.--scroll-off {
 }
 
 .menu__item:not(:first-child) {
-  margin-left: 3em;
+  margin-left: 3rem;
 }
 
 .lang {
@@ -200,22 +203,22 @@ body.--scroll-off {
 }
 
 .lang__item:not(:first-child) {
-  margin-left: 1em;
+  margin-left: 1rem;
 }
 
 .lang__link {
-  color: #7a7a7a;
+  color: var(--gray);
   font-weight: 700;
   text-decoration: none;
 }
 
 .lang__link:hover {
-  color: #fff;
+  color: var(--white);
 }
 
 .lang__link.active {
-  color: #fff;
-  border-bottom: 0.125em solid #f49c0b;
+  color: var(--white);
+  border-bottom: 0.125rem solid var(--orange);
 }
 
 .menu__link {
@@ -225,11 +228,11 @@ body.--scroll-off {
 
 .menu__link:hover {
   color: var(--pink);
-  text-shadow: 0 0 0.625em var(--pink), 0 0 2.5em var(--pink),
-    0 0 5em var(--pink);
+  text-shadow: 0 0 0.625rem var(--pink), 0 0 2.5rem var(--pink),
+    0 0 5rem var(--pink);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .menu__list {
     position: fixed;
     top: 0%;
@@ -239,7 +242,7 @@ body.--scroll-off {
     align-items: center;
     width: 100%;
     height: 100%;
-    font-size: 1.2em;
+    font-size: 1.25rem;
     background: var(--main-bg);
     opacity: 0;
     transition: all 0.3s linear;
@@ -252,7 +255,7 @@ body.--scroll-off {
   }
 
   .menu__list .menu__item {
-    margin-bottom: 2em;
+    margin-bottom: 2.5rem;
     margin-left: 0;
   }
 }
@@ -263,7 +266,7 @@ body.--scroll-off {
 .main {
   position: relative;
   margin: auto 0;
-  max-height: calc(100vh - 16.25em);
+  max-height: calc(100vh - 16.25rem);
   height: 100%;
 }
 
@@ -281,21 +284,31 @@ body.--scroll-off {
   position: relative;
   display: flex;
   max-height: inherit;
-  max-width: 28.125em;
-  margin-right: 1.25em;
+  max-width: 28.125rem;
+  margin-right: 1.25rem;
+}
+
+.main__left-box {
+  display: flex;
+  max-width: 20rem;
+  width: 100%;
 }
 
 .main__right {
   display: flex;
-  max-height: 45em;
-  max-width: 28.125em;
+  max-height: 45rem;
+  max-width: 28.125rem;
   margin-left: auto;
   background: var(--card-bg);
-  border-radius: 1em;
+  border-radius: 1rem;
   overflow: hidden;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 62rem) {
+  /* .main {
+    margin: 0;
+  } */
+
   .main,
   .main__right {
     max-height: unset;
@@ -303,22 +316,29 @@ body.--scroll-off {
 
   .main__wrapper {
     flex-direction: column;
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
   }
 
-  .main__wrapper > div[class^="main__"] {
-    margin-bottom: 2.5em;
-  }
+  /* .main__wrapper > div[class^="main__"] {
+    margin-bottom: 2.5rem;
+  } */
 
   .main__left,
   .main__right {
     max-width: unset;
     width: 80%;
-    margin: auto;
+  }
+
+  .main__left {
+    margin: 0 auto 2.5rem;
+  }
+
+  .main__right {
+    margin: 0 auto 2.5rem;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
   .main__left,
   .main__right {
     width: 100%;
@@ -335,43 +355,43 @@ body.--scroll-off {
 }
 
 .form .previous-button {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .form__title-group {
-  margin-bottom: 2.5em;
+  margin-bottom: 2.5rem;
 }
 
 .form__title {
-  margin-bottom: 0.725em;
-  font-size: 1.375em;
+  margin-bottom: 1rem;
+  font-size: 1.375rem;
   font-family: var(--second-font);
   font-weight: 600;
   line-height: 1.2;
 }
 
 .form__subtitle {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   color: var(--gray);
-  font-size: 1em;
+  font-size: 1rem;
   font-family: var(--second-font);
   font-weight: 500;
   line-height: 1.5;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.9375rem) {
   .form .previous-button {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
   }
 
   .form__title {
-    font-size: 1.375em;
+    font-size: 1.375rem;
     text-align: left;
     line-height: 1;
   }
 
   .form__subtitle {
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1.5;
     text-align: left;
   }
@@ -382,51 +402,51 @@ body.--scroll-off {
 /* Выбор кошелька (1 шаг формы), стили для wallet-card*/
 
 .form__wallet-card:not(:last-child) {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .wallet-card {
-  padding: 1.5em 2.5em;
+  padding: 1.5rem 2.5rem;
   background: var(--card-bg);
-  border-radius: 1em;
+  border-radius: 1rem;
   cursor: pointer;
 }
 
 .wallet-card__title {
   display: flex;
   align-items: center;
-  margin-bottom: 0.725em;
-  font-size: 1.375em;
+  margin-bottom: 1rem;
+  font-size: 1.375rem;
   line-height: 1.2;
 }
 
 .wallet-card__text {
   width: 75%;
   color: var(--gray);
-  font-size: 0.875em;
+  font-size: 0.875rem;
   text-align: left;
   line-height: 1.5;
 }
 
 .--yellow-border {
-  border: 0.1875em solid var(--yellow);
+  border: 0.1875rem solid var(--yellow);
 }
 
 .--yellow-border:hover {
-  box-shadow: inset 0 0 0.625em rgba(251, 214, 61, 0.5);
+  box-shadow: inset 0 0 0.0625rem rgba(251, 214, 61, 0.5);
 }
 
 .--blue-border {
-  border: 0.1875em solid var(--blue);
+  border: 0.1875rem solid var(--blue);
 }
 
 .--blue-border:hover {
-  box-shadow: inset 0 0 0.625em rgba(41, 151, 255, 0.5);
+  box-shadow: inset 0 0 0.625rem rgba(41, 151, 255, 0.5);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.9375rem) {
   .wallet-card {
-    padding: 1.5em;
+    padding: 1.5rem;
   }
 
   .wallet-card__text {
@@ -439,7 +459,7 @@ body.--scroll-off {
 /* Создание Seed Wallet, генерация фраз (3 шаг формы) */
 
 .form__seed-phrases {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .seed-phrases__list {
@@ -454,38 +474,61 @@ body.--scroll-off {
   justify-content: center;
   align-items: center;
   width: 23%;
-  margin-bottom: 5px;
-  padding: 3px;
-  font-size: 0.875em;
+  margin-bottom: 0.375rem;
+  padding: 0.1875rem;
+  font-size: 0.875rem;
   background: var(--card-bg);
-  border-radius: 0.5em;
+  border-radius: 0.375rem;
 }
 
 .form .clipboard-button {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
 }
 
 .form__custom-switch-group {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
 }
 
 .form__custom-switch-group > span {
-  width: 90%;
+  width: 80%;
 }
 
-.form__custom-input {
-  margin-bottom: 1.5em;
+.form__text-field-container {
+  margin-bottom: 1.5rem;
 }
 
 .form__custom-checkbox {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.9375rem) {
   .form__custom-switch-group > span,
   .form__custom-checkbox {
-    font-size: 0.875em;
+    font-size: 0.875rem;
   }
+}
+
+/* *** */
+
+/* Стили для шага с генерацией кошелька */
+
+@media screen and (min-width: 320px) {
+  .form.generation .form__title,
+  .form.generation .form__subtitle {
+    text-align: center;
+  }
+
+  .form.generation .main-progress {
+    margin: auto;
+  }
+}
+
+/* *** */
+
+/* Стили для qr-кода */
+
+.form__qr-code {
+  margin-bottom: 1.5rem;
 }
 
 /* *** */
@@ -494,54 +537,53 @@ body.--scroll-off {
 
 .info {
   max-height: inherit;
-  margin: 4em 1.875em;
+  margin: 4rem 1.875rem;
   overflow: hidden;
 }
 
 .info__wrapper {
   height: 100%;
-  padding: 0 1.875em;
+  padding: 0 1.875rem;
   overflow-y: auto;
 }
 
 .info__title {
-  margin-bottom: 2em;
-  font-size: 1.125em;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
   font-weight: 700;
   font-family: var(--second-font);
 }
 
 .info__text:not(:last-child) {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 62rem) {
   .info {
-    margin: 3em 1.275em;
+    margin: 3rem 1.25rem;
   }
 
   .info__wrapper {
-    padding: 0 1.275em;
+    padding: 0 1.25rem;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.9375rem) {
   .info {
-    margin: 2em 0.75em;
+    margin: 2rem 0.75rem;
     text-align: left;
   }
 
   .info__wrapper {
-    padding: 0 0.75em;
+    padding: 0 0.75rem;
   }
 
   .info__title {
-    /* margin-bottom: 2em; */
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   .info__text {
-    font-size: 0.875em;
+    font-size: 0.875rem;
   }
 }
 
@@ -550,7 +592,7 @@ body.--scroll-off {
 /* Стили для footer */
 
 .footer__copyright {
-  font-size: 1.125em;
+  font-size: 1.125rem;
   font-family: var(--second-font);
 }
 
@@ -560,25 +602,25 @@ body.--scroll-off {
 }
 
 .socials__item:not(:last-child) {
-  margin-right: 1.5em;
+  margin-right: 1.5rem;
 }
 
 .socials__icon {
-  min-width: 1.5em;
-  width: 1.5em;
-  min-height: 1.5em;
-  height: 1.5em;
+  min-width: 1.5rem;
+  width: 1.5rem;
+  min-height: 1.5rem;
+  height: 1.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .footer {
     flex-direction: column-reverse;
-    margin-top: 2em;
+    margin-top: 2rem;
   }
 
   .footer__copyright {
-    margin-top: 2.5em;
-    font-size: 0.875em;
+    margin-top: 2.25rem;
+    font-size: 0.875rem;
     text-align: center;
   }
 }
@@ -586,9 +628,10 @@ body.--scroll-off {
 /* *** */
 
 /* Медиазапрос для ретина-дисплеев */
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.25),
-  only screen and (min-width: 768px) and (min-resolution: 192dpi),
-  only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 48rem) and (-webkit-min-device-pixel-ratio: 1.25),
+  only screen and (min-width: 48rem) and (min-resolution: 192dpi),
+  only screen and (min-width: 48rem) and (min-resolution: 2dppx) {
+  html,
   body {
     font-size: 12px;
   }
@@ -599,7 +642,7 @@ body.--scroll-off {
 
   .main__left {
     margin-top: 0;
-    margin-right: 1em;
+    margin-right: 4rem;
   }
 
   .wallet-card__text {
@@ -609,13 +652,13 @@ body.--scroll-off {
 
 /* тестовые стили */
 
-/* @media screen and (min-width: 768px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-width: 768px) and (max-width: 1600px) and (min-resolution: 192dpi),
-  only screen and (min-width: 768px) and (max-width: 1600px) and (min-resolution: 2dppx),
-  only screen and (min-width: 768px) and (max-width: 1600px) and (min-aspect-ratio: 2/1) {
+/* @media screen and (min-width: 48rem) and (max-width: 100rem) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-width: 48rem) and (max-width: 100rem) and (min-resolution: 192dpi),
+  only screen and (min-width: 48rem) and (max-width: 100rem) and (min-resolution: 2dppx),
+  only screen and (min-width: 48rem) and (max-width: 100rem) and (min-aspect-ratio: 2/1) {
 
   body {
-    font-size: 12px;
+    font-size: .75rem;
     overflow-y: auto;
   }
 

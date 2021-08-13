@@ -1,0 +1,13 @@
+.qr-code__image-wrap {
+  max-width: 16.875rem;
+  max-height: 16.875rem;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.qr-code__text {
+  margin: 0.625rem auto;
+  font-size: 0.875rem;
+  text-align: center;
+}
