@@ -1,7 +1,7 @@
 const burger = document.querySelector(".burger");
 const menuList = document.querySelector(".menu__list");
 const body = document.querySelector("body")
-const showHidePasswd = document.querySelector(".text-field__icon");
+const togglePassword = document.querySelector(".text-field__icon");
 const passwd = document.querySelector(".password");
 
 burger.addEventListener('click', () => {
@@ -10,14 +10,11 @@ burger.addEventListener('click', () => {
   body.classList.toggle('--scroll-off')
 })
 
-showHidePasswd.addEventListener("click", function () {
-  if (passwd.getAttribute("type") == "password") {
-    showHidePasswd.classList.remove("view");
-    passwd.setAttribute("type", "text");
-  } else {
-    showHidePasswd.classList.add("view");
-    passwd.setAttribute("type", "password");
-  }
+togglePassword.addEventListener('click', function (e) {
+  // toggle the type attribute
+  const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+  password.setAttribute('type', type);
+  this.classList.toggle("view");
 });
 
 // window.function(){
