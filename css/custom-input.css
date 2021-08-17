@@ -99,6 +99,7 @@
   right: 0.25rem;
   width: 1.5rem;
   height: 1.5rem;
+  background-image: url(../images/eye.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -114,6 +115,7 @@
   right: 0.25rem;
   width: 1.5rem;
   height: 1.5rem;
+  background-image: url(../images/eye-off.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -122,13 +124,13 @@
   cursor: pointer;
 }
 
-.text-field__icon {
+/* .text-field__icon {
   background-image: url(../images/eye.svg);
 }
 
 .text-field__icon.view {
   background-image: url(../images/eye-off.svg);
-}
+} */
 
 /* *** */
 
