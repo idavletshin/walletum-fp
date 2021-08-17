@@ -137,7 +137,7 @@
                     >Ваш шифр Cид-фразы</label
                   >
                   <span class="text-field__line focus"></span>
-                  <span class="text-field__icon"></span>
+                  <span class="text-field__icon view"></span>
                 </div>
                 <div class="text-field-helper primary">
                   <p class="primary-text">
@@ -239,8 +239,6 @@
       const encryptionContainer = document.getElementById(
         "encryptionContainer"
       );
-      const showHidePasswd = document.querySelector(".text-field__icon");
-      const passwd = document.querySelector(".password");
       const nextButton = document.querySelector(".next-button.button");
 
       nextButton.addEventListener("click", () => {
@@ -254,16 +252,6 @@
         } else {
           encryptionContainer.classList.add("fade");
           passwd.value = "";
-        }
-      });
-
-      showHidePasswd.addEventListener("click", function () {
-        if (passwd.getAttribute("type") == "password") {
-          showHidePasswd.classList.add("view");
-          passwd.setAttribute("type", "text");
-        } else {
-          showHidePasswd.classList.remove("view");
-          passwd.setAttribute("type", "password");
         }
       });
     </script>

@@ -77,6 +77,8 @@
                     <input type="text" maxlength="1" id="pincode-3" />
                     <input type="text" maxlength="1" id="pincode-4" />
                     <input type="text" maxlength="1" id="pincode-5" />
+                    <input type="text" maxlength="1" id="pincode-6" />
+                    <input type="text" maxlength="1" id="pincode-7" />
                   </div>
                   <div class="pincode-control">
                     <div class="pincode-control__list">
@@ -258,7 +260,9 @@
         "pincode-2": { previous: "pincode-1", next: "pincode-3" },
         "pincode-3": { previous: "pincode-2", next: "pincode-4" },
         "pincode-4": { previous: "pincode-3", next: "pincode-5" },
-        "pincode-5": { previous: "pincode-4", next: "pincode-5" },
+        "pincode-5": { previous: "pincode-4", next: "pincode-6" },
+        "pincode-6": { previous: "pincode-5", next: "pincode-7" },
+        "pincode-7": { previous: "pincode-6", next: "pincode-7" },
       };
       const pincodeControls = [
         ...document.querySelectorAll(".pincode-control__button"),

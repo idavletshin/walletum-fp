@@ -201,19 +201,5 @@
       </div>
     </footer>
     <script src="./js/main.js"></script>
-    <script>
-      const showHidePasswd = document.querySelector(".text-field__icon");
-      const passwd = document.querySelector(".password");
-
-      showHidePasswd.addEventListener("click", function () {
-        if (passwd.getAttribute("type") == "password") {
-          showHidePasswd.classList.add("view");
-          passwd.setAttribute("type", "text");
-        } else {
-          showHidePasswd.classList.remove("view");
-          passwd.setAttribute("type", "password");
-        }
-      });
-    </script>
   </body>
 </html>

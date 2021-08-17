@@ -31,7 +31,8 @@ body::before {
   background-image: url("../images/background.png");
   background-position: 170% 12%;
   background-repeat: no-repeat;
-  background-size: 80%;
+  /* background-size: 80%; */
+  background-size: cover;
   z-index: -2;
 }
 
@@ -267,7 +268,7 @@ body.--scroll-off {
 .main {
   position: relative;
   margin: auto 0;
-  max-height: calc(100vh - 16.25rem);
+  max-height: calc(100vh - 11.25rem);
   height: 100%;
 }
 
@@ -540,9 +541,17 @@ body.--scroll-off {
 
 /* Стили для pin-code */
 
+.main__left-box .next-button {
+  max-width: 20rem;
+}
+
 @media screen and (max-width: 62rem) {
   .form .pincode {
     max-width: 20rem;
+    margin: auto;
+  }
+
+  .main__left-box .next-button {
     margin: auto;
   }
 }

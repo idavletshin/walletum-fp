@@ -2,6 +2,11 @@
   display: none;
 }
 
+.form {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox 64 */
+}
+
 .form::-webkit-scrollbar {
   display: none;
 }

@@ -184,8 +184,6 @@
         "additionalEncryption"
       );
       const chiperForPhrases = document.getElementById("chiperForPhrases");
-      const showHidePasswd = document.querySelector(".custom-input .icon");
-      const passwd = document.querySelector(".password");
       const nextButton = document.querySelector(".next-button.button");
 
       nextButton.addEventListener("click", () => {
@@ -199,16 +197,6 @@
         } else {
           chiperForPhrases.classList.add("fade");
           passwd.value = "";
-        }
-      });
-
-      showHidePasswd.addEventListener("click", function () {
-        if (passwd.getAttribute("type") == "password") {
-          showHidePasswd.classList.add("view");
-          passwd.setAttribute("type", "text");
-        } else {
-          showHidePasswd.classList.remove("view");
-          passwd.setAttribute("type", "password");
         }
       });
     </script>
