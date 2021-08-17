@@ -92,7 +92,21 @@
 
 /* Стили для иконки у поля ввода */
 
-.text-field__icon,
+.text-field__icon {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
 .text-field__icon.view {
   position: absolute;
   content: "";
@@ -100,7 +114,6 @@
   right: 0.25rem;
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../images/eye.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
