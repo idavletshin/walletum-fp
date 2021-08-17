@@ -109,7 +109,7 @@
 }
 
 .text-field__icon.view {
-  background-image: url(../images/eye-off.svg);
+  background-image: url(../images/eye-off.svg) !important;
 }
 
 /* *** */
