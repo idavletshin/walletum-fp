@@ -518,6 +518,10 @@ body.--scroll-off {
 
 /* Стили для шага с генерацией кошелька */
 
+.form.generation {
+  overflow: hidden;
+}
+
 @media screen and (min-width: 20rem) {
   .form.generation .form__title,
   .form.generation .form__subtitle {
