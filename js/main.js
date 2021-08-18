@@ -15,6 +15,7 @@ for (let i = 0; i < togglePasswordList.length; i++) {
     const currentInput = this.parentNode.querySelector('.text-field__input');
     const currentType = currentInput.getAttribute('type') === 'password' ? 'text' : 'password';
     currentInput.setAttribute('type', currentType);
+    this.classList.toggle("hide");
     this.classList.toggle("view");
   });
 }
