@@ -29,11 +29,6 @@ body::before {
   width: 100vw;
   height: 100vh;
   background: url("../images/background.png") no-repeat 170% 12% / cover;
-  /* background-image: url("../images/background.png"); */
-  /* background-position: 170% 12%; */
-  /* background-repeat: no-repeat; */
-  /* background-size: 80%; */
-  /* background-size: cover; */
   z-index: -2;
   user-select: none;
 }
@@ -55,10 +50,10 @@ body.--scroll-off {
   }
 
   body::before {
-    background-position: center;
-    background-size: cover;
-    /* background-position: 65% -5rem; */
-    /* background-size: 180%; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    background-position: 65% -4rem;
+    background-size: 180%;
   }
 }
 
