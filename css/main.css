@@ -54,8 +54,8 @@ body.--scroll-off {
   }
 
   body::before {
-    background-position: top;
-    background-size: unset;
+    background-position: 65% -5rem;
+    background-size: 180%;
   }
 }
 
