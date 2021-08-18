@@ -307,7 +307,7 @@ body.--scroll-off {
 
 @media screen and (max-width: 62rem) {
   /* .main {
-    margin: 0;
+    height: auto;
   } */
 
   .main,
