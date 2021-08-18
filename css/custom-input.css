@@ -101,12 +101,15 @@
   height: 1.5rem;
   background: url(../images/eye.svg) no-repeat center / cover;
   transform: translateY(-50%);
-  transition: all 0.2s ease;
+  /* transition: all 0.2s ease; */
   cursor: pointer;
+  opacity: 1;
 }
 
 .text-field__icon.view {
+  content: "";
   background: url(../images/eye-off.svg) no-repeat center / cover;
+  opacity: 1;
 }
 
 /* *** */
