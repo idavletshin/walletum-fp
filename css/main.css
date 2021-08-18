@@ -54,8 +54,8 @@ body.--scroll-off {
   }
 
   body::before {
-    background-position: center;
-    background-size: cover;
+    background-position: top;
+    background-size: unset;
   }
 }
 

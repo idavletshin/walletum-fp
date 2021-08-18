@@ -100,10 +100,6 @@
   width: 1.5rem;
   height: 1.5rem;
   background: url(../images/eye.svg) no-repeat center / cover;
-  /* background-image: url(../images/eye.svg); */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  /* background-position: center; */
   transform: translateY(-50%);
   transition: all 0.2s ease;
   cursor: pointer;
@@ -111,7 +107,6 @@
 
 .text-field__icon.view {
   background: url(../images/eye-off.svg) no-repeat center / cover;
-  /* background-image: url(../images/eye-off.svg); */
 }
 
 /* *** */
