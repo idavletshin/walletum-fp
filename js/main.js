@@ -3,20 +3,20 @@ const menuList = document.querySelector(".menu__list");
 const body = document.querySelector("body")
 const togglePasswordList = document.querySelectorAll(".text-field__icon");
 const typeList = document.querySelectorAll(".password");
-const document = document.documentElement;
+// const document = document.documentElement;
 
 /* Function to open fullscreen mode */
-function openFullscreen() {
-  if (document.requestFullscreen) {
-    document.requestFullscreen();
-  } else if (document.mozRequestFullScreen) { /* Firefox */
-    document.mozRequestFullScreen();
-  } else if (document.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-    document.webkitRequestFullscreen();
-  } else if (document.msRequestFullscreen) { /* IE/Edge */
-    document.msRequestFullscreen();
-  }
-}
+// function openFullscreen() {
+//   if (document.requestFullscreen) {
+//     document.requestFullscreen();
+//   } else if (document.mozRequestFullScreen) { /* Firefox */
+//     document.mozRequestFullScreen();
+//   } else if (document.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+//     document.webkitRequestFullscreen();
+//   } else if (document.msRequestFullscreen) { /* IE/Edge */
+//     document.msRequestFullscreen();
+//   }
+// }
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('active')
