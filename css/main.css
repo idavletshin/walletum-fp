@@ -461,6 +461,20 @@ body.--scroll-off {
 
 /* *** */
 
+/* Создание Seed Wallet (2 шаг формы) */
+
+@media screen and (max-width: 62rem) {
+  .main__wrapper.create-sw {
+    overflow: hidden;
+  }
+
+  .main__wrapper.create-sw .main__right {
+    display: none;
+  }
+}
+
+/* *** */
+
 /* Создание Seed Wallet, генерация фраз (3 шаг формы) */
 
 .form__seed-phrases {
