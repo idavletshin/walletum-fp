@@ -1,10 +1,21 @@
-window.addEventListener("load", function () { window.scrollTo(0, 0); });
-
 const burger = document.querySelector(".burger");
 const menuList = document.querySelector(".menu__list");
 const body = document.querySelector("body")
 const togglePasswordList = document.querySelectorAll(".text-field__icon");
 const typeList = document.querySelectorAll(".password");
+
+/* Function to open fullscreen mode */
+function openFullscreen() {
+  if (body.requestFullscreen) {
+    body.requestFullscreen();
+  } else if (body.mozRequestFullScreen) { /* Firefox */
+    body.mozRequestFullScreen();
+  } else if (body.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    body.webkitRequestFullscreen();
+  } else if (body.msRequestFullscreen) { /* IE/Edge */
+    body.msRequestFullscreen();
+  }
+}
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('active')
