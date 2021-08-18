@@ -1,3 +1,5 @@
+window.addEventListener("load", function () { window.scrollTo(0, 0); });
+
 const burger = document.querySelector(".burger");
 const menuList = document.querySelector(".menu__list");
 const body = document.querySelector("body")
