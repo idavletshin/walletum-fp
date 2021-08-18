@@ -99,17 +99,19 @@
   right: 0.25rem;
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../images/eye.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url(../images/eye.svg) no-repeat center / cover;
+  /* background-image: url(../images/eye.svg); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-position: center; */
   transform: translateY(-50%);
   transition: all 0.2s ease;
   cursor: pointer;
 }
 
 .text-field__icon.view {
-  background-image: url(../images/eye-off.svg);
+  background: url(../images/eye-off.svg) no-repeat center / cover;
+  /* background-image: url(../images/eye-off.svg); */
 }
 
 /* *** */
