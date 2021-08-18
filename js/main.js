@@ -1,8 +1,8 @@
 const burger = document.querySelector(".burger");
 const menuList = document.querySelector(".menu__list");
 const body = document.querySelector("body")
-const togglePassword = document.querySelector(".text-field__icon");
-const password = document.querySelector(".password");
+const togglePasswordList = document.querySelectorAll(".text-field__icon");
+const typeList = document.querySelectorAll(".password");
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('active')
@@ -10,12 +10,16 @@ burger.addEventListener('click', () => {
   body.classList.toggle('--scroll-off')
 })
 
-togglePassword.addEventListener('click', function () {
-  // toggle the type attribute
-  const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-  password.setAttribute('type', type);
-  this.classList.toggle("view");
-});
+for (let i = 0; i < togglePasswordList.length; i++) {
+  togglePasswordList[i].addEventListener('click', function (event) {
+    const currentInput = this.parentNode.querySelector('.text-field__input');
+    const currentType = currentInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    currentInput.setAttribute('type', currentType);
+    this.classList.toggle("view");
+  });
+}
+
+
 
 // window.function(){
 //   document.getElementsByTagName("body")[0].style.height = window.innerHeight + 'px';
