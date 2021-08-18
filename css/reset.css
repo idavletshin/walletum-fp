@@ -5,7 +5,8 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -26,7 +27,7 @@ svg {
   height: auto;
 }
 
-article>*+* {
+article > * + * {
   margin-top: 1em;
 }
 
@@ -77,13 +78,7 @@ input::-webkit-inner-spin-button {
 
 select,
 textarea,
-input:matches([type="email"],
-  [type="number"],
-  [type="password"],
-  [type="search"],
-  [type="tel"],
-  [type="text"],
-  [type="url"]) {
+input:matches([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]) {
   appearance: none;
 }
 
