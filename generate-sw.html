@@ -233,12 +233,14 @@
     </footer>
     <script src="./js/main.js"></script>
     <script>
+      const seedPhrasesList = document.querySelector(".form__seed-phrases");
       const additionalEncryption = document.getElementById(
         "additionalEncryption"
       );
       const encryptionContainer = document.getElementById(
         "encryptionContainer"
       );
+      const chiperForPhrases = document.getElementById("chiperForPhrases");
       const nextButton = document.querySelector(".next-button.button");
 
       nextButton.addEventListener("click", () => {
@@ -248,7 +250,9 @@
       additionalEncryption.addEventListener("change", function () {
         if (this.checked) {
           encryptionContainer.classList.remove("fade");
-          encryptionContainer.scrollIntoView({ behavior: "smooth" });
+          // encryptionContainer.scrollIntoView({ behavior: "smooth" });
+          chiperForPhrases.focus();
+          seedPhrasesList.scrollIntoView({ behavior: "smooth" });
         } else {
           encryptionContainer.classList.add("fade");
           passwd.value = "";
