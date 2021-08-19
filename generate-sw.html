@@ -251,11 +251,11 @@
         if (this.checked) {
           encryptionContainer.classList.remove("fade");
           // encryptionContainer.scrollIntoView({ behavior: "smooth" });
-          // chiperForPhrases.focus();
+          chiperForPhrases.focus();
           seedPhrasesList.scrollIntoView({ behavior: "smooth" });
         } else {
           encryptionContainer.classList.add("fade");
-          passwd.value = "";
+          chiperForPhrases.value = "";
         }
       });
     </script>
