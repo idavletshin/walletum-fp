@@ -535,6 +535,60 @@ body.--scroll-off {
 
 /* *** */
 
+/* Создание Seed Wallet, ввод фраз (4 шаг формы) */
+
+.form__phrase-numbers {
+  margin-bottom: 1rem;
+}
+
+.phrase-numbers__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  user-select: none;
+}
+
+.phrase-numbers__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31%;
+  margin-bottom: 0.5625rem;
+  padding: 0.375rem 0.1875rem;
+  color: var(--white);
+  font-size: 0.875rem;
+  text-align: center;
+  background: var(--card-bg);
+  border-radius: 0.375rem;
+  outline: none;
+  border: 0.125rem solid transparent;
+  cursor: pointer;
+}
+
+.phrase-numbers__input:focus {
+  border: 0.125rem solid var(--blue);
+  outline: none;
+}
+
+.phrase-numbers__input::placeholder {
+  color: var(--gray);
+  text-align: center;
+}
+
+.phrase-numbers__input:hover::placeholder {
+  color: var(--white);
+}
+
+.phrase-numbers__input:focus::placeholder {
+  opacity: 0;
+}
+
+.phrase-numbers__input:hover {
+  background-color: var(--blue);
+}
+
+/* *** */
+
 /* Стили для шага с генерацией кошелька */
 
 .form.generation {
@@ -550,6 +604,63 @@ body.--scroll-off {
   .form.generation .main-progress {
     margin: auto;
   }
+}
+
+/* *** */
+
+/* Стили для входа в Seed Wallet, ввод фраз (1 шаг) */
+
+.seed-phrases__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23%;
+  height: 1.6875rem;
+  margin-bottom: 0.375rem;
+  padding: 0.1875rem;
+  color: var(--white);
+  font-size: 0.875rem;
+  text-align: center;
+  background: var(--card-bg);
+  border-radius: 0.375rem;
+  border: 0.125rem solid transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.seed-phrases__input:focus {
+  border: 0.125rem solid var(--blue);
+  outline: none;
+}
+
+.seed-phrases__input::placeholder {
+  color: var(--gray);
+  text-align: center;
+}
+
+.seed-phrases__input:hover::placeholder {
+  color: var(--white);
+}
+
+.seed-phrases__input:focus::placeholder {
+  opacity: 0;
+}
+
+.seed-phrases__input:hover {
+  background-color: var(--blue);
+}
+
+.text-field__paste {
+  position: absolute;
+  top: 50%;
+  right: 0.25rem;
+  color: var(--blue);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transform: translateY(-17%);
+  cursor: pointer;
+  user-select: none;
 }
 
 /* *** */

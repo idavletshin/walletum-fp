@@ -51,40 +51,96 @@
     <main class="main">
       <div class="container">
         <div class="main__wrapper">
-          <!-- Выбор кошелька 1 шаг -->
+          <!-- Вход с помощью file-wallet 3 шаг -->
           <div class="main__left">
             <form action="#" class="form">
               <!-- <button class="previous-button button" type="button">
                 <img src="./images/vector.png" alt="previous button" />
-                <span class="previous-button__text">Шаг 1 из 5</span>
+                <span class="previous-button__text">Шаг 3 из 5</span>
               </button> -->
-              <a class="previous-button button" href="#">
+
+              <!-- Временный вариант в виде ссылки -->
+              <a
+                class="previous-button button"
+                href="entry-fw-second-page.html"
+              >
                 <img src="./images/vector.png" alt="previous button" />
-                <span class="previous-button__text">Шаг 1 из 5</span>
+                <span class="previous-button__text">Шаг 3 из 4</span>
               </a>
+              <!-- *** -->
               <div class="form__title-group">
-                <h2 class="form__title">Создать кошелек</h2>
+                <h2 class="form__title">Войти в File Wallet</h2>
                 <p class="form__subtitle gradient-color">
-                  Зашифруйте свой аккаунт для этого устройства паролем
+                  Загрузите свой Backup файл кошелька, который находится в
+                  «Настройки» - «Скачать Backup файл»
                 </p>
               </div>
-              <div class="form__wallet-card wallet-card --yellow-border">
-                <h3 class="wallet-card__title">Seed-Wallet</h3>
-                <p class="wallet-card__text">
-                  К каждому варианту будет какой-то небольшой поясняющий текст
-                  примерно такого размера.
-                </p>
+
+              <div class="form__file-upload file-upload">
+                <input class="visually-hidden" type="file" id="file" />
+                <label for="file">
+                  <img src="./images/paperclip.svg" alt="paperclip" />
+                  <span>Выберите файл на своем устройстве</span>
+                </label>
               </div>
-              <div class="form__wallet-card wallet-card --blue-border">
-                <h3 class="wallet-card__title">Brain Wallet</h3>
-                <p class="wallet-card__text">
-                  К каждому варианту будет какой-то небольшой поясняющий текст
-                  примерно такого размера.
-                </p>
+
+              <div class="form__text-field-container text-field-container">
+                <div class="text-field">
+                  <input
+                    id="password"
+                    class="text-field__input password"
+                    type="password"
+                    placeholder="Пароль для расшифровки файла"
+                  />
+                  <label for="password" class="text-field__label"
+                    >Пароль для расшифровки файла</label
+                  >
+                  <!-- no class / error / success -->
+                  <span class="text-field__line"></span>
+                  <span class="text-field__icon"></span>
+                </div>
+                <!-- primary / error / success -->
+                <div class="text-field-helper primary">
+                  <p class="primary-text">
+                    Minimum length is 8 character but longer is better
+                  </p>
+                  <p class="error-text">Error</p>
+                  <p class="success-text">Success</p>
+                </div>
               </div>
+              <div class="form__text-field-container text-field-container">
+                <div class="text-field">
+                  <input
+                    id="accountTitle"
+                    class="text-field__input"
+                    type="text"
+                    placeholder="Account title"
+                  />
+                  <label for="accountTitle" class="text-field__label"
+                    >Account title</label
+                  >
+                  <!-- no class / error / success -->
+                  <span class="text-field__line"></span>
+                </div>
+                <!-- primary / error / success -->
+                <div class="text-field-helper primary">
+                  <p class="primary-text">
+                    Minimum length is 8 character but longer is better
+                  </p>
+                  <p class="error-text">Error</p>
+                  <p class="success-text">Success</p>
+                </div>
+              </div>
+
+              <button
+                class="next-button button --blue jc-space-between"
+                type="button"
+              >
+                Продолжить
+                <img src="./images/vector.png" alt="previous button" />
+              </button>
             </form>
           </div>
-          <!-- *** -->
           <div class="main__right">
             <div class="info">
               <div class="info__wrapper">
@@ -157,15 +213,10 @@
     </footer>
     <script src="./js/main.js"></script>
     <script>
-      const seedWallet = document.querySelector(".wallet-card.--yellow-border");
-      const brainWallet = document.querySelector(".wallet-card.--blue-border");
+      const nextButton = document.querySelector(".next-button.button");
 
-      seedWallet.addEventListener("click", () => {
-        window.location.href = "create-sw.html";
-      });
-
-      brainWallet.addEventListener("click", () => {
-        window.location.href = "create-bw-first-page.html";
+      nextButton.addEventListener("click", () => {
+        window.location.href = "entry-fw-final-page.html";
       });
     </script>
   </body>

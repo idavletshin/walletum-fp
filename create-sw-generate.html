@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo logo" href="#">
+      <a class="header__logo logo" href="/">
         <img class="logo__img" src="./images/logo.svg" alt="Logo" />
         <span class="logo__text">walletum</span>
       </a>
@@ -51,7 +51,7 @@
     <main class="main">
       <div class="container">
         <div class="main__wrapper">
-          <!-- Проверка фразы seed-кошелька 4 шаг -->
+          <!-- Генерация seed-кошелька 3 шаг -->
           <div class="main__left">
             <form action="#" class="form">
               <!-- <button class="previous-button button" type="button">
@@ -60,18 +60,16 @@
               </button> -->
 
               <!-- Временный вариант в виде ссылки -->
-              <a class="previous-button button" href="generate-sw.html">
+              <a class="previous-button button" href="create-sw.html">
                 <img src="./images/vector.png" alt="previous button" />
-                <span class="previous-button__text">Шаг 4 из 5</span>
+                <span class="previous-button__text">Шаг 3 из 5</span>
               </a>
               <!-- *** -->
               <div class="form__title-group">
-                <h2 class="form__title">Проверить seed-фразу</h2>
-                <p class="form__subtitle gradient-color">
-                  Введите 2, 9, 10 слово вашей seed-фразы
-                </p>
+                <h2 class="form__title">Генерация кошелька</h2>
+                <p class="form__subtitle gradient-color">Ваш новый Seed-Ключ</p>
               </div>
-              <!-- <div class="form__seed-phrases">
+              <div class="form__seed-phrases">
                 <ul class="seed-phrases__list">
                   <li class="seed-phrases__item">canyon</li>
                   <li class="seed-phrases__item">purity</li>
@@ -98,9 +96,64 @@
                   <li class="seed-phrases__item">immense2</li>
                   <li class="seed-phrases__item">lonely2</li>
                 </ul>
-              </div> -->
+              </div>
+              <button class="clipboard-button button" type="button">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 16H6C5.46957 16 4.96086 15.7893 4.58579 15.4142C4.21071 15.0391 4 14.5304 4 14V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H14C14.5304 4 15.0391 4.21071 15.4142 4.58579C15.7893 4.96086 16 5.46957 16 6V8M10 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V10C20 9.46957 19.7893 8.96086 19.4142 8.58579C19.0391 8.21071 18.5304 8 18 8H10C9.46957 8 8.96086 8.21071 8.58579 8.58579C8.21071 8.96086 8 9.46957 8 10V18C8 18.5304 8.21071 19.0391 8.58579 19.4142C8.96086 19.7893 9.46957 20 10 20Z"
+                    stroke="#2997FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Скопировать фразу в буфер
+              </button>
+              <div class="form__custom-switch-group custom-switch-group">
+                <span>Использовать дополнительное шифрование</span>
+                <label class="custom-switch">
+                  <input id="additionalEncryption" type="checkbox" />
+                  <span class="custom-slider round"></span>
+                </label>
+              </div>
+              <div
+                id="encryptionContainer"
+                class="form__text-field-container text-field-container fade"
+              >
+                <div class="text-field">
+                  <input
+                    id="chiperForPhrases"
+                    class="text-field__input password"
+                    type="password"
+                    placeholder="Ваш шифр Cид-фразы"
+                  />
+                  <label for="chiperForPhrases" class="text-field__label"
+                    >Ваш шифр Cид-фразы</label
+                  >
+                  <span class="text-field__line focus"></span>
+                  <span class="text-field__icon"></span>
+                </div>
+                <div class="text-field-helper primary">
+                  <p class="primary-text">
+                    Minimum length is 8 character but longer is better
+                  </p>
+                  <p class="error-text">Error</p>
+                  <p class="success-text">Success</p>
+                </div>
+              </div>
+              <label class="form__custom-checkbox custom-checkbox">
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+                Я сохранил шифр и фразу
+              </label>
               <button
-                class="next-button button --black jc-space-between"
+                class="next-button button --blue jc-space-between"
                 type="button"
               >
                 Продолжить
@@ -180,23 +233,29 @@
     </footer>
     <script src="./js/main.js"></script>
     <script>
+      const seedPhrasesList = document.querySelector(".form__seed-phrases");
       const additionalEncryption = document.getElementById(
         "additionalEncryption"
+      );
+      const encryptionContainer = document.getElementById(
+        "encryptionContainer"
       );
       const chiperForPhrases = document.getElementById("chiperForPhrases");
       const nextButton = document.querySelector(".next-button.button");
 
       nextButton.addEventListener("click", () => {
-        window.location.href = "final-step-sw.html";
+        window.location.href = "create-sw-phrase-check.html";
       });
 
       additionalEncryption.addEventListener("change", function () {
         if (this.checked) {
-          chiperForPhrases.classList.remove("fade");
-          chiperForPhrases.scrollIntoView({ behavior: "smooth" });
+          encryptionContainer.classList.remove("fade");
+          // encryptionContainer.scrollIntoView({ behavior: "smooth" });
+          // chiperForPhrases.focus();
+          seedPhrasesList.scrollIntoView({ behavior: "smooth" });
         } else {
-          chiperForPhrases.classList.add("fade");
-          passwd.value = "";
+          encryptionContainer.classList.add("fade");
+          chiperForPhrases.value = "";
         }
       });
     </script>

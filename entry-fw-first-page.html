@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo logo" href="#">
+      <a class="header__logo logo" href="/">
         <img class="logo__img" src="./images/logo.svg" alt="Logo" />
         <span class="logo__text">walletum</span>
       </a>
@@ -51,7 +51,7 @@
     <main class="main">
       <div class="container">
         <div class="main__wrapper">
-          <!-- Создание brain-кошелька 3 шаг -->
+          <!-- Вход с помощью file-wallet 1 шаг -->
           <div class="main__left">
             <form action="#" class="form">
               <!-- <button class="previous-button button" type="button">
@@ -60,50 +60,25 @@
               </button> -->
 
               <!-- Временный вариант в виде ссылки -->
-              <a class="previous-button button" href="scan-qr.html">
+              <a class="previous-button button" href="entry-sw-final.html">
                 <img src="./images/vector.png" alt="previous button" />
-                <span class="previous-button__text">Шаг 2 из 3</span>
+                <span class="previous-button__text">Шаг 1 из 4</span>
               </a>
               <!-- *** -->
               <div class="form__title-group">
-                <h2 class="form__title">Войти по QR-коду</h2>
-                <!-- <p class="form__subtitle gradient-color">
-                  Если у вас есть активная сесссия на другом устройстве, то
-                  перейдите в раздел «Настройки» и откройте «Совместное
-                  использование»
-                </p> -->
+                <h2 class="form__title">Войти в File Wallet</h2>
+                <p class="form__subtitle gradient-color">
+                  Загрузите свой Backup файл кошелька, который находится в
+                  «Настройки» - «Скачать Backup файл»
+                </p>
               </div>
 
-              <div class="form__qr-code">
-                <div class="qr-code__image-wrap">
-                  <img src="./images/qr-code.png" alt="qr-code" />
-                </div>
-                <p class="qr-code__text">Сканируйте QR-код</p>
-              </div>
-
-              <div class="form__text-field-container text-field-container">
-                <div class="text-field">
-                  <input
-                    id="password"
-                    class="text-field__input password"
-                    type="password"
-                    placeholder="Введите одноразовый ключ"
-                  />
-                  <label for="password" class="text-field__label"
-                    >Введите одноразовый ключ</label
-                  >
-                  <!-- no class / error / success -->
-                  <span class="text-field__line"></span>
-                  <span class="text-field__icon"></span>
-                </div>
-                <!-- primary / error / success -->
-                <div class="text-field-helper primary">
-                  <p class="primary-text">
-                    Minimum length is 8 character but longer is better
-                  </p>
-                  <p class="error-text">Error</p>
-                  <p class="success-text">Success</p>
-                </div>
+              <div class="form__file-upload file-upload">
+                <input class="visually-hidden" type="file" id="file" />
+                <label for="file">
+                  <img src="./images/paperclip.svg" alt="paperclip" />
+                  <span>Выберите файл на своем устройстве</span>
+                </label>
               </div>
 
               <button
@@ -126,6 +101,23 @@
                   Здесь вы можете решить, сохранять ли аккаунт на этом
                   устройтстве. Если вы хотите пользоваться кошельком достаточно
                   часто, то следует активировать данную функцию.
+                </p>
+                <p class="info__text">
+                  Вы сохраните аккаунт в кэше вашего браузера/устройства.
+                  Потерять доступ от него не страшно. Это просто способ связать
+                  ваш браузер/устроство с вашим кошельком в Walletum. Связку
+                  логин/пароль
+                  <span class="blue-color">запоминает только</span> ваше текущее
+                  устройство, мы не имеем доступа к этой информации и никак не
+                  можем повлиять на её изменения. Вы можете задавать разные
+                  связки логина и пароля для доступа к вашему кошельку Walletum
+                  в каждом из ваших устройств.
+                </p>
+                <p class="info__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                  doloribus deleniti in recusandae culpa numquam inventore
+                  laboriosam delectus, repellat nobis sapiente, perspiciatis
+                  alias laborum dolores sunt nihil neque illum tempora!
                 </p>
               </div>
             </div>
@@ -173,7 +165,7 @@
       const nextButton = document.querySelector(".next-button.button");
 
       nextButton.addEventListener("click", () => {
-        window.location.href = "final-step-qr.html";
+        window.location.href = "entry-fw-second-page.html";
       });
     </script>
   </body>

@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo logo" href="#">
+      <a class="header__logo logo" href="/">
         <img class="logo__img" src="./images/logo.svg" alt="Logo" />
         <span class="logo__text">walletum</span>
       </a>
@@ -51,7 +51,7 @@
     <main class="main">
       <div class="container">
         <div class="main__wrapper">
-          <!-- Создание brain-кошелька 2 шаг -->
+          <!-- Генерация seed-кошелька 3 шаг -->
           <div class="main__left">
             <form action="#" class="form">
               <!-- <button class="previous-button button" type="button">
@@ -60,32 +60,178 @@
               </button> -->
 
               <!-- Временный вариант в виде ссылки -->
-              <a class="previous-button button" href="index.html">
+              <a class="previous-button button" href="create-sw-final.html">
                 <img src="./images/vector.png" alt="previous button" />
-                <span class="previous-button__text">Шаг 2 из 5</span>
+                <span class="previous-button__text">Шаг 1 из 2</span>
               </a>
               <!-- *** -->
               <div class="form__title-group">
-                <h2 class="form__title">Создать Brain Wallet</h2>
-                <p class="form__subtitle gradient-color">
-                  Please, be careful when choosing account's title. It is
-                  displayed in the Accounts List on wallet startup.
-                </p>
+                <h2 class="form__title">Войти в Seed Wallet</h2>
+                <p class="form__subtitle gradient-color">Ваш новый Seed-Ключ</p>
               </div>
+              <button class="clipboard-button button" type="button">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 16H6C5.46957 16 4.96086 15.7893 4.58579 15.4142C4.21071 15.0391 4 14.5304 4 14V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H14C14.5304 4 15.0391 4.21071 15.4142 4.58579C15.7893 4.96086 16 5.46957 16 6V8M10 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V10C20 9.46957 19.7893 8.96086 19.4142 8.58579C19.0391 8.21071 18.5304 8 18 8H10C9.46957 8 8.96086 8.21071 8.58579 8.58579C8.21071 8.96086 8 9.46957 8 10V18C8 18.5304 8.21071 19.0391 8.58579 19.4142C8.96086 19.7893 9.46957 20 10 20Z"
+                    stroke="#2997FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Вставить из буфера обмена
+              </button>
+              <div class="form__seed-phrases">
+                <div class="seed-phrases__list">
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="1"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="2"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="3"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="4"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="5"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="6"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="7"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="8"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="9"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="10"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="11"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="12"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="13"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="14"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="15"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="16"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="17"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="18"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="19"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="20"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="21"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="22"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="23"
+                  />
+                  <input
+                    class="seed-phrases__input"
+                    type="password"
+                    placeholder="24"
+                  />
+                </div>
+              </div>
+
+              <label class="form__custom-checkbox custom-checkbox">
+                <input id="showPhrases" type="checkbox" />
+                <span class="checkmark"></span>
+                Показать секретную фразу
+              </label>
+
               <div class="form__text-field-container text-field-container">
                 <div class="text-field">
                   <input
-                    id="username"
-                    class="text-field__input password"
+                    id="password"
+                    class="text-field__input paste-password"
                     type="password"
-                    placeholder="Username"
+                    placeholder="Ключ шифрования Seed-Wallet"
                   />
-                  <label for="username" class="text-field__label"
-                    >Username</label
+                  <label for="password" class="text-field__label"
+                    >Ключ шифрования Seed-Wallet</label
                   >
                   <!-- no class / error / success -->
                   <span class="text-field__line"></span>
-                  <span class="text-field__icon"></span>
+                  <span class="text-field__paste">Вставить</span>
                 </div>
                 <!-- primary / error / success -->
                 <div class="text-field-helper primary">
@@ -178,9 +324,20 @@
     <script src="./js/main.js"></script>
     <script>
       const nextButton = document.querySelector(".next-button.button");
+      const seedPhrasesList = document.querySelectorAll(".seed-phrases__input");
+      const showPhrases = document.getElementById("showPhrases");
+
+      for (let i = 0; i < seedPhrasesList.length; i++) {
+        showPhrases.addEventListener("change", function (event) {
+          const currentInput = seedPhrasesList[i];
+          const currentType =
+            currentInput.getAttribute("type") === "text" ? "password" : "text";
+          currentInput.setAttribute("type", currentType);
+        });
+      }
 
       nextButton.addEventListener("click", () => {
-        window.location.href = "create-bw-sp.html";
+        window.location.href = "entry-sw-final.html";
       });
     </script>
   </body>
