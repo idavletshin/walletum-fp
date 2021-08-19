@@ -18,6 +18,13 @@ const typeList = document.querySelectorAll(".password");
 //   }
 // }
 
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    // This hides the address bar:
+    window.scrollTo(0, 1);
+  }, 0);
+});
+
 burger.addEventListener('click', () => {
   burger.classList.toggle('active')
   menuList.classList.toggle('active')
