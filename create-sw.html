@@ -201,17 +201,14 @@
       const circumference = 2 * Math.PI * radius;
       let percent = 0;
 
-      circle.style.strokeDasharray = `${circumference} ${circumference}`;
+      circle.style.strokeDasharray = `${circumference} 1000`;
       circle.style.strokeDashoffset = circumference;
 
       function setProgress(num) {
-        const offset = circumference - (num / 100) * circumference;
-        circle.style.strokeDashoffset = offset;
+        circle.style.strokeDashoffset = circumference * (1 - percent / 100);
       }
 
       progressWrap.onmousemove = function () {
-        // document.querySelector("body").classList.add("stop-scrolling");
-
         setProgress((percent += 0.5));
         if (percent === 100) {
           percent = 0;
@@ -219,23 +216,13 @@
         }
       };
 
-      // progressWrap.onmouseleave = function () {
-      //   document.querySelector("body").classList.remove("stop-scrolling");
-      // };
-
       progressWrap.ontouchmove = function () {
-        // document.querySelector("body").classList.add("stop-scrolling");
-
         setProgress((percent += 1));
         if (percent === 100) {
           percent = 0;
           window.location.href = "generate-sw.html";
         }
       };
-
-      // progressWrap.ontouchleave = function () {
-      //   document.querySelector("body").classList.remove("stop-scrolling");
-      // };
     </script>
   </body>
 </html>
