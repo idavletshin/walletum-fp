@@ -1,3 +1,7 @@
+.progress {
+  touch-action: none;
+}
+
 .progress-ring__circle {
   transform-origin: center;
   transform: rotate(-90deg);
