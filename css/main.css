@@ -306,6 +306,10 @@ body.--scroll-off {
 }
 
 @media screen and (max-width: 62rem) {
+  /* .main {
+    height: auto;
+  } */
+
   .main,
   .main__right {
     max-height: unset;
@@ -339,7 +343,7 @@ body.--scroll-off {
   }
 }
 
-@media screen and (max-width: 47.9375rem) {
+@media screen and (max-width: 48rem) {
   .main {
     margin-top: 0;
   }
