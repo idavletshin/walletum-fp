@@ -306,10 +306,6 @@ body.--scroll-off {
 }
 
 @media screen and (max-width: 62rem) {
-  /* .main {
-    height: auto;
-  } */
-
   .main,
   .main__right {
     max-height: unset;
@@ -340,6 +336,12 @@ body.--scroll-off {
 
   .main__right {
     margin: 0 auto 2.5rem;
+  }
+}
+
+@media screen and (max-width: 47.9375rem) {
+  .main {
+    margin-top: 0;
   }
 }
 
@@ -664,7 +666,8 @@ body.--scroll-off {
 @media screen and (max-width: 48rem) {
   .footer {
     flex-direction: column-reverse;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    margin-top: 0;
   }
 
   .footer__copyright {
