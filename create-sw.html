@@ -51,7 +51,7 @@
 
     <main class="main">
       <div class="container">
-        <div class="main__wrapper create-sw">
+        <div class="main__wrapper">
           <!-- Создание seed-кошелька 2 шаг -->
           <div class="main__left">
             <form action="#" class="form">
@@ -70,6 +70,17 @@
                 </p>
               </div>
               <div class="progress">
+                <!-- <div class="inner"></div>
+                <div class="number">100%</div>
+                <div class="text">Генерация</div>
+                <div class="circle">
+                  <div class="bar left">
+                    <div class="progress-bar"></div>
+                  </div>
+                  <div class="bar right">
+                    <div class="progress-bar"></div>
+                  </div>
+                </div> -->
                 <svg
                   class="progress-ring"
                   viewBox="0 0 110 110"
@@ -199,7 +210,7 @@
       }
 
       progressWrap.onmousemove = function () {
-        document.querySelector("body").classList.add("stop-scrolling");
+        // document.querySelector("body").classList.add("stop-scrolling");
 
         setProgress((percent += 0.5));
         if (percent === 100) {
@@ -208,12 +219,12 @@
         }
       };
 
-      progressWrap.onmouseleave = function () {
-        document.querySelector("body").classList.remove("stop-scrolling");
-      };
+      // progressWrap.onmouseleave = function () {
+      //   document.querySelector("body").classList.remove("stop-scrolling");
+      // };
 
       progressWrap.ontouchmove = function () {
-        document.querySelector("body").classList.add("stop-scrolling");
+        // document.querySelector("body").classList.add("stop-scrolling");
 
         setProgress((percent += 1));
         if (percent === 100) {
@@ -222,9 +233,9 @@
         }
       };
 
-      progressWrap.ontouchleave = function () {
-        document.querySelector("body").classList.remove("stop-scrolling");
-      };
+      // progressWrap.ontouchleave = function () {
+      //   document.querySelector("body").classList.remove("stop-scrolling");
+      // };
     </script>
   </body>
 </html>

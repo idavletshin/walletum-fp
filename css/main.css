@@ -72,11 +72,11 @@ body.--scroll-off {
 /* *** */
 
 /* Отключение скролла */
-
+/* 
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
-}
+} */
 
 /* *** */
 
@@ -469,7 +469,7 @@ body.--scroll-off {
 
 /* Создание Seed Wallet (2 шаг формы) */
 
-@media screen and (max-width: 62rem) {
+/* @media screen and (max-width: 62rem) {
   .main__wrapper.create-sw {
     overflow: hidden;
   }
@@ -477,7 +477,7 @@ body.--scroll-off {
   .main__wrapper.create-sw .main__right {
     display: none;
   }
-}
+} */
 
 /* *** */
 

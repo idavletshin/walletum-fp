@@ -9,9 +9,9 @@
 }
 
 .main-progress {
+  position: relative;
   height: 18.125rem;
   width: 18.125rem;
-  position: relative;
 }
 .main-progress .inner {
   position: absolute;
@@ -53,7 +53,7 @@
   -webkit-border-radius: 100%;
   clip: rect(0rem, 18.125rem, 18.125rem, 9.0625rem);
 }
-.circle .bar .progress-bar {
+.main-progress .circle .bar .progress-bar {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -61,7 +61,7 @@
   clip: rect(0rem, 9.0625rem, 18.125rem, 0rem);
   background: var(--purple);
 }
-.circle .left .progress-bar {
+.main-progress .circle .left .progress-bar {
   z-index: 1;
   animation: left 5.5s linear both;
 }
@@ -70,11 +70,11 @@
     transform: rotate(180deg);
   }
 }
-.circle .right {
+.main-progress .circle .right {
   transform: rotate(180deg);
   z-index: 2;
 }
-.circle .right .progress-bar {
+.main-progress .circle .right .progress-bar {
   animation: right 5.5s linear both;
   animation-delay: 5.5s;
 }
