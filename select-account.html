@@ -49,27 +49,36 @@
     </header>
 
     <main class="main mobile-ma-y">
-      <div class="container">
+      <div class="container mobile-p-0">
         <div class="main__wrapper">
-          <!-- Выбор кошелька 1 шаг -->
-          <div class="main__left-medium">
+          <!-- Выбор аккаунта 2 шаг -->
+          <div class="main__center">
             <form action="#" class="form">
-              <img
-                class="form__main-logo"
-                src="./images/logo.svg"
-                alt="walletum"
-              />
-              <h1 class="form__main-title">Walletum</h1>
-              <div class="form__title-group">
-                <h2 class="form__title">
-                  Некастодиальный мультиблокчейновый кошелек
-                </h2>
-                <p class="form__subtitle gradient-color">
-                  Некастодиальным можно считать криптовалютный кошелек,
-                  сохраняющий за пользователем возможность полностью
-                  контролировать ключи и свои средства.
-                </p>
-              </div>
+              <h2 class="form__title">Сохраненные аккаунты</h2>
+              <button
+                class="purple-button button --black jc-space-between"
+                id="account-1"
+                type="button"
+              >
+                Account Number One
+                <img src="./images/vector.png" alt="previous button" />
+              </button>
+              <button
+                class="purple-button button --black jc-space-between"
+                id="account-2"
+                type="button"
+              >
+                Account Number Two
+                <img src="./images/vector.png" alt="previous button" />
+              </button>
+              <button
+                class="purple-button button --black jc-space-between"
+                id="account-3"
+                type="button"
+              >
+                Account Number Three
+                <img src="./images/vector.png" alt="previous button" />
+              </button>
               <div class="form__action-group">
                 <button
                   class="next-button button --blue jc-center"
@@ -82,8 +91,7 @@
                   type="button"
                 >
                   Создать
-                </button>
-              </div>
+                </butto
             </form>
           </div>
         </div>
@@ -125,17 +133,5 @@
       </div>
     </footer>
     <script src="./js/main.js"></script>
-    <script>
-      const entryButton = document.querySelector(".next-button.button");
-      const createButton = document.querySelector(".transparent-button.button");
-
-      entryButton.addEventListener("click", () => {
-        window.location.href = "select-wallet.html";
-      });
-
-      createButton.addEventListener("click", () => {
-        window.location.href = "create-wallet.html";
-      });
-    </script>
   </body>
 </html>

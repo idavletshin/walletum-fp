@@ -49,41 +49,52 @@
     </header>
 
     <main class="main mobile-ma-y">
-      <div class="container">
+      <div class="container mobile-p-0">
         <div class="main__wrapper">
           <!-- Выбор кошелька 1 шаг -->
-          <div class="main__left-medium">
+          <div class="main__center">
             <form action="#" class="form">
-              <img
-                class="form__main-logo"
-                src="./images/logo.svg"
-                alt="walletum"
-              />
-              <h1 class="form__main-title">Walletum</h1>
-              <div class="form__title-group">
-                <h2 class="form__title">
-                  Некастодиальный мультиблокчейновый кошелек
-                </h2>
-                <p class="form__subtitle gradient-color">
-                  Некастодиальным можно считать криптовалютный кошелек,
-                  сохраняющий за пользователем возможность полностью
-                  контролировать ключи и свои средства.
-                </p>
+              <h2 class="form__title">Войти в кошелек</h2>
+              <div class="form__logo-group">
+                <img
+                  class="form__main-logo"
+                  src="./images/logo.svg"
+                  alt="walletum"
+                />
+                <h3>walletum</h3>
               </div>
-              <div class="form__action-group">
-                <button
-                  class="next-button button --blue jc-center"
-                  type="button"
-                >
-                  Войти
-                </button>
-                <button
-                  class="transparent-button button --transparent jc-center"
-                  type="button"
-                >
-                  Создать
-                </button>
-              </div>
+              <button
+                class="purple-button button --black jc-space-between"
+                id="seed-wallet"
+                type="button"
+              >
+                Seed Wallet
+                <img src="./images/vector.png" alt="previous button" />
+              </button>
+              <button
+                class="purple-button button --black jc-space-between"
+                id="brain-wallet"
+                type="button"
+              >
+                Brain Wallet
+                <img src="./images/vector.png" alt="previous button" />
+              </button>
+              <button
+                class="purple-button button --black jc-space-between"
+                id="file-wallet"
+                type="button"
+              >
+                File Wallet
+                <img src="./images/vector.png" alt="previous button" />
+              </button>
+              <button
+                class="purple-button button --black jc-space-between"
+                id="scan-wallet"
+                type="button"
+              >
+                Сканировать QR-Код
+                <img src="./images/vector.png" alt="previous button" />
+              </button>
             </form>
           </div>
         </div>
@@ -126,15 +137,25 @@
     </footer>
     <script src="./js/main.js"></script>
     <script>
-      const entryButton = document.querySelector(".next-button.button");
-      const createButton = document.querySelector(".transparent-button.button");
+      const seedWallet = document.getElementById("seed-wallet");
+      const brainWallet = document.getElementById("brain-wallet");
+      const fileWallet = document.getElementById("file-wallet");
+      const scanWallet = document.getElementById("scan-wallet");
 
-      entryButton.addEventListener("click", () => {
-        window.location.href = "select-wallet.html";
+      seedWallet.addEventListener("click", () => {
+        window.location.href = "select-account.html";
       });
 
-      createButton.addEventListener("click", () => {
-        window.location.href = "create-wallet.html";
+      brainWallet.addEventListener("click", () => {
+        window.location.href = "select-account.html";
+      });
+
+      fileWallet.addEventListener("click", () => {
+        window.location.href = "select-account.html";
+      });
+
+      scanWallet.addEventListener("click", () => {
+        window.location.href = "select-account.html";
       });
     </script>
   </body>

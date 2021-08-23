@@ -271,14 +271,25 @@ body.--scroll-off {
   height: 100%;
 }
 
+.main.mobile-ma-y {
+  margin: auto 0;
+}
+
 .main__wrapper {
   display: flex;
   max-height: inherit;
 }
 
 .main__left,
+.main__center,
 .main__right {
   flex: 1;
+}
+
+.main__left-medium {
+  display: flex;
+  max-height: inherit;
+  max-width: 37.5rem;
 }
 
 .main__left {
@@ -287,6 +298,15 @@ body.--scroll-off {
   max-height: inherit;
   max-width: 28.125rem;
   margin-right: 1.25rem;
+}
+
+.main__center {
+  position: relative;
+  display: flex;
+  max-height: inherit;
+  max-width: 28.125rem;
+  width: 100%;
+  margin: auto;
 }
 
 .main__left-box {
@@ -343,9 +363,14 @@ body.--scroll-off {
   }
 }
 
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 47.9375rem) {
   .main {
     margin-top: 0;
+  }
+
+  .main__left-medium {
+    width: 100%;
+    margin: auto;
   }
 }
 
@@ -365,8 +390,30 @@ body.--scroll-off {
   overflow-y: auto;
 }
 
+.form__action-group {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.form__action-group button {
+  /* max-width: 35%; */
+  max-width: 13.125rem;
+}
+
+.form__action-group button:not(:last-child) {
+  margin-right: 1.875rem;
+}
+
 .form .previous-button {
   margin-bottom: 2rem;
+}
+
+.form__main-title {
+  margin-bottom: 2.5rem;
+  font-size: 4.5rem;
+  font-family: var(--second-font);
+  font-weight: 500;
+  line-height: 1;
 }
 
 .form__title-group {
@@ -405,6 +452,95 @@ body.--scroll-off {
     font-size: 1rem;
     line-height: 1.5;
     text-align: left;
+  }
+}
+
+/* *** */
+
+/* Главная страница */
+
+.form__main-logo {
+  display: none;
+}
+
+@media screen and (max-width: 47.9375rem) {
+  .form__main-logo {
+    display: block;
+    max-width: 12.5rem;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .form__main-title {
+    font-size: 2rem;
+    text-transform: lowercase;
+    text-align: center;
+  }
+
+  .form__title-group {
+    display: none;
+  }
+  .form__action-group {
+    flex-direction: column-reverse;
+  }
+
+  .form__action-group button {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* *** */
+
+/* Выбор кошелька на главной странице */
+
+.main__center .form__title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.form__logo-group {
+  display: none;
+}
+
+.main__center .form button {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 47.9375rem) {
+  .form__logo-group {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 28.125rem) {
+  .container.mobile-p-0 {
+    padding: 0;
+  }
+
+  .main__center .form button {
+    margin-bottom: 1rem;
+    padding-left: 3.25rem;
+    padding-right: 3.25rem;
+  }
+
+  .purple-button {
+    border-radius: 0;
+  }
+}
+
+/* *** */
+
+/* Выбор аккаунта на главной странице */
+
+@media screen and (max-width: 28.125rem) {
+  .main__center .form__action-group {
+    margin-left: 1.5625rem;
+    margin-right: 1.5625rem;
   }
 }
 

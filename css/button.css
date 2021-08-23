@@ -23,6 +23,22 @@
 
 /* *** */
 
+/* Цвет для кнопок */
+
+.--blue {
+  background: var(--dark-blue);
+}
+
+.--black {
+  background: var(--card-bg);
+}
+
+.--transparent {
+  background: transparent;
+}
+
+/* *** */
+
 /* Стилизация кнопки с шагами (возврата назад) */
 
 .previous-button {
@@ -108,14 +124,6 @@
   transition: background 0.2s ease;
 }
 
-.--blue {
-  background: var(--dark-blue);
-}
-
-.--black {
-  background: var(--card-bg);
-}
-
 .next-button img {
   height: 0.75rem;
   transform: rotate(180deg);
@@ -127,5 +135,50 @@
 
 .next-button:active {
   background: var(--dark-blue);
+}
+/* *** */
+
+/* Стилизация прозрачной кнопки */
+
+.transparent-button {
+  height: 3rem;
+  padding: 0.625rem 1.5rem;
+  color: var(--white);
+  border-radius: 0.5rem;
+  border: 0.0625rem solid var(--white);
+  transition: background 0.2s ease;
+}
+
+.transparent-button:hover {
+  background: var(--blue);
+}
+
+.transparent-button:active {
+  background: transparent;
+}
+
+/* Стилизация фиолетовой кнопки */
+
+.purple-button {
+  height: 3rem;
+  padding: 0.625rem 1.5rem;
+  color: var(--white);
+  border-radius: 0.5rem;
+  transition: background 0.2s ease;
+}
+
+.purple-button img {
+  height: 0.75rem;
+  transform: rotate(180deg);
+}
+
+.purple-button:hover {
+  background: -webkit-linear-gradient(45deg, #6a1cf8, #a114f9);
+}
+
+.purple-button:active,
+.purple-button:focus {
+  background: var(--input-border);
+  outline: none;
 }
 /* *** */
