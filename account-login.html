@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo logo" href="/">
+      <a class="header__logo logo" href="/index.html">
         <img class="logo__img" src="./images/logo.svg" alt="Logo" />
         <span class="logo__text">walletum</span>
       </a>
@@ -49,51 +49,49 @@
     </header>
 
     <main class="main mobile-ma-y">
-      <div class="container mobile-p-0">
+      <div class="container">
         <div class="main__wrapper">
-          <!-- Выбор кошелька 1 шаг -->
+          <!-- Финальный шаг для входа в аккаунт -->
           <div class="main__center">
             <form action="#" class="form">
-              <h2 class="form__title">Войти в кошелек</h2>
-              <div class="form__logo-group">
-                <img
-                  class="form__main-logo"
-                  src="./images/logo.svg"
-                  alt="walletum"
-                />
-                <h3>walletum</h3>
+              <!-- <button class="previous-button button" type="button">
+                <img src="./images/vector.png" alt="previous button" />
+                <span class="previous-button__text">Шаг 3 из 5</span>
+              </button> -->
+
+              <!-- Временный вариант в виде ссылки -->
+              <a class="previous-button button" href="select-account.html">
+                <img src="./images/vector.png" alt="previous button" />
+                <span class="previous-button__text">Назад</span>
+              </a>
+              <!-- *** -->
+              <h2 class="form__title">Account Number One</h2>
+              <div class="form__text-field-container text-field-container">
+                <div class="text-field">
+                  <input
+                    id="password"
+                    class="text-field__input password"
+                    type="password"
+                    placeholder="Password"
+                  />
+                  <label for="password" class="text-field__label"
+                    >Password</label
+                  >
+                  <!-- no class / error / success -->
+                  <span class="text-field__line"></span>
+                  <span class="text-field__icon"></span>
+                </div>
+                <!-- primary / error / success -->
+                <div class="text-field-helper primary">
+                  <p class="primary-text">
+                    Minimum length is 8 character but longer is better
+                  </p>
+                  <p class="error-text">Error</p>
+                  <p class="success-text">Success</p>
+                </div>
               </div>
-              <button
-                class="purple-button button --black jc-space-between"
-                id="seed-wallet"
-                type="button"
-              >
-                Seed Wallet
-                <img src="./images/vector.png" alt="previous button" />
-              </button>
-              <button
-                class="purple-button button --black jc-space-between"
-                id="brain-wallet"
-                type="button"
-              >
-                Brain Wallet
-                <img src="./images/vector.png" alt="previous button" />
-              </button>
-              <button
-                class="purple-button button --black jc-space-between"
-                id="file-wallet"
-                type="button"
-              >
-                File Wallet
-                <img src="./images/vector.png" alt="previous button" />
-              </button>
-              <button
-                class="purple-button button --black jc-space-between"
-                id="scan-wallet"
-                type="button"
-              >
-                Сканировать QR-Код
-                <img src="./images/vector.png" alt="previous button" />
+              <button class="next-button button --blue jc-center" type="button">
+                Перейти в кошелек
               </button>
             </form>
           </div>
@@ -136,27 +134,5 @@
       </div>
     </footer>
     <script src="./js/main.js"></script>
-    <script>
-      const seedWallet = document.getElementById("seed-wallet");
-      const brainWallet = document.getElementById("brain-wallet");
-      const fileWallet = document.getElementById("file-wallet");
-      const scanWallet = document.getElementById("scan-wallet");
-
-      seedWallet.addEventListener("click", () => {
-        window.location.href = "select-account.html";
-      });
-
-      brainWallet.addEventListener("click", () => {
-        window.location.href = "select-account.html";
-      });
-
-      fileWallet.addEventListener("click", () => {
-        window.location.href = "select-account.html";
-      });
-
-      scanWallet.addEventListener("click", () => {
-        window.location.href = "select-account.html";
-      });
-    </script>
   </body>
 </html>

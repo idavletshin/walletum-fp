@@ -496,14 +496,13 @@ body.--scroll-off {
 
 .main__center .form__title {
   margin-bottom: 2.5rem;
-  text-align: center;
 }
 
 .form__logo-group {
   display: none;
 }
 
-.main__center .form button {
+.main__center .form .button__wrap {
   margin-bottom: 1rem;
 }
 
@@ -522,15 +521,15 @@ body.--scroll-off {
     padding: 0;
   }
 
-  .main__center .form button {
+  /* .main__center .form .button__wrap {
     margin-bottom: 1rem;
     padding-left: 3.25rem;
     padding-right: 3.25rem;
-  }
+  } */
 
-  .purple-button {
+  /* .purple-button {
     border-radius: 0;
-  }
+  } */
 }
 
 /* *** */

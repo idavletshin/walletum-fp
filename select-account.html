@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo logo" href="/">
+      <a class="header__logo logo" href="/index.html">
         <img class="logo__img" src="./images/logo.svg" alt="Logo" />
         <span class="logo__text">walletum</span>
       </a>
@@ -49,49 +49,58 @@
     </header>
 
     <main class="main mobile-ma-y">
-      <div class="container mobile-p-0">
+      <div class="container">
         <div class="main__wrapper">
-          <!-- Выбор аккаунта 2 шаг -->
+          <!-- Выбор аккаунта -->
           <div class="main__center">
             <form action="#" class="form">
+              <a class="previous-button button" href="/index.html">
+                <img src="./images/vector.png" alt="previous button" />
+                <span class="previous-button__text">Назад</span>
+              </a>
               <h2 class="form__title">Сохраненные аккаунты</h2>
-              <button
-                class="purple-button button --black jc-space-between"
-                id="account-1"
-                type="button"
-              >
-                Account Number One
-                <img src="./images/vector.png" alt="previous button" />
-              </button>
-              <button
-                class="purple-button button --black jc-space-between"
-                id="account-2"
-                type="button"
-              >
-                Account Number Two
-                <img src="./images/vector.png" alt="previous button" />
-              </button>
-              <button
-                class="purple-button button --black jc-space-between"
-                id="account-3"
-                type="button"
-              >
-                Account Number Three
-                <img src="./images/vector.png" alt="previous button" />
-              </button>
-              <div class="form__action-group">
+              <div class="button__wrap">
                 <button
-                  class="next-button button --blue jc-center"
+                  class="purple-button button --black jc-space-between"
+                  id="account-1"
                   type="button"
                 >
-                  Войти
+                  <!-- <span> Account Number One</span> -->
+                  Account Number One
+                  <img src="./images/vector.png" alt="previous button" />
                 </button>
+                <button class="button-details button --black" type="button">
+                  <img src="./images/more-vertical.png" alt="details" />
+                </button>
+              </div>
+              <div class="button__wrap">
                 <button
-                  class="transparent-button button --transparent jc-center"
+                  class="purple-button button --black jc-space-between"
+                  id="account-2"
                   type="button"
                 >
-                  Создать
-                </butto
+                  <!-- <span>Account Number Two</span> -->
+                  Account Number Two
+                  <img src="./images/vector.png" alt="previous button" />
+                </button>
+                <button class="button-details button --black" type="button">
+                  <img src="./images/more-vertical.png" alt="details" />
+                </button>
+              </div>
+              <div class="button__wrap">
+                <button
+                  class="purple-button button --black jc-space-between"
+                  id="account-3"
+                  type="button"
+                >
+                  <!-- <span>Account Number Three</span> -->
+                  Account Number Three
+                  <img src="./images/vector.png" alt="previous button" />
+                </button>
+                <button class="button-details button --black" type="button">
+                  <img src="./images/more-vertical.png" alt="details" />
+                </button>
+              </div>
             </form>
           </div>
         </div>
@@ -133,5 +142,12 @@
       </div>
     </footer>
     <script src="./js/main.js"></script>
+    <script>
+      const account = document.getElementById("account-1");
+
+      account.addEventListener("click", () => {
+        window.location.href = "account-login.html";
+      });
+    </script>
   </body>
 </html>

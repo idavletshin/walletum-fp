@@ -48,31 +48,55 @@
       </div>
     </header>
 
-    <main class="main">
-      <div class="container">
+    <main class="main mobile-ma-y">
+      <div class="container mobile-p-0">
         <div class="main__wrapper">
-          <!-- Генерация brain-кошелька -->
-          <form class="form generation">
-            <div class="form__title-group">
-              <h2 class="form__title">Генерация кошелька</h2>
-              <p class="form__subtitle gradient-color">
-                Генерация может занят несколько минут
-              </p>
-            </div>
-            <div class="main-progress">
-              <div class="inner"></div>
-              <div class="number">100%</div>
-              <div class="text">Генерация</div>
-              <div class="circle">
-                <div class="bar left">
-                  <div class="progress-bar"></div>
-                </div>
-                <div class="bar right">
-                  <div class="progress-bar"></div>
-                </div>
+          <!-- Выбор кошелька 1 шаг -->
+          <div class="main__center">
+            <form action="#" class="form">
+              <h2 class="form__title">Войти в кошелек</h2>
+              <div class="form__logo-group">
+                <img
+                  class="form__main-logo"
+                  src="./images/logo.svg"
+                  alt="walletum"
+                />
+                <h3>walletum</h3>
               </div>
-            </div>
-          </form>
+              <button
+                class="purple-button button --black jc-space-between"
+                id="seed-wallet"
+                type="button"
+              >
+                Seed Wallet
+                <img src="./images/vector.png" alt="previous button" />
+              </button>
+              <button
+                class="purple-button button --black jc-space-between"
+                id="brain-wallet"
+                type="button"
+              >
+                Brain Wallet
+                <img src="./images/vector.png" alt="previous button" />
+              </button>
+              <button
+                class="purple-button button --black jc-space-between"
+                id="file-wallet"
+                type="button"
+              >
+                File Wallet
+                <img src="./images/vector.png" alt="previous button" />
+              </button>
+              <button
+                class="purple-button button --black jc-space-between"
+                id="scan-wallet"
+                type="button"
+              >
+                Сканировать QR-Код
+                <img src="./images/vector.png" alt="previous button" />
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </main>
@@ -113,17 +137,26 @@
     </footer>
     <script src="./js/main.js"></script>
     <script>
-      const numb = document.querySelector(".number");
-      let counter = 0;
-      setInterval(() => {
-        if (counter == 100) {
-          clearInterval();
-          window.location.href = "create-bw-final.html";
-        } else {
-          counter += 1;
-          numb.textContent = counter + "%";
-        }
-      }, 110);
+      const seedWallet = document.getElementById("seed-wallet");
+      const brainWallet = document.getElementById("brain-wallet");
+      const fileWallet = document.getElementById("file-wallet");
+      const scanWallet = document.getElementById("scan-wallet");
+
+      seedWallet.addEventListener("click", () => {
+        window.location.href = "select-account.html";
+      });
+
+      brainWallet.addEventListener("click", () => {
+        window.location.href = "select-account.html";
+      });
+
+      fileWallet.addEventListener("click", () => {
+        window.location.href = "select-account.html";
+      });
+
+      scanWallet.addEventListener("click", () => {
+        window.location.href = "select-account.html";
+      });
     </script>
   </body>
 </html>

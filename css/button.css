@@ -7,6 +7,7 @@
   border: 0;
   cursor: pointer;
   user-select: none;
+  outline: none;
 }
 
 /* *** */
@@ -182,3 +183,38 @@
   outline: none;
 }
 /* *** */
+
+.button__wrap {
+  display: flex;
+}
+
+.button-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem;
+  width: 3rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+}
+
+.button-details:hover {
+  background: -webkit-linear-gradient(45deg, #6a1cf8, #a114f9);
+}
+
+.button-details:active,
+.button-details:focus {
+  background: var(--input-border);
+  outline: none;
+}
+
+.button-details img {
+  width: 24px;
+  height: 24px;
+}
+
+/* .button span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
