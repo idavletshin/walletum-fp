@@ -502,7 +502,7 @@ body.--scroll-off {
   display: none;
 }
 
-.main__center .form .button__wrap {
+.main__center .form button {
   margin-bottom: 1rem;
 }
 

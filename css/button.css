@@ -184,7 +184,26 @@
 }
 /* *** */
 
-.button__wrap {
+.button-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: -0.75rem;
+}
+
+/* .button-details:hover {
+  background: var(--card-bg);
+  border-radius: 50%;
+} */
+
+.button-details img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* .button__wrap {
   display: flex;
 }
 
@@ -211,7 +230,7 @@
 .button-details img {
   width: 24px;
   height: 24px;
-}
+} */
 
 /* .button span {
   white-space: nowrap;
