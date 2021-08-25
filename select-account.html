@@ -48,47 +48,77 @@
       </div>
     </header>
 
-    <main class="main mobile-ma-y">
+    <main class="main">
       <div class="container">
         <div class="main__wrapper">
           <!-- Выбор аккаунта -->
+
           <div class="main__center">
-            <form action="#" class="form">
+            <div class="main__fixed-header">
               <a class="previous-button button" href="/walletum-fp/">
                 <img src="./images/vector.png" alt="previous button" />
                 <span class="previous-button__text">Назад</span>
               </a>
-              <h2 class="form__title">Сохраненные аккаунты</h2>
-              <button
-                class="purple-button button --black jc-space-between"
-                id="account-1"
-                type="button"
-              >
-                Account Number One
-                <span class="button-details">
-                  <img src="./images/more-vertical.png" alt="details" />
-                </span>
-              </button>
-              <button
-                class="purple-button button --black jc-space-between"
-                id="account-2"
-                type="button"
-              >
-                Account Number Two
-                <span class="button-details">
-                  <img src="./images/more-vertical.png" alt="details" />
-                </span>
-              </button>
-              <button
-                class="purple-button button --black jc-space-between"
-                id="account-3"
-                type="button"
-              >
-                Account Number Three
-                <span class="button-details">
-                  <img src="./images/more-vertical.png" alt="details" />
-                </span>
-              </button>
+              <h2 class="main__title">Сохраненные аккаунты</h2>
+            </div>
+            <form action="#" class="form account-list">
+              <div class="button__box">
+                <button
+                  class="purple-button button --black jc-space-between"
+                  id="account-1"
+                  type="button"
+                >
+                  Account Number One
+                  <img src="./images/vector.png" alt="previous button" />
+                </button>
+                <div class="button-details__box">
+                  <span class="button-details">
+                    <img src="./images/more-vertical.svg" alt="details" />
+                  </span>
+                  <ul class="context-menu">
+                    <li class="context-menu__item logout-icon">Logout</li>
+                    <li class="context-menu__item delete-icon">Delete</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="button__box">
+                <button
+                  class="purple-button button --black jc-space-between"
+                  id="account-2"
+                  type="button"
+                >
+                  Account Number Two
+                  <img src="./images/vector.png" alt="previous button" />
+                </button>
+                <div class="button-details__box">
+                  <span class="button-details">
+                    <img src="./images/more-vertical.svg" alt="details" />
+                  </span>
+                  <ul class="context-menu">
+                    <li class="context-menu__item logout-icon">Logout</li>
+                    <li class="context-menu__item delete-icon">Delete</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="button__box">
+                <button
+                  class="purple-button button --black jc-space-between"
+                  id="account-3"
+                  type="button"
+                >
+                  Account Number Three
+                  <img src="./images/vector.png" alt="previous button" />
+                </button>
+                <div class="button-details__box">
+                  <span class="button-details">
+                    <img src="./images/more-vertical.svg" alt="details" />
+                  </span>
+                  <ul class="context-menu">
+                    <li class="context-menu__item logout-icon">Logout</li>
+                    <li class="context-menu__item delete-icon">Delete</li>
+                  </ul>
+                </div>
+              </div>
             </form>
           </div>
         </div>
@@ -132,6 +162,13 @@
     <script src="./js/main.js"></script>
     <script>
       const account = document.getElementById("account-1");
+      const buttonDetailsList = document.querySelectorAll(".button-details");
+
+      for (let i = 0; i < buttonDetailsList.length; i++) {
+        buttonDetailsList[i].addEventListener("click", () => {
+          buttonDetailsList[i].classList.toggle("active");
+        });
+      }
 
       account.addEventListener("click", () => {
         window.location.href = "account-login.html";

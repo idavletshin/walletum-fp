@@ -130,7 +130,7 @@ body.--scroll-off {
     align-items: flex-start;
     width: 100%;
     background: var(--main-bg);
-    z-index: 1;
+    z-index: 2;
   }
 
   header::before {
@@ -144,7 +144,7 @@ body.--scroll-off {
     background-position: 65% -4rem;
     background-size: 180%;
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: 2;
     user-select: none;
   }
 }
@@ -314,6 +314,7 @@ body.--scroll-off {
 .main__center {
   position: relative;
   display: flex;
+  flex-direction: column;
   max-height: inherit;
   max-width: 28.125rem;
   width: 100%;
@@ -406,7 +407,7 @@ body.--scroll-off {
 
   .main__fixed-header .previous-button {
     margin-bottom: 1.5rem;
-    z-index: 2;
+    /* z-index: 2; */
   }
 
   .main__title {
@@ -436,7 +437,7 @@ body.--scroll-off {
     width: 100%;
     padding: 0 1.5625rem;
     background: var(--main-bg);
-    z-index: 1;
+    z-index: 2;
   }
 
   .main__fixed-header::before {
@@ -450,7 +451,7 @@ body.--scroll-off {
     background-position: 65% -9rem;
     background-size: 180%;
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: 2;
     user-select: none;
   }
 
@@ -578,7 +579,7 @@ body.--scroll-off {
 
 /* Выбор кошелька на главной странице */
 
-.main__center .form__title {
+/* .main__center .form__title {
   margin-bottom: 2.5rem;
 }
 
@@ -604,11 +605,25 @@ body.--scroll-off {
   .container.mobile-p-0 {
     padding: 0;
   }
-}
+} */
 
 /* *** */
 
 /* Выбор аккаунта на главной странице */
+
+.main__center .button__box {
+  margin-bottom: 1rem;
+}
+
+.main__center .form.account-list {
+  overflow: unset;
+}
+
+@media screen and (max-width: 600px) {
+  .main__center .form.account-list {
+    margin-top: 163px;
+  }
+}
 
 @media screen and (max-width: 28.125rem) {
   .main__center .form__action-group {

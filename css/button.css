@@ -184,37 +184,41 @@
 }
 /* *** */
 
-.button-details {
+/* .button-details {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 1.5rem;
   height: 1.5rem;
   margin-right: -0.75rem;
-}
-
-/* .button-details:hover {
-  background: var(--card-bg);
-  border-radius: 50%;
 } */
 
-.button-details img {
+/* .button-details img {
   width: 1.25rem;
   height: 1.25rem;
+} */
+
+.button-details__box {
+  position: relative;
 }
 
-/* .button__wrap {
+.button__box {
   display: flex;
 }
 
 .button-details {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
   min-width: 3rem;
   width: 3rem;
   margin-left: 1rem;
+  background: var(--card-bg);
   border-radius: 0.5rem;
+  cursor: pointer;
+  user-select: none;
 }
 
 .button-details:hover {
@@ -228,12 +232,67 @@
 }
 
 .button-details img {
-  width: 24px;
-  height: 24px;
-} */
+  width: 1.5rem;
+  height: 1.5rem;
+}
 
 /* .button span {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 } */
+
+/* Контекстное меню */
+
+/* .button__box {
+  position: relative;
+} */
+
+.context-menu {
+  position: absolute;
+  content: "";
+  display: none;
+  flex-direction: column;
+  top: 3.5rem;
+  right: 0;
+  background: var(--card-bg);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.3125rem rgba(12, 12, 12, 0.4);
+  z-index: 1;
+}
+
+.context-menu__item {
+  position: relative;
+  padding: 0.75rem 1.875rem 0.75rem 5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.context-menu__item:hover {
+  background: var(--purple);
+}
+
+.button-details.active + .context-menu {
+  display: flex;
+  padding: 0.75rem 0;
+}
+
+.logout-icon:before {
+  position: absolute;
+  content: "";
+  left: 1.875rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background: url(../images/log-out.svg);
+  background-size: contain;
+}
+
+.delete-icon:before {
+  position: absolute;
+  content: "";
+  left: 1.875rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background: url(../images/close_24px\ copy.svg);
+  background-size: contain;
+}
