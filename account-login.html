@@ -134,5 +134,23 @@
       </div>
     </footer>
     <script src="./js/main.js"></script>
+    <script>
+      const password = document.getElementById("password");
+      const nextButton = document.querySelector(".next-button.button");
+      const textHelper = document.querySelector(".text-field-helper");
+
+      // console.log(password.value.length);
+
+      nextButton.addEventListener("click", () => {
+        if (password.value.length < 8) {
+          textHelper.classList.remove("primary");
+          textHelper.classList.remove("success");
+          textHelper.classList.add("error");
+        } else if (password.value.length >= 8) {
+          textHelper.classList.remove("error");
+          textHelper.classList.add("success");
+        }
+      });
+    </script>
   </body>
 </html>
