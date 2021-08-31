@@ -162,6 +162,13 @@
     <script src="./js/main.js"></script>
     <script>
       const account = document.getElementById("account-1");
+
+      account.addEventListener("click", () => {
+        window.location.href = "account-login.html";
+      });
+
+      /* Для контекстного меню */
+
       const buttonDetailsList = document.querySelectorAll(".button-details");
 
       for (let i = 0; i < buttonDetailsList.length; i++) {
@@ -169,10 +176,6 @@
           buttonDetailsList[i].classList.toggle("active");
         });
       }
-
-      account.addEventListener("click", () => {
-        window.location.href = "account-login.html";
-      });
     </script>
   </body>
 </html>

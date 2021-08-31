@@ -67,7 +67,7 @@
   text-shadow: 0 0 0.3125rem var(--yellow);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.9375rem) {
   .previous-button img {
     margin-right: 0.725rem;
     height: 0.625rem;
