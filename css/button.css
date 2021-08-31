@@ -198,20 +198,13 @@
   height: 1.25rem;
 } */
 
-.button-details__box {
-  position: relative;
-}
-
 .button__box {
   display: flex;
 }
 
-.button-details {
+.button-details__box {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+  height: 3rem;
   min-width: 3rem;
   width: 3rem;
   margin-left: 1rem;
@@ -221,32 +214,29 @@
   user-select: none;
 }
 
-.button-details:hover {
-  background: -webkit-linear-gradient(45deg, #6a1cf8, #a114f9);
+.button-details__box:hover {
+  /* background: -webkit-linear-gradient(45deg, #6a1cf8, #a114f9); */
+  background: var(--purple);
 }
 
-.button-details:active,
-.button-details:focus {
+.button-details__box:active,
+.button-details__box:focus {
   background: var(--input-border);
   outline: none;
+}
+
+.button-details__box .button-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 .button-details img {
   width: 1.5rem;
   height: 1.5rem;
 }
-
-/* .button span {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-} */
-
-/* Контекстное меню */
-
-/* .button__box {
-  position: relative;
-} */
 
 .context-menu {
   position: absolute;
@@ -257,8 +247,12 @@
   right: 0;
   background: var(--card-bg);
   border-radius: 0.5rem;
-  box-shadow: 0 0 0.3125rem rgba(12, 12, 12, 0.4);
+  box-shadow: 0 0 1.3125rem rgba(12, 12, 12, 0.8);
   z-index: 1;
+}
+
+.button-details__box .context-menu {
+  background: var(--purple);
 }
 
 .context-menu__item {
@@ -268,11 +262,11 @@
   user-select: none;
 }
 
-.context-menu__item:hover {
+/* .context-menu__item:hover {
   background: var(--purple);
-}
+} */
 
-.button-details.active + .context-menu {
+.button-details.active ~ .context-menu {
   display: flex;
   padding: 0.75rem 0;
 }
