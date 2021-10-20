@@ -1,0 +1,532 @@
+<form action="#" class="form">
+  <div id="add" class="form__wrapper modal-form active modal__form">
+    <div class="form__text-field-container text-field-container">
+      <div class="text-field">
+        <input
+          id="typeofPurse"
+          class="text-field__input dropdown-icon"
+          type="text"
+          placeholder="Тип кошелька"
+        />
+        <label for="typeofPurse" class="text-field__label">Тип кошелька</label>
+        <!-- no class -->
+        <span class="text-field__line"></span>
+        <span class="text-field__wrap-arrow">
+          <span class="text-field__arrow"></span>
+        </span>
+        <ul class="text-field__list">
+          <li class="text-field__item text-item-field">
+            <span class="text-item-field__label">test</span>
+          </li>
+          <li class="text-field__item text-item-field">
+            <span class="text-item-field__label">test</span>
+          </li>
+          <li class="text-field__item text-item-field">
+            <span class="text-item-field__label">Custom</span>
+          </li>
+        </ul>
+      </div>
+      <!-- primary / error / success -->
+      <div class="text-field-helper primary">
+        <p class="error-text">Error</p>
+        <p class="success-text">Success</p>
+      </div>
+    </div>
+    <div class="form__text-field-container text-field-container">
+      <div class="text-field">
+        <input
+          id="typeofDate"
+          class="text-field__input modal__date primary-text"
+          type="date"
+        />
+
+        <!-- no class -->
+        <ul class="text-field__list">
+          <li class="text-field__item text-item-field">
+            <span class="text-item-field__label">test</span>
+          </li>
+          <li class="text-field__item text-item-field">
+            <span class="text-item-field__label">test</span>
+          </li>
+          <li class="text-field__item text-item-field">
+            <span class="text-item-field__label">Custom</span>
+          </li>
+        </ul>
+      </div>
+      <!-- primary / error / success -->
+    </div>
+    <label onclick="activeCoin()" for="coin" class="modal__form_radio"
+      >Монета
+      <input type="radio" id="coin" value="coin" name="radio" />
+      <span class="checkmark"></span>
+    </label>
+
+    <label onclick="activeToken()" for="token" class="modal__form_radio"
+      >Токен
+      <input type="radio" id="token" value="token" name="radio" />
+      <span class="checkmark"></span>
+    </label>
+    <label
+      onclick="activeStablecoin()"
+      for="stablecoin"
+      class="modal__form_radio"
+      >Стейблкойн
+      <input
+        type="radio"
+        id="stablecoin"
+        value="stablecoin"
+        name="radio"
+        checked="checked"
+      />
+      <span class="checkmark"></span>
+    </label>
+    <div>
+      <div id="stblecoin__wrappper" class="form__wrapper modal-form active">
+        <div class="btn-field">
+          Валюта
+          <ul class="btn-field__list">
+            <li class="btn-field__item active">
+              <span class="btn-item-field__label">USDT</span>
+            </li>
+            <li class="btn-field__item">
+              <span class="btn-item-field__label">RUB</span>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-field">
+          Протокол
+          <ul class="btn-field__list">
+            <li class="btn-field__item active">
+              <span class="btn-item-field__label">Ethereum (ERC 20)</span>
+            </li>
+            <li class="btn-field__item">
+              <span class="btn-item-field__label">Bitcoin (Omni)</span>
+            </li>
+            <li class="btn-field__item">
+              <span class="btn-item-field__label">Liquid</span>
+            </li>
+            <li class="btn-field__item">
+              <span class="btn-item-field__label">TRON (TRC 20)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="coin__wrapper" class="form__wrapper modal-form">
+        <div class="form__text-field-container text-field-container">
+          <div class="text-field">
+            <input
+              id="coin__blockchain"
+              class="text-field__input dropdown-icon"
+              type="text"
+              placeholder="Блокчейн"
+            />
+            <label for="coin__blockchain" class="text-field__label"
+              >Блокчейн</label
+            >
+            <!-- no class -->
+            <span class="text-field__line"></span>
+            <span class="text-field__wrap-arrow">
+              <span class="text-field__arrow"></span>
+            </span>
+            <ul class="text-field__list">
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">Custom</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="token__wrapper" class="form__wrapper modal-form">
+        <div class="form__text-field-container text-field-container">
+          <div class="text-field">
+            <input
+              id="token__blockchain"
+              class="text-field__input dropdown-icon"
+              type="text"
+              placeholder="Блокчейн"
+            />
+            <label for="token__blockchainn" class="text-field__label"
+              >Блокчейн</label
+            >
+            <!-- no class -->
+            <span class="text-field__line"></span>
+            <span class="text-field__wrap-arrow">
+              <span class="text-field__arrow"></span>
+            </span>
+            <ul class="text-field__list">
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">Custom</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__text-field-container text-field-container">
+          <div class="text-field">
+            <input
+              id="coin__blockchain"
+              class="text-field__input dropdown-icon"
+              type="text"
+              placeholder="Token ID"
+            />
+            <label for="coin__blockchain" class="text-field__label"
+              >Token ID</label
+            >
+            <!-- no class -->
+            <span class="text-field__line"></span>
+            <span class="text-field__wrap-arrow">
+              <span class="text-field__arrow"></span>
+            </span>
+            <ul class="text-field__list">
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">Custom</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form__text-field-container text-field-container">
+      <div class="text-field">
+        <input
+          id="walletName"
+          class="text-field__input"
+          type="text"
+          placeholder="Название кошелька"
+        />
+        <label for="walletName" class="text-field__label"
+          >Название кошелька
+        </label>
+        <!-- no class -->
+        <span class="text-field__line"></span>
+      </div>
+      <!-- primary -->
+      <div class="text-field-helper primary">
+        <p class="primary-text">
+          Minimum length is 8 character but longer is better
+        </p>
+      </div>
+    </div>
+    <button
+      id="walletCreate"
+      class="next-button button --blue jc-center modal__btn_create"
+      type="button"
+    >
+      Создать кошелек
+    </button>
+  </div>
+  <div id="import" class="form__wrapper modal-form modal__form">
+    <label
+      onclick="activeRadioImportApp()"
+      for="fromTheApp"
+      class="modal__form_radio"
+      >Из приложения
+      <input
+        type="radio"
+        id="fromTheApp"
+        value="fromTheApp"
+        name="radios"
+        checked="checked"
+      />
+      <span class="checkmark"></span>
+    </label>
+    <label
+      onclick="activeRadioImportScan()"
+      for="autoScan"
+      class="modal__form_radio"
+      >Автоматическое сканирование
+      <input type="radio" id="autoScan" value="autoScan" name="radios" />
+      <span class="checkmark"></span>
+    </label>
+    <form action="#" class="form">
+      <div id="fromTheApp__wrapper" class="form__wrapper modal-form active">
+        <div class="form__text-field-container text-field-container">
+          <div class="text-field">
+            <input
+              id="listOfApplication"
+              class="text-field__input dropdown-icon"
+              type="text"
+              placeholder="Список приложений"
+            />
+            <label for="listOfApplication" class="text-field__label"
+              >Список приложений</label
+            >
+            <!-- no class -->
+            <span class="text-field__line"></span>
+            <span class="text-field__wrap-arrow">
+              <span class="text-field__arrow"></span>
+            </span>
+            <ul class="text-field__list">
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">Custom</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__text-field-container text-field-container">
+          <div class="text-field">
+            <input
+              id="seedPhrase"
+              class="text-field__input dropdown-icon"
+              type="text"
+              placeholder="Seed Phrase"
+            />
+            <label for="seedPhrase" class="text-field__label"
+              >Seed Phrase</label
+            >
+            <!-- no class -->
+            <span class="text-field__line"></span>
+            <ul class="text-field__list">
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">Custom</span>
+              </li>
+            </ul>
+          </div>
+          <!-- primary / error / success -->
+          <div class="text-field-helper primary">
+            <p class="primary-text">
+              Minimum length is 8 character but longer is better
+            </p>
+            <p class="error-text">Error</p>
+            <p class="success-text">Success</p>
+          </div>
+        </div>
+        <div class="form__text-field-container text-field-container">
+          <div class="text-field">
+            <input
+              id="privateKey"
+              class="text-field__input dropdown-icon"
+              type="text"
+              placeholder="Private Key"
+            />
+            <label for="privateKey" class="text-field__label"
+              >Private Key</label
+            >
+            <!-- no class -->
+            <span class="text-field__line"></span>
+
+            <ul class="text-field__list">
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">Custom</span>
+              </li>
+            </ul>
+          </div>
+          <!-- primary / error / success -->
+          <div class="text-field-helper primary">
+            <p class="primary-text">
+              Minimum length is 8 character but longer is better
+            </p>
+            <p class="error-text">Error</p>
+            <p class="success-text">Success</p>
+          </div>
+        </div>
+        <div class="form__text-field-container text-field-container">
+          <div class="text-field">
+            <input
+              id="xpreview"
+              class="text-field__input dropdown-icon"
+              type="text"
+              placeholder="X Preview"
+            />
+            <label for="xpreviw" class="text-field__label">X Preview</label>
+            <!-- no class -->
+            <span class="text-field__line"></span>
+            <ul class="text-field__list">
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">Custom</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__text-field-container text-field-container">
+          <div class="text-field">
+            <input
+              id="publicKey"
+              class="text-field__input dropdown-icon"
+              type="text"
+              placeholder="Public Key"
+            />
+            <label for="publicKey" class="text-field__label">Public Key</label>
+            <!-- no class -->
+            <span class="text-field__line"></span>
+            <ul class="text-field__list">
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">Custom</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__text-field-container text-field-container">
+          <div class="text-field">
+            <input
+              id="xpub"
+              class="text-field__input dropdown-icon"
+              type="text"
+              placeholder="X Pub"
+            />
+            <label for="xpub" class="text-field__label">X Pub</label>
+            <!-- no class -->
+            <span class="text-field__line"></span>
+            <ul class="text-field__list">
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">test</span>
+              </li>
+              <li class="text-field__item text-item-field">
+                <span class="text-item-field__label">Custom</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__text-field-container text-field-container">
+          <div class="text-field">
+            <input
+              id="fromFile"
+              class="file-field_input"
+              type="file"
+              placeholder="Из файла"
+            />
+            <label for="fromFile" class="file-field_label">Из файла</label>
+            <!-- no class -->
+            <span class="text-field__line"></span>
+          </div>
+          <!-- primary / error / success -->
+          <div class="text-field-helper primary">
+            <p class="primary-text">
+              Minimum length is 8 character but longer is better
+            </p>
+            <p class="error-text">Error</p>
+            <p class="success-text">Success</p>
+          </div>
+        </div>
+        <div class="form__text-field-container text-field-container">
+          <div class="text-field">
+            <input
+              id="walletName"
+              class="text-field__input"
+              type="text"
+              placeholder="Название кошелька"
+            />
+            <label for="walletName" class="text-field__label"
+              >Название кошелька
+            </label>
+            <!-- no class -->
+            <span class="text-field__line"></span>
+          </div>
+          <!-- primary -->
+          <div class="text-field-helper primary">
+            <p class="primary-text">
+              Minimum length is 8 character but longer is better
+            </p>
+          </div>
+        </div>
+        <button
+          id="walletImport"
+          class="next-button button --blue jc-center modal__btn_import"
+          type="button"
+        >
+          Import
+        </button>
+      </div>
+      <div id="autoScan__wrapper" class="form__wrapper modal-form">
+        <p class="primary-text autoScan__text">
+          Please, be careful when choosing account's title. It is displayed in
+          the Accounts List on wallet startup. Anyone who has access to this
+          device can see it.
+        </p>
+        <div class="form__text-field-container text-field-container">
+          <div class="text-field modal__text-field">
+            <input
+              id="enterData"
+              class="text-field__input"
+              type="text"
+              placeholder="Ведите имеющиеся у вас данные"
+            />
+            <label for="enterData" class="text-field__label"
+              >Ведите имеющиеся у вас данные</label
+            >
+            <!-- no class -->
+            <span class="text-field__line"></span>
+          </div>
+          <div class="form__text-field-container text-field-container">
+            <div class="text-field">
+              <input
+                id="walletName"
+                class="text-field__input"
+                type="text"
+                placeholder="Название кошелька"
+              />
+              <label for="walletName" class="text-field__label"
+                >Название кошелька
+              </label>
+              <!-- no class -->
+              <span class="text-field__line"></span>
+            </div>
+            <!-- primary -->
+            <div class="text-field-helper primary">
+              <p class="primary-text">
+                Minimum length is 8 character but longer is better
+              </p>
+            </div>
+          </div>
+          <button
+            id="walletScan"
+            class="next-button button --blue jc-center modal__btn_import"
+            type="button"
+          >
+            Scan
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</form>

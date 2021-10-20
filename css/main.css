@@ -12,9 +12,14 @@
 @import "pin-code.css";
 @import "qr-code.css";
 @import "file-upload.css";
+@import "navbar.css";
+@import "tabs.css";
+@import "card-wallets.css";
+@import "my-account.css";
+@import "accordion.css";
+@import "modal.css";
 
 /* Общие стили для страницы */
-
 body {
   position: relative;
   display: flex;
@@ -62,7 +67,7 @@ body.--scroll-off {
   }
 }
 
-@media screen and (max-width: 20.3125rem) {
+@media screen and (max-width: 23.125rem) {
   .container {
     padding: 0 1rem;
   }
@@ -113,7 +118,7 @@ body.--scroll-off {
   }
 }
 
-@media screen and (max-width: 20.3125rem) {
+@media screen and (max-width: 23.125rem) {
   .header,
   .footer {
     padding: 1.5625rem 1rem;
@@ -472,7 +477,7 @@ body.--scroll-off {
   }
 }
 
-@media screen and (max-width: 20.3125rem) {
+@media screen and (max-width: 23.125rem) {
   .main__fixed-header {
     padding: 0 1rem;
   }
@@ -890,19 +895,6 @@ body.--scroll-off {
 
 .seed-phrases__input:hover {
   background-color: var(--blue);
-}
-
-.text-field__paste {
-  position: absolute;
-  top: 50%;
-  right: 0.25rem;
-  color: var(--blue);
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  transform: translateY(-17%);
-  cursor: pointer;
-  user-select: none;
 }
 
 /* *** */

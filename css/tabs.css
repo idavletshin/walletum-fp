@@ -1,0 +1,42 @@
+/* стили для Tabs */
+
+.tabs {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.tabs-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  padding: 0.75rem 0;
+  color: var(--dark-gray);
+  font-size: 0.875rem;
+  font-weight: 500;
+  user-select: none;
+  cursor: pointer;
+}
+
+.tabs-item span {
+  margin-left: 5px;
+}
+
+.tabs-item.active::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 0.25rem;
+  width: 2.1875rem;
+  background-color: var(--dark-blue);
+}
+
+.tabs-item.active,
+.tabs-item:hover {
+  color: var(--white);
+}
+
+/* *** */

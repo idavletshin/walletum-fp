@@ -10,6 +10,11 @@
   outline: none;
 }
 
+button:disabled.button,
+button[disabled].button {
+  background-color: var(--card-bg);
+}
+
 /* *** */
 
 /* flex-стили */
@@ -184,20 +189,6 @@
 }
 /* *** */
 
-/* .button-details {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: -0.75rem;
-} */
-
-/* .button-details img {
-  width: 1.25rem;
-  height: 1.25rem;
-} */
-
 .button__box {
   display: flex;
 }
@@ -215,78 +206,155 @@
 }
 
 .button-details__box:hover {
-  /* background: -webkit-linear-gradient(45deg, #6a1cf8, #a114f9); */
   background: var(--purple);
 }
 
-.button-details__box:active,
-.button-details__box:focus {
-  background: var(--input-border);
-  outline: none;
-}
-
-.button-details__box .button-details {
+.button-details__box .context-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+.button-details__box .context-btn.active::after {
+  background-image: url(../images/more-vertical-hover.svg);
 }
 
-.button-details img {
+/* show-hide button */
+
+.toggle-btn {
+  max-width: max-content;
+  color: var(--white);
+  background: transparent;
+  transition: all 0.2s ease 0s;
+}
+
+.toggle-btn.button {
+  padding: 0;
+}
+
+.toggle-btn__icon {
+  position: relative;
   width: 1.5rem;
   height: 1.5rem;
+  margin-right: 0.625rem;
 }
 
-.context-menu {
+.toggle-btn__icon::before {
   position: absolute;
   content: "";
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../images/eye-white.svg);
+  background-size: contain;
+  transition: all 0.2s ease 0s;
+}
+
+.toggle-btn:hover {
+  color: var(--blue);
+}
+
+.toggle-btn:hover .toggle-btn__icon::before {
+  background: url(../images/eye-blue.svg);
+  background-size: contain;
+}
+
+.toggle-btn__text_hide {
   display: none;
+}
+
+.toggle-btn.hide .toggle-btn__icon::before {
+  background: url(../images/eye-off-white.svg);
+  background-size: contain;
+}
+
+.toggle-btn.hide:hover .toggle-btn__icon::before {
+  background: url(../images/eye-off-blue.svg);
+  background-size: contain;
+}
+
+.toggle-btn.hide .toggle-btn__text_show {
+  display: none;
+}
+
+.toggle-btn.hide .toggle-btn__text_hide {
+  display: flex;
+}
+
+/* контекстное меню  */
+.context-box {
+  position: relative;
+}
+.context-btn {
+  position: relative;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+.context-btn::after {
+  position: absolute;
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../images/more-vertical.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.context-btn:hover::after {
+  background-image: url(../images/more-vertical-hover.svg);
+}
+.context-menu-list {
+  display: none;
+}
+.context-btn.active ~ .context-menu-list {
+  display: flex;
   flex-direction: column;
-  top: 3.5rem;
+}
+ul.context-menu-list {
+  position: absolute;
+  content: "";
+  top: 2rem;
   right: 0;
-  background: var(--card-bg);
-  border-radius: 0.5rem;
-  box-shadow: 0 0 1.3125rem rgba(12, 12, 12, 0.8);
+  padding: 1.25rem 0;
+  background: #151516;
+  box-shadow: 0 0 0.625rem rgba(12, 12, 12, 0.8);
+  border-radius: 0.75rem;
   z-index: 1;
 }
-
-.button-details__box .context-menu {
-  background: var(--purple);
-}
-
 .context-menu__item {
   position: relative;
-  padding: 0.75rem 1.875rem 0.75rem 5rem;
-  cursor: pointer;
-  user-select: none;
+  padding: 0.75rem 2rem 0.75rem 5rem;
+  color: var(--gray);
+  font-size: 0.875rem;
+  transition: all 0.2s ease 0s;
 }
-
-/* .context-menu__item:hover {
-  background: var(--purple);
-} */
-
-.button-details.active ~ .context-menu {
-  display: flex;
-  padding: 0.75rem 0;
+.context-menu__item:hover {
+  color: var(--white);
+  background: var(--main-bg);
 }
-
-.logout-icon:before {
+.context-menu__item::before {
   position: absolute;
   content: "";
-  left: 1.875rem;
-  height: 1.5rem;
+  top: 50%;
+  left: 2rem;
   width: 1.5rem;
-  background: url(../images/log-out.svg);
+  height: 1.5rem;
+  background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
+  transform: translate(0, -50%);
 }
-
-.delete-icon:before {
-  position: absolute;
-  content: "";
-  left: 1.875rem;
-  height: 1.5rem;
-  width: 1.5rem;
-  background: url(../images/close_24px\ copy.svg);
-  background-size: contain;
+.context-menu__item_delete::before {
+  background-image: url("../images/close_24px\ copy.svg");
+}
+.context-menu__item_hide::before {
+  background-image: url("../images/eye-off.svg");
+}
+.context-menu__item_edit::before {
+  background-image: url("../images/create_24px.svg");
+}
+.context-menu__item_logout::before {
+  background-image: url("../images/log-out.svg");
 }

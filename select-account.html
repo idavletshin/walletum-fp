@@ -71,15 +71,25 @@
                   Account Number One
                   <img src="./images/vector.png" alt="previous button" />
                 </button>
+                <!-- контекстное меню -->
                 <div class="button-details__box">
-                  <span class="button-details">
-                    <img src="./images/more-vertical.svg" alt="details" />
-                  </span>
-                  <ul class="context-menu">
-                    <li class="context-menu__item logout-icon">Logout</li>
-                    <li class="context-menu__item delete-icon">Delete</li>
-                  </ul>
+                  <div class="button-details__context-box context-box">
+                    <!-- no class | active -->
+                    <div class="context-box__btn context-btn"></div>
+                    <ul class="context-box__menu-list context-menu-list">
+                      <li class="context-menu__item context-menu__item_edit">
+                        Редактировать
+                      </li>
+                      <li class="context-menu__item context-menu__item_delete">
+                        Удалить
+                      </li>
+                      <li class="context-menu__item context-menu__item_hide">
+                        Скрыть баланс
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+                <!-- *** -->
               </div>
               <div class="button__box">
                 <button
@@ -90,34 +100,22 @@
                   Account Number Two
                   <img src="./images/vector.png" alt="previous button" />
                 </button>
+                <!-- контекстное меню -->
                 <div class="button-details__box">
-                  <span class="button-details">
-                    <img src="./images/more-vertical.svg" alt="details" />
-                  </span>
-                  <ul class="context-menu">
-                    <li class="context-menu__item logout-icon">Logout</li>
-                    <li class="context-menu__item delete-icon">Delete</li>
-                  </ul>
+                  <div class="button-details__context-box context-box">
+                    <!-- no class | active -->
+                    <div class="context-box__btn context-btn active"></div>
+                    <ul class="context-box__menu-list context-menu-list">
+                      <li class="context-menu__item context-menu__item_logout">
+                        Выход
+                      </li>
+                      <li class="context-menu__item context-menu__item_delete">
+                        Удалить
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="button__box">
-                <button
-                  class="purple-button button --black jc-space-between"
-                  id="account-3"
-                  type="button"
-                >
-                  Account Number Three
-                  <img src="./images/vector.png" alt="previous button" />
-                </button>
-                <div class="button-details__box">
-                  <span class="button-details">
-                    <img src="./images/more-vertical.svg" alt="details" />
-                  </span>
-                  <ul class="context-menu">
-                    <li class="context-menu__item logout-icon">Logout</li>
-                    <li class="context-menu__item delete-icon">Delete</li>
-                  </ul>
-                </div>
+                <!-- *** -->
               </div>
             </form>
           </div>

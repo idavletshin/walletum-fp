@@ -1,0 +1,222 @@
+.modal {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  overflow-y: auto;
+}
+.modal.modal-open {
+  display: flex;
+}
+.modal__content {
+  max-width: 28.125rem;
+  width: 100%;
+  height: auto;
+  margin: 6rem auto auto;
+  padding: 4rem 0;
+  background-color: var(--card-bg);
+  border-radius: 2rem;
+}
+.modal__title-wrapper {
+}
+.modal__title {
+  position: relative;
+  margin-bottom: 1rem;
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  display: none;
+}
+.modal__title.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-form__wrapper {
+  display: none;
+  flex-direction: column;
+}
+.modal-form__wrapper.active {
+  display: flex;
+}
+.modal-content .navbar {
+  margin-bottom: 3rem;
+}
+.modal-content .navbar-item {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.modal__form {
+  padding: 0 3.75rem;
+}
+
+/* radio button */
+
+.modal-form__radio {
+  position: relative;
+  display: block;
+  margin-bottom: 1.5rem;
+  padding-left: 2.5rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.modal-form__radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1.25rem;
+  width: 1.25rem;
+  line-height: 1.5rem;
+  background-color: transparent;
+  border: 0.125rem solid var(--input-border);
+  border-radius: 50%;
+  transform: translate(0, -50%);
+}
+.modal-form__radio:hover input ~ .checkmark {
+  border-color: var(--dark-blue);
+}
+.modal-form__radio input:checked ~ .checkmark {
+  border-color: var(--dark-blue);
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.modal-form__radio input:checked ~ .checkmark:after {
+  display: block;
+}
+.modal-form__radio .checkmark:after {
+  top: 50%;
+  left: 50%;
+  width: 0.625rem;
+  height: 0.625rem;
+  background: var(--white);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+/* *** */
+
+.modal-form__btn_create {
+  margin-top: 1rem;
+}
+.modal-form__btn_create img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.75rem;
+}
+.modal__date {
+  padding-left: 2.5rem;
+}
+input#date::-webkit-calendar-picker-indicator {
+  content: url(../images/calendar.svg);
+  position: absolute;
+  left: -1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+.modal-form__box {
+  margin-bottom: 1.5rem;
+}
+.modal-form__subtitle {
+  margin-bottom: 1rem;
+}
+.modal-form__button-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.button-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: var(--gray);
+  font-size: 0.875rem;
+  background: #2c2c2e;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+.button-sm.active {
+  background: var(--card-bg);
+  border: 0.125rem solid var(--dark-blue);
+  color: var(--white);
+  box-sizing: border-box;
+}
+.file-field__input {
+  display: none;
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+}
+.file-field__label {
+  display: flex;
+  align-items: center;
+  line-height: 3rem;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  z-index: 12;
+}
+.file-field__label::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../images/paperclip.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+.modal-form__text {
+  margin-bottom: 2.5rem;
+  font-size: 0.875rem;
+}
+
+.modal-form textarea {
+  background: transparent;
+  border: 0;
+  box-sizing: border-box;
+  color: var(--white);
+  outline: none;
+  width: 100%;
+  min-height: 6rem;
+  display: inline-block;
+}
+.modal-form textarea::placeholder {
+  color: var(--white);
+}
+.modal-form textarea:focus ~ .text-field__line {
+  height: 0.125rem;
+  background-color: var(--light-green);
+}
+
+@media screen and (max-width: 26.5625rem) {
+  .modal-form {
+    padding: 0 1.875rem;
+  }
+}

@@ -14,10 +14,12 @@
   --blue: #2997ff;
   --dark-blue: #246bfe;
   --green: #2abb9b;
+  --apple: #6ab04c;
   --light-green: #94d783;
   --yellow: #fbd63d;
   --orange: #f49c0b;
 
   --main-font: "Inter", sans-serif;
   --second-font: "Montserrat", "Helvetica", sans-serif;
+  --roboto-font: "Roboto Mono", sans-serif;
 }

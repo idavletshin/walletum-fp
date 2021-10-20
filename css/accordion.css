@@ -1,0 +1,77 @@
+/* accordion общие классы */
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-body {
+  height: 0;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  -ms-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s;
+}
+
+.accordion-container.active .accordion-body {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  overflow: unset;
+  -webkit-transition: opacity 0.4s ease-out 0s;
+  -moz-transition: opacity 0.4s ease-out 0s;
+  -ms-transition: opacity 0.4s ease-out 0s;
+  -o-transition: opacity 0.4s ease-out 0s;
+  transition: opacity 0.4s ease-out 0s;
+}
+
+.accordion-title {
+  position: relative;
+  display: flex;
+  margin-bottom: 0;
+  font-family: var(--second-font);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordion-title::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 50%;
+  width: 0.625rem;
+  height: 0.125rem;
+  background-color: var(--white);
+  transform: translate(0, -50%) rotate(-45deg);
+}
+
+.accordion-title::after {
+  position: absolute;
+  content: "";
+  right: 0.375rem;
+  top: 50%;
+  width: 0.625rem;
+  height: 0.125rem;
+  background-color: var(--white);
+  transform: translate(0, -50%) rotate(45deg);
+}
+
+.accordion-container.active .accordion-title::before {
+  transform: translate(0, -50%) rotate(45deg);
+}
+
+.accordion-container.active .accordion-title::after {
+  transform: translate(0, -50%) rotate(-45deg);
+}
+
+.accordion-container.active .accordion-title {
+  margin-bottom: 1.5rem;
+}
+/* *** */

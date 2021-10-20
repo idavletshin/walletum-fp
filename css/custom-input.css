@@ -58,12 +58,19 @@
 
 /* *** */
 
+/* классы-отступы у полей ввода  */
+
 .text-field__input.password {
   padding: 1.25rem 2rem 0.375rem 0;
 }
 
-.text-field__input.paste-password {
+.text-field__input.paste-password,
+.text-field__input.max-amount {
   padding: 1.25rem 6rem 0.375rem 0;
+}
+
+.text-field__input.dropdown-icon {
+  padding: 1.25rem 2rem 0.375rem 0;
 }
 
 /* Стили для бордера у поля ввода */
@@ -231,4 +238,139 @@
     display: block;
     opacity: 1;
   }
+}
+
+/* стрелка для поля ввода */
+
+.text-field__wrap-arrow {
+  position: absolute;
+  top: 60%;
+  right: 0.375rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+.text-field__arrow {
+  position: relative;
+  display: flex;
+  top: 50%;
+  transform: translateY(-100%);
+  font-family: var(--second-font);
+  font-size: 1rem;
+  font-weight: 600;
+  user-select: none;
+}
+
+.text-field__arrow::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 50%;
+  width: 0.625rem;
+  height: 0.125rem;
+  background-color: var(--white);
+  transform: translate(0, -50%) rotate(-45deg);
+  transition: all 0.2s ease 0s;
+}
+
+.text-field__arrow::after {
+  position: absolute;
+  content: "";
+  right: 0.375rem;
+  top: 50%;
+  width: 0.625rem;
+  height: 0.125rem;
+  background-color: var(--white);
+  transform: translate(0, -50%) rotate(45deg);
+  transition: all 0.2s ease 0s;
+}
+
+.text-field__input.dropdown-icon:focus
+  ~ .text-field__wrap-arrow
+  .text-field__arrow::before {
+  transform: translate(0, -50%) rotate(45deg);
+}
+
+.text-field__input.dropdown-icon:focus
+  ~ .text-field__wrap-arrow
+  .text-field__arrow::after {
+  transform: translate(0, -50%) rotate(-45deg);
+}
+
+/* выпадающий список */
+
+.text-field .text-field__list {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 1rem 0;
+  background-color: #151516;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.text-field .text-field__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  color: var(--gray);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.text-field .text-field__item:hover {
+  color: var(--white);
+  background-color: #111112;
+}
+
+.text-field__input.dropdown-icon:focus ~ .text-field__list {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* кнопки у полей ввода */
+
+.text-field__paste,
+.text-field__send {
+  position: absolute;
+  top: 50%;
+  right: 0.25rem;
+  color: var(--blue);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transform: translateY(-17%);
+  cursor: pointer;
+  user-select: none;
+}
+
+.text-field__alert {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../images/alert-triangle.svg) no-repeat center / cover;
+  transform: translateY(-17%);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.max-amount.error ~ .text-field__send {
+  display: none;
+}
+
+.max-amount.error ~ .text-field__alert {
+  opacity: 1;
+  visibility: visible;
 }

@@ -1,0 +1,2358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Montserrat:wght@500;600;700&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Walletum</title>
+  </head>
+  <body class="--bg-off --scroll-on">
+    <header class="header">
+      <a class="header__logo logo" href="/walletum-fp/">
+        <img class="logo__img" src="./images/logo.svg" alt="Logo" />
+        <span class="logo__text">walletum</span>
+      </a>
+      <div class="header__menu menu">
+        <div class="menu__burger burger">
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item lang">
+            <ul class="lang__list">
+              <li class="lang__item">
+                <a class="lang__link" href="#">Ru</a>
+              </li>
+              <li class="lang__item">
+                <a class="lang__link active" href="#">En</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">F.A.Q</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Social</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__container">
+        <h1 class="main__main-title">My wallet account name</h1>
+        <div class="main__wrapper">
+          <aside class="main__aside">
+            <div class="aside__group">
+              <h3 class="aside__title">My Wallets - (51)</h3>
+              <button class="search-form__icon button"></button>
+              <form action="#" class="aside__search-form">
+                <button class="search-form__button button"></button>
+                <input class="search-form__input" type="text" />
+              </form>
+            </div>
+            <div class="aside__card-wallets">
+              <!-- no class | wallet-group | wallet-group + active | wallet-group + mixed-wallet | wallet-group + mixed-wallet + active -->
+              <div class="card-wallet-group">
+                <!-- no-class | active | alert | progress-update | active + blue | active + red | active + purple | active + yellow -->
+                <div class="card-wallet alert">
+                  <div class="card-wallet__top">
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__title">
+                        Тестовое название какого-то токена
+                      </div>
+                      <div class="card-wallet-top__alert-text">
+                        Fill in amount and payment description if needed.
+                      </div>
+                      <!-- контекстное меню -->
+                      <div class="card-wallet-top__context-box context-box">
+                        <!-- no class | active -->
+                        <div class="context-box__btn context-btn"></div>
+                        <ul class="context-box__menu-list context-menu-list">
+                          <li
+                            class="context-menu__item context-menu__item_edit"
+                          >
+                            Редактировать
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_delete"
+                          >
+                            Удалить
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_hide"
+                          >
+                            Скрыть баланс
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- *** -->
+                    </div>
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__badges badge-list">
+                        <div class="card-wallet-top__badge badge">token</div>
+                        <div class="card-wallet-top__badge badge">btc</div>
+                      </div>
+                      <div class="card-wallet-top__info">
+                        <div class="card-wallet-info__time">
+                          <span>Time Lock</span>
+                          <span>12.04.22</span>
+                        </div>
+                        <div class="card-wallet-info__amount gradient-color">
+                          15 Wallets
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-wallet__bottom">
+                    <div class="card-wallet-bottom__left">
+                      <div class="card-wallet-bottom__icon"></div>
+                      <div class="main-progress-mini">
+                        <div class="inner"></div>
+                        <div class="number">100%</div>
+                        <div class="circle">
+                          <div class="bar left">
+                            <div class="progress-bar"></div>
+                          </div>
+                          <div class="bar right">
+                            <div class="progress-bar"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-wallet-bottom__right">
+                      <div class="card-wallet-bottom__info-amount">
+                        <div class="card-wallet-bottom__amount">
+                          632,632,632,111.<small>00437383</small>
+                        </div>
+                        <span class="card-wallet-bottom__token-name">FAGH</span>
+                      </div>
+                      <div class="card-wallet-bottom__badges badge-list">
+                        <div class="card-wallet-bottom__badge badge">btc</div>
+                        <div class="card-wallet-bottom__badge badge">coin</div>
+                        <div class="card-wallet-bottom__badge badge">ufo</div>
+                      </div>
+                      <a href="#" class="card-wallet-bottom__action">Update</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wallet-group">
+                <div class="card-wallet blue">
+                  <div class="card-wallet__top">
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__title">
+                        Тестовое название какого-то токена
+                      </div>
+                      <div class="card-wallet-top__alert-text">
+                        Fill in amount and payment description if needed.
+                      </div>
+                      <!-- контекстное меню -->
+                      <div class="card-wallet-top__context-box context-box">
+                        <!-- no class | active -->
+                        <div class="context-box__btn context-btn"></div>
+                        <ul class="context-box__menu-list context-menu-list">
+                          <li
+                            class="context-menu__item context-menu__item_edit"
+                          >
+                            Редактировать
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_delete"
+                          >
+                            Удалить
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_hide"
+                          >
+                            Скрыть баланс
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- *** -->
+                    </div>
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__badges badge-list">
+                        <div class="card-wallet-top__badge badge">token</div>
+                        <div class="card-wallet-top__badge badge">btc</div>
+                      </div>
+                      <div class="card-wallet-top__info">
+                        <div class="card-wallet-info__time">
+                          <span>Time Lock</span>
+                          <span>12.04.22</span>
+                        </div>
+                        <div class="card-wallet-info__amount gradient-color">
+                          15 Wallets
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-wallet__bottom">
+                    <div class="card-wallet-bottom__left">
+                      <div class="card-wallet-bottom__icon"></div>
+                      <div class="main-progress-mini">
+                        <div class="inner"></div>
+                        <div class="number">100%</div>
+                        <div class="circle">
+                          <div class="bar left">
+                            <div class="progress-bar"></div>
+                          </div>
+                          <div class="bar right">
+                            <div class="progress-bar"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-wallet-bottom__right">
+                      <div class="card-wallet-bottom__info-amount">
+                        <div class="card-wallet-bottom__amount">
+                          632,632,632,111.<small>00437383</small>
+                        </div>
+                        <span class="card-wallet-bottom__token-name">FAGH</span>
+                      </div>
+                      <div class="card-wallet-bottom__badges badge-list">
+                        <div class="card-wallet-bottom__badge badge">btc</div>
+                        <div class="card-wallet-bottom__badge badge">coin</div>
+                        <div class="card-wallet-bottom__badge badge">ufo</div>
+                      </div>
+                      <a href="#" class="card-wallet-bottom__action">Update</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wallet-group">
+                <div class="card-wallet red">
+                  <div class="card-wallet__top">
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__title">
+                        Тестовое название какого-то токена
+                      </div>
+                      <div class="card-wallet-top__alert-text">
+                        Fill in amount and payment description if needed.
+                      </div>
+                      <!-- контекстное меню -->
+                      <div class="card-wallet-top__context-box context-box">
+                        <!-- no class | active -->
+                        <div class="context-box__btn context-btn"></div>
+                        <ul class="context-box__menu-list context-menu-list">
+                          <li
+                            class="context-menu__item context-menu__item_edit"
+                          >
+                            Редактировать
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_delete"
+                          >
+                            Удалить
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_hide"
+                          >
+                            Скрыть баланс
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- *** -->
+                    </div>
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__badges badge-list">
+                        <div class="card-wallet-top__badge badge">token</div>
+                        <div class="card-wallet-top__badge badge">btc</div>
+                      </div>
+                      <div class="card-wallet-top__info">
+                        <div class="card-wallet-info__time">
+                          <span>Time Lock</span>
+                          <span>12.04.22</span>
+                        </div>
+                        <div class="card-wallet-info__amount gradient-color">
+                          15 Wallets
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-wallet__bottom">
+                    <div class="card-wallet-bottom__left">
+                      <div class="card-wallet-bottom__icon"></div>
+                      <div class="main-progress-mini">
+                        <div class="inner"></div>
+                        <div class="number">100%</div>
+                        <div class="circle">
+                          <div class="bar left">
+                            <div class="progress-bar"></div>
+                          </div>
+                          <div class="bar right">
+                            <div class="progress-bar"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-wallet-bottom__right">
+                      <div class="card-wallet-bottom__info-amount">
+                        <div class="card-wallet-bottom__amount">
+                          632,632,632,111.<small>00437383</small>
+                        </div>
+                        <span class="card-wallet-bottom__token-name">FAGH</span>
+                      </div>
+                      <div class="card-wallet-bottom__badges badge-list">
+                        <div class="card-wallet-bottom__badge badge">btc</div>
+                        <div class="card-wallet-bottom__badge badge">coin</div>
+                        <div class="card-wallet-bottom__badge badge">ufo</div>
+                      </div>
+                      <a href="#" class="card-wallet-bottom__action">Update</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wallet-group">
+                <div class="card-wallet progress-update">
+                  <div class="card-wallet__top">
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__title">
+                        Тестовое название какого-то токена
+                      </div>
+                      <div class="card-wallet-top__alert-text">
+                        Fill in amount and payment description if needed.
+                      </div>
+                      <!-- контекстное меню -->
+                      <div class="card-wallet-top__context-box context-box">
+                        <!-- no class | active -->
+                        <div class="context-box__btn context-btn"></div>
+                        <ul class="context-box__menu-list context-menu-list">
+                          <li
+                            class="context-menu__item context-menu__item_edit"
+                          >
+                            Редактировать
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_delete"
+                          >
+                            Удалить
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_hide"
+                          >
+                            Скрыть баланс
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- *** -->
+                    </div>
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__badges badge-list">
+                        <div class="card-wallet-top__badge badge">token</div>
+                        <div class="card-wallet-top__badge badge">btc</div>
+                      </div>
+                      <div class="card-wallet-top__info">
+                        <div class="card-wallet-info__time">
+                          <span>Time Lock</span>
+                          <span>12.04.22</span>
+                        </div>
+                        <div class="card-wallet-info__amount gradient-color">
+                          15 Wallets
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-wallet__bottom">
+                    <div class="card-wallet-bottom__left">
+                      <div class="card-wallet-bottom__icon"></div>
+                      <div class="main-progress-mini">
+                        <div class="inner"></div>
+                        <div class="number">100%</div>
+                        <div class="circle">
+                          <div class="bar left">
+                            <div class="progress-bar"></div>
+                          </div>
+                          <div class="bar right">
+                            <div class="progress-bar"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-wallet-bottom__right">
+                      <div class="card-wallet-bottom__info-amount">
+                        <div class="card-wallet-bottom__amount">
+                          632,632,632,111.<small>00437383</small>
+                        </div>
+                        <span class="card-wallet-bottom__token-name">FAGH</span>
+                      </div>
+                      <div class="card-wallet-bottom__badges badge-list">
+                        <div class="card-wallet-bottom__badge badge">btc</div>
+                        <div class="card-wallet-bottom__badge badge">coin</div>
+                        <div class="card-wallet-bottom__badge badge">ufo</div>
+                      </div>
+                      <a href="#" class="card-wallet-bottom__action">Update</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wallet-group wallet-group">
+                <div class="card-wallet alert">
+                  <div class="card-wallet__top">
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__title">
+                        Тестовое название какого-то токена
+                      </div>
+                      <div class="card-wallet-top__alert-text">
+                        Fill in amount and payment description if needed.
+                      </div>
+                      <!-- контекстное меню -->
+                      <div class="card-wallet-top__context-box context-box">
+                        <!-- no class | active -->
+                        <div class="context-box__btn context-btn"></div>
+                        <ul class="context-box__menu-list context-menu-list">
+                          <li
+                            class="context-menu__item context-menu__item_edit"
+                          >
+                            Редактировать
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_delete"
+                          >
+                            Удалить
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_hide"
+                          >
+                            Скрыть баланс
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- *** -->
+                    </div>
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__badges badge-list">
+                        <div class="card-wallet-top__badge badge">token</div>
+                        <div class="card-wallet-top__badge badge">btc</div>
+                      </div>
+                      <div class="card-wallet-top__info">
+                        <div class="card-wallet-info__time">
+                          <span>Time Lock</span>
+                          <span>12.04.22</span>
+                        </div>
+                        <div class="card-wallet-info__amount gradient-color">
+                          15 Wallets
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-wallet__bottom">
+                    <div class="card-wallet-bottom__left">
+                      <div class="card-wallet-bottom__icon"></div>
+                      <div class="main-progress-mini">
+                        <div class="inner"></div>
+                        <div class="number">100%</div>
+                        <div class="circle">
+                          <div class="bar left">
+                            <div class="progress-bar"></div>
+                          </div>
+                          <div class="bar right">
+                            <div class="progress-bar"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-wallet-bottom__right">
+                      <div class="card-wallet-bottom__info-amount">
+                        <div class="card-wallet-bottom__amount">
+                          632,632,632,111.<small>00437383</small>
+                        </div>
+                        <span class="card-wallet-bottom__token-name">FAGH</span>
+                      </div>
+                      <div class="card-wallet-bottom__badges badge-list">
+                        <div class="card-wallet-bottom__badge badge">btc</div>
+                        <div class="card-wallet-bottom__badge badge">coin</div>
+                        <div class="card-wallet-bottom__badge badge">ufo</div>
+                      </div>
+                      <a href="#" class="card-wallet-bottom__action">Update</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-wallet purple">
+                  <div class="card-wallet__top">
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__title">
+                        Тестовое название какого-то токена
+                      </div>
+                      <div class="card-wallet-top__alert-text">
+                        Fill in amount and payment description if needed.
+                      </div>
+                      <div class="card-wallet-top__context-box context-box">
+                        <!-- no class | active -->
+                        <div class="context-box__btn context-btn"></div>
+                        <ul class="context-box__menu-list context-menu-list">
+                          <li
+                            class="context-menu__item context-menu__item_edit"
+                          >
+                            Редактировать
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_delete"
+                          >
+                            Удалить
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_hide"
+                          >
+                            Скрыть баланс
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__badges badge-list">
+                        <div class="card-wallet-top__badge badge">token</div>
+                        <div class="card-wallet-top__badge badge">btc</div>
+                      </div>
+                      <div class="card-wallet-top__info">
+                        <div class="card-wallet-info__time">
+                          <span>Time Lock</span>
+                          <span>12.04.22</span>
+                        </div>
+                        <div class="card-wallet-info__amount gradient-color">
+                          15 Wallets
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-wallet__bottom">
+                    <div class="card-wallet-bottom__left">
+                      <div class="card-wallet-bottom__icon"></div>
+                      <div class="main-progress-mini">
+                        <div class="inner"></div>
+                        <div class="number">100%</div>
+                        <div class="circle">
+                          <div class="bar left">
+                            <div class="progress-bar"></div>
+                          </div>
+                          <div class="bar right">
+                            <div class="progress-bar"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-wallet-bottom__right">
+                      <div class="card-wallet-bottom__info-amount">
+                        <div class="card-wallet-bottom__amount">
+                          632,632,632,111.<small>00437383</small>
+                        </div>
+                        <span class="card-wallet-bottom__token-name">FAGH</span>
+                      </div>
+                      <div class="card-wallet-bottom__badges badge-list">
+                        <div class="card-wallet-bottom__badge badge">btc</div>
+                        <div class="card-wallet-bottom__badge badge">coin</div>
+                        <div class="card-wallet-bottom__badge badge">ufo</div>
+                      </div>
+                      <a href="#" class="card-wallet-bottom__action">Update</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-wallet yellow">
+                  <div class="card-wallet__top">
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__title">
+                        Тестовое название какого-то токена
+                      </div>
+                      <div class="card-wallet-top__alert-text">
+                        Fill in amount and payment description if needed.
+                      </div>
+                      <div class="card-wallet-top__context-box context-box">
+                        <!-- no class | active -->
+                        <div class="context-box__btn context-btn"></div>
+                        <ul class="context-box__menu-list context-menu-list">
+                          <li
+                            class="context-menu__item context-menu__item_edit"
+                          >
+                            Редактировать
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_delete"
+                          >
+                            Удалить
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_hide"
+                          >
+                            Скрыть баланс
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__badges badge-list">
+                        <div class="card-wallet-top__badge badge">token</div>
+                        <div class="card-wallet-top__badge badge">btc</div>
+                      </div>
+                      <div class="card-wallet-top__info">
+                        <div class="card-wallet-info__time">
+                          <span>Time Lock</span>
+                          <span>12.04.22</span>
+                        </div>
+                        <div class="card-wallet-info__amount gradient-color">
+                          15 Wallets
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-wallet__bottom">
+                    <div class="card-wallet-bottom__left">
+                      <div class="card-wallet-bottom__icon"></div>
+                      <div class="main-progress-mini">
+                        <div class="inner"></div>
+                        <div class="number">100%</div>
+                        <div class="circle">
+                          <div class="bar left">
+                            <div class="progress-bar"></div>
+                          </div>
+                          <div class="bar right">
+                            <div class="progress-bar"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-wallet-bottom__right">
+                      <div class="card-wallet-bottom__info-amount">
+                        <div class="card-wallet-bottom__amount">
+                          632,632,632,111.<small>00437383</small>
+                        </div>
+                        <span class="card-wallet-bottom__token-name">FAGH</span>
+                      </div>
+                      <div class="card-wallet-bottom__badges badge-list">
+                        <div class="card-wallet-bottom__badge badge">btc</div>
+                        <div class="card-wallet-bottom__badge badge">coin</div>
+                        <div class="card-wallet-bottom__badge badge">ufo</div>
+                      </div>
+                      <a href="#" class="card-wallet-bottom__action">Update</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wallet-group wallet-group mixed-wallet">
+                <div class="card-wallet alert">
+                  <div class="card-wallet__top">
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__title">
+                        Тестовое название какого-то токена
+                      </div>
+                      <div class="card-wallet-top__alert-text">
+                        Fill in amount and payment description if needed.
+                      </div>
+                      <!-- контекстное меню -->
+                      <div class="card-wallet-top__context-box context-box">
+                        <!-- no class | active -->
+                        <div class="context-box__btn context-btn"></div>
+                        <ul class="context-box__menu-list context-menu-list">
+                          <li
+                            class="context-menu__item context-menu__item_edit"
+                          >
+                            Редактировать
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_delete"
+                          >
+                            Удалить
+                          </li>
+                          <li
+                            class="context-menu__item context-menu__item_hide"
+                          >
+                            Скрыть баланс
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- *** -->
+                    </div>
+                    <div class="card-wallet-top__group">
+                      <div class="card-wallet-top__badges badge-list">
+                        <div class="card-wallet-top__badge badge">token</div>
+                        <div class="card-wallet-top__badge badge">btc</div>
+                      </div>
+                      <div class="card-wallet-top__info">
+                        <div class="card-wallet-info__time">
+                          <span>Time Lock</span>
+                          <span>12.04.22</span>
+                        </div>
+                        <div class="card-wallet-info__amount gradient-color">
+                          15 Wallets
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-wallet__bottom">
+                    <div class="card-wallet-bottom__left">
+                      <div class="card-wallet-bottom__icon"></div>
+                      <div class="main-progress-mini">
+                        <div class="inner"></div>
+                        <div class="number">100%</div>
+                        <div class="circle">
+                          <div class="bar left">
+                            <div class="progress-bar"></div>
+                          </div>
+                          <div class="bar right">
+                            <div class="progress-bar"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-wallet-bottom__right">
+                      <div class="card-wallet-bottom__info-amount">
+                        <div class="card-wallet-bottom__amount">
+                          632,632,632,111.<small>00437383</small>
+                        </div>
+                        <span class="card-wallet-bottom__token-name">FAGH</span>
+                      </div>
+                      <div class="card-wallet-bottom__badges badge-list">
+                        <div class="card-wallet-bottom__badge badge">btc</div>
+                        <div class="card-wallet-bottom__badge badge">coin</div>
+                        <div class="card-wallet-bottom__badge badge">ufo</div>
+                      </div>
+                      <a href="#" class="card-wallet-bottom__action">Update</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="aside__action button">
+              <img src="./images/plus-circle.svg" alt="Create card wallet" />
+              Создать новый кошелек
+            </button>
+          </aside>
+          <div class="main__content">
+            <button class="content__action toggle-btn button">
+              <span class="toggle-btn__icon"></span>
+              <span class="toggle-btn__text toggle-btn__text_show"
+                >Show All Balances</span
+              >
+              <span class="toggle-btn__text toggle-btn__text_hide"
+                >Hide All Balances</span
+              >
+            </button>
+            <ul class="content__navbar navbar">
+              <li class="navbar-item" onclick="activeNavbarItem('history', 1)">
+                History
+              </li>
+              <li class="navbar-item" onclick="activeNavbarItem('receive', 1)">
+                Receive
+              </li>
+              <li
+                class="navbar-item active"
+                onclick="activeNavbarItem('send', 1)"
+              >
+                Send
+              </li>
+              <li class="navbar-item" onclick="activeNavbarItem('overview', 1)">
+                Overview
+              </li>
+            </ul>
+            <div id="history" class="content__body history">
+              <div class="history__column">
+                <h2 class="main__title">Transactions History</h2>
+                <div class="history__table table-history">
+                  <div class="table-history__header table-history-header">
+                    <div class="table-history-header__column">Address</div>
+                    <div class="table-history-header__column">Status</div>
+                    <div class="table-history-header__column">Amount</div>
+                  </div>
+                  <div class="table-history__body history-accordion accordion">
+                    <!-- success / no class -->
+                    <div
+                      class="
+                        history-accordion__container
+                        accordion-container
+                        success
+                      "
+                    >
+                      <div
+                        class="
+                          history-accordion__header
+                          accordion-history-header accordion-btn
+                        "
+                      >
+                        <div class="accordion-history-header__column">
+                          <div class="accordion-history-header__label">
+                            Address
+                          </div>
+                          <div
+                            class="
+                              accordion-history-header__value
+                              accordion-history-header__value_address
+                              --received
+                            "
+                          >
+                            fjslkdfjsldjf2lsd
+                          </div>
+                        </div>
+                        <div class="accordion-history-header__column">
+                          <div class="accordion-history-header__label">
+                            Status
+                          </div>
+                          <div class="accordion-history-header__value">
+                            Confirmed (6/6)
+                          </div>
+                        </div>
+                        <div class="accordion-history-header__column">
+                          <div class="accordion-history-header__label">
+                            Amount
+                          </div>
+                          <div class="accordion-history-header__value">
+                            +632,632,632,111.00437383 UFO
+                          </div>
+                        </div>
+                        <!-- контекстное меню -->
+                        <div
+                          class="
+                            accordion-history-header__context-box
+                            context-box
+                          "
+                        >
+                          <!-- no class | active -->
+                          <div class="context-box__btn context-btn"></div>
+                          <ul class="context-box__menu-list context-menu-list">
+                            <li
+                              class="context-menu__item context-menu__item_edit"
+                            >
+                              Редактировать
+                            </li>
+                            <li
+                              class="
+                                context-menu__item context-menu__item_delete
+                              "
+                            >
+                              Удалить
+                            </li>
+                            <li
+                              class="context-menu__item context-menu__item_hide"
+                            >
+                              Скрыть баланс
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- *** -->
+                      </div>
+                      <div
+                        class="
+                          history-accordion__body
+                          accordion-history-body accordion-body
+                        "
+                      >
+                        <div class="accordion-history-body__table">
+                          <div class="accordion-history-table__column">
+                            <div class="accordion-history-table__header">
+                              Income
+                            </div>
+                            <div class="accordion-history-table__list">
+                              <div class="accordion-history-table__item">
+                                <div class="accordion-history-table__label">
+                                  fjslkdfjsldjf2lsd
+                                </div>
+                                <div class="accordion-history-table__value">
+                                  +632,632,111.00437383 UFO
+                                </div>
+                              </div>
+                              <div class="accordion-history-table__item">
+                                <div class="accordion-history-table__label">
+                                  fjslkdfjsldjf2lsd
+                                </div>
+                                <div class="accordion-history-table__value">
+                                  +632,632,111.00437383 UFO
+                                </div>
+                              </div>
+                              <div class="accordion-history-table__item">
+                                <div class="accordion-history-table__label">
+                                  fjslkdfjsldjf2lsd
+                                </div>
+                                <div class="accordion-history-table__value">
+                                  +632,632,111.00437383 UFO
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-history-table__column">
+                            <div class="accordion-history-table__header">
+                              Out
+                            </div>
+                            <div class="accordion-history-table__list">
+                              <div class="accordion-history-table__item">
+                                <div class="accordion-history-table__label">
+                                  fjslkdfjsldjf2lsd
+                                </div>
+                                <div class="accordion-history-table__value">
+                                  +632,632,111.00437383 UFO
+                                </div>
+                              </div>
+                              <div class="accordion-history-table__item">
+                                <div class="accordion-history-table__label">
+                                  fjslkdfjsldjf2lsd
+                                </div>
+                                <div class="accordion-history-table__value">
+                                  +632,632,111.00437383 UFO
+                                </div>
+                              </div>
+                              <div class="accordion-history-table__item">
+                                <div class="accordion-history-table__label">
+                                  fjslkdfjsldjf2lsd
+                                </div>
+                                <div class="accordion-history-table__value">
+                                  +632,632,111.00437383 UFO
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-history-body__bottom">
+                          <button class="toggle-btn button">
+                            <span class="toggle-btn__icon"></span>
+                            <span class="toggle-btn__text toggle-btn__text_show"
+                              >Show All Balances</span
+                            >
+                            <span class="toggle-btn__text toggle-btn__text_hide"
+                              >Hide All Balances</span
+                            >
+                          </button>
+                          <div class="accordion-history-body__group">
+                            <div class="accordion-history-body__label">
+                              Blochain fee:
+                            </div>
+                            <div class="accordion-history-body__value">
+                              -0.00437383 UFO
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- success / no class -->
+                    <div
+                      class="history-accordion__container accordion-container"
+                    >
+                      <div
+                        class="
+                          history-accordion__header
+                          accordion-history-header accordion-btn
+                        "
+                      >
+                        <div class="accordion-history-header__column">
+                          <div class="accordion-history-header__label">
+                            Address
+                          </div>
+                          <div
+                            class="
+                              accordion-history-header__value
+                              accordion-history-header__value_address
+                              --sent
+                            "
+                          >
+                            fjslkdfjsldjf2lsd
+                          </div>
+                        </div>
+                        <div class="accordion-history-header__column">
+                          <div class="accordion-history-header__label">
+                            Status
+                          </div>
+                          <div class="accordion-history-header__value">
+                            Unconfirmed (1/6)
+                          </div>
+                        </div>
+                        <div class="accordion-history-header__column">
+                          <div class="accordion-history-header__label">
+                            Amount
+                          </div>
+                          <div class="accordion-history-header__value">
+                            +632,632,632,111.00437383 UFO
+                          </div>
+                        </div>
+                        <!-- контекстное меню -->
+                        <div
+                          class="
+                            accordion-history-header__context-box
+                            context-box
+                          "
+                        >
+                          <!-- no class | active -->
+                          <div class="context-box__btn context-btn"></div>
+                          <ul
+                            class="
+                              context-box__menu-list
+                              context-menu-list
+                              active
+                            "
+                          >
+                            <li
+                              class="context-menu__item context-menu__item_edit"
+                            >
+                              Редактировать
+                            </li>
+                            <li
+                              class="
+                                context-menu__item context-menu__item_delete
+                              "
+                            >
+                              Удалить
+                            </li>
+                            <li
+                              class="context-menu__item context-menu__item_hide"
+                            >
+                              Скрыть баланс
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- *** -->
+                      </div>
+                      <div
+                        class="
+                          history-accordion__body
+                          accordion-history-body accordion-body
+                        "
+                      >
+                        <div class="accordion-history-body__table">
+                          <!-- success / no class -->
+                          <div class="accordion-history-table__column success">
+                            <div class="accordion-history-table__header">
+                              Income
+                            </div>
+                            <div class="accordion-history-table__list">
+                              <div class="accordion-history-table__item">
+                                <div class="accordion-history-table__label">
+                                  fjslkdfjsldjf2lsd
+                                </div>
+                                <div class="accordion-history-table__value">
+                                  +632,632,111.00437383 UFO
+                                </div>
+                              </div>
+                              <div class="accordion-history-table__item">
+                                <div class="accordion-history-table__label">
+                                  fjslkdfjsldjf2lsd
+                                </div>
+                                <div class="accordion-history-table__value">
+                                  +632,632,111.00437383 UFO
+                                </div>
+                              </div>
+                              <div class="accordion-history-table__item">
+                                <div class="accordion-history-table__label">
+                                  fjslkdfjsldjf2lsd
+                                </div>
+                                <div class="accordion-history-table__value">
+                                  +632,632,111.00437383 UFO
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- success / no class -->
+                          <div class="accordion-history-table__column">
+                            <div class="accordion-history-table__header">
+                              Out
+                            </div>
+                            <div class="accordion-history-table__list">
+                              <div class="accordion-history-table__item">
+                                <div class="accordion-history-table__label">
+                                  fjslkdfjsldjf2lsd
+                                </div>
+                                <div class="accordion-history-table__value">
+                                  +632,632,111.00437383 UFO
+                                </div>
+                              </div>
+                              <div class="accordion-history-table__item">
+                                <div class="accordion-history-table__label">
+                                  fjslkdfjsldjf2lsd
+                                </div>
+                                <div class="accordion-history-table__value">
+                                  +632,632,111.00437383 UFO
+                                </div>
+                              </div>
+                              <div class="accordion-history-table__item">
+                                <div class="accordion-history-table__label">
+                                  fjslkdfjsldjf2lsd
+                                </div>
+                                <div class="accordion-history-table__value">
+                                  +632,632,111.00437383 UFO
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-history-body__bottom">
+                          <button class="toggle-btn button">
+                            <span class="toggle-btn__icon"></span>
+                            <span class="toggle-btn__text toggle-btn__text_show"
+                              >Show All Balances</span
+                            >
+                            <span class="toggle-btn__text toggle-btn__text_hide"
+                              >Hide All Balances</span
+                            >
+                          </button>
+                          <div class="accordion-history-body__group">
+                            <div class="accordion-history-body__label">
+                              Blochain fee:
+                            </div>
+                            <div class="accordion-history-body__value">
+                              -0.00437383 UFO
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="receive" class="content__body receive">
+              <div class="receive__column receive__column_left">
+                <h2 class="main__title">Receive UFO</h2>
+                <p class="main__subtitle gradient-color">
+                  Fill in amount and payment description if needed. Click on
+                  'Create invoice' will generate several ways of payment to your
+                  address.
+                </p>
+                <form action="#" class="form">
+                  <div class="form__wrapper">
+                    <div
+                      class="form__text-field-container text-field-container"
+                    >
+                      <div class="text-field">
+                        <input
+                          id="amountToReceive"
+                          class="text-field__input"
+                          type="text"
+                          placeholder="Account title"
+                        />
+                        <label for="amountToReceive" class="text-field__label"
+                          >Account title</label
+                        >
+                        <!-- no class / error / success -->
+                        <span class="text-field__line"></span>
+                      </div>
+                      <!-- primary / error / success -->
+                      <div class="text-field-helper primary">
+                        <p class="primary-text">
+                          Minimum length is 8 character but longer is better
+                        </p>
+                        <p class="error-text">Error</p>
+                        <p class="success-text">Success</p>
+                      </div>
+                    </div>
+                    <div
+                      class="form__text-field-container text-field-container"
+                    >
+                      <div class="text-field">
+                        <input
+                          id="paymentCommentReceive"
+                          class="text-field__input"
+                          type="text"
+                          placeholder="Payment comment"
+                        />
+                        <label
+                          for="paymentCommentReceive"
+                          class="text-field__label"
+                          >Payment comment</label
+                        >
+                        <!-- no class -->
+                        <span class="text-field__line"></span>
+                      </div>
+                      <!-- primary -->
+                      <div class="text-field-helper primary">
+                        <p class="primary-text">Optional comment</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__wrapper">
+                    <div class="form__box">
+                      <div
+                        class="form__text-field-container text-field-container"
+                      >
+                        <div class="text-field">
+                          <input
+                            id="ufoAddress"
+                            class="text-field__input"
+                            type="text"
+                            placeholder="UFO Address"
+                            value="uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmltuf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmlt"
+                            disabled
+                          />
+                          <label for="ufoAddress" class="text-field__label"
+                            >UFO Address</label
+                          >
+                          <!-- success -->
+                          <span class="text-field__line success"></span>
+                        </div>
+                        <!-- success -->
+                        <div class="text-field-helper success">
+                          <p class="success-text">Click to copy</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__box">
+                      <div
+                        class="form__text-field-container text-field-container"
+                      >
+                        <div class="text-field">
+                          <input
+                            id="paymentUrl"
+                            class="text-field__input"
+                            type="text"
+                            placeholder="Payment URL"
+                            value="ufo:uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypes"
+                            disabled
+                          />
+                          <label for="paymentUrl" class="text-field__label"
+                            >Payment URL</label
+                          >
+                          <!-- success -->
+                          <span class="text-field__line success"></span>
+                        </div>
+                        <!-- success -->
+                        <div class="text-field-helper success">
+                          <p class="success-text">Click to copy</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="next-button button --blue jc-center"
+                    type="button"
+                  >
+                    Create New UFO Invoice
+                  </button>
+                </form>
+              </div>
+              <div class="receive__column receive__column_right">
+                <div class="receive__image-wrapper">
+                  <img src="./images/qr-code.png" alt="qr-code" />
+                </div>
+              </div>
+            </div>
+            <div id="send" class="content__body send active">
+              <div class="send__column">
+                <h2 class="main__title">Send UFO from my UFO Wallet test 1</h2>
+                <div class="send__wrapper">
+                  <ul class="send__navbar navbar">
+                    <li
+                      class="navbar-item active"
+                      onclick="activeNavbarItem('singlePayment', 2)"
+                    >
+                      Single payment
+                    </li>
+                    <li
+                      class="navbar-item"
+                      onclick="activeNavbarItem('bulkPayment', 2)"
+                    >
+                      Bulk payment
+                    </li>
+                  </ul>
+                  <form action="#" class="send__form form">
+                    <div
+                      id="singlePayment"
+                      class="form__wrapper send-form active"
+                    >
+                      <div
+                        class="form__text-field-container text-field-container"
+                      >
+                        <div class="text-field">
+                          <input
+                            id="addressOfTheRecipient"
+                            class="text-field__input dropdown-icon"
+                            type="text"
+                            placeholder="Recipient's UFO address"
+                          />
+                          <label
+                            for="addressOfTheRecipient"
+                            class="text-field__label"
+                            >Recipient's UFO address</label
+                          >
+                          <!-- no class -->
+                          <span class="text-field__line"></span>
+                          <span class="text-field__wrap-arrow">
+                            <span class="text-field__arrow"></span>
+                          </span>
+                          <ul class="text-field__list">
+                            <li class="text-field__item text-item-field">
+                              <span class="text-item-field__label">test</span>
+                            </li>
+                            <li class="text-field__item text-item-field">
+                              <span class="text-item-field__label">test</span>
+                            </li>
+                            <li class="text-field__item text-item-field">
+                              <span class="text-item-field__label">Custom</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- primary / error / success -->
+                        <div class="text-field-helper primary">
+                          <p class="primary-text">
+                            Minimum length is 8 character but longer is better
+                          </p>
+                          <p class="error-text">Error</p>
+                          <p class="success-text">Success</p>
+                        </div>
+                      </div>
+                      <div
+                        class="form__text-field-container text-field-container"
+                      >
+                        <div class="text-field">
+                          <!-- no class / error -->
+                          <input
+                            id="amountToSend"
+                            class="text-field__input max-amount"
+                            type="text"
+                            placeholder="UFO Amount to send"
+                          />
+                          <label for="amountToSend" class="text-field__label"
+                            >UFO Amount to send</label
+                          >
+                          <!-- no class / error / success -->
+                          <span class="text-field__line"></span>
+                          <span class="text-field__send">Send All</span>
+                          <span class="text-field__alert"></span>
+                        </div>
+                        <!-- primary / error / success -->
+                        <div class="text-field-helper primary">
+                          <p class="primary-text">
+                            Minimum length is 8 character but longer is better
+                          </p>
+                          <p class="error-text">Error</p>
+                          <p class="success-text">Success</p>
+                        </div>
+                      </div>
+                      <div
+                        class="form__text-field-container text-field-container"
+                      >
+                        <div class="text-field">
+                          <input
+                            id="paymentCommentSend"
+                            class="text-field__input"
+                            type="text"
+                            placeholder="Payment comment"
+                          />
+                          <label
+                            for="paymentCommentSend"
+                            class="text-field__label"
+                            >Payment comment</label
+                          >
+                          <!-- no class -->
+                          <span class="text-field__line"></span>
+                        </div>
+                        <!-- primary -->
+                        <div class="text-field-helper primary">
+                          <p class="primary-text">Optional comment</p>
+                        </div>
+                      </div>
+                      <div
+                        class="form__text-field-container text-field-container"
+                      >
+                        <div class="text-field">
+                          <input
+                            id="transactionPriority"
+                            class="text-field__input dropdown-icon"
+                            type="text"
+                            placeholder="Transaction priority"
+                          />
+                          <label
+                            for="transactionPriority"
+                            class="text-field__label"
+                            >Transaction priority</label
+                          >
+                          <!-- no class -->
+                          <span class="text-field__line"></span>
+                          <span class="text-field__wrap-arrow">
+                            <span class="text-field__arrow"></span>
+                          </span>
+                          <ul class="text-field__list">
+                            <li class="text-field__item text-item-field">
+                              <span class="text-item-field__label">Slow</span>
+                              <span class="text-item-field__value">30 min</span>
+                            </li>
+                            <li class="text-field__item text-item-field">
+                              <span class="text-item-field__label">Medium</span>
+                              <span class="text-item-field__value">15 min</span>
+                            </li>
+                            <li class="text-field__item text-item-field">
+                              <span class="text-item-field__label">Fast</span>
+                              <span class="text-item-field__value">5 min</span>
+                            </li>
+                            <li class="text-field__item text-item-field">
+                              <span class="text-item-field__label"
+                                >Immediate</span
+                              >
+                              <span class="text-item-field__value">1 min</span>
+                            </li>
+                            <li class="text-field__item text-item-field">
+                              <span class="text-item-field__label">Custom</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- primary / error / success -->
+                        <div class="text-field-helper primary">
+                          <p class="primary-text">
+                            Minimum length is 8 character but longer is better
+                          </p>
+                          <p class="error-text">Error</p>
+                          <p class="success-text">Success</p>
+                        </div>
+                      </div>
+                      <div class="form__info">
+                        <p class="info__label">Transaction Fees:</p>
+                        <p class="info__result">
+                          Fill in the form to calculate fees
+                        </p>
+                      </div>
+                      <label class="form__custom-checkbox custom-checkbox">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        Donate 100 UFO to developers
+                      </label>
+                      <button
+                        id="PreparePayment-sp"
+                        class="next-button button --blue jc-center"
+                        type="button"
+                      >
+                        Prepare Payment
+                      </button>
+                    </div>
+                    <div id="bulkPayment" class="form__wrapper send-form">
+                      <div class="send-form__list">
+                        <div class="send-form__item">
+                          <div class="send-form__num">1</div>
+                          <div class="send-form__wallet">
+                            uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmlt
+                          </div>
+                          <div class="send-form__sum">111.00437383 UFO</div>
+                        </div>
+                        <div class="send-form__item">
+                          <div class="send-form__num">2</div>
+                          <div class="send-form__wallet">
+                            uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmlt
+                          </div>
+                          <div class="send-form__sum">263.00437383 UFO</div>
+                        </div>
+                        <div class="send-form__item">
+                          <div class="send-form__num">2341</div>
+                          <div class="send-form__wallet">
+                            uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmlt
+                          </div>
+                          <div class="send-form__sum">
+                            56,341,111.00437383 UFO
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__actions">
+                        <button
+                          class="next-button button --black jc-center"
+                          type="button"
+                        >
+                          +
+                        </button>
+                        <button
+                          class="next-button button --black jc-center"
+                          type="button"
+                        >
+                          Import
+                        </button>
+                      </div>
+                      <div class="form__info-list">
+                        <div class="form__info">
+                          <p class="info__label">Transaction Fees:</p>
+                          <p class="info__result">
+                            Fill in the form to calculate fees
+                          </p>
+                        </div>
+                        <div class="form__info">
+                          <p class="info__label">Total Transaction:</p>
+                          <p class="info__result">12,432,340.00046428</p>
+                        </div>
+                      </div>
+                      <label class="form__custom-checkbox custom-checkbox">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        Donate 100 UFO to developers
+                      </label>
+                      <button
+                        id="PreparePayment-sp"
+                        class="next-button button --blue jc-center"
+                        type="button"
+                      >
+                        Prepare Payment
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <form action="#" class="send__form form">
+                  <div class="form__confirm confirm-form">
+                    <div class="confirm-form__box">
+                      <div class="confirm-form__group">
+                        <h3 class="confirm-form__title">
+                          Send UFO from my UFO Wallet test 1
+                        </h3>
+                        <!-- контекстное меню -->
+                        <div class="confirm-form__context-box context-box">
+                          <!-- no class | active -->
+                          <div class="context-box__btn context-btn"></div>
+                          <ul class="context-box__menu-list context-menu-list">
+                            <li
+                              class="context-menu__item context-menu__item_edit"
+                            >
+                              Редактировать
+                            </li>
+                            <li
+                              class="
+                                context-menu__item context-menu__item_delete
+                              "
+                            >
+                              Удалить
+                            </li>
+                            <li
+                              class="context-menu__item context-menu__item_hide"
+                            >
+                              Скрыть баланс
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- *** -->
+                      </div>
+                      <div class="confirm-form__list">
+                        <div class="confirm-form__item">
+                          <div class="confirm-form__label">
+                            Recipient's UFO address
+                          </div>
+                          <div
+                            class="
+                              confirm-form__value confirm-form__value_address
+                            "
+                          >
+                            uf1q5ldm...ypesmmlt
+                          </div>
+                        </div>
+                        <div class="confirm-form__item">
+                          <div class="confirm-form__label">
+                            UFO Amount to send
+                          </div>
+                          <div class="confirm-form__value">
+                            632,632,632,111.00437383
+                          </div>
+                        </div>
+                        <div class="confirm-form__item">
+                          <div class="confirm-form__label">
+                            Medium priority fee (~15 min)
+                          </div>
+                          <div class="confirm-form__value">0.00437383 UFO</div>
+                        </div>
+                      </div>
+                      <div
+                        class="
+                          confirm-form__accordion
+                          confirm-accordion
+                          accordion
+                        "
+                      >
+                        <div
+                          class="
+                            accordion-container
+                            confirm-accordion__container
+                          "
+                        >
+                          <div
+                            class="
+                              confirm-accordion__title
+                              accordion-title accordion-btn
+                            "
+                          >
+                            Transaction details
+                          </div>
+                          <div class="confirm-accordion__body accordion-body">
+                            <ul class="confirm-accordion__tabs tabs">
+                              <li
+                                class="tabs-item active"
+                                onclick="activeNavbarItem('transactionInput', 3)"
+                              >
+                                Outputs<span>(50)</span>
+                              </li>
+                              <li
+                                class="tabs-item"
+                                onclick="activeNavbarItem('transactionOutput', 3)"
+                              >
+                                Inputs<span>(70)</span>
+                              </li>
+                            </ul>
+                            <div class="confirm-accordion__wrapper">
+                              <div
+                                id="transactionInput"
+                                class="confirm-accordion__column active"
+                              >
+                                <div class="confirm-accordion__list">
+                                  <div class="confirm-accordion__item">
+                                    <div
+                                      class="
+                                        confirm-accordion__label
+                                        confirm-accordion__label_address
+                                      "
+                                    >
+                                      fjslkdfjsldjf2lsd
+                                    </div>
+                                    <div class="confirm-accordion__value">
+                                      -632,632,111.00437383 UFO
+                                    </div>
+                                  </div>
+                                  <div class="confirm-accordion__item">
+                                    <div
+                                      class="
+                                        confirm-accordion__label
+                                        confirm-accordion__label_address
+                                      "
+                                    >
+                                      fjslkdfjsldjf2lsd
+                                    </div>
+                                    <div class="confirm-accordion__value">
+                                      -111.00437383 UFO
+                                    </div>
+                                  </div>
+                                  <div class="confirm-accordion__item">
+                                    <div
+                                      class="
+                                        confirm-accordion__label
+                                        confirm-accordion__label_address
+                                      "
+                                    >
+                                      fjslkdfjsldjf2lsd
+                                    </div>
+                                    <div class="confirm-accordion__value">
+                                      -52,111.00437383 UFO
+                                    </div>
+                                  </div>
+                                  <div class="confirm-accordion__item">
+                                    <div
+                                      class="
+                                        confirm-accordion__label
+                                        confirm-accordion__label_address
+                                      "
+                                    >
+                                      fjslkdfjsldjf2lsd
+                                    </div>
+                                    <div class="confirm-accordion__value">
+                                      -52,111.00437383 UFO
+                                    </div>
+                                  </div>
+                                  <div class="confirm-accordion__item">
+                                    <div
+                                      class="
+                                        confirm-accordion__label
+                                        confirm-accordion__label_address
+                                      "
+                                    >
+                                      fjslkdfjsldjf2lsd
+                                    </div>
+                                    <div class="confirm-accordion__value">
+                                      -52,111.00437383 UFO
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="confirm-accordion__group">
+                                  <div class="confirm-accordion__label">
+                                    Blochain fee:
+                                  </div>
+                                  <div class="confirm-accordion__value">
+                                    -0.00437383 UFO
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                id="transactionOutput"
+                                class="confirm-accordion__column"
+                              >
+                                <div class="confirm-accordion__list">
+                                  <div class="confirm-accordion__item">
+                                    <div
+                                      class="
+                                        confirm-accordion__label
+                                        confirm-accordion__label_address
+                                      "
+                                    >
+                                      fjslkdfjsldjf2lsd
+                                    </div>
+                                    <div class="confirm-accordion__value">
+                                      +632,632,111.00437383 UFO
+                                    </div>
+                                  </div>
+                                  <div class="confirm-accordion__item">
+                                    <div
+                                      class="
+                                        confirm-accordion__label
+                                        confirm-accordion__label_address
+                                      "
+                                    >
+                                      fjslkdfjsldjf2lsd
+                                    </div>
+                                    <div class="confirm-accordion__value">
+                                      +111.00437383 UFO
+                                    </div>
+                                  </div>
+                                  <div class="confirm-accordion__item">
+                                    <div
+                                      class="
+                                        confirm-accordion__label
+                                        confirm-accordion__label_address
+                                      "
+                                    >
+                                      fjslkdfjsldjf2lsd
+                                    </div>
+                                    <div class="confirm-accordion__value">
+                                      +52,111.00437383 UFO
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="confirm-accordion__group">
+                                  <div class="confirm-accordion__label">
+                                    Blochain fee:
+                                  </div>
+                                  <div class="confirm-accordion__value">
+                                    -0.00437383 UFO
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="confirm-form__actions">
+                      <button
+                        class="next-button button --black jc-center"
+                        type="button"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        class="next-button button --blue jc-center"
+                        type="button"
+                      >
+                        Confirm and send
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div id="overview" class="content__body overview">
+              <div class="overview__column">
+                <h2 class="main__title">Backup Options</h2>
+                <div class="overview__accordion overview-accordion accordion">
+                  <div
+                    class="accordion-container overview-accordion__container"
+                  >
+                    <div
+                      class="
+                        overview-accordion__title
+                        accordion-title accordion-btn
+                      "
+                    >
+                      Title
+                    </div>
+                    <div class="overview-accordion__body accordion-body">
+                      title
+                    </div>
+                  </div>
+                  <div
+                    class="accordion-container overview-accordion__container"
+                  >
+                    <div
+                      class="
+                        overview-accordion__title
+                        accordion-title accordion-btn
+                      "
+                    >
+                      Seed Phrase
+                    </div>
+                    <div class="overview-accordion__body accordion-body">
+                      Seed Phrase
+                    </div>
+                  </div>
+                  <div
+                    class="accordion-container overview-accordion__container"
+                  >
+                    <div
+                      class="
+                        overview-accordion__title
+                        accordion-title accordion-btn
+                      "
+                    >
+                      Entropy
+                    </div>
+                    <div class="overview-accordion__body accordion-body">
+                      Entropy
+                    </div>
+                  </div>
+                  <div
+                    class="accordion-container overview-accordion__container"
+                  >
+                    <div
+                      class="
+                        overview-accordion__title
+                        accordion-title accordion-btn
+                      "
+                    >
+                      Seed
+                    </div>
+                    <div class="overview-accordion__body accordion-body">
+                      Seed
+                    </div>
+                  </div>
+                  <div
+                    class="accordion-container overview-accordion__container"
+                  >
+                    <div
+                      class="
+                        overview-accordion__title
+                        accordion-title accordion-btn
+                      "
+                    >
+                      Wif
+                    </div>
+                    <div class="overview-accordion__body accordion-body">
+                      Wif
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="modal">
+      <div class="modal__content modal-content">
+        <div class="modal__title-wrapper">
+          <h2 class="modal__title modal__title_add active">Добавить кошелек</h2>
+          <h2 class="modal__title modal__title_import">Импортировать</h2>
+        </div>
+        <div class="modal__wrapper">
+          <ul class="navbar modal__navbar">
+            <li
+              id="addNavbar"
+              class="navbar-item active"
+              onclick="activeNavbarItem('addWallet', 4)"
+            >
+              Add
+            </li>
+            <li
+              id="importNavbar"
+              class="navbar-item"
+              onclick="activeNavbarItem('importWallet', 4)"
+            >
+              Import
+            </li>
+          </ul>
+        </div>
+        <form action="#" class="modal__form modal-form">
+          <div
+            id="addWallet"
+            class="modal-form__wrapper modal-form__add-wallet active"
+          >
+            <div class="modal-form__radio-wrapper">
+              <label for="coin" class="modal-form__radio"
+                >Монета
+                <input type="radio" id="coin" value="coin" name="typeCoin" />
+                <span class="checkmark"></span>
+              </label>
+
+              <label for="token" class="modal-form__radio"
+                >Токен
+                <input type="radio" id="token" value="token" name="typeCoin" />
+                <span class="checkmark"></span>
+              </label>
+              <label for="stablecoin" class="modal-form__radio"
+                >Стейблкойн
+                <input
+                  type="radio"
+                  id="stablecoin"
+                  value="stablecoin"
+                  name="typeCoin"
+                  checked="checked"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="form__text-field-container text-field-container">
+              <div class="text-field">
+                <input
+                  id="blockchain"
+                  class="text-field__input dropdown-icon"
+                  type="text"
+                  placeholder="Блокчейн"
+                />
+                <label for="blockchain" class="text-field__label"
+                  >Блокчейн</label
+                >
+                <!-- no class -->
+                <span class="text-field__line"></span>
+                <span class="text-field__wrap-arrow">
+                  <span class="text-field__arrow"></span>
+                </span>
+                <ul class="text-field__list">
+                  <li class="text-field__item text-item-field">
+                    <span class="text-item-field__label">test</span>
+                  </li>
+                  <li class="text-field__item text-item-field">
+                    <span class="text-item-field__label">test</span>
+                  </li>
+                  <li class="text-field__item text-item-field">
+                    <span class="text-item-field__label">Custom</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="form__text-field-container text-field-container">
+              <div class="text-field">
+                <input
+                  id="tokenName"
+                  class="text-field__input dropdown-icon"
+                  type="text"
+                  placeholder="Название токена"
+                />
+                <label for="tokenName" class="text-field__label"
+                  >Название токена</label
+                >
+                <!-- no class -->
+                <span class="text-field__line"></span>
+                <span class="text-field__wrap-arrow">
+                  <span class="text-field__arrow"></span>
+                </span>
+                <ul class="text-field__list">
+                  <li class="text-field__item text-item-field">
+                    <span class="text-item-field__label">test</span>
+                  </li>
+                  <li class="text-field__item text-item-field">
+                    <span class="text-item-field__label">test</span>
+                  </li>
+                  <li class="text-field__item text-item-field">
+                    <span class="text-item-field__label">Custom</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-form__stablecoin">
+              <div class="form__text-field-container text-field-container">
+                <div class="text-field">
+                  <input
+                    id="typeofWallet"
+                    class="text-field__input dropdown-icon"
+                    type="text"
+                    placeholder="Тип кошелька"
+                  />
+                  <label for="typeofWallet" class="text-field__label"
+                    >Тип кошелька</label
+                  >
+                  <!-- no class -->
+                  <span class="text-field__line"></span>
+                  <span class="text-field__wrap-arrow">
+                    <span class="text-field__arrow"></span>
+                  </span>
+                  <ul class="text-field__list">
+                    <li class="text-field__item text-item-field">
+                      <span class="text-item-field__label">test</span>
+                    </li>
+                    <li class="text-field__item text-item-field">
+                      <span class="text-item-field__label">test</span>
+                    </li>
+                    <li class="text-field__item text-item-field">
+                      <span class="text-item-field__label">Custom</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- primary / error / success -->
+                <div class="text-field-helper primary">
+                  <p class="error-text">Error</p>
+                  <p class="success-text">Success</p>
+                </div>
+              </div>
+              <div class="form__text-field-container text-field-container">
+                <div class="text-field">
+                  <input
+                    id="date"
+                    class="text-field__input modal__date primary-text"
+                    type="date"
+                  />
+                </div>
+              </div>
+              <div class="modal-form__box">
+                <h4 class="modal-form__subtitle">Валюта</h4>
+                <ul class="modal-form__button-group">
+                  <li class="button-sm active">Usdt</li>
+                  <li class="button-sm">Rub</li>
+                </ul>
+              </div>
+              <div class="modal-form__box">
+                <h4 class="modal-form__subtitle">Протокол</h4>
+                <ul class="modal-form__button-group">
+                  <li class="button-sm active">Ethereum (ERC 20)</li>
+                  <li class="button-sm">Bitcoin (Omni)</li>
+                  <li class="button-sm">Liquid</li>
+                  <li class="button-sm">TRON (TRC 20)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="form__text-field-container text-field-container">
+              <div class="text-field">
+                <input
+                  id="importWalletName"
+                  class="text-field__input"
+                  type="text"
+                  placeholder="Название кошелька"
+                />
+                <label for="importWalletName" class="text-field__label"
+                  >Название кошелька</label
+                >
+                <!-- no class / error / success -->
+                <span class="text-field__line"></span>
+              </div>
+              <!-- primary / error / success -->
+              <div class="text-field-helper primary">
+                <p class="primary-text">
+                  Minimum length is 8 character but longer is better
+                </p>
+                <p class="error-text">Error</p>
+                <p class="success-text">Success</p>
+              </div>
+            </div>
+            <button
+              id="walletCreate"
+              class="next-button button --blue jc-center modal-form__btn_create"
+              type="button"
+            >
+              <img src="./images/plus-circle-white.svg" alt="Create wallet" />
+              Создать кошелек
+            </button>
+          </div>
+          <div
+            id="importWallet"
+            class="modal-form__wrapper modal-form__import-wallet"
+          >
+            <div class="modal-form__radio-wrapper">
+              <label for="fromTheApp" class="modal-form__radio"
+                >Из приложения
+                <input
+                  type="radio"
+                  id="fromTheApp"
+                  value="fromTheApp"
+                  name="importWallet"
+                  checked="checked"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label for="autoScan" class="modal-form__radio"
+                >Автоматическое сканирование
+                <input
+                  type="radio"
+                  id="autoScan"
+                  value="autoScan"
+                  name="importWallet"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="form__text-field-container text-field-container">
+              <div class="text-field">
+                <input
+                  id="listOfApplication"
+                  class="text-field__input dropdown-icon"
+                  type="text"
+                  placeholder="Список приложений"
+                />
+                <label for="listOfApplication" class="text-field__label"
+                  >Список приложений</label
+                >
+                <!-- no class -->
+                <span class="text-field__line"></span>
+                <span class="text-field__wrap-arrow">
+                  <span class="text-field__arrow"></span>
+                </span>
+                <ul class="text-field__list">
+                  <li class="text-field__item text-item-field">
+                    <span class="text-item-field__label">test</span>
+                  </li>
+                  <li class="text-field__item text-item-field">
+                    <span class="text-item-field__label">test</span>
+                  </li>
+                  <li class="text-field__item text-item-field">
+                    <span class="text-item-field__label">Custom</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="form__text-field-container text-field-container">
+              <div class="text-field">
+                <input
+                  id="seedPhrase"
+                  class="text-field__input"
+                  type="text"
+                  placeholder="Seed Phrase"
+                />
+                <label for="seedPhrase" class="text-field__label"
+                  >Seed Phrase</label
+                >
+                <!-- no class / error / success -->
+                <span class="text-field__line"></span>
+              </div>
+              <!-- primary / error / success -->
+              <div class="text-field-helper primary">
+                <p class="primary-text">
+                  Minimum length is 8 character but longer is better
+                </p>
+                <p class="error-text">Error</p>
+                <p class="success-text">Success</p>
+              </div>
+            </div>
+            <div class="form__text-field-container text-field-container">
+              <div class="text-field">
+                <input
+                  id="privateKey"
+                  class="text-field__input"
+                  type="text"
+                  placeholder="Private Key"
+                />
+                <label for="privateKey" class="text-field__label"
+                  >Private Key</label
+                >
+                <!-- no class / error / success -->
+                <span class="text-field__line"></span>
+              </div>
+              <!-- primary / error / success -->
+              <div class="text-field-helper primary">
+                <p class="primary-text">
+                  Minimum length is 8 character but longer is better
+                </p>
+                <p class="error-text">Error</p>
+                <p class="success-text">Success</p>
+              </div>
+            </div>
+            <div class="form__text-field-container text-field-container">
+              <div class="text-field">
+                <input
+                  id="xPreview"
+                  class="text-field__input"
+                  type="text"
+                  placeholder="X Preview"
+                />
+                <label for="xPreview" class="text-field__label"
+                  >X Preview</label
+                >
+                <!-- no class / error / success -->
+                <span class="text-field__line"></span>
+              </div>
+              <!-- primary / error / success -->
+              <div class="text-field-helper primary">
+                <p class="primary-text">
+                  Minimum length is 8 character but longer is better
+                </p>
+                <p class="error-text">Error</p>
+                <p class="success-text">Success</p>
+              </div>
+            </div>
+            <div class="form__text-field-container text-field-container">
+              <div class="text-field">
+                <input
+                  id="publicKey"
+                  class="text-field__input"
+                  type="text"
+                  placeholder="Public Key"
+                />
+                <label for="publicKey" class="text-field__label"
+                  >Public Key</label
+                >
+                <!-- no class / error / success -->
+                <span class="text-field__line"></span>
+              </div>
+              <!-- primary / error / success -->
+              <div class="text-field-helper primary">
+                <p class="primary-text">
+                  Minimum length is 8 character but longer is better
+                </p>
+                <p class="error-text">Error</p>
+                <p class="success-text">Success</p>
+              </div>
+            </div>
+            <div class="form__text-field-container text-field-container">
+              <div class="text-field">
+                <input
+                  id="xPub"
+                  class="text-field__input"
+                  type="text"
+                  placeholder="X Pub"
+                />
+                <label for="xPub" class="text-field__label">X Pub</label>
+                <!-- no class / error / success -->
+                <span class="text-field__line"></span>
+              </div>
+              <!-- primary / error / success -->
+              <div class="text-field-helper primary">
+                <p class="primary-text">
+                  Minimum length is 8 character but longer is better
+                </p>
+                <p class="error-text">Error</p>
+                <p class="success-text">Success</p>
+              </div>
+            </div>
+            <div class="form__text-field-container text-field-container">
+              <div class="text-field">
+                <input
+                  id="selectAFile"
+                  class="file-field__input"
+                  type="file"
+                  placeholder="Из файла"
+                />
+                <label for="selectAFile" class="file-field__label"
+                  >Из файла</label
+                >
+                <!-- no class -->
+                <span class="text-field__line"></span>
+              </div>
+              <!-- primary / error / success -->
+              <div class="text-field-helper primary">
+                <p class="primary-text">
+                  Minimum length is 8 character but longer is better
+                </p>
+                <p class="error-text">Error</p>
+                <p class="success-text">Success</p>
+              </div>
+            </div>
+            <div class="modal-form__box">
+              <p class="primary-text modal-form__text">
+                Please, be careful when choosing account's title. It is
+                displayed in the Accounts List on wallet startup. Anyone who has
+                access to this device can see it.
+              </p>
+              <div class="form__text-field-container text-field-container">
+                <div class="text-field modal__text-field">
+                  <textarea
+                    id="enterData"
+                    class=""
+                    placeholder="Ведите имеющиеся у вас данные"
+                  ></textarea>
+                  <!-- no class -->
+                  <span class="text-field__line"></span>
+                </div>
+              </div>
+            </div>
+            <div class="form__text-field-container text-field-container">
+              <div class="text-field">
+                <input
+                  id="walletName"
+                  class="text-field__input"
+                  type="text"
+                  placeholder="Название кошелька"
+                />
+                <label for="walletName" class="text-field__label"
+                  >Название кошелька</label
+                >
+                <!-- no class / error / success -->
+                <span class="text-field__line"></span>
+              </div>
+              <!-- primary / error / success -->
+              <div class="text-field-helper primary">
+                <p class="primary-text">
+                  Minimum length is 8 character but longer is better
+                </p>
+                <p class="error-text">Error</p>
+                <p class="success-text">Success</p>
+              </div>
+            </div>
+            <button
+              id="walletCreate"
+              class="next-button button --blue jc-center modal-form__btn_create"
+              type="button"
+            >
+              <img src="./images/plus-circle-white.svg" alt="Import" />
+              Import
+            </button>
+            <div></div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/dots.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script>
+      /* focused input */
+      const inputArray = [...document.querySelectorAll(".text-field")];
+
+      inputArray.forEach((el) => {
+        el.addEventListener("click", (e) => {
+          e.target.closest(".text-field").children[0].focus();
+        });
+      });
+
+      /* card-wallets */
+      const cardWalletArr = [...document.querySelectorAll(".card-wallet")];
+
+      cardWalletArr.forEach((el) => {
+        el.addEventListener("click", (e) => {
+          if (
+            e.target
+              .closest(".card-wallet-group")
+              .classList.contains("wallet-group")
+          ) {
+            e.target.closest(".wallet-group").classList.toggle("active");
+          }
+          if (
+            !e.target
+              .closest(".card-wallet-group")
+              .classList.contains("wallet-group") &&
+            !e.target.closest(".card-wallet").classList.contains("alert") &&
+            !e.target
+              .closest(".card-wallet")
+              .classList.contains("progress-update")
+          ) {
+            e.target.closest(".card-wallet").classList.toggle("active");
+          }
+        });
+      });
+
+      const searchIconBtn = document.querySelector(
+        ".aside__group .search-form__icon"
+      );
+      const searchInput = document.querySelector(
+        ".aside__group .search-form__input"
+      );
+      const searchBtn = document.querySelector(
+        ".aside__group .search-form__button"
+      );
+      const asideTitle = document.querySelector(".aside__group .aside__title");
+      const asideSearchForm = document.querySelector(
+        ".aside__group .aside__search-form"
+      );
+
+      searchIconBtn.addEventListener("click", () => {
+        asideTitle.classList.add("hide");
+        searchIconBtn.classList.add("hide");
+        searchInput.classList.add("active");
+        searchBtn.classList.add("active");
+        asideSearchForm.classList.add("active");
+        searchInput.focus();
+      });
+
+      searchInput.addEventListener("blur", (event) => {
+        asideTitle.classList.remove("hide");
+        searchIconBtn.classList.remove("hide");
+        searchInput.classList.remove("active");
+        searchBtn.classList.remove("active");
+        asideSearchForm.classList.remove("active");
+      });
+
+      const createNewWallet = document.querySelector(".aside__action");
+      const modal = document.querySelector(".modal");
+
+      createNewWallet.addEventListener("click", function () {
+        modal.classList.add("modal-open");
+        body.classList.remove("--scroll-on");
+        body.classList.add("--scroll-off");
+      });
+    </script>
+  </body>
+</html>
