@@ -79,7 +79,7 @@
   opacity: 0;
   visibility: hidden;
 }
-.checkmark {
+.radiomark {
   position: absolute;
   top: 50%;
   left: 0;
@@ -91,21 +91,21 @@
   border-radius: 50%;
   transform: translate(0, -50%);
 }
-.modal-form__radio:hover input ~ .checkmark {
+.modal-form__radio:hover input ~ .radiomark {
   border-color: var(--dark-blue);
 }
-.modal-form__radio input:checked ~ .checkmark {
+.modal-form__radio input:checked ~ .radiomark {
   border-color: var(--dark-blue);
 }
-.checkmark:after {
+.radiomark:after {
   content: "";
   position: absolute;
   display: none;
 }
-.modal-form__radio input:checked ~ .checkmark:after {
+.modal-form__radio input:checked ~ .radiomark:after {
   display: block;
 }
-.modal-form__radio .checkmark:after {
+.modal-form__radio .radiomark:after {
   top: 50%;
   left: 50%;
   width: 0.625rem;

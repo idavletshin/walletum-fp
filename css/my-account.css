@@ -267,8 +267,15 @@ body.--scroll-off .main {
 }
 
 .send__column {
-  max-width: 28.125rem;
+  /* max-width: 28.125rem; */
   flex: 1 1 100%;
+}
+
+#singlePayment,
+.send-form .form__custom-checkbox,
+.send-form .next-button,
+.send-form .form__info-list {
+  max-width: 28.125rem;
 }
 
 .send__column:not(:last-child) {
@@ -308,8 +315,9 @@ body.--scroll-off .main {
 
 .send-form__item {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  min-height: 4rem;
+  min-height: 3rem;
   padding: 0.5rem 1rem;
   background-color: var(--card-bg);
   border-radius: 0.5rem;
@@ -324,14 +332,17 @@ body.--scroll-off .main {
   margin-right: 0.1875rem;
   font-family: var(--roboto-font);
   font-size: 0.875rem;
-  flex: 0.1;
+  /* flex: 0.1; */
+  flex: 1;
 }
 
 .send-form__wallet {
   color: var(--dark-gray);
   font-size: 0.875rem;
-  text-align: right;
-  flex: 1;
+  text-align: left;
+  /* text-align: right; */
+  /* flex: 1; */
+  flex: 5;
   word-break: break-all;
 }
 
@@ -340,7 +351,12 @@ body.--scroll-off .main {
   font-family: var(--roboto-font);
   font-size: 0.875rem;
   text-align: right;
-  flex: 1 1 100%;
+  /* flex: 1 1 100%; */
+  flex: 4;
+}
+
+.send-form__context-box {
+  margin-left: 1rem;
 }
 
 .send-form .form__actions {
@@ -374,6 +390,9 @@ body.--scroll-off .main {
 }
 
 /* confirm-form */
+.form__confirm {
+  max-width: 28.125rem;
+}
 .confirm-form__box {
   padding: 2.5rem 2rem;
   margin-bottom: 1.5rem;
@@ -451,16 +470,19 @@ body.--scroll-off .main {
 
 /* confirm-accordion */
 
-.confirm-accordion__tabs.tabs {
+.confirm-accordion__tabs-nav.tabs-nav {
   margin-bottom: 2.25rem;
 }
 
 .confirm-accordion__column {
-  display: none;
   flex-direction: column;
 }
 
-.confirm-accordion__column.active {
+.tabs-content__item {
+  display: none;
+}
+
+.tabs-content__item.active {
   display: flex;
 }
 
@@ -596,11 +618,14 @@ body.--scroll-off .main {
   position: relative;
   padding: 0.75rem 3.5rem 0.75rem 1.5rem;
   min-height: 3rem;
+  margin-bottom: 1rem;
+  background-color: #151516;
   border-radius: 0.5rem;
   user-select: none;
 }
 
-.history-accordion__container:nth-child(odd) {
+.history-accordion__container.active {
+  padding-top: 1.75rem;
   background-color: var(--card-bg);
 }
 

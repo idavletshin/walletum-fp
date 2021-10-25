@@ -1,12 +1,12 @@
 /* стили для Tabs */
 
-.tabs {
+.tabs-nav {
   display: flex;
   width: 100%;
   margin-bottom: 2rem;
 }
 
-.tabs-item {
+.tabs-nav__item {
   position: relative;
   display: flex;
   justify-content: center;
@@ -20,11 +20,11 @@
   cursor: pointer;
 }
 
-.tabs-item span {
+.tabs-nav__item span {
   margin-left: 5px;
 }
 
-.tabs-item.active::after {
+.tabs-nav__item.active::after {
   position: absolute;
   content: "";
   left: 0;
@@ -34,8 +34,8 @@
   background-color: var(--dark-blue);
 }
 
-.tabs-item.active,
-.tabs-item:hover {
+.tabs-nav__item.active,
+.tabs-nav__item:hover {
   color: var(--white);
 }
 
