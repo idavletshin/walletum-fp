@@ -436,6 +436,10 @@ body.--scroll-off .main {
     flex-wrap: wrap;
   }
 
+  .send-form__num {
+    align-self: flex-start;
+  }
+
   .send-form__wallet {
     text-align: right;
   }
