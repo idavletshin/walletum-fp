@@ -51,6 +51,82 @@
     <main class="main">
       <div class="main__container">
         <h1 class="main__main-title">My wallet account name</h1>
+        <div class="main__card-wallet card-wallet blue active">
+          <div class="card-wallet__top">
+            <div class="card-wallet-top__group">
+              <a class="previous-button button" href="#">
+                <img src="./images/vector.png" alt="previous button" />
+              </a>
+              <div class="card-wallet-top__title">
+                Тестовое название какого-то токена
+              </div>
+              <div class="card-wallet-top__alert-text">
+                Fill in amount and payment description if needed.
+              </div>
+              <div class="card-wallet-top__context-box context-box">
+                <!-- no class | active -->
+                <div class="context-box__btn context-btn"></div>
+                <ul class="context-box__menu-list context-menu-list">
+                  <li class="context-menu__item context-menu__item_edit">
+                    Редактировать
+                  </li>
+                  <li class="context-menu__item context-menu__item_delete">
+                    Удалить
+                  </li>
+                  <li class="context-menu__item context-menu__item_hide">
+                    Скрыть баланс
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-wallet-top__group">
+              <div class="card-wallet-top__badges badge-list">
+                <div class="card-wallet-top__badge badge">token</div>
+                <div class="card-wallet-top__badge badge">btc</div>
+              </div>
+              <div class="card-wallet-top__info">
+                <div class="card-wallet-info__time">
+                  <span>Time Lock</span>
+                  <span>12.04.22</span>
+                </div>
+                <div class="card-wallet-info__amount gradient-color">
+                  15 Wallets
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-wallet__bottom">
+            <div class="card-wallet-bottom__left">
+              <div class="card-wallet-bottom__icon"></div>
+              <div class="main-progress-mini">
+                <div class="inner"></div>
+                <div class="number">100%</div>
+                <div class="circle">
+                  <div class="bar left">
+                    <div class="progress-bar"></div>
+                  </div>
+                  <div class="bar right">
+                    <div class="progress-bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-wallet-bottom__right">
+              <div class="card-wallet-bottom__info-amount">
+                <div class="card-wallet-bottom__amount">
+                  632,632,632,111.<small>00437383</small>
+                </div>
+                <span class="card-wallet-bottom__token-name">FAGH</span>
+              </div>
+              <div class="card-wallet-bottom__badges badge-list">
+                <div class="card-wallet-bottom__badge badge">btc</div>
+                <div class="card-wallet-bottom__badge badge">coin</div>
+                <div class="card-wallet-bottom__badge badge">ufo</div>
+              </div>
+              <a href="#" class="card-wallet-bottom__action">Update</a>
+            </div>
+          </div>
+        </div>
         <div class="main__wrapper">
           <aside class="main__aside">
             <div class="aside__group">
@@ -941,83 +1017,6 @@
             </button>
           </aside>
           <div class="main__content">
-            <a class="previous-button button" href="#">
-              <img src="./images/vector.png" alt="previous button" />
-              <span class="previous-button__text">Назад</span>
-            </a>
-            <div class="content__card-wallet card-wallet blue active">
-              <div class="card-wallet__top">
-                <div class="card-wallet-top__group">
-                  <div class="card-wallet-top__title">
-                    Тестовое название какого-то токена
-                  </div>
-                  <div class="card-wallet-top__alert-text">
-                    Fill in amount and payment description if needed.
-                  </div>
-                  <div class="card-wallet-top__context-box context-box">
-                    <!-- no class | active -->
-                    <div class="context-box__btn context-btn"></div>
-                    <ul class="context-box__menu-list context-menu-list">
-                      <li class="context-menu__item context-menu__item_edit">
-                        Редактировать
-                      </li>
-                      <li class="context-menu__item context-menu__item_delete">
-                        Удалить
-                      </li>
-                      <li class="context-menu__item context-menu__item_hide">
-                        Скрыть баланс
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="card-wallet-top__group">
-                  <div class="card-wallet-top__badges badge-list">
-                    <div class="card-wallet-top__badge badge">token</div>
-                    <div class="card-wallet-top__badge badge">btc</div>
-                  </div>
-                  <div class="card-wallet-top__info">
-                    <div class="card-wallet-info__time">
-                      <span>Time Lock</span>
-                      <span>12.04.22</span>
-                    </div>
-                    <div class="card-wallet-info__amount gradient-color">
-                      15 Wallets
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-wallet__bottom">
-                <div class="card-wallet-bottom__left">
-                  <div class="card-wallet-bottom__icon"></div>
-                  <div class="main-progress-mini">
-                    <div class="inner"></div>
-                    <div class="number">100%</div>
-                    <div class="circle">
-                      <div class="bar left">
-                        <div class="progress-bar"></div>
-                      </div>
-                      <div class="bar right">
-                        <div class="progress-bar"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-wallet-bottom__right">
-                  <div class="card-wallet-bottom__info-amount">
-                    <div class="card-wallet-bottom__amount">
-                      632,632,632,111.<small>00437383</small>
-                    </div>
-                    <span class="card-wallet-bottom__token-name">FAGH</span>
-                  </div>
-                  <div class="card-wallet-bottom__badges badge-list">
-                    <div class="card-wallet-bottom__badge badge">btc</div>
-                    <div class="card-wallet-bottom__badge badge">coin</div>
-                    <div class="card-wallet-bottom__badge badge">ufo</div>
-                  </div>
-                  <a href="#" class="card-wallet-bottom__action">Update</a>
-                </div>
-              </div>
-            </div>
             <button class="content__action toggle-btn button">
               <span class="toggle-btn__icon"></span>
               <span class="toggle-btn__text toggle-btn__text_show"
@@ -2758,20 +2757,35 @@
       /* card-wallets */
       const cardWalletArr = [...document.querySelectorAll(".card-wallet")];
       const mainContent = document.querySelector(".main__content");
+      const mainCardWallet = document.querySelector(".main__card-wallet");
       const asideContent = document.querySelector(".main__aside");
       const mainTitle = document.querySelector(".main__main-title");
       const returnToWallet = document.querySelector(
-        ".main__content .previous-button"
+        ".main__card-wallet .previous-button"
       );
 
       cardWalletArr.forEach((el) => {
         el.addEventListener("click", (e) => {
-          if (window.matchMedia("(max-width: 767px)").matches) {
+          if (window.matchMedia("(max-width: 47.9375rem)").matches) {
             if (e.target.closest(".card-wallet")) {
               mainContent.style.display = "block";
+              mainCardWallet.style.display = "block";
               asideContent.style.display = "none";
               mainTitle.style.display = "none";
+
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
             }
+          }
+          if (e.target.closest(".previous-button")) {
+            e.preventDefault();
+            mainContent.style.display = "none";
+            mainCardWallet.style.display = "none";
+            asideContent.style.display = "block";
+            mainTitle.style.display = "block";
+            return;
           }
           if (
             e.target
@@ -2794,11 +2808,34 @@
         });
       });
 
-      returnToWallet.addEventListener("click", () => {
-        mainContent.style.display = "none";
-        asideContent.style.display = "block";
-        mainTitle.style.display = "block";
-      });
+      /* Уменьшение card-wallet при скролле */
+      window.onscroll = function () {
+        if (window.matchMedia("(max-width: 767px)").matches) {
+          if (window.pageYOffset > 100) {
+            mainCardWallet.style.top = "-9.5rem";
+            mainCardWallet.style.transition = "top 0.3s ease";
+          } else if (window.pageYOffset < 100) {
+            mainCardWallet.style.top = "0";
+          }
+
+          // var hp = document.body.scrollHeight,
+          //   hw = window.innerHeight,
+          //   smax = hp - hw,
+          //   smin = 0,
+          //   hmin = 5,
+          //   hmax = 13,
+          //   ds = smax - smin,
+          //   dh = hmax - hmin;
+
+          // window.addEventListener("scroll", function () {
+          //   var s = window.pageYOffset; // current scrollTop
+          //   var h = hmax - (dh * s) / ds;
+
+          //   mainCardWallet.style.top = h - 13 + "rem";
+          // });
+        }
+      };
+      /* *** */
 
       const searchIconBtn = document.querySelector(
         ".aside__group .search-form__icon"
