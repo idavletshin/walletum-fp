@@ -1,22 +1,37 @@
 
 /* modal */
 
-const createNewWallet = document.querySelector(".aside__action");
-const modalWrap = document.querySelector(".modal");
-const modalContent = document.querySelector(".modal-content");
+const createNewWalletButton = document.querySelector(".aside__action");
+const modal = document.querySelectorAll(".modal");
+const dataImportModal = document.getElementById('dataImportModal')
+const dataImportButton = document.getElementById('dataImportButton')
+const createNewWalletModal = document.getElementById('createNewWalletModal')
 
-createNewWallet.addEventListener("click", function () {
-    modalWrap.classList.add("modal-open");
-    body.classList.remove("--scroll-on");
-    body.classList.add("--scroll-off");
+function showModal() {
+  body.classList.remove("--scroll-on");
+  body.classList.add("--scroll-off");
+}
+
+createNewWalletButton.addEventListener("click", function () {
+  showModal()
+  createNewWalletModal.style.display = 'block'
 });
 
-modalWrap.addEventListener("click", (e) => {
-    // при клике в любом месте окна браузера
-    const target = e.target; // находим элемент, на котором был клик
+dataImportButton.addEventListener("click", function () {
+  showModal()
+  dataImportModal.style.display = 'block'
+});
+
+modal.forEach((el) => {
+  el.addEventListener('click', (e) => {
+    const target = e.target;
+
     if (!target.closest(".modal-content")) {
-        modalWrap.classList.remove("modal-open");
-        body.classList.add("--scroll-on");
-        body.classList.remove("--scroll-off");
+      body.classList.add("--scroll-on");
+      body.classList.remove("--scroll-off");
+
+      dataImportModal.style.display = 'none'
+      createNewWalletModal.style.display = 'none'
     }
-});
+  })
+})

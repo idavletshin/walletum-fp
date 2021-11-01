@@ -10,20 +10,31 @@
   z-index: 10;
   overflow-y: auto;
 }
-.modal.modal-open {
-  display: flex;
-}
 .modal__content {
-  max-width: 28.125rem;
   width: 100%;
   height: auto;
   margin: 6rem auto auto;
-  padding: 4rem 0;
   background-color: var(--card-bg);
+}
+#createNewWalletModal .modal-content {
+  max-width: 28.125rem;
+  padding: 4rem 0;
   border-radius: 2rem;
+}
+#dataImportModal .modal-content {
+  max-width: 35.4375rem;
+  padding: 2rem;
+  border-radius: 0.75rem;
 }
 .modal__title-wrapper {
 }
+
+@media screen and (max-width: 47.9375rem) {
+  .modal__content {
+    margin-top: 1rem;
+  }
+}
+/* modal create new wallet */
 .modal__title {
   position: relative;
   margin-bottom: 1rem;
@@ -54,6 +65,49 @@
 }
 .modal__form {
   padding: 0 3.75rem;
+}
+
+/* modal import data */
+
+.modal__form-import-data {
+}
+.import-data {
+}
+.import-data__title {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.import-table-data {
+  min-height: 17.5rem;
+  max-height: 17.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 0.0625rem solid var(--input-border);
+  overflow: hidden;
+}
+.import-table-data__list {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.import-table-data__item {
+  display: flex;
+  justify-content: space-between;
+  width: 31.4375rem;
+  font-size: 0.75rem;
+}
+.import-table-data__num {
+  width: 10%;
+  margin-right: 3%;
+  color: var(--gray);
+  text-align: right;
+}
+.import-table-data__address {
+  width: 58%;
+  margin-right: 3%;
+}
+.import-table-data__amount {
+  width: 26%;
 }
 
 /* radio button */

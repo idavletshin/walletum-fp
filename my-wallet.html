@@ -54,8 +54,71 @@
         <div class="main__wrapper">
           <aside class="main__aside">
             <div class="aside__group">
-              <h3 class="aside__title">My Wallets - (51)</h3>
-              <button class="search-form__icon button"></button>
+              <!-- <h3 class="aside__title">My Wallets - (51)</h3> -->
+              <div class="aside__select custom-select">
+                <p class="custom-select__text">My Wallets - (51)</p>
+                <ul class="custom-select__list">
+                  <li class="custom-select__group">
+                    <ul class="custom-select__group-list">
+                      <li class="custom-select__item">
+                        <span class="custom-select__name">BTC</span>
+                        <span class="custom-select__amount">15</span>
+                      </li>
+                      <li class="custom-select__item">
+                        <span class="custom-select__name">UFO</span>
+                        <span class="custom-select__amount"></span>
+                      </li>
+                      <li class="custom-select__item">
+                        <span class="custom-select__name">ETH</span>
+                        <span class="custom-select__amount"></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="custom-select__group">
+                    <ul class="custom-select__group-list">
+                      <li class="custom-select__item">
+                        <span class="custom-select__name">Stable</span>
+                        <span class="custom-select__amount"></span>
+                      </li>
+                      <li class="custom-select__item">
+                        <span class="custom-select__name">Tokens</span>
+                        <span class="custom-select__amount"></span>
+                      </li>
+                      <li class="custom-select__item">
+                        <span class="custom-select__name">NFT</span>
+                        <span class="custom-select__amount"></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="custom-select__group">
+                    <ul class="custom-select__group-list">
+                      <li class="custom-select__item">
+                        <span class="custom-select__name">Groups</span>
+                        <span class="custom-select__amount"></span>
+                      </li>
+                      <li class="custom-select__item">
+                        <span class="custom-select__name">View-only</span>
+                        <span class="custom-select__amount"></span>
+                      </li>
+                      <li class="custom-select__item">
+                        <span class="custom-select__name">AtomicSwap</span>
+                        <span class="custom-select__amount"></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="custom-select__group">
+                    <ul class="custom-select__group-list">
+                      <li class="custom-select__item">
+                        <span class="custom-select__name">TimeLock</span>
+                        <span class="custom-select__amount"></span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <button class="search-form__icon button">
+                <img src="./images/search.svg" alt="search icon" />
+              </button>
               <form action="#" class="aside__search-form">
                 <button class="search-form__button button"></button>
                 <input class="search-form__input" type="text" />
@@ -171,7 +234,9 @@
                         <!-- контекстное меню -->
                         <div class="card-wallet-top__context-box context-box">
                           <!-- no class | active -->
-                          <div class="context-box__btn context-btn"></div>
+                          <div
+                            class="context-box__btn context-btn active"
+                          ></div>
                           <ul class="context-box__menu-list context-menu-list">
                             <li
                               class="context-menu__item context-menu__item_edit"
@@ -876,6 +941,83 @@
             </button>
           </aside>
           <div class="main__content">
+            <a class="previous-button button" href="#">
+              <img src="./images/vector.png" alt="previous button" />
+              <span class="previous-button__text">Назад</span>
+            </a>
+            <div class="content__card-wallet card-wallet blue active">
+              <div class="card-wallet__top">
+                <div class="card-wallet-top__group">
+                  <div class="card-wallet-top__title">
+                    Тестовое название какого-то токена
+                  </div>
+                  <div class="card-wallet-top__alert-text">
+                    Fill in amount and payment description if needed.
+                  </div>
+                  <div class="card-wallet-top__context-box context-box">
+                    <!-- no class | active -->
+                    <div class="context-box__btn context-btn"></div>
+                    <ul class="context-box__menu-list context-menu-list">
+                      <li class="context-menu__item context-menu__item_edit">
+                        Редактировать
+                      </li>
+                      <li class="context-menu__item context-menu__item_delete">
+                        Удалить
+                      </li>
+                      <li class="context-menu__item context-menu__item_hide">
+                        Скрыть баланс
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-wallet-top__group">
+                  <div class="card-wallet-top__badges badge-list">
+                    <div class="card-wallet-top__badge badge">token</div>
+                    <div class="card-wallet-top__badge badge">btc</div>
+                  </div>
+                  <div class="card-wallet-top__info">
+                    <div class="card-wallet-info__time">
+                      <span>Time Lock</span>
+                      <span>12.04.22</span>
+                    </div>
+                    <div class="card-wallet-info__amount gradient-color">
+                      15 Wallets
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wallet__bottom">
+                <div class="card-wallet-bottom__left">
+                  <div class="card-wallet-bottom__icon"></div>
+                  <div class="main-progress-mini">
+                    <div class="inner"></div>
+                    <div class="number">100%</div>
+                    <div class="circle">
+                      <div class="bar left">
+                        <div class="progress-bar"></div>
+                      </div>
+                      <div class="bar right">
+                        <div class="progress-bar"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-wallet-bottom__right">
+                  <div class="card-wallet-bottom__info-amount">
+                    <div class="card-wallet-bottom__amount">
+                      632,632,632,111.<small>00437383</small>
+                    </div>
+                    <span class="card-wallet-bottom__token-name">FAGH</span>
+                  </div>
+                  <div class="card-wallet-bottom__badges badge-list">
+                    <div class="card-wallet-bottom__badge badge">btc</div>
+                    <div class="card-wallet-bottom__badge badge">coin</div>
+                    <div class="card-wallet-bottom__badge badge">ufo</div>
+                  </div>
+                  <a href="#" class="card-wallet-bottom__action">Update</a>
+                </div>
+              </div>
+            </div>
             <button class="content__action toggle-btn button">
               <span class="toggle-btn__icon"></span>
               <span class="toggle-btn__text toggle-btn__text_show"
@@ -965,7 +1107,9 @@
                           "
                         >
                           <!-- no class | active -->
-                          <div class="context-box__btn context-btn"></div>
+                          <div
+                            class="context-box__btn context-btn active"
+                          ></div>
                           <ul class="context-box__menu-list context-menu-list">
                             <li
                               class="context-menu__item context-menu__item_edit"
@@ -1391,18 +1535,6 @@
                 <h2 class="main__title">Send UFO from my UFO Wallet test 1</h2>
                 <div class="send__wrapper">
                   <ul class="send__navbar navbar">
-                    <!-- <li
-                      class="navbar-item active"
-                      onclick="activeNavbarItem('singlePayment', 2)"
-                    >
-                      Single payment
-                    </li>
-                    <li
-                      class="navbar-item"
-                      onclick="activeNavbarItem('bulkPayment', 2)"
-                    >
-                      Bulk payment
-                    </li> -->
                     <li
                       class="navbar-item active"
                       data-id="singlePayment"
@@ -1599,7 +1731,9 @@
                           <!-- Контекстное меню -->
                           <div class="send-form__context-box context-box">
                             <!-- no class | active -->
-                            <div class="context-box__btn context-btn"></div>
+                            <div
+                              class="context-box__btn context-btn active"
+                            ></div>
                             <ul
                               class="context-box__menu-list context-menu-list"
                             >
@@ -1712,6 +1846,7 @@
                           +
                         </button>
                         <button
+                          id="dataImportButton"
                           class="next-button button --black jc-center"
                           type="button"
                         >
@@ -1755,7 +1890,9 @@
                         <!-- контекстное меню -->
                         <div class="confirm-form__context-box context-box">
                           <!-- no class | active -->
-                          <div class="context-box__btn context-btn"></div>
+                          <div
+                            class="context-box__btn context-btn active"
+                          ></div>
                           <ul class="context-box__menu-list context-menu-list">
                             <li
                               class="context-menu__item context-menu__item_edit"
@@ -2099,7 +2236,7 @@
         </div>
       </div>
     </main>
-    <div class="modal">
+    <div id="createNewWalletModal" class="modal">
       <div class="modal__content modal-content">
         <div class="modal__title-wrapper">
           <h2 class="modal__title modal__title_add active">Добавить кошелек</h2>
@@ -2547,12 +2684,67 @@
         </form>
       </div>
     </div>
+    <div id="dataImportModal" class="modal">
+      <div class="modal__content modal-content">
+        <form action="#" class="modal__form-import-data import-data">
+          <h2 class="import-data__title">Import Data</h2>
+          <div class="import-data__table import-table-data">
+            <ul class="import-table-data__list">
+              <li class="import-table-data__item">
+                <div class="import-table-data__num">1</div>
+                <div class="import-table-data__address">
+                  uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmlt
+                </div>
+                <div class="import-table-data__amount">111.00437383</div>
+              </li>
+              <li class="import-table-data__item">
+                <div class="import-table-data__num">13345</div>
+                <div class="import-table-data__address">
+                  uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmlt
+                </div>
+                <div class="import-table-data__amount">
+                  755,632,111.00437383
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="form__text-field-container text-field-container">
+            <div class="text-field">
+              <input
+                id="importDataAddress"
+                class="text-field__input"
+                type="text"
+                placeholder="Address / Amount"
+              />
+              <label for="importDataAddress" class="text-field__label"
+                >Address / Amount</label
+              >
+            </div>
+            <!-- error -->
+            <div class="text-field-helper error">
+              <p class="error-text">Ошибка в строке 24, неверная сумма</p>
+              <p class="error-text">
+                Ошибка в строке 24, неверный формат кошелька
+              </p>
+            </div>
+          </div>
+          <button
+            id="walletCreate"
+            class="next-button button --blue jc-center modal-form__btn_create"
+            type="button"
+          >
+            Generate Bulk Payment
+          </button>
+        </form>
+      </div>
+    </div>
 
     <script src="./js/main.js"></script>
     <script src="./js/dots.js"></script>
     <script src="./js/accordion.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/select.js"></script>
     <script>
       /* focused input */
       const inputArray = [...document.querySelectorAll(".text-field")];
@@ -2565,9 +2757,22 @@
 
       /* card-wallets */
       const cardWalletArr = [...document.querySelectorAll(".card-wallet")];
+      const mainContent = document.querySelector(".main__content");
+      const asideContent = document.querySelector(".main__aside");
+      const mainTitle = document.querySelector(".main__main-title");
+      const returnToWallet = document.querySelector(
+        ".main__content .previous-button"
+      );
 
       cardWalletArr.forEach((el) => {
         el.addEventListener("click", (e) => {
+          if (window.matchMedia("(max-width: 767px)").matches) {
+            if (e.target.closest(".card-wallet")) {
+              mainContent.style.display = "block";
+              asideContent.style.display = "none";
+              mainTitle.style.display = "none";
+            }
+          }
           if (
             e.target
               .closest(".card-wallet-group")
@@ -2589,6 +2794,12 @@
         });
       });
 
+      returnToWallet.addEventListener("click", () => {
+        mainContent.style.display = "none";
+        asideContent.style.display = "block";
+        mainTitle.style.display = "block";
+      });
+
       const searchIconBtn = document.querySelector(
         ".aside__group .search-form__icon"
       );
@@ -2598,13 +2809,15 @@
       const searchBtn = document.querySelector(
         ".aside__group .search-form__button"
       );
-      const asideTitle = document.querySelector(".aside__group .aside__title");
+      const asideSelect = document.querySelector(
+        ".aside__group .aside__select"
+      );
       const asideSearchForm = document.querySelector(
         ".aside__group .aside__search-form"
       );
 
       searchIconBtn.addEventListener("click", () => {
-        asideTitle.classList.add("hide");
+        asideSelect.classList.add("hide");
         searchIconBtn.classList.add("hide");
         searchInput.classList.add("active");
         searchBtn.classList.add("active");
@@ -2612,8 +2825,8 @@
         searchInput.focus();
       });
 
-      searchInput.addEventListener("blur", (event) => {
-        asideTitle.classList.remove("hide");
+      searchInput.addEventListener("blur", () => {
+        asideSelect.classList.remove("hide");
         searchIconBtn.classList.remove("hide");
         searchInput.classList.remove("active");
         searchBtn.classList.remove("active");

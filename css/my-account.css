@@ -8,16 +8,22 @@ body.--bg-off::before {
 
 body.--scroll-on .main,
 body.--scroll-off .main {
+  max-height: unset;
   margin-top: 4rem;
 }
 
 .main__container {
-  max-height: inherit;
+  /* max-height: inherit; */
+  max-height: unset;
   max-width: 95.125rem;
   width: 100%;
   margin: 0 auto;
   /* padding: 0 0.9375rem; */
   padding: 0 3.5rem;
+}
+
+.main__container .main__wrapper {
+  margin-bottom: 1rem;
 }
 
 .main__main-title {
@@ -72,8 +78,14 @@ body.--scroll-off .main {
   padding-bottom: 2rem;
 }
 
+.content__card-wallet,
+.main__content .previous-button {
+  display: none;
+}
+
 @media screen and (max-width: 47.9375rem) {
-  body.--scroll-on .main {
+  body.--scroll-on.--bg-off .main,
+  body.--scroll-off.--bg-off .main {
     margin-top: 0;
   }
 
@@ -82,15 +94,31 @@ body.--scroll-off .main {
   }
 
   .main__main-title {
-    width: 80%;
+    /* width: 80%; */
+    max-width: 28.125rem;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    /* text-align: center; */
   }
 
   .main__container .main__wrapper {
-    width: 80%;
+    /* width: 80%; */
+    max-width: 28.125rem;
     margin: auto;
+  }
+
+  .main__content {
+    display: none;
+  }
+
+  .main__content .previous-button {
+    display: flex;
+    margin: 1rem 0 2rem;
+  }
+
+  .content__card-wallet {
+    display: block;
   }
 
   .main__content .content__navbar {
@@ -99,6 +127,7 @@ body.--scroll-off .main {
   }
 
   .main__aside {
+    max-width: unset;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
@@ -106,17 +135,19 @@ body.--scroll-off .main {
 }
 
 @media screen and (max-width: 37.5rem) {
-  body.--bg-off.--scroll-on .header {
+  body.--bg-off.--scroll-on .header,
+  body.--bg-off.--scroll-off .header {
     position: unset;
   }
 
-  body.--bg-off.--scroll-on .header::before {
+  body.--bg-off.--scroll-on .header::before,
+  body.--bg-off.--scroll-off .header::before {
     content: unset;
   }
 
-  .main__main-title {
+  /* .main__main-title {
     width: 100%;
-  }
+  } */
 
   .main__container .main__wrapper {
     width: 100%;

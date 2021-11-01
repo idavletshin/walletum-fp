@@ -289,6 +289,7 @@
   display: flex;
   flex-direction: column;
   max-width: 19.375rem;
+  width: 94%;
   margin-left: auto;
 }
 
@@ -297,10 +298,16 @@
   content: "";
   top: 0;
   left: -0.875rem;
-  bottom: 1rem;
+  bottom: 1.5rem;
   /* height: 100%; */
   width: 0.125rem;
   background-color: #2c2c2e;
+}
+
+@media screen and (max-width: 47.9375rem) {
+  .card-wallet-group.wallet-group.active .card-wallet-group__list {
+    max-width: 26.875rem;
+  }
 }
 /* стили для кошелька с алертом */
 
@@ -408,21 +415,24 @@
   height: 2.5rem;
   margin-right: 1.5rem;
 }
+
+.aside__card-wallets {
+  margin-bottom: 2rem;
+}
 .aside__group {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
   line-height: 1.5rem;
 }
-.aside__title {
+.aside__select {
+  position: relative;
+  height: 2.5rem;
   width: 100%;
-  font-family: var(--second-font);
-  font-weight: 600;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
+/* .aside__title { */
 /* .aside__search {
   max-width: 0;
 } */
@@ -432,14 +442,22 @@
   position: relative;
   max-width: 0;
 }
-.search-form__icon,
+.search-form__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  background: transparent;
+}
+/* .search-form__icon, */
 .search-form__button {
   position: relative;
   height: 2.5rem;
   background: transparent;
   flex: 0 0 2.5rem;
 }
-.search-form__icon::after,
+/* .search-form__icon::after, */
 .search-form__button::after {
   position: absolute;
   content: "";
@@ -452,7 +470,7 @@
   background-size: 70%;
   background-position: center;
 }
-.search-form__icon:hover::after,
+/* .search-form__icon:hover::after, */
 .search-form__button:hover::after {
   background-image: url(../images/search-blue.svg);
 }
@@ -486,7 +504,8 @@
   max-width: 100%;
   width: 100%;
 }
-.search-form__icon.hide {
+.search-form__icon.hide,
+.aside__select.hide {
   display: none;
 }
 .aside__search-form.active {
