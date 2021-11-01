@@ -111,15 +111,19 @@ body.--scroll-off .main {
 
   .main__content {
     display: none;
-    margin-top: 15rem;
+    margin-top: 14rem;
   }
 
   .main__card-wallet.active {
-    max-height: 15rem;
+    max-height: 14rem;
   }
 
   .main__card-wallet .card-wallet__top {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .main__card-wallet .card-wallet__bottom {
+    margin-bottom: 0.5rem;
   }
 
   .main__card-wallet .previous-button {

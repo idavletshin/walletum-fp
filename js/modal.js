@@ -33,5 +33,12 @@ modal.forEach((el) => {
       dataImportModal.style.display = 'none'
       createNewWalletModal.style.display = 'none'
     }
+
+    if (target.closest(".close-btn")) {
+      body.classList.add("--scroll-on");
+      body.classList.remove("--scroll-off");
+
+      createNewWalletModal.style.display = 'none'
+    }
   })
 })

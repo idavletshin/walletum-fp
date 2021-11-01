@@ -56,6 +56,18 @@
 .modal-form__wrapper.active {
   display: flex;
 }
+.modal-content {
+  position: relative;
+}
+.modal-content .close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  user-select: none;
+  cursor: pointer;
+}
 .modal-content .navbar {
   margin-bottom: 3rem;
 }

@@ -2237,6 +2237,9 @@
     </main>
     <div id="createNewWalletModal" class="modal">
       <div class="modal__content modal-content">
+        <div class="close-btn">
+          <img src="./images/close.svg" alt="" />
+        </div>
         <div class="modal__title-wrapper">
           <h2 class="modal__title modal__title_add active">Добавить кошелек</h2>
           <h2 class="modal__title modal__title_import">Импортировать</h2>
@@ -2812,7 +2815,7 @@
       window.onscroll = function () {
         if (window.matchMedia("(max-width: 767px)").matches) {
           if (window.pageYOffset > 100) {
-            mainCardWallet.style.top = "-9.5rem";
+            mainCardWallet.style.top = "-8.5rem";
             mainCardWallet.style.transition = "top 0.3s ease";
           } else if (window.pageYOffset < 100) {
             mainCardWallet.style.top = "0";
