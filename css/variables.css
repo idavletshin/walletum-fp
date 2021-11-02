@@ -2,10 +2,11 @@
   --white: #ffffff;
   --main-bg: #0c0c0c;
   /* --card-bg: #191919; */
-  --card-bg: #1d1d1e;
+  --card-bg: #202022;
   --input-border: #2b2b34;
   --disabled-black: #322b2b;
-  --dark-gray: #565669;
+  /* --dark-gray: #565669; */
+  --dark-gray: #7a7a7a;
   --gray: #7a7a7a;
   --light-gray: #ccc;
   --dark-purple: #491d88;
