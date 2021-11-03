@@ -242,59 +242,13 @@
 
 /* стрелка для поля ввода */
 
-.text-field__wrap-arrow {
+.text-field__arrow-down-icon {
   position: absolute;
-  top: 60%;
-  right: 0.375rem;
-  user-select: none;
-  cursor: pointer;
-}
-
-.text-field__arrow {
-  position: relative;
-  display: flex;
-  top: 50%;
-  transform: translateY(-100%);
-  font-family: var(--second-font);
-  font-size: 1rem;
-  font-weight: 600;
-  user-select: none;
-}
-
-.text-field__arrow::before {
-  position: absolute;
-  content: "";
+  top: 1rem;
   right: 0;
-  top: 50%;
-  width: 0.625rem;
-  height: 0.125rem;
-  background-color: var(--white);
-  transform: translate(0, -50%) rotate(-45deg);
-  transition: all 0.2s ease 0s;
 }
-
-.text-field__arrow::after {
-  position: absolute;
-  content: "";
-  right: 0.375rem;
-  top: 50%;
-  width: 0.625rem;
-  height: 0.125rem;
-  background-color: var(--white);
-  transform: translate(0, -50%) rotate(45deg);
-  transition: all 0.2s ease 0s;
-}
-
-.text-field__input.dropdown-icon:focus
-  ~ .text-field__wrap-arrow
-  .text-field__arrow::before {
-  transform: translate(0, -50%) rotate(45deg);
-}
-
-.text-field__input.dropdown-icon:focus
-  ~ .text-field__wrap-arrow
-  .text-field__arrow::after {
-  transform: translate(0, -50%) rotate(-45deg);
+.text-field__input.dropdown-icon:focus ~ .text-field__arrow-down-icon {
+  transform: rotate(-180deg);
 }
 
 /* выпадающий список */

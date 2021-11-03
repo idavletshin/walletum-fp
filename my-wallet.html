@@ -54,9 +54,12 @@
         <div class="main__card-wallet card-wallet blue active">
           <div class="card-wallet__top">
             <div class="card-wallet-top__group">
-              <a class="previous-button button" href="#">
+              <!-- <a class="previous-button button" href="#">
                 <img src="./images/vector.png" alt="previous button" />
-              </a>
+              </a> -->
+              <div class="arrow-left-icon">
+                <img src="./images/arrow-left.svg" alt="arrow-left" />
+              </div>
               <div class="card-wallet-top__title">
                 Тестовое название какого-то токена
               </div>
@@ -130,9 +133,13 @@
         <div class="main__wrapper">
           <aside class="main__aside">
             <div class="aside__group">
-              <!-- <h3 class="aside__title">My Wallets - (51)</h3> -->
               <div class="aside__select custom-select">
-                <p class="custom-select__text">My Wallets - (51)</p>
+                <div class="custom-select__title">
+                  <div class="custom-select__arrow-down-icon arrow-down-icon">
+                    <img src="./images/chevron-down.svg" alt="arrow" />
+                  </div>
+                  <p class="custom-select__text">My Wallets - (51)</p>
+                </div>
                 <ul class="custom-select__list">
                   <li class="custom-select__group">
                     <ul class="custom-select__group-list">
@@ -1202,15 +1209,6 @@
                           </div>
                         </div>
                         <div class="accordion-history-body__bottom">
-                          <button class="toggle-btn button">
-                            <span class="toggle-btn__icon"></span>
-                            <span class="toggle-btn__text toggle-btn__text_show"
-                              >Show All Balances</span
-                            >
-                            <span class="toggle-btn__text toggle-btn__text_hide"
-                              >Hide All Balances</span
-                            >
-                          </button>
                           <div class="accordion-history-body__group">
                             <div class="accordion-history-body__label">
                               Blochain fee:
@@ -1372,15 +1370,6 @@
                           </div>
                         </div>
                         <div class="accordion-history-body__bottom">
-                          <button class="toggle-btn button">
-                            <span class="toggle-btn__icon"></span>
-                            <span class="toggle-btn__text toggle-btn__text_show"
-                              >Show All Balances</span
-                            >
-                            <span class="toggle-btn__text toggle-btn__text_hide"
-                              >Hide All Balances</span
-                            >
-                          </button>
                           <div class="accordion-history-body__group">
                             <div class="accordion-history-body__label">
                               Blochain fee:
@@ -1568,9 +1557,11 @@
                           >
                           <!-- no class -->
                           <span class="text-field__line"></span>
-                          <span class="text-field__wrap-arrow">
-                            <span class="text-field__arrow"></span>
-                          </span>
+                          <div
+                            class="text-field__arrow-down-icon arrow-down-icon"
+                          >
+                            <img src="./images/chevron-down.svg" alt="arrow" />
+                          </div>
                           <ul class="text-field__list">
                             <li class="text-field__item text-item-field">
                               <span class="text-item-field__label">test</span>
@@ -1660,9 +1651,11 @@
                           >
                           <!-- no class -->
                           <span class="text-field__line"></span>
-                          <span class="text-field__wrap-arrow">
-                            <span class="text-field__arrow"></span>
-                          </span>
+                          <div
+                            class="text-field__arrow-down-icon arrow-down-icon"
+                          >
+                            <img src="./images/chevron-down.svg" alt="arrow" />
+                          </div>
                           <ul class="text-field__list">
                             <li class="text-field__item text-item-field">
                               <span class="text-item-field__label">Slow</span>
@@ -1957,11 +1950,26 @@
                         >
                           <div
                             class="
-                              confirm-accordion__title
-                              accordion-title accordion-btn
+                              confirm-accordion__header
+                              accordion-btn accordion-header
                             "
                           >
-                            Transaction details
+                            <div
+                              class="confirm-accordion__title accordion-title"
+                            >
+                              Transaction details
+                            </div>
+                            <div
+                              class="
+                                confirm-accordion__arrow-down-icon
+                                arrow-down-icon
+                              "
+                            >
+                              <img
+                                src="./images/chevron-down.svg"
+                                alt="arrow"
+                              />
+                            </div>
                           </div>
                           <div class="confirm-accordion__body accordion-body">
                             <ul class="confirm-accordion__tabs-nav tabs-nav">
@@ -2135,7 +2143,7 @@
                         Cancel
                       </button>
                       <button
-                        class="next-button button --blue jc-center"
+                        class="next-button button --green jc-center"
                         type="button"
                       >
                         Confirm and send
@@ -2158,11 +2166,21 @@
                   >
                     <div
                       class="
-                        overview-accordion__title
-                        accordion-title accordion-btn
+                        overview-accordion__header
+                        accordion-btn accordion-header
                       "
                     >
-                      Title
+                      <div class="overview-accordion__title accordion-title">
+                        Title
+                      </div>
+                      <div
+                        class="
+                          overview-accordion__arrow-down-icon
+                          arrow-down-icon
+                        "
+                      >
+                        <img src="./images/chevron-down.svg" alt="arrow" />
+                      </div>
                     </div>
                     <div class="overview-accordion__body accordion-body">
                       title
@@ -2173,14 +2191,24 @@
                   >
                     <div
                       class="
-                        overview-accordion__title
-                        accordion-title accordion-btn
+                        overview-accordion__header
+                        accordion-btn accordion-header
                       "
                     >
-                      Seed Phrase
+                      <div class="overview-accordion__title accordion-title">
+                        Seed Phrase
+                      </div>
+                      <div
+                        class="
+                          overview-accordion__arrow-down-icon
+                          arrow-down-icon
+                        "
+                      >
+                        <img src="./images/chevron-down.svg" alt="arrow" />
+                      </div>
                     </div>
                     <div class="overview-accordion__body accordion-body">
-                      Seed Phrase
+                      seed phrase
                     </div>
                   </div>
                   <div
@@ -2188,14 +2216,24 @@
                   >
                     <div
                       class="
-                        overview-accordion__title
-                        accordion-title accordion-btn
+                        overview-accordion__header
+                        accordion-btn accordion-header
                       "
                     >
-                      Entropy
+                      <div class="overview-accordion__title accordion-title">
+                        Entropy
+                      </div>
+                      <div
+                        class="
+                          overview-accordion__arrow-down-icon
+                          arrow-down-icon
+                        "
+                      >
+                        <img src="./images/chevron-down.svg" alt="arrow" />
+                      </div>
                     </div>
                     <div class="overview-accordion__body accordion-body">
-                      Entropy
+                      entropy
                     </div>
                   </div>
                   <div
@@ -2203,14 +2241,24 @@
                   >
                     <div
                       class="
-                        overview-accordion__title
-                        accordion-title accordion-btn
+                        overview-accordion__header
+                        accordion-btn accordion-header
                       "
                     >
-                      Seed
+                      <div class="overview-accordion__title accordion-title">
+                        Seed
+                      </div>
+                      <div
+                        class="
+                          overview-accordion__arrow-down-icon
+                          arrow-down-icon
+                        "
+                      >
+                        <img src="./images/chevron-down.svg" alt="arrow" />
+                      </div>
                     </div>
                     <div class="overview-accordion__body accordion-body">
-                      Seed
+                      seed
                     </div>
                   </div>
                   <div
@@ -2218,14 +2266,24 @@
                   >
                     <div
                       class="
-                        overview-accordion__title
-                        accordion-title accordion-btn
+                        overview-accordion__header
+                        accordion-btn accordion-header
                       "
                     >
-                      Wif
+                      <div class="overview-accordion__title accordion-title">
+                        Wif
+                      </div>
+                      <div
+                        class="
+                          overview-accordion__arrow-down-icon
+                          arrow-down-icon
+                        "
+                      >
+                        <img src="./images/chevron-down.svg" alt="arrow" />
+                      </div>
                     </div>
                     <div class="overview-accordion__body accordion-body">
-                      Wif
+                      wif
                     </div>
                   </div>
                 </div>
@@ -2301,9 +2359,9 @@
                 >
                 <!-- no class -->
                 <span class="text-field__line"></span>
-                <span class="text-field__wrap-arrow">
-                  <span class="text-field__arrow"></span>
-                </span>
+                <div class="text-field__arrow-down-icon arrow-down-icon">
+                  <img src="./images/chevron-down.svg" alt="arrow" />
+                </div>
                 <ul class="text-field__list">
                   <li class="text-field__item text-item-field">
                     <span class="text-item-field__label">test</span>
@@ -2330,9 +2388,9 @@
                 >
                 <!-- no class -->
                 <span class="text-field__line"></span>
-                <span class="text-field__wrap-arrow">
-                  <span class="text-field__arrow"></span>
-                </span>
+                <div class="text-field__arrow-down-icon arrow-down-icon">
+                  <img src="./images/chevron-down.svg" alt="arrow" />
+                </div>
                 <ul class="text-field__list">
                   <li class="text-field__item text-item-field">
                     <span class="text-item-field__label">test</span>
@@ -2360,9 +2418,9 @@
                   >
                   <!-- no class -->
                   <span class="text-field__line"></span>
-                  <span class="text-field__wrap-arrow">
-                    <span class="text-field__arrow"></span>
-                  </span>
+                  <div class="text-field__arrow-down-icon arrow-down-icon">
+                    <img src="./images/chevron-down.svg" alt="arrow" />
+                  </div>
                   <ul class="text-field__list">
                     <li class="text-field__item text-item-field">
                       <span class="text-item-field__label">test</span>
@@ -2480,9 +2538,9 @@
                 >
                 <!-- no class -->
                 <span class="text-field__line"></span>
-                <span class="text-field__wrap-arrow">
-                  <span class="text-field__arrow"></span>
-                </span>
+                <div class="text-field__arrow-down-icon arrow-down-icon">
+                  <img src="./images/chevron-down.svg" alt="arrow" />
+                </div>
                 <ul class="text-field__list">
                   <li class="text-field__item text-item-field">
                     <span class="text-item-field__label">test</span>
@@ -2763,9 +2821,11 @@
       const mainCardWallet = document.querySelector(".main__card-wallet");
       const asideContent = document.querySelector(".main__aside");
       const mainTitle = document.querySelector(".main__main-title");
+      const header = document.querySelector(".header");
       const returnToWallet = document.querySelector(
         ".main__card-wallet .previous-button"
       );
+      const mainNavbar = document.querySelector(".navbar");
 
       cardWalletArr.forEach((el) => {
         el.addEventListener("click", (e) => {
@@ -2775,6 +2835,7 @@
               mainCardWallet.style.display = "block";
               asideContent.style.display = "none";
               mainTitle.style.display = "none";
+              header.style.display = "none";
 
               window.scrollTo({
                 top: 0,
@@ -2782,12 +2843,14 @@
               });
             }
           }
-          if (e.target.closest(".previous-button")) {
+          if (e.target.closest(".arrow-left-icon")) {
             e.preventDefault();
             mainContent.style.display = "none";
             mainCardWallet.style.display = "none";
             asideContent.style.display = "block";
             mainTitle.style.display = "block";
+            header.style.display = "flex";
+
             return;
           }
           if (
@@ -2814,11 +2877,14 @@
       /* Уменьшение card-wallet при скролле */
       window.onscroll = function () {
         if (window.matchMedia("(max-width: 767px)").matches) {
-          if (window.pageYOffset > 100) {
+          if (window.pageYOffset > 1) {
             mainCardWallet.style.top = "-8.5rem";
+            mainContent.style.marginTop = "9rem";
             mainCardWallet.style.transition = "top 0.3s ease";
-          } else if (window.pageYOffset < 100) {
+            mainContent.style.transition = "margin-top 0.3s ease";
+          } else if (window.pageYOffset < 1) {
             mainCardWallet.style.top = "0";
+            mainContent.style.marginTop = "14rem";
           }
 
           // var hp = document.body.scrollHeight,

@@ -39,6 +39,10 @@ button[disabled].button {
   background: var(--card-bg);
 }
 
+.--green {
+  background: var(--apple);
+}
+
 .--transparent {
   background: transparent;
 }
@@ -141,6 +145,14 @@ button[disabled].button {
 
 .next-button:active {
   background: var(--dark-blue);
+}
+
+.next-button.--green:hover {
+  background: var(--light-green);
+}
+
+.next-button.--green:active {
+  background: var(--apple);
 }
 /* *** */
 
