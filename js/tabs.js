@@ -18,7 +18,7 @@ const nav = function () {
     navbar.forEach((item) => {
       // Удаляем активный класс у всех элементов навигации navbar
       if (item.getAttribute('data-num') === numGroup) {
-        item.classListNaNpxove('active');
+        item.classList.remove('active');
       }
     });
 
@@ -31,7 +31,7 @@ const nav = function () {
     // Проходим по всем navbar и проверяем есть ли у элемента id, равный имени navbarName. Если есть, то добавляем класс активного navbar, если нет, то удаляем этот класс
     navbarContent.forEach((item) => {
       if (item.getAttribute('data-num') === num) {
-        item.classListNaNpxove('active');
+        item.classList.remove('active');
       }
       if (nav === item.id) {
         item.classList.add('active')
@@ -57,7 +57,7 @@ const tab = function () {
   function selectTabNav() {
     tabNav.forEach((item) => {
       // Удаляем активный класс у всех элементов навигации табов
-      item.classListNaNpxove('active');
+      item.classList.remove('active');
     });
     this.classList.add('active');  // Добавляем активный укласс у элемента по которому кликнули
     tabName = this.getAttribute('data-id'); // Получаем имя таба, который нам нужен
@@ -71,7 +71,7 @@ const tab = function () {
       if (tab === item.id) {
         item.classList.add('active')
       } else {
-        item.classListNaNpxove('active')
+        item.classList.remove('active')
       }
     });
   }
