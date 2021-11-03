@@ -12,6 +12,22 @@ body.--scroll-off .main {
   margin-top: 4rem;
 }
 
+.header__status {
+  margin-left: auto;
+  margin-right: 3rem;
+  font-size: 1rem;
+  font-family: var(--second-font);
+  font-weight: 600;
+}
+
+.status-on span {
+  color: var(--light-green);
+}
+
+.status-off span {
+  color: var(--red);
+}
+
 .main__container {
   /* max-height: inherit; */
   max-height: unset;
@@ -68,6 +84,7 @@ body.--scroll-off .main {
 
 .main__content .content__navbar {
   margin-bottom: 3.5rem;
+  background-color: var(--main-bg);
 }
 
 .receive,
@@ -78,7 +95,7 @@ body.--scroll-off .main {
   padding-bottom: 2rem;
 }
 
-.main__card-wallet {
+.content__card-wallet {
   display: none;
 }
 
@@ -89,7 +106,8 @@ body.--scroll-off .main {
   }
 
   .main__container {
-    padding: 0 1.5625rem;
+    /* padding: 0 1.5625rem; */
+    padding: 0;
   }
 
   .main__main-title {
@@ -97,6 +115,7 @@ body.--scroll-off .main {
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 1.5625rem;
   }
 
   .main__container .main__wrapper {
@@ -106,33 +125,43 @@ body.--scroll-off .main {
 
   .main__content {
     display: none;
-    margin-top: 14rem;
+    /* margin-top: 14rem; */
   }
 
-  .main__card-wallet.active {
-    max-height: 14rem;
+  .content__list {
+    padding: 0 1.5625rem;
   }
 
-  .main__card-wallet .card-wallet__top {
+  .content__card-wallet {
+    position: sticky;
+    top: -8.5rem;
+    left: 0;
+    right: 0;
+    margin-bottom: 0.5rem;
+    border-radius: 0;
+    z-index: 5;
+  }
+
+  .content__card-wallet.active {
+    max-height: 15rem;
+  }
+
+  .content__card-wallet .card-wallet__top {
     margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
 
-  .main__card-wallet .card-wallet__bottom {
+  .content__card-wallet .arrow-left-icon {
+    position: fixed;
+  }
+
+  .content__card-wallet .card-wallet__bottom {
     margin-bottom: 0.5rem;
   }
 
-  .main__card-wallet .previous-button {
+  .content__card-wallet .previous-button {
     margin-top: 0.4375rem;
     align-items: baseline;
-  }
-
-  .main__card-wallet {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    border-radius: 0;
-    z-index: 5;
   }
 
   .card-wallet-top__title {
@@ -140,12 +169,14 @@ body.--scroll-off .main {
     text-align: center;
   }
 
+  .content__card-wallet .card-wallet-top__title {
+    margin-left: 2rem;
+  }
+
   .main__content .content__navbar {
     position: sticky;
-    top: 5.5rem;
-    max-width: unset;
+    top: 6.5rem;
     margin-bottom: 2.5rem;
-    background-color: var(--main-bg);
     z-index: 5;
   }
 
@@ -154,6 +185,7 @@ body.--scroll-off .main {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
+    padding: 0 1.5625rem;
   }
 
   .content__action {
@@ -189,11 +221,17 @@ body.--scroll-off .main {
 }
 
 @media screen and (max-width: 23.125rem) {
-  .main__container {
+  /* .main__container {
+    padding: 0 1rem;
+  } */
+
+  .main__aside,
+  .main__main-title,
+  .content__list {
     padding: 0 1rem;
   }
 
-  .main__card-wallet {
+  .content__card-wallet {
     padding: 1rem;
   }
 }
@@ -448,12 +486,14 @@ body.--scroll-off .main {
   }
 
   .send-form__sum {
+    margin-right: 2.5rem;
     flex: 100%;
+    order: 4;
   }
 
-  .send-form__context-box {
+  /* .send-form__context-box {
     display: none;
-  }
+  } */
 }
 
 @media screen and (max-width: 26.5625rem) {

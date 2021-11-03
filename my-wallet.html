@@ -19,6 +19,7 @@
         <img class="logo__img" src="./images/logo.svg" alt="Logo" />
         <span class="logo__text">walletum</span>
       </a>
+      <div class="header__status status-on">Status: <span>Online</span></div>
       <div class="header__menu menu">
         <div class="menu__burger burger">
           <span></span>
@@ -46,90 +47,20 @@
           </li>
         </ul>
       </div>
+      <div class="notice">
+        <div class="notice__top">
+          Fill in amount and payment description if needed.
+        </div>
+        <div class="notice__bottom notice-bottom">
+          <div class="notice-bottom__left"></div>
+          <div class="notice-bottom__right">Update</div>
+        </div>
+      </div>
     </header>
 
     <main class="main">
       <div class="main__container">
         <h1 class="main__main-title">My wallet account name</h1>
-        <div class="main__card-wallet card-wallet blue active">
-          <div class="card-wallet__top">
-            <div class="card-wallet-top__group">
-              <!-- <a class="previous-button button" href="#">
-                <img src="./images/vector.png" alt="previous button" />
-              </a> -->
-              <div class="arrow-left-icon">
-                <img src="./images/arrow-left.svg" alt="arrow-left" />
-              </div>
-              <div class="card-wallet-top__title">
-                Тестовое название какого-то токена
-              </div>
-              <div class="card-wallet-top__alert-text">
-                Fill in amount and payment description if needed.
-              </div>
-              <div class="card-wallet-top__context-box context-box">
-                <!-- no class | active -->
-                <div class="context-box__btn context-btn"></div>
-                <ul class="context-box__menu-list context-menu-list">
-                  <li class="context-menu__item context-menu__item_edit">
-                    Редактировать
-                  </li>
-                  <li class="context-menu__item context-menu__item_delete">
-                    Удалить
-                  </li>
-                  <li class="context-menu__item context-menu__item_hide">
-                    Скрыть баланс
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="card-wallet-top__group">
-              <div class="card-wallet-top__badges badge-list">
-                <div class="card-wallet-top__badge badge">token</div>
-                <div class="card-wallet-top__badge badge">btc</div>
-              </div>
-              <div class="card-wallet-top__info">
-                <div class="card-wallet-info__time">
-                  <span>Time Lock</span>
-                  <span>12.04.22</span>
-                </div>
-                <div class="card-wallet-info__amount gradient-color">
-                  15 Wallets
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-wallet__bottom">
-            <div class="card-wallet-bottom__left">
-              <div class="card-wallet-bottom__icon"></div>
-              <div class="main-progress-mini">
-                <div class="inner"></div>
-                <div class="number">100%</div>
-                <div class="circle">
-                  <div class="bar left">
-                    <div class="progress-bar"></div>
-                  </div>
-                  <div class="bar right">
-                    <div class="progress-bar"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-wallet-bottom__right">
-              <div class="card-wallet-bottom__info-amount">
-                <div class="card-wallet-bottom__amount">
-                  632,632,632,111.<small>00437383</small>
-                </div>
-                <span class="card-wallet-bottom__token-name">FAGH</span>
-              </div>
-              <div class="card-wallet-bottom__badges badge-list">
-                <div class="card-wallet-bottom__badge badge">btc</div>
-                <div class="card-wallet-bottom__badge badge">coin</div>
-                <div class="card-wallet-bottom__badge badge">ufo</div>
-              </div>
-              <a href="#" class="card-wallet-bottom__action">Update</a>
-            </div>
-          </div>
-        </div>
         <div class="main__wrapper">
           <aside class="main__aside">
             <div class="aside__group">
@@ -1024,6 +955,82 @@
             </button>
           </aside>
           <div class="main__content">
+            <div class="content__card-wallet card-wallet blue active">
+              <div class="card-wallet__top">
+                <div class="card-wallet-top__group">
+                  <div class="arrow-left-icon">
+                    <img src="./images/arrow-left.svg" alt="arrow-left" />
+                  </div>
+                  <div class="card-wallet-top__title">
+                    Тестовое название какого-то токена
+                  </div>
+                  <div class="card-wallet-top__alert-text">
+                    Fill in amount and payment description if needed.
+                  </div>
+                  <div class="card-wallet-top__context-box context-box">
+                    <!-- no class | active -->
+                    <div class="context-box__btn context-btn"></div>
+                    <ul class="context-box__menu-list context-menu-list">
+                      <li class="context-menu__item context-menu__item_edit">
+                        Редактировать
+                      </li>
+                      <li class="context-menu__item context-menu__item_delete">
+                        Удалить
+                      </li>
+                      <li class="context-menu__item context-menu__item_hide">
+                        Скрыть баланс
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-wallet-top__group card-wallet-top__group_last">
+                  <div class="card-wallet-top__badges badge-list">
+                    <div class="card-wallet-top__badge badge">token</div>
+                    <div class="card-wallet-top__badge badge">btc</div>
+                  </div>
+                  <div class="card-wallet-top__info">
+                    <div class="card-wallet-info__time">
+                      <span>Time Lock</span>
+                      <span>12.04.22</span>
+                    </div>
+                    <div class="card-wallet-info__amount gradient-color">
+                      15 Wallets
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wallet__bottom">
+                <div class="card-wallet-bottom__left">
+                  <div class="card-wallet-bottom__icon"></div>
+                  <div class="main-progress-mini">
+                    <div class="inner"></div>
+                    <div class="number">100%</div>
+                    <div class="circle">
+                      <div class="bar left">
+                        <div class="progress-bar"></div>
+                      </div>
+                      <div class="bar right">
+                        <div class="progress-bar"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-wallet-bottom__right">
+                  <div class="card-wallet-bottom__info-amount">
+                    <div class="card-wallet-bottom__amount">
+                      632,632,632,111.<small>00437383</small>
+                    </div>
+                    <span class="card-wallet-bottom__token-name">FAGH</span>
+                  </div>
+                  <div class="card-wallet-bottom__badges badge-list">
+                    <div class="card-wallet-bottom__badge badge">btc</div>
+                    <div class="card-wallet-bottom__badge badge">coin</div>
+                    <div class="card-wallet-bottom__badge badge">ufo</div>
+                  </div>
+                  <a href="#" class="card-wallet-bottom__action">Update</a>
+                </div>
+              </div>
+            </div>
             <button class="content__action toggle-btn button">
               <span class="toggle-btn__icon"></span>
               <span class="toggle-btn__text toggle-btn__text_show"
@@ -1047,681 +1054,74 @@
                 Overview
               </li>
             </ul>
-            <div
-              id="history"
-              class="content__body navbar-content history"
-              data-num="1"
-            >
-              <div class="history__column">
-                <h2 class="main__title">Transactions History</h2>
-                <div class="history__table table-history">
-                  <div class="table-history__header table-history-header">
-                    <div class="table-history-header__column">Address</div>
-                    <div class="table-history-header__column">Status</div>
-                    <div class="table-history-header__column">Amount</div>
-                  </div>
-                  <div class="table-history__body history-accordion accordion">
-                    <!-- success / no class -->
+            <div class="content__list">
+              <div
+                id="history"
+                class="content__body navbar-content history"
+                data-num="1"
+              >
+                <div class="history__column">
+                  <h2 class="main__title">Transactions History</h2>
+                  <div class="history__table table-history">
+                    <div class="table-history__header table-history-header">
+                      <div class="table-history-header__column">Address</div>
+                      <div class="table-history-header__column">Status</div>
+                      <div class="table-history-header__column">Amount</div>
+                    </div>
                     <div
-                      class="
-                        history-accordion__container
-                        accordion-container
-                        success
-                      "
+                      class="table-history__body history-accordion accordion"
                     >
+                      <!-- success / no class -->
                       <div
                         class="
-                          history-accordion__header
-                          accordion-history-header accordion-btn
+                          history-accordion__container
+                          accordion-container
+                          success
                         "
                       >
-                        <div class="accordion-history-header__column">
-                          <div class="accordion-history-header__label">
-                            Address
-                          </div>
-                          <div
-                            class="
-                              accordion-history-header__value
-                              accordion-history-header__value_address
-                              --received
-                            "
-                          >
-                            fjslkdfjsldjf2lsd
-                          </div>
-                        </div>
-                        <div class="accordion-history-header__column">
-                          <div class="accordion-history-header__label">
-                            Status
-                          </div>
-                          <div class="accordion-history-header__value">
-                            Confirmed (6/6)
-                          </div>
-                        </div>
-                        <div class="accordion-history-header__column">
-                          <div class="accordion-history-header__label">
-                            Amount
-                          </div>
-                          <div class="accordion-history-header__value">
-                            +632,632,632,111.00437383 UFO
-                          </div>
-                        </div>
-                        <!-- контекстное меню -->
                         <div
                           class="
-                            accordion-history-header__context-box
-                            context-box
+                            history-accordion__header
+                            accordion-history-header accordion-btn
                           "
                         >
-                          <!-- no class | active -->
-                          <div
-                            class="context-box__btn context-btn active"
-                          ></div>
-                          <ul class="context-box__menu-list context-menu-list">
-                            <li
-                              class="context-menu__item context-menu__item_edit"
-                            >
-                              Редактировать
-                            </li>
-                            <li
+                          <div class="accordion-history-header__column">
+                            <div class="accordion-history-header__label">
+                              Address
+                            </div>
+                            <div
                               class="
-                                context-menu__item context-menu__item_delete
+                                accordion-history-header__value
+                                accordion-history-header__value_address
+                                --received
                               "
                             >
-                              Удалить
-                            </li>
-                            <li
-                              class="context-menu__item context-menu__item_hide"
-                            >
-                              Скрыть баланс
-                            </li>
-                          </ul>
-                        </div>
-                        <!-- *** -->
-                      </div>
-                      <div
-                        class="
-                          history-accordion__body
-                          accordion-history-body accordion-body
-                        "
-                      >
-                        <div class="accordion-history-body__table">
-                          <div class="accordion-history-table__column">
-                            <div class="accordion-history-table__header">
-                              Income
-                            </div>
-                            <div class="accordion-history-table__list">
-                              <div class="accordion-history-table__item">
-                                <div class="accordion-history-table__label">
-                                  fjslkdfjsldjf2lsd
-                                </div>
-                                <div class="accordion-history-table__value">
-                                  +632,632,111.00437383 UFO
-                                </div>
-                              </div>
-                              <div class="accordion-history-table__item">
-                                <div class="accordion-history-table__label">
-                                  fjslkdfjsldjf2lsd
-                                </div>
-                                <div class="accordion-history-table__value">
-                                  +632,632,111.00437383 UFO
-                                </div>
-                              </div>
-                              <div class="accordion-history-table__item">
-                                <div class="accordion-history-table__label">
-                                  fjslkdfjsldjf2lsd
-                                </div>
-                                <div class="accordion-history-table__value">
-                                  +632,632,111.00437383 UFO
-                                </div>
-                              </div>
+                              fjslkdfjsldjf2lsd
                             </div>
                           </div>
-                          <div class="accordion-history-table__column">
-                            <div class="accordion-history-table__header">
-                              Out
+                          <div class="accordion-history-header__column">
+                            <div class="accordion-history-header__label">
+                              Status
                             </div>
-                            <div class="accordion-history-table__list">
-                              <div class="accordion-history-table__item">
-                                <div class="accordion-history-table__label">
-                                  fjslkdfjsldjf2lsd
-                                </div>
-                                <div class="accordion-history-table__value">
-                                  +632,632,111.00437383 UFO
-                                </div>
-                              </div>
-                              <div class="accordion-history-table__item">
-                                <div class="accordion-history-table__label">
-                                  fjslkdfjsldjf2lsd
-                                </div>
-                                <div class="accordion-history-table__value">
-                                  +632,632,111.00437383 UFO
-                                </div>
-                              </div>
-                              <div class="accordion-history-table__item">
-                                <div class="accordion-history-table__label">
-                                  fjslkdfjsldjf2lsd
-                                </div>
-                                <div class="accordion-history-table__value">
-                                  +632,632,111.00437383 UFO
-                                </div>
-                              </div>
+                            <div class="accordion-history-header__value">
+                              Confirmed (6/6)
                             </div>
                           </div>
-                        </div>
-                        <div class="accordion-history-body__bottom">
-                          <div class="accordion-history-body__group">
-                            <div class="accordion-history-body__label">
-                              Blochain fee:
+                          <div class="accordion-history-header__column">
+                            <div class="accordion-history-header__label">
+                              Amount
                             </div>
-                            <div class="accordion-history-body__value">
-                              -0.00437383 UFO
+                            <div class="accordion-history-header__value">
+                              +632,632,632,111.00437383 UFO
                             </div>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- success / no class -->
-                    <div
-                      class="history-accordion__container accordion-container"
-                    >
-                      <div
-                        class="
-                          history-accordion__header
-                          accordion-history-header accordion-btn
-                        "
-                      >
-                        <div class="accordion-history-header__column">
-                          <div class="accordion-history-header__label">
-                            Address
-                          </div>
+                          <!-- контекстное меню -->
                           <div
                             class="
-                              accordion-history-header__value
-                              accordion-history-header__value_address
-                              --sent
+                              accordion-history-header__context-box
+                              context-box
                             "
                           >
-                            fjslkdfjsldjf2lsd
-                          </div>
-                        </div>
-                        <div class="accordion-history-header__column">
-                          <div class="accordion-history-header__label">
-                            Status
-                          </div>
-                          <div class="accordion-history-header__value">
-                            Unconfirmed (1/6)
-                          </div>
-                        </div>
-                        <div class="accordion-history-header__column">
-                          <div class="accordion-history-header__label">
-                            Amount
-                          </div>
-                          <div class="accordion-history-header__value">
-                            +632,632,632,111.00437383 UFO
-                          </div>
-                        </div>
-                        <!-- контекстное меню -->
-                        <div
-                          class="
-                            accordion-history-header__context-box
-                            context-box
-                          "
-                        >
-                          <!-- no class | active -->
-                          <div class="context-box__btn context-btn"></div>
-                          <ul
-                            class="
-                              context-box__menu-list
-                              context-menu-list
-                              active
-                            "
-                          >
-                            <li
-                              class="context-menu__item context-menu__item_edit"
-                            >
-                              Редактировать
-                            </li>
-                            <li
-                              class="
-                                context-menu__item context-menu__item_delete
-                              "
-                            >
-                              Удалить
-                            </li>
-                            <li
-                              class="context-menu__item context-menu__item_hide"
-                            >
-                              Скрыть баланс
-                            </li>
-                          </ul>
-                        </div>
-                        <!-- *** -->
-                      </div>
-                      <div
-                        class="
-                          history-accordion__body
-                          accordion-history-body accordion-body
-                        "
-                      >
-                        <div class="accordion-history-body__table">
-                          <!-- success / no class -->
-                          <div class="accordion-history-table__column success">
-                            <div class="accordion-history-table__header">
-                              Income
-                            </div>
-                            <div class="accordion-history-table__list">
-                              <div class="accordion-history-table__item">
-                                <div class="accordion-history-table__label">
-                                  fjslkdfjsldjf2lsd
-                                </div>
-                                <div class="accordion-history-table__value">
-                                  +632,632,111.00437383 UFO
-                                </div>
-                              </div>
-                              <div class="accordion-history-table__item">
-                                <div class="accordion-history-table__label">
-                                  fjslkdfjsldjf2lsd
-                                </div>
-                                <div class="accordion-history-table__value">
-                                  +632,632,111.00437383 UFO
-                                </div>
-                              </div>
-                              <div class="accordion-history-table__item">
-                                <div class="accordion-history-table__label">
-                                  fjslkdfjsldjf2lsd
-                                </div>
-                                <div class="accordion-history-table__value">
-                                  +632,632,111.00437383 UFO
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- success / no class -->
-                          <div class="accordion-history-table__column">
-                            <div class="accordion-history-table__header">
-                              Out
-                            </div>
-                            <div class="accordion-history-table__list">
-                              <div class="accordion-history-table__item">
-                                <div class="accordion-history-table__label">
-                                  fjslkdfjsldjf2lsd
-                                </div>
-                                <div class="accordion-history-table__value">
-                                  +632,632,111.00437383 UFO
-                                </div>
-                              </div>
-                              <div class="accordion-history-table__item">
-                                <div class="accordion-history-table__label">
-                                  fjslkdfjsldjf2lsd
-                                </div>
-                                <div class="accordion-history-table__value">
-                                  +632,632,111.00437383 UFO
-                                </div>
-                              </div>
-                              <div class="accordion-history-table__item">
-                                <div class="accordion-history-table__label">
-                                  fjslkdfjsldjf2lsd
-                                </div>
-                                <div class="accordion-history-table__value">
-                                  +632,632,111.00437383 UFO
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-history-body__bottom">
-                          <div class="accordion-history-body__group">
-                            <div class="accordion-history-body__label">
-                              Blochain fee:
-                            </div>
-                            <div class="accordion-history-body__value">
-                              -0.00437383 UFO
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              id="receive"
-              class="content__body navbar-content receive"
-              data-num="1"
-            >
-              <div class="receive__column receive__column_left">
-                <h2 class="main__title">Receive UFO</h2>
-                <p class="main__subtitle gradient-color">
-                  Fill in amount and payment description if needed. Click on
-                  'Create invoice' will generate several ways of payment to your
-                  address.
-                </p>
-                <form action="#" class="form">
-                  <div class="form__wrapper">
-                    <div
-                      class="form__text-field-container text-field-container"
-                    >
-                      <div class="text-field">
-                        <input
-                          id="amountToReceive"
-                          class="text-field__input"
-                          type="text"
-                          placeholder="Account title"
-                        />
-                        <label for="amountToReceive" class="text-field__label"
-                          >Account title</label
-                        >
-                        <!-- no class / error / success -->
-                        <span class="text-field__line"></span>
-                      </div>
-                      <!-- primary / error / success -->
-                      <div class="text-field-helper primary">
-                        <p class="primary-text">
-                          Minimum length is 8 character but longer is better
-                        </p>
-                        <p class="error-text">Error</p>
-                        <p class="success-text">Success</p>
-                      </div>
-                    </div>
-                    <div
-                      class="form__text-field-container text-field-container"
-                    >
-                      <div class="text-field">
-                        <input
-                          id="paymentCommentReceive"
-                          class="text-field__input"
-                          type="text"
-                          placeholder="Payment comment"
-                        />
-                        <label
-                          for="paymentCommentReceive"
-                          class="text-field__label"
-                          >Payment comment</label
-                        >
-                        <!-- no class -->
-                        <span class="text-field__line"></span>
-                      </div>
-                      <!-- primary -->
-                      <div class="text-field-helper primary">
-                        <p class="primary-text">Optional comment</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form__wrapper">
-                    <div class="form__box">
-                      <div
-                        class="form__text-field-container text-field-container"
-                      >
-                        <div class="text-field">
-                          <input
-                            id="ufoAddress"
-                            class="text-field__input"
-                            type="text"
-                            placeholder="UFO Address"
-                            value="uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmltuf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmlt"
-                            disabled
-                          />
-                          <label for="ufoAddress" class="text-field__label"
-                            >UFO Address</label
-                          >
-                          <!-- success -->
-                          <span class="text-field__line success"></span>
-                        </div>
-                        <!-- success -->
-                        <div class="text-field-helper success">
-                          <p class="success-text">Click to copy</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__box">
-                      <div
-                        class="form__text-field-container text-field-container"
-                      >
-                        <div class="text-field">
-                          <input
-                            id="paymentUrl"
-                            class="text-field__input"
-                            type="text"
-                            placeholder="Payment URL"
-                            value="ufo:uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypes"
-                            disabled
-                          />
-                          <label for="paymentUrl" class="text-field__label"
-                            >Payment URL</label
-                          >
-                          <!-- success -->
-                          <span class="text-field__line success"></span>
-                        </div>
-                        <!-- success -->
-                        <div class="text-field-helper success">
-                          <p class="success-text">Click to copy</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button
-                    class="next-button button --blue jc-center"
-                    type="button"
-                  >
-                    Create New UFO Invoice
-                  </button>
-                </form>
-              </div>
-              <div class="receive__column receive__column_right">
-                <div class="receive__image-wrapper">
-                  <img src="./images/qr-code.png" alt="qr-code" />
-                </div>
-              </div>
-            </div>
-            <div
-              id="send"
-              class="content__body send navbar-content active"
-              data-num="1"
-            >
-              <div class="send__column">
-                <h2 class="main__title">Send UFO from my UFO Wallet test 1</h2>
-                <div class="send__wrapper">
-                  <ul class="send__navbar navbar">
-                    <li
-                      class="navbar-item active"
-                      data-id="singlePayment"
-                      data-num="2"
-                    >
-                      Single payment
-                    </li>
-                    <li class="navbar-item" data-id="bulkPayment" data-num="2">
-                      Bulk payment
-                    </li>
-                  </ul>
-                  <form action="#" class="send__form form">
-                    <div
-                      id="singlePayment"
-                      class="form__wrapper send-form active navbar-content"
-                      data-num="2"
-                    >
-                      <div
-                        class="form__text-field-container text-field-container"
-                      >
-                        <div class="text-field">
-                          <input
-                            id="addressOfTheRecipient"
-                            class="text-field__input dropdown-icon"
-                            type="text"
-                            placeholder="Recipient's UFO address"
-                          />
-                          <label
-                            for="addressOfTheRecipient"
-                            class="text-field__label"
-                            >Recipient's UFO address</label
-                          >
-                          <!-- no class -->
-                          <span class="text-field__line"></span>
-                          <div
-                            class="text-field__arrow-down-icon arrow-down-icon"
-                          >
-                            <img src="./images/chevron-down.svg" alt="arrow" />
-                          </div>
-                          <ul class="text-field__list">
-                            <li class="text-field__item text-item-field">
-                              <span class="text-item-field__label">test</span>
-                            </li>
-                            <li class="text-field__item text-item-field">
-                              <span class="text-item-field__label">test</span>
-                            </li>
-                            <li class="text-field__item text-item-field">
-                              <span class="text-item-field__label">Custom</span>
-                            </li>
-                          </ul>
-                        </div>
-                        <!-- primary / error / success -->
-                        <div class="text-field-helper primary">
-                          <p class="primary-text">
-                            Minimum length is 8 character but longer is better
-                          </p>
-                          <p class="error-text">Error</p>
-                          <p class="success-text">Success</p>
-                        </div>
-                      </div>
-                      <div
-                        class="form__text-field-container text-field-container"
-                      >
-                        <div class="text-field">
-                          <!-- no class / error -->
-                          <input
-                            id="amountToSend"
-                            class="text-field__input max-amount"
-                            type="text"
-                            placeholder="UFO Amount to send"
-                          />
-                          <label for="amountToSend" class="text-field__label"
-                            >UFO Amount to send</label
-                          >
-                          <!-- no class / error / success -->
-                          <span class="text-field__line"></span>
-                          <span class="text-field__send">Send All</span>
-                          <span class="text-field__alert"></span>
-                        </div>
-                        <!-- primary / error / success -->
-                        <div class="text-field-helper primary">
-                          <p class="primary-text">
-                            Minimum length is 8 character but longer is better
-                          </p>
-                          <p class="error-text">Error</p>
-                          <p class="success-text">Success</p>
-                        </div>
-                      </div>
-                      <div
-                        class="form__text-field-container text-field-container"
-                      >
-                        <div class="text-field">
-                          <input
-                            id="paymentCommentSend"
-                            class="text-field__input"
-                            type="text"
-                            placeholder="Payment comment"
-                          />
-                          <label
-                            for="paymentCommentSend"
-                            class="text-field__label"
-                            >Payment comment</label
-                          >
-                          <!-- no class -->
-                          <span class="text-field__line"></span>
-                        </div>
-                        <!-- primary -->
-                        <div class="text-field-helper primary">
-                          <p class="primary-text">Optional comment</p>
-                        </div>
-                      </div>
-                      <div
-                        class="form__text-field-container text-field-container"
-                      >
-                        <div class="text-field">
-                          <input
-                            id="transactionPriority"
-                            class="text-field__input dropdown-icon"
-                            type="text"
-                            placeholder="Transaction priority"
-                          />
-                          <label
-                            for="transactionPriority"
-                            class="text-field__label"
-                            >Transaction priority</label
-                          >
-                          <!-- no class -->
-                          <span class="text-field__line"></span>
-                          <div
-                            class="text-field__arrow-down-icon arrow-down-icon"
-                          >
-                            <img src="./images/chevron-down.svg" alt="arrow" />
-                          </div>
-                          <ul class="text-field__list">
-                            <li class="text-field__item text-item-field">
-                              <span class="text-item-field__label">Slow</span>
-                              <span class="text-item-field__value">30 min</span>
-                            </li>
-                            <li class="text-field__item text-item-field">
-                              <span class="text-item-field__label">Medium</span>
-                              <span class="text-item-field__value">15 min</span>
-                            </li>
-                            <li class="text-field__item text-item-field">
-                              <span class="text-item-field__label">Fast</span>
-                              <span class="text-item-field__value">5 min</span>
-                            </li>
-                            <li class="text-field__item text-item-field">
-                              <span class="text-item-field__label"
-                                >Immediate</span
-                              >
-                              <span class="text-item-field__value">1 min</span>
-                            </li>
-                            <li class="text-field__item text-item-field">
-                              <span class="text-item-field__label">Custom</span>
-                            </li>
-                          </ul>
-                        </div>
-                        <!-- primary / error / success -->
-                        <div class="text-field-helper primary">
-                          <p class="primary-text">
-                            Minimum length is 8 character but longer is better
-                          </p>
-                          <p class="error-text">Error</p>
-                          <p class="success-text">Success</p>
-                        </div>
-                      </div>
-                      <div class="form__info">
-                        <p class="info__label">Transaction Fees:</p>
-                        <p class="info__result">
-                          Fill in the form to calculate fees
-                        </p>
-                      </div>
-                      <label class="form__custom-checkbox custom-checkbox">
-                        <input type="checkbox" />
-                        <span class="checkmark"></span>
-                        Donate 100 UFO to developers
-                      </label>
-                      <button
-                        id="PreparePayment-sp"
-                        class="next-button button --blue jc-center"
-                        type="button"
-                      >
-                        Prepare Payment
-                      </button>
-                    </div>
-                    <div
-                      id="bulkPayment"
-                      class="form__wrapper send-form navbar-content"
-                      data-num="2"
-                    >
-                      <div class="send-form__list">
-                        <div class="send-form__item">
-                          <div class="send-form__num">1</div>
-                          <div class="send-form__wallet">
-                            uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmlt
-                          </div>
-                          <div class="send-form__sum">111.00437383 UFO</div>
-                          <!-- Контекстное меню -->
-                          <div class="send-form__context-box context-box">
                             <!-- no class | active -->
                             <div
                               class="context-box__btn context-btn active"
@@ -1752,216 +1152,451 @@
                               </li>
                             </ul>
                           </div>
+                          <!-- *** -->
                         </div>
-                        <div class="send-form__item">
-                          <div class="send-form__num">2</div>
-                          <div class="send-form__wallet">
-                            uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmlt
-                          </div>
-                          <div class="send-form__sum">263.00437383 UFO</div>
-                          <!-- Контекстное меню -->
-                          <div class="send-form__context-box context-box">
-                            <!-- no class | active -->
-                            <div class="context-box__btn context-btn"></div>
-                            <ul
-                              class="context-box__menu-list context-menu-list"
-                            >
-                              <li
-                                class="
-                                  context-menu__item context-menu__item_edit
-                                "
-                              >
-                                Редактировать
-                              </li>
-                              <li
-                                class="
-                                  context-menu__item context-menu__item_delete
-                                "
-                              >
-                                Удалить
-                              </li>
-                              <li
-                                class="
-                                  context-menu__item context-menu__item_hide
-                                "
-                              >
-                                Скрыть баланс
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="send-form__item">
-                          <div class="send-form__num">2341</div>
-                          <div class="send-form__wallet">
-                            uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmlt
-                          </div>
-                          <div class="send-form__sum">
-                            56,341,111.00437383 UFO
-                          </div>
-                          <!-- Контекстное меню -->
-                          <div class="send-form__context-box context-box">
-                            <!-- no class | active -->
-                            <div class="context-box__btn context-btn"></div>
-                            <ul
-                              class="context-box__menu-list context-menu-list"
-                            >
-                              <li
-                                class="
-                                  context-menu__item context-menu__item_edit
-                                "
-                              >
-                                Редактировать
-                              </li>
-                              <li
-                                class="
-                                  context-menu__item context-menu__item_delete
-                                "
-                              >
-                                Удалить
-                              </li>
-                              <li
-                                class="
-                                  context-menu__item context-menu__item_hide
-                                "
-                              >
-                                Скрыть баланс
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form__actions">
-                        <button
-                          class="next-button button --black jc-center"
-                          type="button"
+                        <div
+                          class="
+                            history-accordion__body
+                            accordion-history-body accordion-body
+                          "
                         >
-                          +
-                        </button>
-                        <button
-                          id="dataImportButton"
-                          class="next-button button --black jc-center"
-                          type="button"
-                        >
-                          Import
-                        </button>
-                      </div>
-                      <div class="form__info-list">
-                        <div class="form__info">
-                          <p class="info__label">Transaction Fees:</p>
-                          <p class="info__result">
-                            Fill in the form to calculate fees
-                          </p>
-                        </div>
-                        <div class="form__info">
-                          <p class="info__label">Total Transaction:</p>
-                          <p class="info__result">12,432,340.00046428</p>
-                        </div>
-                      </div>
-                      <label class="form__custom-checkbox custom-checkbox">
-                        <input type="checkbox" />
-                        <span class="checkmark"></span>
-                        Donate 100 UFO to developers
-                      </label>
-                      <button
-                        id="PreparePayment-sp"
-                        class="next-button button --blue jc-center"
-                        type="button"
-                      >
-                        Prepare Payment
-                      </button>
-                    </div>
-                  </form>
-                </div>
-                <form action="#" class="send__form form">
-                  <div class="form__confirm confirm-form">
-                    <div class="confirm-form__box">
-                      <div class="confirm-form__group">
-                        <h3 class="confirm-form__title">
-                          Send UFO from my UFO Wallet test 1
-                        </h3>
-                        <!-- контекстное меню -->
-                        <div class="confirm-form__context-box context-box">
-                          <!-- no class | active -->
-                          <div
-                            class="context-box__btn context-btn active"
-                          ></div>
-                          <ul class="context-box__menu-list context-menu-list">
-                            <li
-                              class="context-menu__item context-menu__item_edit"
-                            >
-                              Редактировать
-                            </li>
-                            <li
-                              class="
-                                context-menu__item context-menu__item_delete
-                              "
-                            >
-                              Удалить
-                            </li>
-                            <li
-                              class="context-menu__item context-menu__item_hide"
-                            >
-                              Скрыть баланс
-                            </li>
-                          </ul>
-                        </div>
-                        <!-- *** -->
-                      </div>
-                      <div class="confirm-form__list">
-                        <div class="confirm-form__item">
-                          <div class="confirm-form__label">
-                            Recipient's UFO address
+                          <div class="accordion-history-body__table">
+                            <div class="accordion-history-table__column">
+                              <div class="accordion-history-table__header">
+                                Income
+                              </div>
+                              <div class="accordion-history-table__list">
+                                <div class="accordion-history-table__item">
+                                  <div class="accordion-history-table__label">
+                                    fjslkdfjsldjf2lsd
+                                  </div>
+                                  <div class="accordion-history-table__value">
+                                    +632,632,111.00437383 UFO
+                                  </div>
+                                </div>
+                                <div class="accordion-history-table__item">
+                                  <div class="accordion-history-table__label">
+                                    fjslkdfjsldjf2lsd
+                                  </div>
+                                  <div class="accordion-history-table__value">
+                                    +632,632,111.00437383 UFO
+                                  </div>
+                                </div>
+                                <div class="accordion-history-table__item">
+                                  <div class="accordion-history-table__label">
+                                    fjslkdfjsldjf2lsd
+                                  </div>
+                                  <div class="accordion-history-table__value">
+                                    +632,632,111.00437383 UFO
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-history-table__column">
+                              <div class="accordion-history-table__header">
+                                Out
+                              </div>
+                              <div class="accordion-history-table__list">
+                                <div class="accordion-history-table__item">
+                                  <div class="accordion-history-table__label">
+                                    fjslkdfjsldjf2lsd
+                                  </div>
+                                  <div class="accordion-history-table__value">
+                                    +632,632,111.00437383 UFO
+                                  </div>
+                                </div>
+                                <div class="accordion-history-table__item">
+                                  <div class="accordion-history-table__label">
+                                    fjslkdfjsldjf2lsd
+                                  </div>
+                                  <div class="accordion-history-table__value">
+                                    +632,632,111.00437383 UFO
+                                  </div>
+                                </div>
+                                <div class="accordion-history-table__item">
+                                  <div class="accordion-history-table__label">
+                                    fjslkdfjsldjf2lsd
+                                  </div>
+                                  <div class="accordion-history-table__value">
+                                    +632,632,111.00437383 UFO
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div
-                            class="
-                              confirm-form__value confirm-form__value_address
-                            "
-                          >
-                            uf1q5ldm...ypesmmlt
+                          <div class="accordion-history-body__bottom">
+                            <div class="accordion-history-body__group">
+                              <div class="accordion-history-body__label">
+                                Blochain fee:
+                              </div>
+                              <div class="accordion-history-body__value">
+                                -0.00437383 UFO
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div class="confirm-form__item">
-                          <div class="confirm-form__label">
-                            UFO Amount to send
-                          </div>
-                          <div class="confirm-form__value">
-                            632,632,632,111.00437383
-                          </div>
-                        </div>
-                        <div class="confirm-form__item">
-                          <div class="confirm-form__label">
-                            Medium priority fee (~15 min)
-                          </div>
-                          <div class="confirm-form__value">0.00437383 UFO</div>
                         </div>
                       </div>
+                      <!-- success / no class -->
                       <div
-                        class="
-                          confirm-form__accordion
-                          confirm-accordion
-                          accordion
-                        "
+                        class="history-accordion__container accordion-container"
                       >
                         <div
                           class="
-                            accordion-container
-                            confirm-accordion__container
+                            history-accordion__header
+                            accordion-history-header accordion-btn
                           "
                         >
-                          <div
-                            class="
-                              confirm-accordion__header
-                              accordion-btn accordion-header
-                            "
-                          >
-                            <div
-                              class="confirm-accordion__title accordion-title"
-                            >
-                              Transaction details
+                          <div class="accordion-history-header__column">
+                            <div class="accordion-history-header__label">
+                              Address
                             </div>
                             <div
                               class="
-                                confirm-accordion__arrow-down-icon
+                                accordion-history-header__value
+                                accordion-history-header__value_address
+                                --sent
+                              "
+                            >
+                              fjslkdfjsldjf2lsd
+                            </div>
+                          </div>
+                          <div class="accordion-history-header__column">
+                            <div class="accordion-history-header__label">
+                              Status
+                            </div>
+                            <div class="accordion-history-header__value">
+                              Unconfirmed (1/6)
+                            </div>
+                          </div>
+                          <div class="accordion-history-header__column">
+                            <div class="accordion-history-header__label">
+                              Amount
+                            </div>
+                            <div class="accordion-history-header__value">
+                              +632,632,632,111.00437383 UFO
+                            </div>
+                          </div>
+                          <!-- контекстное меню -->
+                          <div
+                            class="
+                              accordion-history-header__context-box
+                              context-box
+                            "
+                          >
+                            <!-- no class | active -->
+                            <div class="context-box__btn context-btn"></div>
+                            <ul
+                              class="
+                                context-box__menu-list
+                                context-menu-list
+                                active
+                              "
+                            >
+                              <li
+                                class="
+                                  context-menu__item context-menu__item_edit
+                                "
+                              >
+                                Редактировать
+                              </li>
+                              <li
+                                class="
+                                  context-menu__item context-menu__item_delete
+                                "
+                              >
+                                Удалить
+                              </li>
+                              <li
+                                class="
+                                  context-menu__item context-menu__item_hide
+                                "
+                              >
+                                Скрыть баланс
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- *** -->
+                        </div>
+                        <div
+                          class="
+                            history-accordion__body
+                            accordion-history-body accordion-body
+                          "
+                        >
+                          <div class="accordion-history-body__table">
+                            <!-- success / no class -->
+                            <div
+                              class="accordion-history-table__column success"
+                            >
+                              <div class="accordion-history-table__header">
+                                Income
+                              </div>
+                              <div class="accordion-history-table__list">
+                                <div class="accordion-history-table__item">
+                                  <div class="accordion-history-table__label">
+                                    fjslkdfjsldjf2lsd
+                                  </div>
+                                  <div class="accordion-history-table__value">
+                                    +632,632,111.00437383 UFO
+                                  </div>
+                                </div>
+                                <div class="accordion-history-table__item">
+                                  <div class="accordion-history-table__label">
+                                    fjslkdfjsldjf2lsd
+                                  </div>
+                                  <div class="accordion-history-table__value">
+                                    +632,632,111.00437383 UFO
+                                  </div>
+                                </div>
+                                <div class="accordion-history-table__item">
+                                  <div class="accordion-history-table__label">
+                                    fjslkdfjsldjf2lsd
+                                  </div>
+                                  <div class="accordion-history-table__value">
+                                    +632,632,111.00437383 UFO
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- success / no class -->
+                            <div class="accordion-history-table__column">
+                              <div class="accordion-history-table__header">
+                                Out
+                              </div>
+                              <div class="accordion-history-table__list">
+                                <div class="accordion-history-table__item">
+                                  <div class="accordion-history-table__label">
+                                    fjslkdfjsldjf2lsd
+                                  </div>
+                                  <div class="accordion-history-table__value">
+                                    +632,632,111.00437383 UFO
+                                  </div>
+                                </div>
+                                <div class="accordion-history-table__item">
+                                  <div class="accordion-history-table__label">
+                                    fjslkdfjsldjf2lsd
+                                  </div>
+                                  <div class="accordion-history-table__value">
+                                    +632,632,111.00437383 UFO
+                                  </div>
+                                </div>
+                                <div class="accordion-history-table__item">
+                                  <div class="accordion-history-table__label">
+                                    fjslkdfjsldjf2lsd
+                                  </div>
+                                  <div class="accordion-history-table__value">
+                                    +632,632,111.00437383 UFO
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-history-body__bottom">
+                            <div class="accordion-history-body__group">
+                              <div class="accordion-history-body__label">
+                                Blochain fee:
+                              </div>
+                              <div class="accordion-history-body__value">
+                                -0.00437383 UFO
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="receive"
+                class="content__body navbar-content receive"
+                data-num="1"
+              >
+                <div class="receive__column receive__column_left">
+                  <h2 class="main__title">Receive UFO</h2>
+                  <p class="main__subtitle gradient-color">
+                    Fill in amount and payment description if needed. Click on
+                    'Create invoice' will generate several ways of payment to
+                    your address.
+                  </p>
+                  <form action="#" class="form">
+                    <div class="form__wrapper">
+                      <div
+                        class="form__text-field-container text-field-container"
+                      >
+                        <div class="text-field">
+                          <input
+                            id="amountToReceive"
+                            class="text-field__input"
+                            type="text"
+                            placeholder="Account title"
+                          />
+                          <label for="amountToReceive" class="text-field__label"
+                            >Account title</label
+                          >
+                          <!-- no class / error / success -->
+                          <span class="text-field__line"></span>
+                        </div>
+                        <!-- primary / error / success -->
+                        <div class="text-field-helper primary">
+                          <p class="primary-text">
+                            Minimum length is 8 character but longer is better
+                          </p>
+                          <p class="error-text">Error</p>
+                          <p class="success-text">Success</p>
+                        </div>
+                      </div>
+                      <div
+                        class="form__text-field-container text-field-container"
+                      >
+                        <div class="text-field">
+                          <input
+                            id="paymentCommentReceive"
+                            class="text-field__input"
+                            type="text"
+                            placeholder="Payment comment"
+                          />
+                          <label
+                            for="paymentCommentReceive"
+                            class="text-field__label"
+                            >Payment comment</label
+                          >
+                          <!-- no class -->
+                          <span class="text-field__line"></span>
+                        </div>
+                        <!-- primary -->
+                        <div class="text-field-helper primary">
+                          <p class="primary-text">Optional comment</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__wrapper">
+                      <div class="form__box">
+                        <div
+                          class="
+                            form__text-field-container
+                            text-field-container
+                          "
+                        >
+                          <div class="text-field">
+                            <input
+                              id="ufoAddress"
+                              class="text-field__input"
+                              type="text"
+                              placeholder="UFO Address"
+                              value="uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmltuf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmlt"
+                              disabled
+                            />
+                            <label for="ufoAddress" class="text-field__label"
+                              >UFO Address</label
+                            >
+                            <!-- success -->
+                            <span class="text-field__line success"></span>
+                          </div>
+                          <!-- success -->
+                          <div class="text-field-helper success">
+                            <p class="success-text">Click to copy</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__box">
+                        <div
+                          class="
+                            form__text-field-container
+                            text-field-container
+                          "
+                        >
+                          <div class="text-field">
+                            <input
+                              id="paymentUrl"
+                              class="text-field__input"
+                              type="text"
+                              placeholder="Payment URL"
+                              value="ufo:uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypes"
+                              disabled
+                            />
+                            <label for="paymentUrl" class="text-field__label"
+                              >Payment URL</label
+                            >
+                            <!-- success -->
+                            <span class="text-field__line success"></span>
+                          </div>
+                          <!-- success -->
+                          <div class="text-field-helper success">
+                            <p class="success-text">Click to copy</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      class="next-button button --blue jc-center"
+                      type="button"
+                    >
+                      Create New UFO Invoice
+                    </button>
+                  </form>
+                </div>
+                <div class="receive__column receive__column_right">
+                  <div class="receive__image-wrapper">
+                    <img src="./images/qr-code.png" alt="qr-code" />
+                  </div>
+                </div>
+              </div>
+              <div
+                id="send"
+                class="content__body send navbar-content active"
+                data-num="1"
+              >
+                <div class="send__column">
+                  <h2 class="main__title">
+                    Send UFO from my UFO Wallet test 1
+                  </h2>
+                  <div class="send__wrapper">
+                    <ul class="send__navbar navbar">
+                      <li
+                        class="navbar-item active"
+                        data-id="singlePayment"
+                        data-num="2"
+                      >
+                        Single payment
+                      </li>
+                      <li
+                        class="navbar-item"
+                        data-id="bulkPayment"
+                        data-num="2"
+                      >
+                        Bulk payment
+                      </li>
+                    </ul>
+                    <form action="#" class="send__form form">
+                      <div
+                        id="singlePayment"
+                        class="form__wrapper send-form active navbar-content"
+                        data-num="2"
+                      >
+                        <div
+                          class="
+                            form__text-field-container
+                            text-field-container
+                          "
+                        >
+                          <div class="text-field">
+                            <input
+                              id="addressOfTheRecipient"
+                              class="text-field__input dropdown-icon"
+                              type="text"
+                              placeholder="Recipient's UFO address"
+                            />
+                            <label
+                              for="addressOfTheRecipient"
+                              class="text-field__label"
+                              >Recipient's UFO address</label
+                            >
+                            <!-- no class -->
+                            <span class="text-field__line"></span>
+                            <div
+                              class="
+                                text-field__arrow-down-icon
                                 arrow-down-icon
                               "
                             >
@@ -1970,163 +1605,609 @@
                                 alt="arrow"
                               />
                             </div>
-                          </div>
-                          <div class="confirm-accordion__body accordion-body">
-                            <ul class="confirm-accordion__tabs-nav tabs-nav">
-                              <li
-                                class="tabs-nav__item active"
-                                data-id="transactionInput"
-                              >
-                                Outputs<span>(50)</span>
+                            <ul class="text-field__list">
+                              <li class="text-field__item text-item-field">
+                                <span class="text-item-field__label">test</span>
                               </li>
-                              <li
-                                class="tabs-nav__item"
-                                data-id="transactionOutput"
-                              >
-                                Inputs<span>(70)</span>
+                              <li class="text-field__item text-item-field">
+                                <span class="text-item-field__label">test</span>
+                              </li>
+                              <li class="text-field__item text-item-field">
+                                <span class="text-item-field__label"
+                                  >Custom</span
+                                >
                               </li>
                             </ul>
+                          </div>
+                          <!-- primary / error / success -->
+                          <div class="text-field-helper primary">
+                            <p class="primary-text">
+                              Minimum length is 8 character but longer is better
+                            </p>
+                            <p class="error-text">Error</p>
+                            <p class="success-text">Success</p>
+                          </div>
+                        </div>
+                        <div
+                          class="
+                            form__text-field-container
+                            text-field-container
+                          "
+                        >
+                          <div class="text-field">
+                            <!-- no class / error -->
+                            <input
+                              id="amountToSend"
+                              class="text-field__input max-amount"
+                              type="text"
+                              placeholder="UFO Amount to send"
+                            />
+                            <label for="amountToSend" class="text-field__label"
+                              >UFO Amount to send</label
+                            >
+                            <!-- no class / error / success -->
+                            <span class="text-field__line"></span>
+                            <span class="text-field__send">Send All</span>
+                            <span class="text-field__alert"></span>
+                          </div>
+                          <!-- primary / error / success -->
+                          <div class="text-field-helper primary">
+                            <p class="primary-text">
+                              Minimum length is 8 character but longer is better
+                            </p>
+                            <p class="error-text">Error</p>
+                            <p class="success-text">Success</p>
+                          </div>
+                        </div>
+                        <div
+                          class="
+                            form__text-field-container
+                            text-field-container
+                          "
+                        >
+                          <div class="text-field">
+                            <input
+                              id="paymentCommentSend"
+                              class="text-field__input"
+                              type="text"
+                              placeholder="Payment comment"
+                            />
+                            <label
+                              for="paymentCommentSend"
+                              class="text-field__label"
+                              >Payment comment</label
+                            >
+                            <!-- no class -->
+                            <span class="text-field__line"></span>
+                          </div>
+                          <!-- primary -->
+                          <div class="text-field-helper primary">
+                            <p class="primary-text">Optional comment</p>
+                          </div>
+                        </div>
+                        <div
+                          class="
+                            form__text-field-container
+                            text-field-container
+                          "
+                        >
+                          <div class="text-field">
+                            <input
+                              id="transactionPriority"
+                              class="text-field__input dropdown-icon"
+                              type="text"
+                              placeholder="Transaction priority"
+                            />
+                            <label
+                              for="transactionPriority"
+                              class="text-field__label"
+                              >Transaction priority</label
+                            >
+                            <!-- no class -->
+                            <span class="text-field__line"></span>
                             <div
-                              class="confirm-accordion__wrapper tabs-content"
+                              class="
+                                text-field__arrow-down-icon
+                                arrow-down-icon
+                              "
+                            >
+                              <img
+                                src="./images/chevron-down.svg"
+                                alt="arrow"
+                              />
+                            </div>
+                            <ul class="text-field__list">
+                              <li class="text-field__item text-item-field">
+                                <span class="text-item-field__label">Slow</span>
+                                <span class="text-item-field__value"
+                                  >30 min</span
+                                >
+                              </li>
+                              <li class="text-field__item text-item-field">
+                                <span class="text-item-field__label"
+                                  >Medium</span
+                                >
+                                <span class="text-item-field__value"
+                                  >15 min</span
+                                >
+                              </li>
+                              <li class="text-field__item text-item-field">
+                                <span class="text-item-field__label">Fast</span>
+                                <span class="text-item-field__value"
+                                  >5 min</span
+                                >
+                              </li>
+                              <li class="text-field__item text-item-field">
+                                <span class="text-item-field__label"
+                                  >Immediate</span
+                                >
+                                <span class="text-item-field__value"
+                                  >1 min</span
+                                >
+                              </li>
+                              <li class="text-field__item text-item-field">
+                                <span class="text-item-field__label"
+                                  >Custom</span
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- primary / error / success -->
+                          <div class="text-field-helper primary">
+                            <p class="primary-text">
+                              Minimum length is 8 character but longer is better
+                            </p>
+                            <p class="error-text">Error</p>
+                            <p class="success-text">Success</p>
+                          </div>
+                        </div>
+                        <div class="form__info">
+                          <p class="info__label">Transaction Fees:</p>
+                          <p class="info__result">
+                            Fill in the form to calculate fees
+                          </p>
+                        </div>
+                        <label class="form__custom-checkbox custom-checkbox">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                          Donate 100 UFO to developers
+                        </label>
+                        <button
+                          id="PreparePayment-sp"
+                          class="next-button button --blue jc-center"
+                          type="button"
+                        >
+                          Prepare Payment
+                        </button>
+                      </div>
+                      <div
+                        id="bulkPayment"
+                        class="form__wrapper send-form navbar-content"
+                        data-num="2"
+                      >
+                        <div class="send-form__list">
+                          <div class="send-form__item">
+                            <div class="send-form__num">1</div>
+                            <div class="send-form__wallet">
+                              uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmlt
+                            </div>
+                            <div class="send-form__sum">111.00437383 UFO</div>
+                            <!-- Контекстное меню -->
+                            <div class="send-form__context-box context-box">
+                              <!-- no class | active -->
+                              <div
+                                class="context-box__btn context-btn active"
+                              ></div>
+                              <ul
+                                class="context-box__menu-list context-menu-list"
+                              >
+                                <li
+                                  class="
+                                    context-menu__item context-menu__item_edit
+                                  "
+                                >
+                                  Редактировать
+                                </li>
+                                <li
+                                  class="
+                                    context-menu__item context-menu__item_delete
+                                  "
+                                >
+                                  Удалить
+                                </li>
+                                <li
+                                  class="
+                                    context-menu__item context-menu__item_hide
+                                  "
+                                >
+                                  Скрыть баланс
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="send-form__item">
+                            <div class="send-form__num">2</div>
+                            <div class="send-form__wallet">
+                              uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmlt
+                            </div>
+                            <div class="send-form__sum">263.00437383 UFO</div>
+                            <!-- Контекстное меню -->
+                            <div class="send-form__context-box context-box">
+                              <!-- no class | active -->
+                              <div class="context-box__btn context-btn"></div>
+                              <ul
+                                class="context-box__menu-list context-menu-list"
+                              >
+                                <li
+                                  class="
+                                    context-menu__item context-menu__item_edit
+                                  "
+                                >
+                                  Редактировать
+                                </li>
+                                <li
+                                  class="
+                                    context-menu__item context-menu__item_delete
+                                  "
+                                >
+                                  Удалить
+                                </li>
+                                <li
+                                  class="
+                                    context-menu__item context-menu__item_hide
+                                  "
+                                >
+                                  Скрыть баланс
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="send-form__item">
+                            <div class="send-form__num">2341</div>
+                            <div class="send-form__wallet">
+                              uf1q5ldmyz33cpjmh4damhcyy5yfpvufk0ypesmmlt
+                            </div>
+                            <div class="send-form__sum">
+                              56,341,111.00437383 UFO
+                            </div>
+                            <!-- Контекстное меню -->
+                            <div class="send-form__context-box context-box">
+                              <!-- no class | active -->
+                              <div class="context-box__btn context-btn"></div>
+                              <ul
+                                class="context-box__menu-list context-menu-list"
+                              >
+                                <li
+                                  class="
+                                    context-menu__item context-menu__item_edit
+                                  "
+                                >
+                                  Редактировать
+                                </li>
+                                <li
+                                  class="
+                                    context-menu__item context-menu__item_delete
+                                  "
+                                >
+                                  Удалить
+                                </li>
+                                <li
+                                  class="
+                                    context-menu__item context-menu__item_hide
+                                  "
+                                >
+                                  Скрыть баланс
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form__actions">
+                          <button
+                            class="next-button button --black jc-center"
+                            type="button"
+                          >
+                            +
+                          </button>
+                          <button
+                            id="dataImportButton"
+                            class="next-button button --black jc-center"
+                            type="button"
+                          >
+                            Import
+                          </button>
+                        </div>
+                        <div class="form__info-list">
+                          <div class="form__info">
+                            <p class="info__label">Transaction Fees:</p>
+                            <p class="info__result">
+                              Fill in the form to calculate fees
+                            </p>
+                          </div>
+                          <div class="form__info">
+                            <p class="info__label">Total Transaction:</p>
+                            <p class="info__result">12,432,340.00046428</p>
+                          </div>
+                        </div>
+                        <label class="form__custom-checkbox custom-checkbox">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                          Donate 100 UFO to developers
+                        </label>
+                        <button
+                          id="PreparePayment-sp"
+                          class="next-button button --blue jc-center"
+                          type="button"
+                        >
+                          Prepare Payment
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <form action="#" class="send__form form">
+                    <div class="form__confirm confirm-form">
+                      <div class="confirm-form__box">
+                        <div class="confirm-form__group">
+                          <h3 class="confirm-form__title">
+                            Send UFO from my UFO Wallet test 1
+                          </h3>
+                          <!-- контекстное меню -->
+                          <div class="confirm-form__context-box context-box">
+                            <!-- no class | active -->
+                            <div
+                              class="context-box__btn context-btn active"
+                            ></div>
+                            <ul
+                              class="context-box__menu-list context-menu-list"
+                            >
+                              <li
+                                class="
+                                  context-menu__item context-menu__item_edit
+                                "
+                              >
+                                Редактировать
+                              </li>
+                              <li
+                                class="
+                                  context-menu__item context-menu__item_delete
+                                "
+                              >
+                                Удалить
+                              </li>
+                              <li
+                                class="
+                                  context-menu__item context-menu__item_hide
+                                "
+                              >
+                                Скрыть баланс
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- *** -->
+                        </div>
+                        <div class="confirm-form__list">
+                          <div class="confirm-form__item">
+                            <div class="confirm-form__label">
+                              Recipient's UFO address
+                            </div>
+                            <div
+                              class="
+                                confirm-form__value confirm-form__value_address
+                              "
+                            >
+                              uf1q5ldm...ypesmmlt
+                            </div>
+                          </div>
+                          <div class="confirm-form__item">
+                            <div class="confirm-form__label">
+                              UFO Amount to send
+                            </div>
+                            <div class="confirm-form__value">
+                              632,632,632,111.00437383
+                            </div>
+                          </div>
+                          <div class="confirm-form__item">
+                            <div class="confirm-form__label">
+                              Medium priority fee (~15 min)
+                            </div>
+                            <div class="confirm-form__value">
+                              0.00437383 UFO
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="
+                            confirm-form__accordion
+                            confirm-accordion
+                            accordion
+                          "
+                        >
+                          <div
+                            class="
+                              accordion-container
+                              confirm-accordion__container
+                            "
+                          >
+                            <div
+                              class="
+                                confirm-accordion__header
+                                accordion-btn accordion-header
+                              "
                             >
                               <div
-                                id="transactionInput"
-                                class="
-                                  confirm-accordion__column
-                                  tabs-content__item
-                                  active
-                                "
+                                class="confirm-accordion__title accordion-title"
                               >
-                                <div class="confirm-accordion__list">
-                                  <div class="confirm-accordion__item">
-                                    <div
-                                      class="
-                                        confirm-accordion__label
-                                        confirm-accordion__label_address
-                                      "
-                                    >
-                                      fjslkdfjsldjf2lsd
-                                    </div>
-                                    <div class="confirm-accordion__value">
-                                      -632,632,111.00437383 UFO
-                                    </div>
-                                  </div>
-                                  <div class="confirm-accordion__item">
-                                    <div
-                                      class="
-                                        confirm-accordion__label
-                                        confirm-accordion__label_address
-                                      "
-                                    >
-                                      fjslkdfjsldjf2lsd
-                                    </div>
-                                    <div class="confirm-accordion__value">
-                                      -111.00437383 UFO
-                                    </div>
-                                  </div>
-                                  <div class="confirm-accordion__item">
-                                    <div
-                                      class="
-                                        confirm-accordion__label
-                                        confirm-accordion__label_address
-                                      "
-                                    >
-                                      fjslkdfjsldjf2lsd
-                                    </div>
-                                    <div class="confirm-accordion__value">
-                                      -52,111.00437383 UFO
-                                    </div>
-                                  </div>
-                                  <div class="confirm-accordion__item">
-                                    <div
-                                      class="
-                                        confirm-accordion__label
-                                        confirm-accordion__label_address
-                                      "
-                                    >
-                                      fjslkdfjsldjf2lsd
-                                    </div>
-                                    <div class="confirm-accordion__value">
-                                      -52,111.00437383 UFO
-                                    </div>
-                                  </div>
-                                  <div class="confirm-accordion__item">
-                                    <div
-                                      class="
-                                        confirm-accordion__label
-                                        confirm-accordion__label_address
-                                      "
-                                    >
-                                      fjslkdfjsldjf2lsd
-                                    </div>
-                                    <div class="confirm-accordion__value">
-                                      -52,111.00437383 UFO
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="confirm-accordion__group">
-                                  <div class="confirm-accordion__label">
-                                    Blochain fee:
-                                  </div>
-                                  <div class="confirm-accordion__value">
-                                    -0.00437383 UFO
-                                  </div>
-                                </div>
+                                Transaction details
                               </div>
                               <div
-                                id="transactionOutput"
                                 class="
-                                  confirm-accordion__column
-                                  tabs-content__item
+                                  confirm-accordion__arrow-down-icon
+                                  arrow-down-icon
                                 "
                               >
-                                <div class="confirm-accordion__list">
-                                  <div class="confirm-accordion__item">
-                                    <div
-                                      class="
-                                        confirm-accordion__label
-                                        confirm-accordion__label_address
-                                      "
-                                    >
-                                      fjslkdfjsldjf2lsd
+                                <img
+                                  src="./images/chevron-down.svg"
+                                  alt="arrow"
+                                />
+                              </div>
+                            </div>
+                            <div class="confirm-accordion__body accordion-body">
+                              <ul class="confirm-accordion__tabs-nav tabs-nav">
+                                <li
+                                  class="tabs-nav__item active"
+                                  data-id="transactionInput"
+                                >
+                                  Outputs<span>(50)</span>
+                                </li>
+                                <li
+                                  class="tabs-nav__item"
+                                  data-id="transactionOutput"
+                                >
+                                  Inputs<span>(70)</span>
+                                </li>
+                              </ul>
+                              <div
+                                class="confirm-accordion__wrapper tabs-content"
+                              >
+                                <div
+                                  id="transactionInput"
+                                  class="
+                                    confirm-accordion__column
+                                    tabs-content__item
+                                    active
+                                  "
+                                >
+                                  <div class="confirm-accordion__list">
+                                    <div class="confirm-accordion__item">
+                                      <div
+                                        class="
+                                          confirm-accordion__label
+                                          confirm-accordion__label_address
+                                        "
+                                      >
+                                        fjslkdfjsldjf2lsd
+                                      </div>
+                                      <div class="confirm-accordion__value">
+                                        -632,632,111.00437383 UFO
+                                      </div>
                                     </div>
-                                    <div class="confirm-accordion__value">
-                                      +632,632,111.00437383 UFO
+                                    <div class="confirm-accordion__item">
+                                      <div
+                                        class="
+                                          confirm-accordion__label
+                                          confirm-accordion__label_address
+                                        "
+                                      >
+                                        fjslkdfjsldjf2lsd
+                                      </div>
+                                      <div class="confirm-accordion__value">
+                                        -111.00437383 UFO
+                                      </div>
+                                    </div>
+                                    <div class="confirm-accordion__item">
+                                      <div
+                                        class="
+                                          confirm-accordion__label
+                                          confirm-accordion__label_address
+                                        "
+                                      >
+                                        fjslkdfjsldjf2lsd
+                                      </div>
+                                      <div class="confirm-accordion__value">
+                                        -52,111.00437383 UFO
+                                      </div>
+                                    </div>
+                                    <div class="confirm-accordion__item">
+                                      <div
+                                        class="
+                                          confirm-accordion__label
+                                          confirm-accordion__label_address
+                                        "
+                                      >
+                                        fjslkdfjsldjf2lsd
+                                      </div>
+                                      <div class="confirm-accordion__value">
+                                        -52,111.00437383 UFO
+                                      </div>
+                                    </div>
+                                    <div class="confirm-accordion__item">
+                                      <div
+                                        class="
+                                          confirm-accordion__label
+                                          confirm-accordion__label_address
+                                        "
+                                      >
+                                        fjslkdfjsldjf2lsd
+                                      </div>
+                                      <div class="confirm-accordion__value">
+                                        -52,111.00437383 UFO
+                                      </div>
                                     </div>
                                   </div>
-                                  <div class="confirm-accordion__item">
-                                    <div
-                                      class="
-                                        confirm-accordion__label
-                                        confirm-accordion__label_address
-                                      "
-                                    >
-                                      fjslkdfjsldjf2lsd
+                                  <div class="confirm-accordion__group">
+                                    <div class="confirm-accordion__label">
+                                      Blochain fee:
                                     </div>
                                     <div class="confirm-accordion__value">
-                                      +111.00437383 UFO
-                                    </div>
-                                  </div>
-                                  <div class="confirm-accordion__item">
-                                    <div
-                                      class="
-                                        confirm-accordion__label
-                                        confirm-accordion__label_address
-                                      "
-                                    >
-                                      fjslkdfjsldjf2lsd
-                                    </div>
-                                    <div class="confirm-accordion__value">
-                                      +52,111.00437383 UFO
+                                      -0.00437383 UFO
                                     </div>
                                   </div>
                                 </div>
-                                <div class="confirm-accordion__group">
-                                  <div class="confirm-accordion__label">
-                                    Blochain fee:
+                                <div
+                                  id="transactionOutput"
+                                  class="
+                                    confirm-accordion__column
+                                    tabs-content__item
+                                  "
+                                >
+                                  <div class="confirm-accordion__list">
+                                    <div class="confirm-accordion__item">
+                                      <div
+                                        class="
+                                          confirm-accordion__label
+                                          confirm-accordion__label_address
+                                        "
+                                      >
+                                        fjslkdfjsldjf2lsd
+                                      </div>
+                                      <div class="confirm-accordion__value">
+                                        +632,632,111.00437383 UFO
+                                      </div>
+                                    </div>
+                                    <div class="confirm-accordion__item">
+                                      <div
+                                        class="
+                                          confirm-accordion__label
+                                          confirm-accordion__label_address
+                                        "
+                                      >
+                                        fjslkdfjsldjf2lsd
+                                      </div>
+                                      <div class="confirm-accordion__value">
+                                        +111.00437383 UFO
+                                      </div>
+                                    </div>
+                                    <div class="confirm-accordion__item">
+                                      <div
+                                        class="
+                                          confirm-accordion__label
+                                          confirm-accordion__label_address
+                                        "
+                                      >
+                                        fjslkdfjsldjf2lsd
+                                      </div>
+                                      <div class="confirm-accordion__value">
+                                        +52,111.00437383 UFO
+                                      </div>
+                                    </div>
                                   </div>
-                                  <div class="confirm-accordion__value">
-                                    -0.00437383 UFO
+                                  <div class="confirm-accordion__group">
+                                    <div class="confirm-accordion__label">
+                                      Blochain fee:
+                                    </div>
+                                    <div class="confirm-accordion__value">
+                                      -0.00437383 UFO
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -2134,156 +2215,156 @@
                           </div>
                         </div>
                       </div>
+                      <div class="confirm-form__actions">
+                        <button
+                          class="next-button button --black jc-center"
+                          type="button"
+                        >
+                          Cancel
+                        </button>
+                        <button
+                          class="next-button button --green jc-center"
+                          type="button"
+                        >
+                          Confirm and send
+                        </button>
+                      </div>
                     </div>
-                    <div class="confirm-form__actions">
-                      <button
-                        class="next-button button --black jc-center"
-                        type="button"
-                      >
-                        Cancel
-                      </button>
-                      <button
-                        class="next-button button --green jc-center"
-                        type="button"
-                      >
-                        Confirm and send
-                      </button>
-                    </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
-            </div>
-            <div
-              id="overview"
-              class="content__body navbar-content overview"
-              data-num="1"
-            >
-              <div class="overview__column">
-                <h2 class="main__title">Backup Options</h2>
-                <div class="overview__accordion overview-accordion accordion">
-                  <div
-                    class="accordion-container overview-accordion__container"
-                  >
+              <div
+                id="overview"
+                class="content__body navbar-content overview"
+                data-num="1"
+              >
+                <div class="overview__column">
+                  <h2 class="main__title">Backup Options</h2>
+                  <div class="overview__accordion overview-accordion accordion">
                     <div
-                      class="
-                        overview-accordion__header
-                        accordion-btn accordion-header
-                      "
+                      class="accordion-container overview-accordion__container"
                     >
-                      <div class="overview-accordion__title accordion-title">
-                        Title
-                      </div>
                       <div
                         class="
-                          overview-accordion__arrow-down-icon
-                          arrow-down-icon
+                          overview-accordion__header
+                          accordion-btn accordion-header
                         "
                       >
-                        <img src="./images/chevron-down.svg" alt="arrow" />
+                        <div class="overview-accordion__title accordion-title">
+                          Title
+                        </div>
+                        <div
+                          class="
+                            overview-accordion__arrow-down-icon
+                            arrow-down-icon
+                          "
+                        >
+                          <img src="./images/chevron-down.svg" alt="arrow" />
+                        </div>
+                      </div>
+                      <div class="overview-accordion__body accordion-body">
+                        title
                       </div>
                     </div>
-                    <div class="overview-accordion__body accordion-body">
-                      title
-                    </div>
-                  </div>
-                  <div
-                    class="accordion-container overview-accordion__container"
-                  >
                     <div
-                      class="
-                        overview-accordion__header
-                        accordion-btn accordion-header
-                      "
+                      class="accordion-container overview-accordion__container"
                     >
-                      <div class="overview-accordion__title accordion-title">
-                        Seed Phrase
-                      </div>
                       <div
                         class="
-                          overview-accordion__arrow-down-icon
-                          arrow-down-icon
+                          overview-accordion__header
+                          accordion-btn accordion-header
                         "
                       >
-                        <img src="./images/chevron-down.svg" alt="arrow" />
+                        <div class="overview-accordion__title accordion-title">
+                          Seed Phrase
+                        </div>
+                        <div
+                          class="
+                            overview-accordion__arrow-down-icon
+                            arrow-down-icon
+                          "
+                        >
+                          <img src="./images/chevron-down.svg" alt="arrow" />
+                        </div>
+                      </div>
+                      <div class="overview-accordion__body accordion-body">
+                        seed phrase
                       </div>
                     </div>
-                    <div class="overview-accordion__body accordion-body">
-                      seed phrase
-                    </div>
-                  </div>
-                  <div
-                    class="accordion-container overview-accordion__container"
-                  >
                     <div
-                      class="
-                        overview-accordion__header
-                        accordion-btn accordion-header
-                      "
+                      class="accordion-container overview-accordion__container"
                     >
-                      <div class="overview-accordion__title accordion-title">
-                        Entropy
-                      </div>
                       <div
                         class="
-                          overview-accordion__arrow-down-icon
-                          arrow-down-icon
+                          overview-accordion__header
+                          accordion-btn accordion-header
                         "
                       >
-                        <img src="./images/chevron-down.svg" alt="arrow" />
+                        <div class="overview-accordion__title accordion-title">
+                          Entropy
+                        </div>
+                        <div
+                          class="
+                            overview-accordion__arrow-down-icon
+                            arrow-down-icon
+                          "
+                        >
+                          <img src="./images/chevron-down.svg" alt="arrow" />
+                        </div>
+                      </div>
+                      <div class="overview-accordion__body accordion-body">
+                        entropy
                       </div>
                     </div>
-                    <div class="overview-accordion__body accordion-body">
-                      entropy
-                    </div>
-                  </div>
-                  <div
-                    class="accordion-container overview-accordion__container"
-                  >
                     <div
-                      class="
-                        overview-accordion__header
-                        accordion-btn accordion-header
-                      "
+                      class="accordion-container overview-accordion__container"
                     >
-                      <div class="overview-accordion__title accordion-title">
-                        Seed
-                      </div>
                       <div
                         class="
-                          overview-accordion__arrow-down-icon
-                          arrow-down-icon
+                          overview-accordion__header
+                          accordion-btn accordion-header
                         "
                       >
-                        <img src="./images/chevron-down.svg" alt="arrow" />
+                        <div class="overview-accordion__title accordion-title">
+                          Seed
+                        </div>
+                        <div
+                          class="
+                            overview-accordion__arrow-down-icon
+                            arrow-down-icon
+                          "
+                        >
+                          <img src="./images/chevron-down.svg" alt="arrow" />
+                        </div>
+                      </div>
+                      <div class="overview-accordion__body accordion-body">
+                        seed
                       </div>
                     </div>
-                    <div class="overview-accordion__body accordion-body">
-                      seed
-                    </div>
-                  </div>
-                  <div
-                    class="accordion-container overview-accordion__container"
-                  >
                     <div
-                      class="
-                        overview-accordion__header
-                        accordion-btn accordion-header
-                      "
+                      class="accordion-container overview-accordion__container"
                     >
-                      <div class="overview-accordion__title accordion-title">
-                        Wif
-                      </div>
                       <div
                         class="
-                          overview-accordion__arrow-down-icon
-                          arrow-down-icon
+                          overview-accordion__header
+                          accordion-btn accordion-header
                         "
                       >
-                        <img src="./images/chevron-down.svg" alt="arrow" />
+                        <div class="overview-accordion__title accordion-title">
+                          Wif
+                        </div>
+                        <div
+                          class="
+                            overview-accordion__arrow-down-icon
+                            arrow-down-icon
+                          "
+                        >
+                          <img src="./images/chevron-down.svg" alt="arrow" />
+                        </div>
                       </div>
-                    </div>
-                    <div class="overview-accordion__body accordion-body">
-                      wif
+                      <div class="overview-accordion__body accordion-body">
+                        wif
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -2818,13 +2899,36 @@
       /* card-wallets */
       const cardWalletArr = [...document.querySelectorAll(".card-wallet")];
       const mainContent = document.querySelector(".main__content");
-      const mainCardWallet = document.querySelector(".main__card-wallet");
+      const mainCardWallet = document.querySelector(".content__card-wallet");
       const asideContent = document.querySelector(".main__aside");
       const mainTitle = document.querySelector(".main__main-title");
       const header = document.querySelector(".header");
       const returnToWallet = document.querySelector(
         ".main__card-wallet .previous-button"
       );
+
+      window.addEventListener("resize", function () {
+        let innerScreenWidth = window.innerWidth;
+
+        if (innerScreenWidth > 767) {
+          mainContent.style.display = "block";
+          mainCardWallet.style.display = "none";
+          asideContent.style.display = "block";
+          mainTitle.style.display = "block";
+          header.style.display = "flex";
+
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        } else {
+          mainContent.style.display = "none";
+          mainCardWallet.style.display = "none";
+          asideContent.style.display = "block";
+          mainTitle.style.display = "block";
+          header.style.display = "flex";
+        }
+      });
 
       cardWalletArr.forEach((el) => {
         el.addEventListener("click", (e) => {
@@ -2873,36 +2977,27 @@
         });
       });
 
+      const mainNav = document.querySelector(".content__navbar");
+
       /* Уменьшение card-wallet при скролле */
-      window.onscroll = function () {
-        if (window.matchMedia("(max-width: 767px)").matches) {
-          if (window.pageYOffset > 1) {
-            mainCardWallet.style.top = "-8.5rem";
-            mainContent.style.marginTop = "9rem";
-            mainCardWallet.style.transition = "top 0.3s ease";
-            mainContent.style.transition = "margin-top 0.3s ease";
-          } else if (window.pageYOffset < 1) {
-            mainCardWallet.style.top = "0";
-            mainContent.style.marginTop = "14rem";
-          }
-
-          // var hp = document.body.scrollHeight,
-          //   hw = window.innerHeight,
-          //   smax = hp - hw,
-          //   smin = 0,
-          //   hmin = 5,
-          //   hmax = 13,
-          //   ds = smax - smin,
-          //   dh = hmax - hmin;
-
-          // window.addEventListener("scroll", function () {
-          //   var s = window.pageYOffset; // current scrollTop
-          //   var h = hmax - (dh * s) / ds;
-
-          //   mainCardWallet.style.top = h - 13 + "rem";
-          // });
-        }
-      };
+      // window.onscroll = function () {
+      //   if (window.matchMedia("(max-width: 767px)").matches) {
+      //     if (window.pageYOffset > 20) {
+      //       cardWalletBottomContent.style.maxHeight = "0";
+      //       cardWalletTopContent.style.maxHeight = "0";
+      //       cardWalletTopContent.style.marginBottom = "0.5rem";
+      //       cardWalletTopLastGroup.style.display = "none";
+      //       cardWalletBottomContent.style.transition =
+      //         "max-height 0.3s ease 0s";
+      //       cardWalletTopContent.style.transition = "max-height 0.3s ease 0s";
+      //     } else if (window.pageYOffset < 20) {
+      //       cardWalletTopLastGroup.style.display = "flex";
+      //       cardWalletBottomContent.style.maxHeight = "unset";
+      //       cardWalletTopContent.style.maxHeight = "unset";
+      //       cardWalletTopContent.style.marginBottom = "0rem";
+      //     }
+      //   }
+      // };
       /* *** */
 
       const searchIconBtn = document.querySelector(

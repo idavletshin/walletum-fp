@@ -11,7 +11,7 @@ const accordionHistorTableyAddress = document.querySelectorAll(
 
 const hideAddress = (addressList) => {
   addressList.forEach((el) => {
-    var str = el.innerHTML.split(" ").join("");
+    let str = el.innerHTML.split(" ").join("");
     el.innerHTML =
       str.substr(1, 4) +
       `<span>&bull;&bull;&bull;&bull;</span>` +

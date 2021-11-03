@@ -19,6 +19,7 @@
 @import "my-account.css";
 @import "accordion.css";
 @import "modal.css";
+@import "notice.css";
 
 /* Общие стили для страницы */
 body {
@@ -133,7 +134,7 @@ body.--scroll-off {
 @media screen and (max-width: 37.5rem) {
   .header {
     position: fixed;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     width: 100%;
     background: var(--main-bg);
     z-index: 2;

@@ -1,0 +1,60 @@
+.notice {
+  position: fixed;
+  right: 3.5rem;
+  top: 5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 20.625rem;
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background-color: #1d1d1e;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 0.5rem 0 rgba(21, 21, 22, 0.7);
+  user-select: none;
+  z-index: 10;
+}
+
+.notice__top {
+  margin-bottom: 0.5rem;
+  color: var(--dark-red);
+  line-height: 1.25rem;
+}
+
+.notice__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notice-bottom__left {
+  position: relative;
+}
+.notice-bottom__left::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-image: url(../images/alert-triangle-red.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.notice-bottom__right {
+  color: var(--light-green);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 47.9375rem) {
+  .notice {
+    right: 1.5625rem;
+  }
+}
+
+@media screen and (max-width: 23.125rem) {
+  .notice {
+    right: 1rem;
+    max-width: 18.125rem;
+  }
+}
