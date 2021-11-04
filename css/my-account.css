@@ -153,6 +153,7 @@ body.--scroll-off .main {
 
   .content__card-wallet .arrow-left-icon {
     position: fixed;
+    top: 1.5rem;
   }
 
   .content__card-wallet .card-wallet__bottom {
