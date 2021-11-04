@@ -2910,28 +2910,28 @@
         ".main__card-wallet .previous-button"
       );
 
-      window.addEventListener("resize", function () {
-        let innerScreenWidth = window.innerWidth;
+      // window.addEventListener("resize", function () {
+      //   let innerScreenWidth = window.innerWidth;
 
-        if (innerScreenWidth > 767) {
-          mainContent.style.display = "block";
-          mainCardWallet.style.display = "none";
-          asideContent.style.display = "block";
-          mainTitle.style.display = "block";
-          header.style.display = "flex";
+      //   if (innerScreenWidth > 767) {
+      //     mainContent.style.display = "block";
+      //     mainCardWallet.style.display = "none";
+      //     asideContent.style.display = "block";
+      //     mainTitle.style.display = "block";
+      //     header.style.display = "flex";
 
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        } else {
-          mainContent.style.display = "none";
-          mainCardWallet.style.display = "none";
-          asideContent.style.display = "block";
-          mainTitle.style.display = "block";
-          header.style.display = "flex";
-        }
-      });
+      //     window.scrollTo({
+      //       top: 0,
+      //       behavior: "smooth",
+      //     });
+      //   } else {
+      //     mainContent.style.display = "none";
+      //     mainCardWallet.style.display = "none";
+      //     asideContent.style.display = "block";
+      //     mainTitle.style.display = "block";
+      //     header.style.display = "flex";
+      //   }
+      // });
 
       cardWalletArr.forEach((el) => {
         el.addEventListener("click", (e) => {
@@ -2981,27 +2981,6 @@
       });
 
       const mainNav = document.querySelector(".content__navbar");
-
-      /* Уменьшение card-wallet при скролле */
-      // window.onscroll = function () {
-      //   if (window.matchMedia("(max-width: 767px)").matches) {
-      //     if (window.pageYOffset > 20) {
-      //       cardWalletBottomContent.style.maxHeight = "0";
-      //       cardWalletTopContent.style.maxHeight = "0";
-      //       cardWalletTopContent.style.marginBottom = "0.5rem";
-      //       cardWalletTopLastGroup.style.display = "none";
-      //       cardWalletBottomContent.style.transition =
-      //         "max-height 0.3s ease 0s";
-      //       cardWalletTopContent.style.transition = "max-height 0.3s ease 0s";
-      //     } else if (window.pageYOffset < 20) {
-      //       cardWalletTopLastGroup.style.display = "flex";
-      //       cardWalletBottomContent.style.maxHeight = "unset";
-      //       cardWalletTopContent.style.maxHeight = "unset";
-      //       cardWalletTopContent.style.marginBottom = "0rem";
-      //     }
-      //   }
-      // };
-      /* *** */
 
       const searchIconBtn = document.querySelector(
         ".aside__group .search-form__icon"
