@@ -453,6 +453,12 @@
   width: 2.5rem;
   background: transparent;
 }
+.search-form__icon img {
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
 /* .search-form__icon, */
 .search-form__button {
   position: relative;
