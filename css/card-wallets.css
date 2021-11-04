@@ -449,6 +449,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  justify-content: center;
   height: 2.5rem;
   width: 2.5rem;
   background: transparent;

@@ -263,7 +263,7 @@ button[disabled].button {
   height: 1.5rem;
   background: url(../images/eye-white.svg);
   background-size: contain;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -55%);
   transition: all 0.2s ease 0s;
 }
 
