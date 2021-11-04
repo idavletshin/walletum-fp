@@ -1,7 +1,7 @@
 
 /* modal */
 
-const createNewWalletButton = document.querySelector(".aside__action");
+const createNewWalletButton = document.querySelector(".aside__create-btn");
 const modal = document.querySelectorAll(".modal");
 const dataImportModal = document.getElementById('dataImportModal')
 const dataImportButton = document.getElementById('dataImportButton')

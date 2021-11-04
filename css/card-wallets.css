@@ -391,7 +391,7 @@
 
 /* create wallet button */
 
-.aside__action {
+.aside__create-btn {
   justify-content: center;
   padding: 2rem;
   color: var(--white);
@@ -404,13 +404,13 @@
   border-radius: 0.75rem;
   transition: background 0.2s ease 0s;
 }
-.aside__action:hover {
+.aside__create-btn:hover {
   background: var(--card-bg);
 }
-.aside__action:active {
+.aside__create-btn:active {
   background: transparent;
 }
-.aside__action img {
+.aside__create-btn img {
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 1.5rem;
@@ -441,6 +441,9 @@
   align-items: center;
   position: relative;
   max-width: 0;
+}
+.aside__action {
+  display: none;
 }
 .search-form__icon {
   position: absolute;
@@ -515,4 +518,17 @@
 .aside__title.hide {
   max-width: 0;
   width: 0;
+}
+@media screen and (max-width: 47.9375rem) {
+  .search-form__icon {
+    right: 2.5rem;
+  }
+  .aside__action,
+  .aside__action .toggle-btn__icon {
+    display: block;
+  }
+  .aside__action .toggle-btn__icon:hover {
+    background-color: #1d1d1e;
+    border-radius: 50%;
+  }
 }
