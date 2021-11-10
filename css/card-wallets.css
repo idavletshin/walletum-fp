@@ -140,7 +140,6 @@
   font-weight: 600;
 }
 .card-wallet-bottom__amount {
-  max-width: 11.25rem;
   line-height: 1.5rem;
   white-space: nowrap;
   overflow: hidden;
@@ -169,6 +168,12 @@
 .card-wallet .context-btn::after,
 .card-wallet .context-btn:hover::after {
   background-image: url(../images/more-vertical-hover.svg);
+}
+
+@media screen and (max-width: 26.5rem) {
+  .card-wallet-bottom__info-amount {
+    max-width: 12.25rem;
+  }
 }
 /* стили для раскрытого кошелька по умолчанию  */
 
@@ -398,7 +403,7 @@
   font-family: var(--second-font);
   font-size: 0.875rem;
   font-weight: 600;
-  line-height: 2.5rem;
+  /* line-height: 2.5rem; */
   background: transparent;
   border: 0.125rem dashed var(--white);
   border-radius: 0.75rem;
@@ -418,6 +423,8 @@
 
 .aside__card-wallets {
   margin-bottom: 2rem;
+  max-height: 60vh;
+  overflow: auto;
 }
 .aside__group {
   position: relative;
@@ -447,7 +454,9 @@
 }
 .search-form__icon {
   position: absolute;
-  top: 0;
+  /* top: 0; */
+  top: 50%;
+  transform: translateY(-52%);
   right: 0;
   justify-content: center;
   height: 2.5rem;
