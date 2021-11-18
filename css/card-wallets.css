@@ -259,8 +259,11 @@
 
 /* стили для группы кошельков */
 
+.card-wallet-group.wallet-group .card-wallet-info__amount {
+  display: block;
+}
+
 .card-wallet-group.wallet-group .card-wallet-top__info,
-.card-wallet-group.wallet-group .card-wallet-info__amount,
 .card-wallet-group.wallet-group.mixed-wallet .card-wallet-bottom__badges {
   display: flex;
 }
